@@ -9,7 +9,7 @@
 ## ==> GUI FILE
 from main import *
 
-class UIFunctions(MainWindow):
+class Functions(MainWindow):
 
     def toggleMenu(self, maxWidth, enable):
         if enable:
@@ -36,3 +36,17 @@ class UIFunctions(MainWindow):
             self.animation.setEndValue(widthExtended)
             self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animation.start()
+
+    def forward(self):
+        # PAGE 1
+        self.btn_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_1))
+        # PAGE2
+        self.btn_page_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
+        # PAGE3
+        self.btn_page_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
+
+        self.btn_page_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
+
+        self.btn_page_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
+
+        self.btn_page_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_6))

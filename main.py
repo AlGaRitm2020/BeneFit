@@ -7,7 +7,6 @@
 ################################################################################
 
 import sys
-import platform
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -17,7 +16,7 @@ from PyQt5.QtWidgets import *
 from ui_main import Ui_MainWindow
 
 # IMPORT FUNCTIONS
-from ui_functions import *
+from functions import *
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -27,23 +26,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         ## TOGGLE/BURGUER MENU
         ########################################################################
-        self.Btn_Toggle.clicked.connect(lambda: UIFunctions.toggleMenu(self, 250, True))
+        self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 250, True))
 
         ## PAGES
         ########################################################################
-
-        # PAGE 1
-        self.btn_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_1))
-        # PAGE2
-        self.btn_page_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
-        # PAGE3
-        self.btn_page_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
-
-        self.btn_page_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
-
-        self.btn_page_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
-
-        self.btn_page_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_6))
+        
+        # переход на другие разделы
+        Functions.forward(self)
 
 
         ## SHOW ==> MAIN WINDOW
