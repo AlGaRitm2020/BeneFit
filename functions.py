@@ -38,6 +38,7 @@ class Functions(MainWindow):
             self.animation.start()
 
     def forward(self):
+        self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 250, True))
         # PAGE 1
         self.btn_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_1))
         # PAGE2

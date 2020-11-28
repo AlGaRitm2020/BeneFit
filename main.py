@@ -26,7 +26,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         ## TOGGLE/BURGUER MENU
         ########################################################################
-        self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 250, True))
+        
 
         ## PAGES
         ########################################################################
