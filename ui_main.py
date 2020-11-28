@@ -62,6 +62,12 @@ class Ui_MainWindow(object):
         self.frame_top.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_top.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_top.setObjectName("frame_top")
+        self.label_22 = QtWidgets.QLabel(self.frame_top)
+        self.label_22.setGeometry(QtCore.QRect(0, 2, 1021, 31))
+        self.label_22.setStyleSheet("color:#fff;\n"
+"font-size:24px;")
+        self.label_22.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_22.setObjectName("label_22")
         self.horizontalLayout.addWidget(self.frame_top)
         self.verticalLayout.addWidget(self.Top_Bar)
         self.Content = QtWidgets.QFrame(self.centralwidget)
@@ -179,6 +185,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.frame_pages)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.stackedWidget = QtWidgets.QStackedWidget(self.frame_pages)
+        self.stackedWidget.setStyleSheet("сolor:#ffffff;\n"
+"")
         self.stackedWidget.setObjectName("stackedWidget")
         self.page_1 = QtWidgets.QWidget()
         self.page_1.setObjectName("page_1")
@@ -528,17 +536,70 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_2)
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
-        self.label = QtWidgets.QLabel(self.page_3)
-        self.label.setGeometry(QtCore.QRect(9, 9, 172, 64))
-        font = QtGui.QFont()
-        font.setPointSize(40)
-        self.label.setFont(font)
-        self.label.setStyleSheet("color: #FFF;")
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.label.setObjectName("label")
         self.stackedWidget.addWidget(self.page_3)
         self.page_4 = QtWidgets.QWidget()
         self.page_4.setObjectName("page_4")
+        self.table = QtWidgets.QTableView(self.page_4)
+        self.table.setGeometry(QtCore.QRect(70, 120, 681, 221))
+        self.table.setStyleSheet("font-size:15px;\n"
+"height:20px;\n"
+"color:#fff;\n"
+"\n"
+"")
+        self.table.setObjectName("table")
+        self.pushButton_4 = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_4.setGeometry(QtCore.QRect(770, 120, 171, 71))
+        self.pushButton_4.setStyleSheet("border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:60px;\n"
+"color:#fff;")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.label = QtWidgets.QLabel(self.page_4)
+        self.label.setGeometry(QtCore.QRect(790, 210, 131, 131))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("img/frut.png"))
+        self.label.setObjectName("label")
+        self.pushButton_5 = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_5.setGeometry(QtCore.QRect(70, 600, 331, 61))
+        self.pushButton_5.setStyleSheet("border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;")
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.pushButton_9 = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_9.setGeometry(QtCore.QRect(440, 600, 311, 61))
+        self.pushButton_9.setStyleSheet("border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;")
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.table2 = QtWidgets.QTableView(self.page_4)
+        self.table2.setGeometry(QtCore.QRect(70, 370, 681, 221))
+        self.table2.setStyleSheet("font-size:15px;height:20px;\n"
+"")
+        self.table2.setObjectName("table2")
+        self.search_field = QtWidgets.QLineEdit(self.page_4)
+        self.search_field.setGeometry(QtCore.QRect(70, 20, 871, 71))
+        self.search_field.setStyleSheet("font-size:35px;\n"
+"height: 60px;\n"
+"border:1px solid #fff;\n"
+"color:#ffffff;\n"
+"")
+        self.search_field.setObjectName("search_field")
+        self.pushButton_8 = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_8.setGeometry(QtCore.QRect(770, 490, 171, 101))
+        self.pushButton_8.setStyleSheet("border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;")
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.pushButton_3 = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_3.setGeometry(QtCore.QRect(770, 370, 171, 101))
+        self.pushButton_3.setStyleSheet("border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;")
+        self.pushButton_3.setObjectName("pushButton_3")
         self.stackedWidget.addWidget(self.page_4)
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
@@ -556,6 +617,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_22.setText(_translate("MainWindow", "Главная страница"))
         self.label_name.setText(_translate("MainWindow", "<html><head/><body><p align=\"right\"><span style=\" font-size:15pt;\">Гость</span></p></body></html>"))
         self.pushButton_calculator.setText(_translate("MainWindow", "Калькулятор"))
         self.pushButton_en.setText(_translate("MainWindow", "EN"))
@@ -591,4 +653,9 @@ class Ui_MainWindow(object):
         self.label_19.setText(_translate("MainWindow", "Расчитать % жира"))
         self.label_20.setText(_translate("MainWindow", "Запястья, см"))
         self.pushButton.setText(_translate("MainWindow", "Рассчитать и сохранить"))
-        self.label.setText(_translate("MainWindow", "PAGE 3"))
+        self.pushButton_4.setText(_translate("MainWindow", "+"))
+        self.pushButton_5.setText(_translate("MainWindow", "Сохранить"))
+        self.pushButton_9.setText(_translate("MainWindow", "Загрузить"))
+        self.search_field.setText(_translate("MainWindow", "fg"))
+        self.pushButton_8.setText(_translate("MainWindow", "Очистить"))
+        self.pushButton_3.setText(_translate("MainWindow", "Добавить"))
