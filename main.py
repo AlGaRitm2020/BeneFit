@@ -39,6 +39,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # PAGE3
         self.btn_page_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
 
+        self.btn_page_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
+
+        self.btn_page_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
+
 
         ## SHOW ==> MAIN WINDOW
         ########################################################################

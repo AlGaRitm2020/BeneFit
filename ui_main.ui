@@ -379,7 +379,7 @@ QPushButton:hover {
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
-             <number>0</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="page_1">
              <widget class="QLabel" name="label_name">
@@ -1242,8 +1242,8 @@ color:#fff;</string>
               </property>
              </widget>
             </widget>
-            <widget class="QWidget" name="page"/>
             <widget class="QWidget" name="page_4"/>
+            <widget class="QWidget" name="page_5"/>
            </widget>
           </item>
          </layout>
