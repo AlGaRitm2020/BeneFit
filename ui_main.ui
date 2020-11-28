@@ -137,7 +137,7 @@ border: 0px solid;</string>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <widget class="QLabel" name="label_22">
+         <widget class="QLabel" name="label_header">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -357,6 +357,33 @@ QPushButton:hover {
             </property>
            </widget>
           </item>
+          <item>
+           <widget class="QPushButton" name="btn_page_6">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(35, 35, 35);
+	border: 0px solid;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>img/icons/1904675-configuration-edit-gear-options-preferences-setting-settings_122525.ico</normaloff>img/icons/1904675-configuration-edit-gear-options-preferences-setting-settings_122525.ico</iconset>
+            </property>
+           </widget>
+          </item>
           <item alignment="Qt::AlignTop">
            <widget class="QFrame" name="frame_top_menus">
             <property name="frameShape">
@@ -399,11 +426,11 @@ QPushButton:hover {
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="styleSheet">
-             <string notr="true">сolor:#ffffff;
-</string>
+             <string notr="true">color:#ffffff;
+font-size:20px;</string>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>5</number>
             </property>
             <widget class="QWidget" name="page_1">
              <widget class="QLabel" name="label_name">
@@ -602,13 +629,46 @@ color:#fff;</string>
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
+             <widget class="QPushButton" name="btn_page_7">
+              <property name="geometry">
+               <rect>
+                <x>220</x>
+                <y>200</y>
+                <width>68</width>
+                <height>40</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(35, 35, 35);
+	border: 0px solid;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>img/icons/webpagehome_85808.ico</normaloff>img/icons/webpagehome_85808.ico</iconset>
+              </property>
+             </widget>
             </widget>
             <widget class="QWidget" name="page_2">
              <widget class="QGroupBox" name="groupBox_5">
               <property name="geometry">
                <rect>
                 <x>520</x>
-                <y>140</y>
+                <y>70</y>
                 <width>381</width>
                 <height>401</height>
                </rect>
@@ -820,30 +880,11 @@ border:none</string>
                </widget>
               </widget>
              </widget>
-             <widget class="QPushButton" name="pushButton_2">
-              <property name="geometry">
-               <rect>
-                <x>290</x>
-                <y>50</y>
-                <width>421</width>
-                <height>61</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">border:1px solid #fff;
-border-radius:25px;
-font-size:20px;
-color:#fff;</string>
-              </property>
-              <property name="text">
-               <string>Калькулятор</string>
-              </property>
-             </widget>
              <widget class="QLabel" name="label_2">
               <property name="geometry">
                <rect>
-                <x>770</x>
-                <y>30</y>
+                <x>870</x>
+                <y>580</y>
                 <width>111</width>
                 <height>101</height>
                </rect>
@@ -859,7 +900,7 @@ color:#fff;</string>
               <property name="geometry">
                <rect>
                 <x>100</x>
-                <y>140</y>
+                <y>70</y>
                 <width>381</width>
                 <height>401</height>
                </rect>
@@ -1358,9 +1399,7 @@ color:#fff;</string>
               <property name="styleSheet">
                <string notr="true">font-size:35px;
 height: 60px;
-border:1px solid #fff;
-color:#ffffff;
-</string>
+border:1px solid #fff;</string>
               </property>
               <property name="text">
                <string>fg</string>
@@ -1405,7 +1444,108 @@ color:#fff;</string>
               </property>
              </widget>
             </widget>
-            <widget class="QWidget" name="page_5"/>
+            <widget class="QWidget" name="page_5">
+             <widget class="QStackedWidget" name="stackedWidget_description">
+              <property name="geometry">
+               <rect>
+                <x>9</x>
+                <y>9</y>
+                <width>981</width>
+                <height>661</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#fff;</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="page_des_en">
+               <widget class="QTextBrowser" name="textBrowser_en">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>10</y>
+                  <width>921</width>
+                  <height>631</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:26pt; font-weight:600; color:#ffffff;&quot;&gt;BeneFit: training, nutrition, calculates&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:26pt; font-weight:600; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:8.25pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;BeneFit&lt;/span&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:14pt; color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;is a universal fitness app that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;The app consists of the following sections: &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;Calculator&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Calculate your BMI, body fat%, daily water intake, and many other metrics&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;Workout &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Find a training program that is right for you&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;Nutrition&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;Make diets, monitor micronutrients, add your products to the database&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;What's new?&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;- Added new training sessions&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;- Fixed some bugs&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;- Optimized code&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;- Added contacts&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;-V. 0. 8. 2&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;Contacts&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; color:#ffffff;&quot;&gt;For all questions and suggestions, write to&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;benefitapphelp@yandex.ru&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="page_des_ru"/>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_6">
+             <widget class="QWidget" name="formLayoutWidget_6">
+              <property name="geometry">
+               <rect>
+                <x>290</x>
+                <y>130</y>
+                <width>361</width>
+                <height>321</height>
+               </rect>
+              </property>
+              <layout class="QFormLayout" name="formLayout_6">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_23">
+                 <property name="text">
+                  <string>Язык интерфейса</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboBox">
+                 <item>
+                  <property name="text">
+                   <string>Русский</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>English</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
            </widget>
           </item>
          </layout>
