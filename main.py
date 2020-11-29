@@ -25,8 +25,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         
         
-        # функции переходов
+        # функции переходов из меню 
         Functions.forward(self)
+
+        # переходы из главной страницы
+        self.pushButton_sign.clicked.connect(self.open_login)
+        self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
+        self.pushButton_training.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
+        self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
+        self.pushButton_info.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
 
         # показать окно
         self.show()
