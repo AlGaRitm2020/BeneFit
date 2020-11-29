@@ -22,10 +22,9 @@ from functions import *
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-     
         self.setupUi(self)
         self.btn_login.hide()
-    
+
         
         # функции переходов из меню 
         Functions.forward(self)

@@ -23,14 +23,25 @@ class Functions(MainWindow):
             if width == 70:
                 widthExtended = maxExtend
                 self.btn_page_1.setText(" Главная")
+                self.btn_page_2.setText(" Калькулятор")
+                self.btn_page_3.setText(" Тренировки")
+                self.btn_page_4.setText(" Питание")
+                self.btn_page_5.setText(" Описание")
+                self.btn_page_6.setText(" Настройки")
                 self.btn_login.show()
                 self.label_menu_login.setText("login")
+                
             else:
                 self.btn_login.hide()
                 self.label_menu_login.setText("")
                 widthExtended = standard
                 self.btn_page_1.setText("")
-
+                self.btn_page_2.setText("")
+                self.btn_page_3.setText("")
+                self.btn_page_4.setText("")
+                self.btn_page_5.setText("")
+                self.btn_page_6.setText("")
+                
 
 
             # ANIMATION
@@ -51,7 +62,12 @@ class Functions(MainWindow):
     def forward(self):
         ## TOGGLE/BURGUER MENU
         ########################################################################
-        self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 250, True))
+
+      
+        self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 200, True))
+
+        # self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 250, True))
+
         # PAGE 1
         self.btn_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_1))
         # PAGE2
