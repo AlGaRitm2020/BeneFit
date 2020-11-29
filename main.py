@@ -11,6 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+from login import LoginWindow
 
 # GUI FILEL
 from ui_main import Ui_MainWindow
@@ -68,9 +69,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # открыть вход
     def open_login(self):
         global log
-        log = LoginWindow(self.language)
-        global main
-        main.hide()
+        log = LoginWindow('ru')
+        
+
 
     # сменить язык
     def translate(self):
