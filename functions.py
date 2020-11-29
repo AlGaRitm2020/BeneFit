@@ -38,6 +38,8 @@ class Functions(MainWindow):
             self.animation.start()
 
     def forward(self):
+        ## TOGGLE/BURGUER MENU
+        ########################################################################
         self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 250, True))
         # PAGE 1
         self.btn_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_1))
@@ -51,3 +53,10 @@ class Functions(MainWindow):
         self.btn_page_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
 
         self.btn_page_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_6))
+
+        # переходы из главной страницы
+        self.pushButton_sign.clicked.connect(self.open_login)
+        self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
+        self.pushButton_training.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
+        self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
+        self.pushButton_info.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))

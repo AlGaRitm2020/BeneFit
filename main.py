@@ -12,7 +12,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
-# GUI FILE
+# GUI FILEL
 from ui_main import Ui_MainWindow
 
 # IMPORT FUNCTIONS
@@ -23,21 +23,62 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
      
         self.setupUi(self)
-
-        ## TOGGLE/BURGUER MENU
-        ########################################################################
         
-
-        ## PAGES
-        ########################################################################
         
-        # переход на другие разделы
+        # функции переходов
         Functions.forward(self)
 
-
-        ## SHOW ==> MAIN WINDOW
-        ########################################################################
+        # показать окно
         self.show()
+
+                # заходим в приложение 
+        global ID, LOGIN
+        ID = 0
+        LOGIN = "Guest"
+        # создать переменную с языком
+
+
+        # установить фисированый размер окна
+        # self.setFixedSize(641, 534)
+
+
+        # установить иконку окна
+        self.setWindowIcon(QIcon("img/icons/webpagehome_85808.ico"))
+
+        # показать имя пользователя
+        self.label_name.setText(LOGIN)
+        
+
+        
+
+        # self.pushButton_training.clicked.connect(self.open_training)
+        # self.pushButton_nutrition.clicked.connect(self.open_nutrition)
+        # self.pushButton_info.clicked.connect(self.open_description)
+        # # выбор языка интерфейса
+        # self.pushButton_ru.clicked.connect(self.translate)
+        # self.pushButton_en.clicked.connect(self.translate)
+
+    # открыть вход
+    def open_login(self):
+        global log
+        log = LoginWindow(self.language)
+        global main
+        main.hide()
+
+    # сменить язык
+    def translate(self):
+        if self.sender().text() == "EN":
+            self.language = "en"
+            self.pushButton_calculator.setText("Calculator")
+            self.pushButton_training.setText("Training")
+            self.pushButton_nutrition.setText("Nutrition")
+            self.setWindowTitle("Main")
+        else:
+            self.language = "ru"
+            self.pushButton_calculator.setText("Калькулятор")
+            self.pushButton_training.setText("Тренировки")
+            self.pushButton_nutrition.setText("Питание")
+            self.setWindowTitle("Главная")
         ## ==> END ##
 
 if __name__ == "__main__":
