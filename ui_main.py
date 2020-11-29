@@ -81,7 +81,9 @@ class Ui_MainWindow(object):
         self.frame_left_menu = QtWidgets.QFrame(self.Content)
         self.frame_left_menu.setMinimumSize(QtCore.QSize(70, 0))
         self.frame_left_menu.setMaximumSize(QtCore.QSize(70, 16777215))
-        self.frame_left_menu.setStyleSheet("background-color: rgb(35, 35, 35);")
+        self.frame_left_menu.setStyleSheet("background-color: rgb(35, 35, 35);\n"
+"color:#fff;\n"
+"font-size:20px;")
         self.frame_left_menu.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_left_menu.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_left_menu.setObjectName("frame_left_menu")
@@ -100,7 +102,7 @@ class Ui_MainWindow(object):
 "}")
         self.btn_page_1.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("img/icons/webpagehome_85808.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("img/icons/home-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_page_1.setIcon(icon1)
         self.btn_page_1.setObjectName("btn_page_1")
         self.verticalLayout_3.addWidget(self.btn_page_1)
@@ -116,7 +118,7 @@ class Ui_MainWindow(object):
 "}")
         self.btn_page_2.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../BeneFit/img/icons/calculator_icon-icons.com_50442.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("img/icons/calculator_(1).ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_page_2.setIcon(icon2)
         self.btn_page_2.setObjectName("btn_page_2")
         self.verticalLayout_3.addWidget(self.btn_page_2)
@@ -132,7 +134,7 @@ class Ui_MainWindow(object):
 "}")
         self.btn_page_3.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("../BeneFit/img/icons/barbell-48_44982.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("img/icons/barrel-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_page_3.setIcon(icon3)
         self.btn_page_3.setObjectName("btn_page_3")
         self.verticalLayout_3.addWidget(self.btn_page_3)
@@ -148,7 +150,7 @@ class Ui_MainWindow(object):
 "}")
         self.btn_page_4.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("../BeneFit/img/icons/foodmealplaterestaurant_109684.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("img/icons/apple-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_page_4.setIcon(icon4)
         self.btn_page_4.setObjectName("btn_page_4")
         self.verticalLayout_3.addWidget(self.btn_page_4)
@@ -164,7 +166,7 @@ class Ui_MainWindow(object):
 "}")
         self.btn_page_5.setText("")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("../BeneFit/img/icons/4213426-about-description-help-info-information-notification_115427.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("img/icons/info-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_page_5.setIcon(icon5)
         self.btn_page_5.setObjectName("btn_page_5")
         self.verticalLayout_3.addWidget(self.btn_page_5)
@@ -180,10 +182,36 @@ class Ui_MainWindow(object):
 "}")
         self.btn_page_6.setText("")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("img/icons/1904675-configuration-edit-gear-options-preferences-setting-settings_122525.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap("img/icons/settings-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_page_6.setIcon(icon6)
         self.btn_page_6.setObjectName("btn_page_6")
         self.verticalLayout_3.addWidget(self.btn_page_6)
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem)
+        self.label_menu_login = QtWidgets.QLabel(self.frame_left_menu)
+        self.label_menu_login.setStyleSheet("color:#fff;\n"
+"font-size:20px;")
+        self.label_menu_login.setText("")
+        self.label_menu_login.setObjectName("label_menu_login")
+        self.verticalLayout_3.addWidget(self.label_menu_login)
+        self.btn_login = QtWidgets.QPushButton(self.frame_left_menu)
+        self.btn_login.setEnabled(True)
+        self.btn_login.setMinimumSize(QtCore.QSize(0, 40))
+        self.btn_login.setStyleSheet("QPushButton {\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(35, 35, 35);\n"
+"    border:1px solid #fff;\n"
+"    color:#fff;\n"
+"    font-size:20px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap("img/icons/webpagehome_85808.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_login.setIcon(icon7)
+        self.btn_login.setObjectName("btn_login")
+        self.verticalLayout_3.addWidget(self.btn_login)
         self.frame_top_menus = QtWidgets.QFrame(self.frame_left_menu)
         self.frame_top_menus.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_top_menus.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -207,7 +235,7 @@ class Ui_MainWindow(object):
         self.page_1 = QtWidgets.QWidget()
         self.page_1.setObjectName("page_1")
         self.label_name = QtWidgets.QLabel(self.page_1)
-        self.label_name.setGeometry(QtCore.QRect(780, 30, 131, 31))
+        self.label_name.setGeometry(QtCore.QRect(590, 40, 131, 31))
         self.label_name.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
         self.label_name.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_name.setStyleSheet("\n"
@@ -216,84 +244,76 @@ class Ui_MainWindow(object):
         self.label_name.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_name.setObjectName("label_name")
         self.pushButton_calculator = QtWidgets.QPushButton(self.page_1)
-        self.pushButton_calculator.setGeometry(QtCore.QRect(480, 290, 421, 61))
-        self.pushButton_calculator.setStyleSheet("QPushButton:hover {\n"
-"        font-size:23px;\n"
-"        border:3px solid #fff;\n"
-"        font-weight:900;\n"
-"    }\n"
-"QPushButton{\n"
-"       border:1px solid #fff;\n"
-"       font-size:20px;\n"
-"       color:#fff;\n"
-"    }")
-        self.pushButton_calculator.setObjectName("pushButton_calculator")
-        self.pushButton_en = QtWidgets.QPushButton(self.page_1)
-        self.pushButton_en.setGeometry(QtCore.QRect(440, 30, 51, 23))
-        self.pushButton_en.setStyleSheet("border:1px solid #fff;\n"
+        self.pushButton_calculator.setGeometry(QtCore.QRect(290, 300, 421, 61))
+        self.pushButton_calculator.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
 "font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_en.setObjectName("pushButton_en")
-        self.pushButton_training = QtWidgets.QPushButton(self.page_1)
-        self.pushButton_training.setGeometry(QtCore.QRect(480, 380, 421, 61))
-        self.pushButton_training.setStyleSheet("border:1px solid #fff;\n"
-"font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_training.setObjectName("pushButton_training")
-        self.pushButton_ru = QtWidgets.QPushButton(self.page_1)
-        self.pushButton_ru.setGeometry(QtCore.QRect(380, 30, 51, 23))
-        self.pushButton_ru.setStyleSheet("border:1px solid #fff;\n"
-"font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_ru.setObjectName("pushButton_ru")
-        self.pushButton_info = QtWidgets.QPushButton(self.page_1)
-        self.pushButton_info.setGeometry(QtCore.QRect(480, 560, 421, 61))
-        self.pushButton_info.setStyleSheet("border:1px solid #fff;\n"
-"font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_info.setObjectName("pushButton_info")
-        self.label_3 = QtWidgets.QLabel(self.page_1)
-        self.label_3.setGeometry(QtCore.QRect(630, 20, 131, 111))
-        self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("../BeneFit/img/filename.png"))
-        self.label_3.setObjectName("label_3")
-        self.pushButton_sign = QtWidgets.QPushButton(self.page_1)
-        self.pushButton_sign.setGeometry(QtCore.QRect(920, 30, 71, 31))
-        self.pushButton_sign.setStyleSheet("border:1px solid #fff;\n"
-"font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_sign.setObjectName("pushButton_sign")
-        self.pushButton_nutrition = QtWidgets.QPushButton(self.page_1)
-        self.pushButton_nutrition.setGeometry(QtCore.QRect(480, 470, 421, 61))
-        self.pushButton_nutrition.setStyleSheet("border:1px solid #fff;\n"
-"font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_nutrition.setObjectName("pushButton_nutrition")
-        self.label_4 = QtWidgets.QLabel(self.page_1)
-        self.label_4.setGeometry(QtCore.QRect(480, 150, 421, 101))
-        self.label_4.setStyleSheet("font-size:127px;\n"
-"color:#fff;")
-        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_4.setObjectName("label_4")
-        self.btn_page_7 = QtWidgets.QPushButton(self.page_1)
-        self.btn_page_7.setGeometry(QtCore.QRect(220, 200, 68, 40))
-        self.btn_page_7.setMinimumSize(QtCore.QSize(0, 40))
-        self.btn_page_7.setStyleSheet("QPushButton {\n"
-"    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
-"    border: 0px solid;\n"
+"color:#fff;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
-        self.btn_page_7.setText("")
-        self.btn_page_7.setIcon(icon1)
-        self.btn_page_7.setObjectName("btn_page_7")
+        self.pushButton_calculator.setObjectName("pushButton_calculator")
+        self.pushButton_training = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_training.setGeometry(QtCore.QRect(290, 390, 421, 61))
+        self.pushButton_training.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_training.setObjectName("pushButton_training")
+        self.pushButton_info = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_info.setGeometry(QtCore.QRect(290, 570, 421, 61))
+        self.pushButton_info.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_info.setObjectName("pushButton_info")
+        self.label_3 = QtWidgets.QLabel(self.page_1)
+        self.label_3.setGeometry(QtCore.QRect(440, 30, 131, 111))
+        self.label_3.setText("")
+        self.label_3.setPixmap(QtGui.QPixmap("../BeneFit/img/filename.png"))
+        self.label_3.setObjectName("label_3")
+        self.pushButton_sign = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_sign.setGeometry(QtCore.QRect(730, 40, 71, 31))
+        self.pushButton_sign.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_sign.setObjectName("pushButton_sign")
+        self.pushButton_nutrition = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_nutrition.setGeometry(QtCore.QRect(290, 480, 421, 61))
+        self.pushButton_nutrition.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_nutrition.setObjectName("pushButton_nutrition")
+        self.label_4 = QtWidgets.QLabel(self.page_1)
+        self.label_4.setGeometry(QtCore.QRect(290, 160, 421, 111))
+        self.label_4.setStyleSheet("font-size:130px;\n"
+"color:#fff;")
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setObjectName("label_4")
         self.stackedWidget.addWidget(self.page_1)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
         self.groupBox_5 = QtWidgets.QGroupBox(self.page_2)
-        self.groupBox_5.setGeometry(QtCore.QRect(520, 70, 381, 401))
+        self.groupBox_5.setGeometry(QtCore.QRect(560, 110, 381, 401))
         self.groupBox_5.setStyleSheet("color:#fff;\n"
 "border-radius:25px;\n"
 "font-size:20px;\n"
@@ -393,12 +413,12 @@ class Ui_MainWindow(object):
         self.lineEdit_percent.setObjectName("lineEdit_percent")
         self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_percent)
         self.label_2 = QtWidgets.QLabel(self.page_2)
-        self.label_2.setGeometry(QtCore.QRect(870, 580, 111, 101))
+        self.label_2.setGeometry(QtCore.QRect(450, 0, 111, 101))
         self.label_2.setText("")
         self.label_2.setPixmap(QtGui.QPixmap("../BeneFit/img/calculator3.png"))
         self.label_2.setObjectName("label_2")
         self.groupBox_3 = QtWidgets.QGroupBox(self.page_2)
-        self.groupBox_3.setGeometry(QtCore.QRect(100, 70, 381, 401))
+        self.groupBox_3.setGeometry(QtCore.QRect(60, 110, 381, 401))
         self.groupBox_3.setStyleSheet("border-radius:25px;\n"
 "font-size:20px;\n"
 "background-color: rgb(35, 35, 35);\n"
@@ -556,6 +576,11 @@ class Ui_MainWindow(object):
 "font-size:20px;\n"
 "color:#fff;")
         self.pushButton.setObjectName("pushButton")
+        self.label_22 = QtWidgets.QLabel(self.page_2)
+        self.label_22.setGeometry(QtCore.QRect(450, 230, 111, 141))
+        self.label_22.setText("")
+        self.label_22.setPixmap(QtGui.QPixmap("img/right-arrow - Copy.png"))
+        self.label_22.setObjectName("label_22")
         self.stackedWidget.addWidget(self.page_2)
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
@@ -642,7 +667,7 @@ class Ui_MainWindow(object):
         self.page_6 = QtWidgets.QWidget()
         self.page_6.setObjectName("page_6")
         self.formLayoutWidget_6 = QtWidgets.QWidget(self.page_6)
-        self.formLayoutWidget_6.setGeometry(QtCore.QRect(290, 130, 361, 321))
+        self.formLayoutWidget_6.setGeometry(QtCore.QRect(360, 100, 361, 321))
         self.formLayoutWidget_6.setObjectName("formLayoutWidget_6")
         self.formLayout_6 = QtWidgets.QFormLayout(self.formLayoutWidget_6)
         self.formLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -655,6 +680,17 @@ class Ui_MainWindow(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBox)
+        self.pushButton_calculator_2 = QtWidgets.QPushButton(self.page_6)
+        self.pushButton_calculator_2.setGeometry(QtCore.QRect(330, 540, 421, 61))
+        self.pushButton_calculator_2.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_calculator_2.setObjectName("pushButton_calculator_2")
         self.stackedWidget.addWidget(self.page_6)
         self.verticalLayout_5.addWidget(self.stackedWidget)
         self.horizontalLayout_2.addWidget(self.frame_pages)
@@ -671,11 +707,10 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_header.setText(_translate("MainWindow", "Главная страница"))
+        self.btn_login.setText(_translate("MainWindow", "Войти"))
         self.label_name.setText(_translate("MainWindow", "<html><head/><body><p align=\"right\"><span style=\" font-size:15pt;\">Гость</span></p></body></html>"))
         self.pushButton_calculator.setText(_translate("MainWindow", "Калькулятор"))
-        self.pushButton_en.setText(_translate("MainWindow", "EN"))
         self.pushButton_training.setText(_translate("MainWindow", "Тренировки"))
-        self.pushButton_ru.setText(_translate("MainWindow", "RU"))
         self.pushButton_info.setText(_translate("MainWindow", "О приложении"))
         self.pushButton_sign.setText(_translate("MainWindow", "Войти"))
         self.pushButton_nutrition.setText(_translate("MainWindow", "Питание"))
@@ -745,3 +780,4 @@ class Ui_MainWindow(object):
         self.label_23.setText(_translate("MainWindow", "Язык интерфейса"))
         self.comboBox.setItemText(0, _translate("MainWindow", "Русский"))
         self.comboBox.setItemText(1, _translate("MainWindow", "English"))
+        self.pushButton_calculator_2.setText(_translate("MainWindow", "Сохранить"))

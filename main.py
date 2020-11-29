@@ -24,7 +24,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
      
         self.setupUi(self)
-        
+        self.btn_login.hide()
+    
         
         # функции переходов из меню 
         Functions.forward(self)
@@ -70,7 +71,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def open_login(self):
         global log
         log = LoginWindow('ru')
-        
+
 
 
     # сменить язык

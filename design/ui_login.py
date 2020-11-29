@@ -50,12 +50,23 @@ class Ui_Dialog(object):
         self.label_status.setObjectName("label_status")
         self.pushButton_authorization = QtWidgets.QPushButton(Dialog)
         self.pushButton_authorization.setGeometry(QtCore.QRect(30, 245, 161, 41))
-        self.pushButton_authorization.setStyleSheet("border:1px solid #fff;\n"
-"border-radius:25px;")
+        self.pushButton_authorization.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.pushButton_authorization.setObjectName("pushButton_authorization")
         self.pushButton_registration = QtWidgets.QPushButton(Dialog)
         self.pushButton_registration.setGeometry(QtCore.QRect(230, 245, 151, 41))
-        self.pushButton_registration.setStyleSheet("border:1px solid #fff;")
+        self.pushButton_registration.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.pushButton_registration.setObjectName("pushButton_registration")
 
         self.retranslateUi(Dialog)

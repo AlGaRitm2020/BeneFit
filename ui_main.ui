@@ -201,7 +201,9 @@ font-size:24px;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(35, 35, 35);</string>
+          <string notr="true">background-color: rgb(35, 35, 35);
+color:#fff;
+font-size:20px;</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -245,7 +247,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>img/icons/webpagehome_85808.ico</normaloff>img/icons/webpagehome_85808.ico</iconset>
+              <normaloff>img/icons/home-_1_.ico</normaloff>img/icons/home-_1_.ico</iconset>
             </property>
            </widget>
           </item>
@@ -272,7 +274,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>../BeneFit/img/icons/calculator_icon-icons.com_50442.ico</normaloff>../BeneFit/img/icons/calculator_icon-icons.com_50442.ico</iconset>
+              <normaloff>img/icons/calculator_(1).ico</normaloff>img/icons/calculator_(1).ico</iconset>
             </property>
            </widget>
           </item>
@@ -299,7 +301,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>../BeneFit/img/icons/barbell-48_44982.ico</normaloff>../BeneFit/img/icons/barbell-48_44982.ico</iconset>
+              <normaloff>img/icons/barrel-_1_.ico</normaloff>img/icons/barrel-_1_.ico</iconset>
             </property>
            </widget>
           </item>
@@ -326,7 +328,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>../BeneFit/img/icons/foodmealplaterestaurant_109684.ico</normaloff>../BeneFit/img/icons/foodmealplaterestaurant_109684.ico</iconset>
+              <normaloff>img/icons/apple-_1_.ico</normaloff>img/icons/apple-_1_.ico</iconset>
             </property>
            </widget>
           </item>
@@ -353,7 +355,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>../BeneFit/img/icons/4213426-about-description-help-info-information-notification_115427.ico</normaloff>../BeneFit/img/icons/4213426-about-description-help-info-information-notification_115427.ico</iconset>
+              <normaloff>img/icons/info-_1_.ico</normaloff>img/icons/info-_1_.ico</iconset>
             </property>
            </widget>
           </item>
@@ -380,7 +382,63 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>img/icons/1904675-configuration-edit-gear-options-preferences-setting-settings_122525.ico</normaloff>img/icons/1904675-configuration-edit-gear-options-preferences-setting-settings_122525.ico</iconset>
+              <normaloff>img/icons/settings-_1_.ico</normaloff>img/icons/settings-_1_.ico</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_menu_login">
+            <property name="styleSheet">
+             <string notr="true">color:#fff;
+font-size:20px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_login">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(35, 35, 35);
+	border:1px solid #fff;
+	color:#fff;
+	font-size:20px;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Войти</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>img/icons/webpagehome_85808.ico</normaloff>img/icons/webpagehome_85808.ico</iconset>
             </property>
            </widget>
           </item>
@@ -436,8 +494,8 @@ font-size:20px;</string>
              <widget class="QLabel" name="label_name">
               <property name="geometry">
                <rect>
-                <x>780</x>
-                <y>30</y>
+                <x>590</x>
+                <y>40</y>
                 <width>131</width>
                 <height>31</height>
                </rect>
@@ -463,95 +521,67 @@ color:#fff;</string>
              <widget class="QPushButton" name="pushButton_calculator">
               <property name="geometry">
                <rect>
-                <x>480</x>
-                <y>290</y>
+                <x>290</x>
+                <y>300</y>
                 <width>421</width>
                 <height>61</height>
                </rect>
               </property>
               <property name="styleSheet">
-               <string notr="true">QPushButton:hover {
-        font-size:23px;
-		border:3px solid #fff;
-		font-weight:900;
-    }
-QPushButton{
-       border:1px solid #fff;
-	   font-size:20px;
-	   color:#fff;
-    }</string>
+               <string notr="true">QPushButton {
+border:1px solid #fff;
+font-size:20px;
+color:#fff;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
               </property>
               <property name="text">
                <string>Калькулятор</string>
               </property>
              </widget>
-             <widget class="QPushButton" name="pushButton_en">
-              <property name="geometry">
-               <rect>
-                <x>440</x>
-                <y>30</y>
-                <width>51</width>
-                <height>23</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">border:1px solid #fff;
-font-size:20px;
-color:#fff;</string>
-              </property>
-              <property name="text">
-               <string>EN</string>
-              </property>
-             </widget>
              <widget class="QPushButton" name="pushButton_training">
               <property name="geometry">
                <rect>
-                <x>480</x>
-                <y>380</y>
+                <x>290</x>
+                <y>390</y>
                 <width>421</width>
                 <height>61</height>
                </rect>
               </property>
               <property name="styleSheet">
-               <string notr="true">border:1px solid #fff;
+               <string notr="true">QPushButton {
+border:1px solid #fff;
 font-size:20px;
-color:#fff;</string>
+color:#fff;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
               </property>
               <property name="text">
                <string>Тренировки</string>
               </property>
              </widget>
-             <widget class="QPushButton" name="pushButton_ru">
-              <property name="geometry">
-               <rect>
-                <x>380</x>
-                <y>30</y>
-                <width>51</width>
-                <height>23</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">border:1px solid #fff;
-font-size:20px;
-color:#fff;</string>
-              </property>
-              <property name="text">
-               <string>RU</string>
-              </property>
-             </widget>
              <widget class="QPushButton" name="pushButton_info">
               <property name="geometry">
                <rect>
-                <x>480</x>
-                <y>560</y>
+                <x>290</x>
+                <y>570</y>
                 <width>421</width>
                 <height>61</height>
                </rect>
               </property>
               <property name="styleSheet">
-               <string notr="true">border:1px solid #fff;
+               <string notr="true">QPushButton {
+border:1px solid #fff;
 font-size:20px;
-color:#fff;</string>
+color:#fff;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
               </property>
               <property name="text">
                <string>О приложении</string>
@@ -560,8 +590,8 @@ color:#fff;</string>
              <widget class="QLabel" name="label_3">
               <property name="geometry">
                <rect>
-                <x>630</x>
-                <y>20</y>
+                <x>440</x>
+                <y>30</y>
                 <width>131</width>
                 <height>111</height>
                </rect>
@@ -576,16 +606,21 @@ color:#fff;</string>
              <widget class="QPushButton" name="pushButton_sign">
               <property name="geometry">
                <rect>
-                <x>920</x>
-                <y>30</y>
+                <x>730</x>
+                <y>40</y>
                 <width>71</width>
                 <height>31</height>
                </rect>
               </property>
               <property name="styleSheet">
-               <string notr="true">border:1px solid #fff;
+               <string notr="true">QPushButton {
+border:1px solid #fff;
 font-size:20px;
-color:#fff;</string>
+color:#fff;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
               </property>
               <property name="text">
                <string>Войти</string>
@@ -594,16 +629,21 @@ color:#fff;</string>
              <widget class="QPushButton" name="pushButton_nutrition">
               <property name="geometry">
                <rect>
-                <x>480</x>
-                <y>470</y>
+                <x>290</x>
+                <y>480</y>
                 <width>421</width>
                 <height>61</height>
                </rect>
               </property>
               <property name="styleSheet">
-               <string notr="true">border:1px solid #fff;
+               <string notr="true">QPushButton {
+border:1px solid #fff;
 font-size:20px;
-color:#fff;</string>
+color:#fff;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
               </property>
               <property name="text">
                <string>Питание</string>
@@ -612,14 +652,14 @@ color:#fff;</string>
              <widget class="QLabel" name="label_4">
               <property name="geometry">
                <rect>
-                <x>480</x>
-                <y>150</y>
+                <x>290</x>
+                <y>160</y>
                 <width>421</width>
-                <height>101</height>
+                <height>111</height>
                </rect>
               </property>
               <property name="styleSheet">
-               <string notr="true">font-size:127px;
+               <string notr="true">font-size:130px;
 color:#fff;</string>
               </property>
               <property name="text">
@@ -629,46 +669,13 @@ color:#fff;</string>
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
-             <widget class="QPushButton" name="btn_page_7">
-              <property name="geometry">
-               <rect>
-                <x>220</x>
-                <y>200</y>
-                <width>68</width>
-                <height>40</height>
-               </rect>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	color: rgb(255, 255, 255);
-	background-color: rgb(35, 35, 35);
-	border: 0px solid;
-}
-QPushButton:hover {
-	background-color: rgb(85, 170, 255);
-}</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="icon">
-               <iconset>
-                <normaloff>img/icons/webpagehome_85808.ico</normaloff>img/icons/webpagehome_85808.ico</iconset>
-              </property>
-             </widget>
             </widget>
             <widget class="QWidget" name="page_2">
              <widget class="QGroupBox" name="groupBox_5">
               <property name="geometry">
                <rect>
-                <x>520</x>
-                <y>70</y>
+                <x>560</x>
+                <y>110</y>
                 <width>381</width>
                 <height>401</height>
                </rect>
@@ -883,8 +890,8 @@ border:none</string>
              <widget class="QLabel" name="label_2">
               <property name="geometry">
                <rect>
-                <x>870</x>
-                <y>580</y>
+                <x>450</x>
+                <y>0</y>
                 <width>111</width>
                 <height>101</height>
                </rect>
@@ -899,8 +906,8 @@ border:none</string>
              <widget class="QGroupBox" name="groupBox_3">
               <property name="geometry">
                <rect>
-                <x>100</x>
-                <y>70</y>
+                <x>60</x>
+                <y>110</y>
                 <width>381</width>
                 <height>401</height>
                </rect>
@@ -1280,6 +1287,22 @@ color:#fff;</string>
                <string>Рассчитать и сохранить</string>
               </property>
              </widget>
+             <widget class="QLabel" name="label_22">
+              <property name="geometry">
+               <rect>
+                <x>450</x>
+                <y>230</y>
+                <width>111</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>img/right-arrow - Copy.png</pixmap>
+              </property>
+             </widget>
             </widget>
             <widget class="QWidget" name="page_3"/>
             <widget class="QWidget" name="page_4">
@@ -1515,8 +1538,8 @@ p, li { white-space: pre-wrap; }
              <widget class="QWidget" name="formLayoutWidget_6">
               <property name="geometry">
                <rect>
-                <x>290</x>
-                <y>130</y>
+                <x>360</x>
+                <y>100</y>
                 <width>361</width>
                 <height>321</height>
                </rect>
@@ -1544,6 +1567,29 @@ p, li { white-space: pre-wrap; }
                 </widget>
                </item>
               </layout>
+             </widget>
+             <widget class="QPushButton" name="pushButton_calculator_2">
+              <property name="geometry">
+               <rect>
+                <x>330</x>
+                <y>540</y>
+                <width>421</width>
+                <height>61</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+border:1px solid #fff;
+font-size:20px;
+color:#fff;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
+              </property>
+              <property name="text">
+               <string>Сохранить</string>
+              </property>
              </widget>
             </widget>
            </widget>

@@ -103,8 +103,13 @@ font-size:20px;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border:1px solid #fff;
-border-radius:25px;</string>
+    <string notr="true">QPushButton {
+border:1px solid #fff;
+border-radius:25px;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
    </property>
    <property name="text">
     <string>Вход</string>
@@ -120,7 +125,13 @@ border-radius:25px;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border:1px solid #fff;</string>
+    <string notr="true">QPushButton {
+border:1px solid #fff;
+border-radius:25px;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
    </property>
    <property name="text">
     <string>Регистрация</string>

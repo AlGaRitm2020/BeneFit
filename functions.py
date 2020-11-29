@@ -22,8 +22,12 @@ class Functions(MainWindow):
             # SET MAX WIDTH
             if width == 70:
                 widthExtended = maxExtend
-                self.btn_page_1.setText("Main")
+                self.btn_page_1.setText(" Главная")
+                self.btn_login.show()
+                self.label_menu_login.setText("login")
             else:
+                self.btn_login.hide()
+                self.label_menu_login.setText("")
                 widthExtended = standard
                 self.btn_page_1.setText("")
 
@@ -35,6 +39,13 @@ class Functions(MainWindow):
             self.animation.setStartValue(width)
             self.animation.setEndValue(widthExtended)
             self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
+            self.animation.start()
+
+            self.animation2 = QPropertyAnimation(self.btn_page_2, b"text")
+            self.animation2.setDuration(400)
+            self.animation2.setStartValue("")
+            self.animation2.setEndValue("widthExtended")
+            self.animation2.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animation.start()
 
     def forward(self):
@@ -53,3 +64,5 @@ class Functions(MainWindow):
         self.btn_page_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
 
         self.btn_page_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_6))
+
+        self.btn_login.clicked.connect(self.open_login)
