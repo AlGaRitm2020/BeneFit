@@ -9,6 +9,11 @@
 ## ==> GUI FILE
 from main import *
 
+
+def open_login():
+        global log
+        log = LoginWindow('ru')
+
 class Functions(MainWindow):
 
     def toggleMenu(self, maxWidth, enable):
@@ -70,6 +75,7 @@ class Functions(MainWindow):
 
         # PAGE 1
         self.btn_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_1))
+
         # PAGE2
         self.btn_page_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
         # PAGE3
@@ -81,4 +87,15 @@ class Functions(MainWindow):
 
         self.btn_page_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_6))
 
-        self.btn_login.clicked.connect(self.open_login)
+
+        self.pushButton_sign.clicked.connect(Functions.open_login())
+        self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
+        self.pushButton_training.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
+        self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
+        self.pushButton_info.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
+
+
+        self.btn_login.clicked.connect(open_login)
+    def open_login():
+        global log
+        log = LoginWindow('ru')

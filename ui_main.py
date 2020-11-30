@@ -698,7 +698,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(5)
+        self.stackedWidget.setCurrentIndex(1)
         self.comboBox_activity.setCurrentIndex(3)
         self.stackedWidget_description.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
