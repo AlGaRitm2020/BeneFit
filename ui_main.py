@@ -71,6 +71,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.frame_top)
         self.verticalLayout.addWidget(self.Top_Bar)
         self.Content = QtWidgets.QFrame(self.centralwidget)
+        self.Content.setStyleSheet("")
         self.Content.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.Content.setFrameShadow(QtWidgets.QFrame.Raised)
         self.Content.setObjectName("Content")
@@ -207,9 +208,7 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("img/icons/webpagehome_85808.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_login.setIcon(icon7)
+        self.btn_login.setIcon(icon1)
         self.btn_login.setObjectName("btn_login")
         self.verticalLayout_3.addWidget(self.btn_login)
         self.frame_top_menus = QtWidgets.QFrame(self.frame_left_menu)
@@ -233,6 +232,7 @@ class Ui_MainWindow(object):
 "font-size:20px;")
         self.stackedWidget.setObjectName("stackedWidget")
         self.page_1 = QtWidgets.QWidget()
+        self.page_1.setStyleSheet("")
         self.page_1.setObjectName("page_1")
         self.label_name = QtWidgets.QLabel(self.page_1)
         self.label_name.setGeometry(QtCore.QRect(590, 40, 131, 31))
@@ -556,6 +556,7 @@ class Ui_MainWindow(object):
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.LabelRole, self.label_19)
         self.checkBox_fat = QtWidgets.QCheckBox(self.formLayoutWidget)
         self.checkBox_fat.setText("")
+        self.checkBox_fat.setChecked(False)
         self.checkBox_fat.setObjectName("checkBox_fat")
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.checkBox_fat)
         self.label_20 = QtWidgets.QLabel(self.formLayoutWidget)
@@ -571,10 +572,16 @@ class Ui_MainWindow(object):
         self.formLayout.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.spinBox_wrist)
         self.pushButton = QtWidgets.QPushButton(self.page_2)
         self.pushButton.setGeometry(QtCore.QRect(290, 560, 421, 71))
-        self.pushButton.setStyleSheet("border:1px solid #fff;\n"
+        self.pushButton.setStyleSheet("\n"
+"QPushButton {\n"
+"border:1px solid #fff;\n"
 "border-radius:25px;\n"
 "font-size:20px;\n"
-"color:#fff;")
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.pushButton.setObjectName("pushButton")
         self.label_22 = QtWidgets.QLabel(self.page_2)
         self.label_22.setGeometry(QtCore.QRect(450, 230, 111, 141))
@@ -586,6 +593,8 @@ class Ui_MainWindow(object):
         self.page_3.setObjectName("page_3")
         self.stackedWidget.addWidget(self.page_3)
         self.page_4 = QtWidgets.QWidget()
+        self.page_4.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"color:#fff;")
         self.page_4.setObjectName("page_4")
         self.table = QtWidgets.QTableView(self.page_4)
         self.table.setGeometry(QtCore.QRect(70, 120, 681, 221))
@@ -595,32 +604,49 @@ class Ui_MainWindow(object):
 "\n"
 "")
         self.table.setObjectName("table")
-        self.pushButton_4 = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_4.setGeometry(QtCore.QRect(770, 120, 171, 71))
-        self.pushButton_4.setStyleSheet("border:1px solid #fff;\n"
+        self.pushButton_insert = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_insert.setGeometry(QtCore.QRect(770, 120, 171, 71))
+        self.pushButton_insert.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
 "border-radius:25px;\n"
 "font-size:60px;\n"
-"color:#fff;")
-        self.pushButton_4.setObjectName("pushButton_4")
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_insert.setObjectName("pushButton_insert")
         self.label = QtWidgets.QLabel(self.page_4)
         self.label.setGeometry(QtCore.QRect(790, 210, 131, 131))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("img/frut.png"))
         self.label.setObjectName("label")
-        self.pushButton_5 = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_5.setGeometry(QtCore.QRect(70, 600, 331, 61))
-        self.pushButton_5.setStyleSheet("border:1px solid #fff;\n"
+        self.pushButton_save = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_save.setGeometry(QtCore.QRect(70, 600, 331, 61))
+        self.pushButton_save.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
 "border-radius:25px;\n"
 "font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.pushButton_9 = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_9.setGeometry(QtCore.QRect(440, 600, 311, 61))
-        self.pushButton_9.setStyleSheet("border:1px solid #fff;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}\n"
+"")
+        self.pushButton_save.setObjectName("pushButton_save")
+        self.pushButton_load = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_load.setGeometry(QtCore.QRect(440, 600, 311, 61))
+        self.pushButton_load.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
 "border-radius:25px;\n"
 "font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_9.setObjectName("pushButton_9")
+"color:#fff;;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}\n"
+"")
+        self.pushButton_load.setObjectName("pushButton_load")
         self.table2 = QtWidgets.QTableView(self.page_4)
         self.table2.setGeometry(QtCore.QRect(70, 370, 681, 221))
         self.table2.setStyleSheet("font-size:15px;height:20px;\n"
@@ -631,21 +657,32 @@ class Ui_MainWindow(object):
         self.search_field.setStyleSheet("font-size:35px;\n"
 "height: 60px;\n"
 "border:1px solid #fff;")
+        self.search_field.setText("")
         self.search_field.setObjectName("search_field")
-        self.pushButton_8 = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_8.setGeometry(QtCore.QRect(770, 490, 171, 101))
-        self.pushButton_8.setStyleSheet("border:1px solid #fff;\n"
+        self.pushButton_clear = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_clear.setGeometry(QtCore.QRect(770, 490, 171, 101))
+        self.pushButton_clear.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
 "border-radius:25px;\n"
 "font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_8.setObjectName("pushButton_8")
-        self.pushButton_3 = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_3.setGeometry(QtCore.QRect(770, 370, 171, 101))
-        self.pushButton_3.setStyleSheet("border:1px solid #fff;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_clear.setObjectName("pushButton_clear")
+        self.pushButton_add = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_add.setGeometry(QtCore.QRect(770, 370, 171, 101))
+        self.pushButton_add.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
 "border-radius:25px;\n"
 "font-size:20px;\n"
-"color:#fff;")
-        self.pushButton_3.setObjectName("pushButton_3")
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_add.setObjectName("pushButton_add")
         self.stackedWidget.addWidget(self.page_4)
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
@@ -698,7 +735,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(3)
         self.comboBox_activity.setCurrentIndex(3)
         self.stackedWidget_description.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -707,7 +744,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_header.setText(_translate("MainWindow", "Главная страница"))
-        self.btn_login.setText(_translate("MainWindow", "Войти"))
+        self.btn_login.setText(_translate("MainWindow", " Войти"))
         self.label_name.setText(_translate("MainWindow", "<html><head/><body><p align=\"right\"><span style=\" font-size:15pt;\">Гость</span></p></body></html>"))
         self.pushButton_calculator.setText(_translate("MainWindow", "Калькулятор"))
         self.pushButton_training.setText(_translate("MainWindow", "Тренировки"))
@@ -740,12 +777,11 @@ class Ui_MainWindow(object):
         self.label_19.setText(_translate("MainWindow", "Расчитать % жира"))
         self.label_20.setText(_translate("MainWindow", "Запястья, см"))
         self.pushButton.setText(_translate("MainWindow", "Рассчитать и сохранить"))
-        self.pushButton_4.setText(_translate("MainWindow", "+"))
-        self.pushButton_5.setText(_translate("MainWindow", "Сохранить"))
-        self.pushButton_9.setText(_translate("MainWindow", "Загрузить"))
-        self.search_field.setText(_translate("MainWindow", "fg"))
-        self.pushButton_8.setText(_translate("MainWindow", "Очистить"))
-        self.pushButton_3.setText(_translate("MainWindow", "Добавить"))
+        self.pushButton_insert.setText(_translate("MainWindow", "+"))
+        self.pushButton_save.setText(_translate("MainWindow", "Сохранить"))
+        self.pushButton_load.setText(_translate("MainWindow", "Загрузить"))
+        self.pushButton_clear.setText(_translate("MainWindow", "Очистить"))
+        self.pushButton_add.setText(_translate("MainWindow", "Добавить"))
         self.textBrowser_en.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

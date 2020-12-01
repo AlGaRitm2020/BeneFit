@@ -9,9 +9,11 @@
 ## ==> GUI FILE
 from main import *
 
-def open_login():
-        global log
-        log = LoginWindow('ru')
+# функция отбрасывания дробной части
+def cast(n):
+    if n == int(n):
+        return int(n)
+    return n
 
 class Functions(MainWindow):
     def update_calculator(self, ID):
