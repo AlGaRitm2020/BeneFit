@@ -25,6 +25,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
         # покключить интерфейс
         self.setupUi(self)
+        #
+        # ГЛАВНАЯ СТРАНИЦА
+        #
+
         # создать перемунные пользователя
         global ID, LOGIN
         ID = 1
@@ -43,20 +47,27 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
         self.pushButton_info.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
 
-        # показать окно
-        self.show()
-
         # установить иконку окна
-        self.setWindowIcon(QIcon("img/icons/webpagehome_85808.ico"))
+        self.setWindowIcon(QIcon("img/icons/barbell-48_44982.ico"))
 
         # показать имя пользователя
         self.label_name.setText(LOGIN)
-        
 
+        #
+        # /ГЛАВНАЯ СТРАНИЦА
+        #
+        
+        # 
+        # КАЛЬКУЛЯТОР
+        #
+
+        # перемунные
         # создать переменную с языком
         self.language = "ru"
         # обнулить чекбокс
         self.check = False
+        # пол
+        self.male = self.radioButton_male.isChecked()
 
         # скрыть дополнительные поля
         self.groupBox.hide()
@@ -64,21 +75,39 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.groupBox_4.hide()
 
         # события
-        
+        # рассчитать
         self.pushButton.clicked.connect(self.calculate)
-        # смена пола
-        self.male = self.radioButton_male.isChecked()
         # показать доп поля
         self.checkBox_fat.clicked.connect(self.show_extra)
         # перейти в функцию сменить пол
         self.radioButton_male.clicked.connect(self.gender)
         self.radioButton_female.clicked.connect(self.gender)
 
+        # обновить данные пользователя в калькуляторе
         Functions.update_calculator(self, ID)
 
         self.show()
 
-        
+        # 
+        # /КАЛЬКУЛЯТОР
+        #
+
+    #
+    # методы Главной страницы
+    #
+    # открыть вход
+    def open_login(self):
+        global log
+        log = LoginWindow('ru')
+
+    #
+    # /методы Главной страницы
+    #
+
+
+    #
+    # методы Калькулятора
+    #
     # Рассчитать
     def calculate(self):
         # параметры
@@ -240,17 +269,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if self.check is True:
                 self.groupBox_2.hide()
 
+    #
+    # /методы Калькулятора
+    #
 
-
-    # открыть вход
-    def open_login(self):
-        global log
-        log = LoginWindow('ru')
-
-
-
-
-        ## ==> END ##
+    
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
