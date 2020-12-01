@@ -505,17 +505,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             error()
         else:
             dialog = Add(self.language, self.table.currentIndex().data())
-            # weight = dialog.get()
-            # получение данных из диалогового окна
-            # if self.language == 'ru':
-            #     add = QInputDialog(self, "Добавить ", f"{self.table.currentIndex().data()}, грамм:", 100, 1, 3000, 1)
-            #     weight, okPressed = add.getInt()
 
-            # else:
-            #     weight, okPressed = QInputDialog.getInt(
-            #         self, "Add ", f"{self.table.currentIndex().data()}, g:", 100, 1, 3000, 1)
-
-            
             if dialog.exec():
                 weight = dialog.get()
             try:
@@ -530,7 +520,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 # обновить таблицу пользователя
                 self.user_table()
             except Exception:
-                error()
+                pass
 
     # очистить список пользователя
     def clear(self):
