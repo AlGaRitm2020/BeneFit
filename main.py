@@ -1,4 +1,10 @@
-
+################################################################################
+##
+## BY: WANDERSON M.PIMENTA
+## PROJECT MADE WITH: Qt Designer and PyQt5
+## V: 1.0.0
+##
+################################################################################
 
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -6,59 +12,59 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from login import LoginWindow
-import sqlite3
+
 # GUI FILEL
 from ui_main import Ui_MainWindow
 
 # IMPORT FUNCTIONS
 from functions import *
+import sqlite3
 from math import log10
-global ID
-ID = 1
-
-
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
+        # покключить интерфейс
         self.setupUi(self)
-        self.setWindowTitle('BeneFit')
+        # создать перемунные пользователя
+        global ID, LOGIN
+        ID = 1
+        LOGIN = "Guest"
+
+        # скрыть дополнительные поля    
         self.btn_login.hide()
-        self.language = 'ru'
-        self.check = False
-        # функции переходов из меню
+        
+        # функции переходов из меню 
         Functions.forward(self)
 
-        #
-        #
-        # ГЛАВНАЯ СТРАНИЦА
-
+        # переходы из главной страницы
         self.pushButton_sign.clicked.connect(self.open_login)
-        self.pushButton_calculator.clicked.connect(
-            lambda: self.stackedWidget.setCurrentWidget(self.page_2))
-        self.pushButton_training.clicked.connect(
-            lambda: self.stackedWidget.setCurrentWidget(self.page_3))
-        self.pushButton_nutrition.clicked.connect(
-            lambda: self.stackedWidget.setCurrentWidget(self.page_4))
-        self.pushButton_info.clicked.connect(
-            lambda: self.stackedWidget.setCurrentWidget(self.page_5))
+        self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
+        self.pushButton_training.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
+        self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
+        self.pushButton_info.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
 
         # показать окно
         self.show()
 
-        #
-        #
-        #
+        # установить иконку окна
+        self.setWindowIcon(QIcon("img/icons/webpagehome_85808.ico"))
 
-        #
-        #
-        # КАЛЬКУЛЯТОР
+        # показать имя пользователя
+        self.label_name.setText(LOGIN)
+        
 
-        # скрыть дополнительные поля   
+        # создать переменную с языком
+        self.language = "ru"
+        # обнулить чекбокс
+        self.check = False
+
+        # скрыть дополнительные поля
         self.groupBox.hide()
         self.groupBox_2.hide()
         self.groupBox_4.hide()
 
         # события
+        
         self.pushButton.clicked.connect(self.calculate)
         # смена пола
         self.male = self.radioButton_male.isChecked()
@@ -67,89 +73,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # перейти в функцию сменить пол
         self.radioButton_male.clicked.connect(self.gender)
         self.radioButton_female.clicked.connect(self.gender)
-        # поставить выбранный язык
-        if self.language == "en":
-            self.setWindowTitle("Calculator")
-            self.pushButton.setText("Calculate")
-            self.label_7.setText("Waist, cm             ")
-            self.label_8.setText("Neck, cm                ")
-            self.label_11.setText("Hip, cm                  ")
-            self.label_2.setText("Height, cm")
-            self.label_3.setText("Weight, kg")
-            self.label_4.setText("Age, years              ")
-            self.label_5.setText("Gender")
-            self.radioButton_male.setText("Male")
-            self.radioButton_female.setText("Female")
-            self.label_6.setText("Activity")
-            self.comboBox_activity.setItemText(0, "Very low")
-            self.comboBox_activity.setItemText(1, "Low")
-            self.comboBox_activity.setItemText(2, "Average")
-            self.comboBox_activity.setItemText(3, "High")
-            self.comboBox_activity.setItemText(4, "Very high")
-            self.label_9.setText("Calculate fat %")
-            self.label_10.setText("Body Mass Index")
-            self.label_12.setText("Resting Metabolic")
-            self.label_13.setText("Heart Rate Max")
-            self.label_14.setText("Training Heart Rate")
-            self.label_15.setText("Daily Water Intake")
-            self.label_16.setText("fat %                     ")
-            self.pushButton_2.setText("Calculator")
-            self.pushButton_3.setText("Main")
-        
 
-        global ID
-        if ID:
-            # подключение к базе данных информации о пользователе
-            with sqlite3.connect('db/dataBase2.db') as db:
-                # создание курсора
-                cursor = db.cursor()
-                info = cursor.execute(
-                    f"""SELECT * FROM info WHERE ID = {ID}""").fetchall()[0]
-            # импортируем рост, вес, возраст из БД
-            self.spinBox_height.setValue(info[1])
-            self.spinBox_weight.setValue(info[2])
-            self.spinBox_age.setValue(info[3])
-            # импортируем пол из БД
-            if info[4]:
-                self.radioButton_male.setChecked(True)
-                self.male = True
-                if self.check is True:
-                    self.groupBox_2.hide()
-            else:
-                self.radioButton_female.setChecked(True)
-                self.male = False
-                if self.check is True:
-                    self.groupBox_2.show()
-            # импортируем активность из БД
-            self.comboBox_activity.setCurrentIndex(info[5])
-            # импортируем активность из БД
-            self.spinBox_wrist.setValue(info[6])
-            # импортируем значение чекбокса из БД
-            if info[7]:
-                self.check = True
-                self.groupBox.show()
-                self.groupBox_4.show()
-                if self.male == False:
-                    self.groupBox_2.show()
-            else:
-                self.check = False
-                self.groupBox.hide()
-                self.groupBox_4.hide()
-                self.groupBox_2.hide()
-            self.checkBox_fat.setChecked(info[7])
-            # импортируем талию, шею, бедра из БД
-            self.spinBox_waist.setValue(info[8])
-            self.spinBox_neck.setValue(info[9])
-            self.spinBox_hip.setValue(info[10])
+        Functions.update_calculator(self, ID)
+
         self.show()
 
-    # вернуться на главную
-    def back(self):
-        global main
-        main.show()
-        global calc
-        calc.close()
-
+        
     # Рассчитать
     def calculate(self):
         # параметры
@@ -270,7 +199,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.lineEdit_percent.setText(str(round(
                     495 / (1.29579 - 0.35004 * (log10(waist + hip - neck)) + 0.22100 * (log10(height))) - 450, 1)))
         if ID:
-
             # запись некоторых данных в БД
             with sqlite3.connect('db/dataBase2.db') as db:
 
@@ -290,7 +218,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.groupBox_4.show()
             if self.male == False:
                 self.groupBox_2.show()
-
         # нажатие на активный чекбокс
         else:
             self.check = False
@@ -313,11 +240,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if self.check is True:
                 self.groupBox_2.hide()
 
+
+
     # открыть вход
     def open_login(self):
         global log
         log = LoginWindow('ru')
 
+
+
+
+        ## ==> END ##
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

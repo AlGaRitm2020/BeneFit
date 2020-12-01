@@ -16,12 +16,6 @@ class LoginWindow(QDialog, Ui_Dialog):
         self.pushButton_authorization.clicked.connect(self.authorization)
 
         self.show()
-    # вернуться на главную
-    def back(self):
-        global main
-        main.show()
-        global log
-        log.close()
 
     def registration(self):
         # подключение к базе данных логинов и паролей
