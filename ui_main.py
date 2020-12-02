@@ -326,30 +326,30 @@ class Ui_MainWindow(object):
         self.formLayout_4 = QtWidgets.QFormLayout(self.formLayoutWidget_4)
         self.formLayout_4.setContentsMargins(0, 0, 0, 0)
         self.formLayout_4.setObjectName("formLayout_4")
-        self.label_10 = QtWidgets.QLabel(self.formLayoutWidget_4)
-        self.label_10.setStyleSheet("border:none")
-        self.label_10.setObjectName("label_10")
-        self.formLayout_4.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_10)
+        self.label_IMT = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_IMT.setStyleSheet("border:none")
+        self.label_IMT.setObjectName("label_IMT")
+        self.formLayout_4.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_IMT)
         self.lineEdit_IMT_value = QtWidgets.QLineEdit(self.formLayoutWidget_4)
         self.lineEdit_IMT_value.setStyleSheet("background-color: rgb(45, 45, 45);\n"
 "border:none")
         self.lineEdit_IMT_value.setReadOnly(True)
         self.lineEdit_IMT_value.setObjectName("lineEdit_IMT_value")
         self.formLayout_4.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_IMT_value)
-        self.label_12 = QtWidgets.QLabel(self.formLayoutWidget_4)
-        self.label_12.setStyleSheet("border:none")
-        self.label_12.setObjectName("label_12")
-        self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_12)
+        self.label_metabolism = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_metabolism.setStyleSheet("border:none")
+        self.label_metabolism.setObjectName("label_metabolism")
+        self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_metabolism)
         self.lineEdit_metabolism = QtWidgets.QLineEdit(self.formLayoutWidget_4)
         self.lineEdit_metabolism.setStyleSheet("background-color: rgb(45, 45, 45);\n"
 "border:none;")
         self.lineEdit_metabolism.setReadOnly(True)
         self.lineEdit_metabolism.setObjectName("lineEdit_metabolism")
         self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit_metabolism)
-        self.label_13 = QtWidgets.QLabel(self.formLayoutWidget_4)
-        self.label_13.setStyleSheet("border:none")
-        self.label_13.setObjectName("label_13")
-        self.formLayout_4.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_13)
+        self.label_hr_max = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_hr_max.setStyleSheet("border:none")
+        self.label_hr_max.setObjectName("label_hr_max")
+        self.formLayout_4.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_hr_max)
         self.lineEdit_hr_max = QtWidgets.QLineEdit(self.formLayoutWidget_4)
         self.lineEdit_hr_max.setStyleSheet("background-color: rgb(45, 45, 45);\n"
 "border:none")
@@ -357,20 +357,20 @@ class Ui_MainWindow(object):
         self.lineEdit_hr_max.setReadOnly(True)
         self.lineEdit_hr_max.setObjectName("lineEdit_hr_max")
         self.formLayout_4.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.lineEdit_hr_max)
-        self.label_14 = QtWidgets.QLabel(self.formLayoutWidget_4)
-        self.label_14.setStyleSheet("border:none")
-        self.label_14.setObjectName("label_14")
-        self.formLayout_4.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label_14)
+        self.label_hr_train = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_hr_train.setStyleSheet("border:none")
+        self.label_hr_train.setObjectName("label_hr_train")
+        self.formLayout_4.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label_hr_train)
         self.lineEdit_hr_train = QtWidgets.QLineEdit(self.formLayoutWidget_4)
         self.lineEdit_hr_train.setStyleSheet("background-color: rgb(45, 45, 45);\n"
 "border:none")
         self.lineEdit_hr_train.setReadOnly(True)
         self.lineEdit_hr_train.setObjectName("lineEdit_hr_train")
         self.formLayout_4.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.lineEdit_hr_train)
-        self.label_15 = QtWidgets.QLabel(self.formLayoutWidget_4)
-        self.label_15.setStyleSheet("border:none")
-        self.label_15.setObjectName("label_15")
-        self.formLayout_4.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_15)
+        self.label_water = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_water.setStyleSheet("border:none")
+        self.label_water.setObjectName("label_water")
+        self.formLayout_4.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_water)
         self.lineEdit_water = QtWidgets.QLineEdit(self.formLayoutWidget_4)
         self.lineEdit_water.setStyleSheet("background-color: rgb(45, 45, 45);\n"
 "border:none")
@@ -383,9 +383,9 @@ class Ui_MainWindow(object):
         self.lineEdit_IMT_status.setReadOnly(True)
         self.lineEdit_IMT_status.setObjectName("lineEdit_IMT_status")
         self.formLayout_4.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_IMT_status)
-        self.label_21 = QtWidgets.QLabel(self.formLayoutWidget_4)
-        self.label_21.setObjectName("label_21")
-        self.formLayout_4.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_21)
+        self.label_type = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_type.setObjectName("label_type")
+        self.formLayout_4.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_type)
         self.lineEdit_type = QtWidgets.QLineEdit(self.formLayoutWidget_4)
         self.lineEdit_type.setStyleSheet("background-color: rgb(45, 45, 45);\n"
 "border:none")
@@ -403,20 +403,20 @@ class Ui_MainWindow(object):
         self.formLayout_5 = QtWidgets.QFormLayout(self.formLayoutWidget_5)
         self.formLayout_5.setContentsMargins(0, 0, 0, 0)
         self.formLayout_5.setObjectName("formLayout_5")
-        self.label_16 = QtWidgets.QLabel(self.formLayoutWidget_5)
-        self.label_16.setObjectName("label_16")
-        self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_16)
+        self.label_fat_percent = QtWidgets.QLabel(self.formLayoutWidget_5)
+        self.label_fat_percent.setObjectName("label_fat_percent")
+        self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_fat_percent)
         self.lineEdit_percent = QtWidgets.QLineEdit(self.formLayoutWidget_5)
         self.lineEdit_percent.setEnabled(True)
         self.lineEdit_percent.setStyleSheet("background-color: rgb(45, 45, 45);")
         self.lineEdit_percent.setReadOnly(True)
         self.lineEdit_percent.setObjectName("lineEdit_percent")
         self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_percent)
-        self.label_2 = QtWidgets.QLabel(self.page_2)
-        self.label_2.setGeometry(QtCore.QRect(450, 0, 111, 101))
-        self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("../BeneFit/img/calculator3.png"))
-        self.label_2.setObjectName("label_2")
+        self.label_img_calculator = QtWidgets.QLabel(self.page_2)
+        self.label_img_calculator.setGeometry(QtCore.QRect(450, 0, 111, 101))
+        self.label_img_calculator.setText("")
+        self.label_img_calculator.setPixmap(QtGui.QPixmap("../BeneFit/img/calculator3.png"))
+        self.label_img_calculator.setObjectName("label_img_calculator")
         self.groupBox_3 = QtWidgets.QGroupBox(self.page_2)
         self.groupBox_3.setGeometry(QtCore.QRect(60, 110, 381, 401))
         self.groupBox_3.setStyleSheet("border-radius:25px;\n"
@@ -437,9 +437,9 @@ class Ui_MainWindow(object):
         self.formLayout_2 = QtWidgets.QFormLayout(self.formLayoutWidget_2)
         self.formLayout_2.setContentsMargins(0, 0, 0, 0)
         self.formLayout_2.setObjectName("formLayout_2")
-        self.label_7 = QtWidgets.QLabel(self.formLayoutWidget_2)
-        self.label_7.setObjectName("label_7")
-        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_7)
+        self.label_waist = QtWidgets.QLabel(self.formLayoutWidget_2)
+        self.label_waist.setObjectName("label_waist")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_waist)
         self.spinBox_waist = QtWidgets.QSpinBox(self.formLayoutWidget_2)
         self.spinBox_waist.setEnabled(True)
         self.spinBox_waist.setStyleSheet("background-color: rgb(45, 45, 45);")
@@ -448,9 +448,9 @@ class Ui_MainWindow(object):
         self.spinBox_waist.setProperty("value", 70)
         self.spinBox_waist.setObjectName("spinBox_waist")
         self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.spinBox_waist)
-        self.label_8 = QtWidgets.QLabel(self.formLayoutWidget_2)
-        self.label_8.setObjectName("label_8")
-        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_8)
+        self.label_neck = QtWidgets.QLabel(self.formLayoutWidget_2)
+        self.label_neck.setObjectName("label_neck")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_neck)
         self.spinBox_neck = QtWidgets.QSpinBox(self.formLayoutWidget_2)
         self.spinBox_neck.setStyleSheet("background-color: rgb(45, 45, 45);")
         self.spinBox_neck.setMinimum(10)
@@ -469,9 +469,9 @@ class Ui_MainWindow(object):
         self.formLayout_3 = QtWidgets.QFormLayout(self.formLayoutWidget_3)
         self.formLayout_3.setContentsMargins(0, 0, 0, 0)
         self.formLayout_3.setObjectName("formLayout_3")
-        self.label_11 = QtWidgets.QLabel(self.formLayoutWidget_3)
-        self.label_11.setObjectName("label_11")
-        self.formLayout_3.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_11)
+        self.label_hip = QtWidgets.QLabel(self.formLayoutWidget_3)
+        self.label_hip.setObjectName("label_hip")
+        self.formLayout_3.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_hip)
         self.spinBox_hip = QtWidgets.QSpinBox(self.formLayoutWidget_3)
         self.spinBox_hip.setStyleSheet("background-color: rgb(45, 45, 45);")
         self.spinBox_hip.setMinimum(40)
@@ -485,10 +485,10 @@ class Ui_MainWindow(object):
         self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
         self.formLayout.setContentsMargins(0, 0, 0, 0)
         self.formLayout.setObjectName("formLayout")
-        self.label_5 = QtWidgets.QLabel(self.formLayoutWidget)
-        self.label_5.setStyleSheet("border:none")
-        self.label_5.setObjectName("label_5")
-        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_5)
+        self.label_height = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_height.setStyleSheet("border:none")
+        self.label_height.setObjectName("label_height")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_height)
         self.spinBox_height = QtWidgets.QSpinBox(self.formLayoutWidget)
         self.spinBox_height.setStyleSheet("border:none;\n"
 "background-color: rgb(45, 45, 45);")
@@ -497,10 +497,10 @@ class Ui_MainWindow(object):
         self.spinBox_height.setProperty("value", 175)
         self.spinBox_height.setObjectName("spinBox_height")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.spinBox_height)
-        self.label_6 = QtWidgets.QLabel(self.formLayoutWidget)
-        self.label_6.setStyleSheet("border:none")
-        self.label_6.setObjectName("label_6")
-        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_6)
+        self.label_weight = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_weight.setStyleSheet("border:none")
+        self.label_weight.setObjectName("label_weight")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_weight)
         self.spinBox_weight = QtWidgets.QSpinBox(self.formLayoutWidget)
         self.spinBox_weight.setStyleSheet("border:none;\n"
 "background-color: rgb(45, 45, 45);")
@@ -509,10 +509,10 @@ class Ui_MainWindow(object):
         self.spinBox_weight.setProperty("value", 70)
         self.spinBox_weight.setObjectName("spinBox_weight")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.spinBox_weight)
-        self.label_9 = QtWidgets.QLabel(self.formLayoutWidget)
-        self.label_9.setStyleSheet("border:none")
-        self.label_9.setObjectName("label_9")
-        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_9)
+        self.label_age = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_age.setStyleSheet("border:none")
+        self.label_age.setObjectName("label_age")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_age)
         self.spinBox_age = QtWidgets.QSpinBox(self.formLayoutWidget)
         self.spinBox_age.setStyleSheet("border:none;\n"
 "background-color: rgb(45, 45, 45);")
@@ -521,10 +521,10 @@ class Ui_MainWindow(object):
         self.spinBox_age.setProperty("value", 16)
         self.spinBox_age.setObjectName("spinBox_age")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.spinBox_age)
-        self.label_17 = QtWidgets.QLabel(self.formLayoutWidget)
-        self.label_17.setStyleSheet("border:none")
-        self.label_17.setObjectName("label_17")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_17)
+        self.label_gender = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_gender.setStyleSheet("border:none")
+        self.label_gender.setObjectName("label_gender")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_gender)
         self.radioButton_male = QtWidgets.QRadioButton(self.formLayoutWidget)
         self.radioButton_male.setStyleSheet("border:none;\n"
 "background-color: rgb(45, 45, 45);")
@@ -536,10 +536,10 @@ class Ui_MainWindow(object):
 "background-color: rgb(45, 45, 45);")
         self.radioButton_female.setObjectName("radioButton_female")
         self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.radioButton_female)
-        self.label_18 = QtWidgets.QLabel(self.formLayoutWidget)
-        self.label_18.setStyleSheet("border:none")
-        self.label_18.setObjectName("label_18")
-        self.formLayout.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_18)
+        self.label_activity = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_activity.setStyleSheet("border:none")
+        self.label_activity.setObjectName("label_activity")
+        self.formLayout.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_activity)
         self.comboBox_activity = QtWidgets.QComboBox(self.formLayoutWidget)
         self.comboBox_activity.setStyleSheet("border:none;\n"
 "background-color: rgb(45, 45, 45);")
@@ -550,18 +550,18 @@ class Ui_MainWindow(object):
         self.comboBox_activity.addItem("")
         self.comboBox_activity.addItem("")
         self.formLayout.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.comboBox_activity)
-        self.label_19 = QtWidgets.QLabel(self.formLayoutWidget)
-        self.label_19.setStyleSheet("border:none")
-        self.label_19.setObjectName("label_19")
-        self.formLayout.setWidget(7, QtWidgets.QFormLayout.LabelRole, self.label_19)
+        self.label_check_fat = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_check_fat.setStyleSheet("border:none")
+        self.label_check_fat.setObjectName("label_check_fat")
+        self.formLayout.setWidget(7, QtWidgets.QFormLayout.LabelRole, self.label_check_fat)
         self.checkBox_fat = QtWidgets.QCheckBox(self.formLayoutWidget)
         self.checkBox_fat.setText("")
         self.checkBox_fat.setChecked(False)
         self.checkBox_fat.setObjectName("checkBox_fat")
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.checkBox_fat)
-        self.label_20 = QtWidgets.QLabel(self.formLayoutWidget)
-        self.label_20.setObjectName("label_20")
-        self.formLayout.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_20)
+        self.label_wrist = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_wrist.setObjectName("label_wrist")
+        self.formLayout.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_wrist)
         self.spinBox_wrist = QtWidgets.QSpinBox(self.formLayoutWidget)
         self.spinBox_wrist.setStyleSheet("border:none;\n"
 "background-color: rgb(45, 45, 45);")
@@ -570,9 +570,9 @@ class Ui_MainWindow(object):
         self.spinBox_wrist.setProperty("value", 18)
         self.spinBox_wrist.setObjectName("spinBox_wrist")
         self.formLayout.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.spinBox_wrist)
-        self.pushButton = QtWidgets.QPushButton(self.page_2)
-        self.pushButton.setGeometry(QtCore.QRect(290, 560, 421, 71))
-        self.pushButton.setStyleSheet("\n"
+        self.pushButton_calculate = QtWidgets.QPushButton(self.page_2)
+        self.pushButton_calculate.setGeometry(QtCore.QRect(290, 560, 421, 71))
+        self.pushButton_calculate.setStyleSheet("\n"
 "QPushButton {\n"
 "border:1px solid #fff;\n"
 "border-radius:25px;\n"
@@ -582,12 +582,12 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
-        self.pushButton.setObjectName("pushButton")
-        self.label_22 = QtWidgets.QLabel(self.page_2)
-        self.label_22.setGeometry(QtCore.QRect(450, 230, 111, 141))
-        self.label_22.setText("")
-        self.label_22.setPixmap(QtGui.QPixmap("img/right-arrow - Copy.png"))
-        self.label_22.setObjectName("label_22")
+        self.pushButton_calculate.setObjectName("pushButton_calculate")
+        self.label_img_arrow = QtWidgets.QLabel(self.page_2)
+        self.label_img_arrow.setGeometry(QtCore.QRect(450, 230, 111, 141))
+        self.label_img_arrow.setText("")
+        self.label_img_arrow.setPixmap(QtGui.QPixmap("img/right-arrow - Copy.png"))
+        self.label_img_arrow.setObjectName("label_img_arrow")
         self.stackedWidget.addWidget(self.page_2)
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
@@ -693,18 +693,22 @@ class Ui_MainWindow(object):
         self.page_des_en = QtWidgets.QWidget()
         self.page_des_en.setObjectName("page_des_en")
         self.textBrowser_en = QtWidgets.QTextBrowser(self.page_des_en)
-        self.textBrowser_en.setGeometry(QtCore.QRect(30, 10, 921, 631))
+        self.textBrowser_en.setGeometry(QtCore.QRect(20, 20, 921, 631))
         self.textBrowser_en.setStyleSheet("")
         self.textBrowser_en.setObjectName("textBrowser_en")
         self.stackedWidget_description.addWidget(self.page_des_en)
         self.page_des_ru = QtWidgets.QWidget()
         self.page_des_ru.setObjectName("page_des_ru")
+        self.textBrowser_ru = QtWidgets.QTextBrowser(self.page_des_ru)
+        self.textBrowser_ru.setGeometry(QtCore.QRect(20, 20, 921, 631))
+        self.textBrowser_ru.setStyleSheet("")
+        self.textBrowser_ru.setObjectName("textBrowser_ru")
         self.stackedWidget_description.addWidget(self.page_des_ru)
         self.stackedWidget.addWidget(self.page_5)
         self.page_6 = QtWidgets.QWidget()
         self.page_6.setObjectName("page_6")
         self.formLayoutWidget_6 = QtWidgets.QWidget(self.page_6)
-        self.formLayoutWidget_6.setGeometry(QtCore.QRect(360, 100, 361, 321))
+        self.formLayoutWidget_6.setGeometry(QtCore.QRect(330, 100, 421, 321))
         self.formLayoutWidget_6.setObjectName("formLayoutWidget_6")
         self.formLayout_6 = QtWidgets.QFormLayout(self.formLayoutWidget_6)
         self.formLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -712,14 +716,14 @@ class Ui_MainWindow(object):
         self.label_23 = QtWidgets.QLabel(self.formLayoutWidget_6)
         self.label_23.setObjectName("label_23")
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_23)
-        self.comboBox = QtWidgets.QComboBox(self.formLayoutWidget_6)
-        self.comboBox.setObjectName("comboBox")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBox)
-        self.pushButton_calculator_2 = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_calculator_2.setGeometry(QtCore.QRect(330, 540, 421, 61))
-        self.pushButton_calculator_2.setStyleSheet("QPushButton {\n"
+        self.comboBox_language = QtWidgets.QComboBox(self.formLayoutWidget_6)
+        self.comboBox_language.setObjectName("comboBox_language")
+        self.comboBox_language.addItem("")
+        self.comboBox_language.addItem("")
+        self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBox_language)
+        self.pushButton_settings = QtWidgets.QPushButton(self.page_6)
+        self.pushButton_settings.setGeometry(QtCore.QRect(330, 540, 421, 61))
+        self.pushButton_settings.setStyleSheet("QPushButton {\n"
 "border:1px solid #fff;\n"
 "font-size:20px;\n"
 "color:#fff;\n"
@@ -727,7 +731,7 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
-        self.pushButton_calculator_2.setObjectName("pushButton_calculator_2")
+        self.pushButton_settings.setObjectName("pushButton_settings")
         self.stackedWidget.addWidget(self.page_6)
         self.verticalLayout_5.addWidget(self.stackedWidget)
         self.horizontalLayout_2.addWidget(self.frame_pages)
@@ -735,9 +739,9 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(1)
         self.comboBox_activity.setCurrentIndex(3)
-        self.stackedWidget_description.setCurrentIndex(0)
+        self.stackedWidget_description.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -752,31 +756,31 @@ class Ui_MainWindow(object):
         self.pushButton_sign.setText(_translate("MainWindow", "Войти"))
         self.pushButton_nutrition.setText(_translate("MainWindow", "Питание"))
         self.label_4.setText(_translate("MainWindow", "BeneFit"))
-        self.label_10.setText(_translate("MainWindow", "Индекс Массы Тела"))
-        self.label_12.setText(_translate("MainWindow", "Дневной метаболизм"))
-        self.label_13.setText(_translate("MainWindow", "ЧСС максимум"))
-        self.label_14.setText(_translate("MainWindow", "ЧСС тренировочный"))
-        self.label_15.setText(_translate("MainWindow", "Норма воды в день"))
-        self.label_21.setText(_translate("MainWindow", "Тип Телосложения"))
-        self.label_16.setText(_translate("MainWindow", "% жира                    "))
-        self.label_7.setText(_translate("MainWindow", "Талия, см             "))
-        self.label_8.setText(_translate("MainWindow", "Шея, см                "))
-        self.label_11.setText(_translate("MainWindow", "Бёдра, см              "))
-        self.label_5.setText(_translate("MainWindow", "Рост, см"))
-        self.label_6.setText(_translate("MainWindow", "Масса, кг"))
-        self.label_9.setText(_translate("MainWindow", "Возраст, лет"))
-        self.label_17.setText(_translate("MainWindow", "Пол"))
+        self.label_IMT.setText(_translate("MainWindow", "Индекс Массы Тела"))
+        self.label_metabolism.setText(_translate("MainWindow", "Дневной метаболизм"))
+        self.label_hr_max.setText(_translate("MainWindow", "ЧСС максимум"))
+        self.label_hr_train.setText(_translate("MainWindow", "ЧСС тренировочный"))
+        self.label_water.setText(_translate("MainWindow", "Норма воды в день"))
+        self.label_type.setText(_translate("MainWindow", "Тип Телосложения"))
+        self.label_fat_percent.setText(_translate("MainWindow", "% жира                    "))
+        self.label_waist.setText(_translate("MainWindow", "Талия, см             "))
+        self.label_neck.setText(_translate("MainWindow", "Шея, см                "))
+        self.label_hip.setText(_translate("MainWindow", "Бёдра, см              "))
+        self.label_height.setText(_translate("MainWindow", "Рост, см"))
+        self.label_weight.setText(_translate("MainWindow", "Масса, кг"))
+        self.label_age.setText(_translate("MainWindow", "Возраст, лет"))
+        self.label_gender.setText(_translate("MainWindow", "Пол"))
         self.radioButton_male.setText(_translate("MainWindow", "Мужской"))
         self.radioButton_female.setText(_translate("MainWindow", "Женский"))
-        self.label_18.setText(_translate("MainWindow", "Активность"))
+        self.label_activity.setText(_translate("MainWindow", "Активность"))
         self.comboBox_activity.setItemText(0, _translate("MainWindow", "Очень низкая"))
         self.comboBox_activity.setItemText(1, _translate("MainWindow", "Низкая"))
         self.comboBox_activity.setItemText(2, _translate("MainWindow", "Средняя"))
         self.comboBox_activity.setItemText(3, _translate("MainWindow", "Высокая"))
         self.comboBox_activity.setItemText(4, _translate("MainWindow", "Очень высокая"))
-        self.label_19.setText(_translate("MainWindow", "Расчитать % жира"))
-        self.label_20.setText(_translate("MainWindow", "Запястья, см"))
-        self.pushButton.setText(_translate("MainWindow", "Рассчитать и сохранить"))
+        self.label_check_fat.setText(_translate("MainWindow", "Расчитать % жира"))
+        self.label_wrist.setText(_translate("MainWindow", "Запястья, см"))
+        self.pushButton_calculate.setText(_translate("MainWindow", "Рассчитать и сохранить"))
         self.pushButton_insert.setText(_translate("MainWindow", "+"))
         self.pushButton_save.setText(_translate("MainWindow", "Сохранить"))
         self.pushButton_load.setText(_translate("MainWindow", "Загрузить"))
@@ -786,34 +790,59 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:26pt; font-weight:600; color:#ffffff;\">BeneFit: training, nutrition, calculates</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:26pt; font-weight:600; color:#ffffff;\"><br /></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:8.25pt; color:#ffffff;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:14pt; font-weight:600; color:#ffffff;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:14pt; color:#ffffff;\"> </span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">is a universal fitness app that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\"><br /></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">The app consists of the following sections: </span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; font-weight:600; color:#ffffff;\">Calculator</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">Calculate your BMI, body fat%, daily water intake, and many other metrics</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; font-weight:600; color:#ffffff;\">Workout </span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">Find a training program that is right for you</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; font-weight:600; color:#ffffff;\">Nutrition</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">Make diets, monitor micronutrients, add your products to the database</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; font-weight:600; color:#ffffff;\">What\'s new?</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">- Added new training sessions</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">- Fixed some bugs</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">- Optimized code</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">- Added contacts</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">-V. 0. 8. 2</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; font-weight:600; color:#ffffff;\">Contacts</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; color:#ffffff;\">For all questions and suggestions, write to</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:12pt; font-weight:600; color:#ffffff;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:28pt; font-weight:600;\">BeneFit: training, nutrition, calculates</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"> is a universal fitness app that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">The app consists of the following sections: </span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Calculator</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Calculate your BMI, body fat%, daily water intake, and many other metrics</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Workout </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Find a training program that is right for you</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Nutrition</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Make diets, monitor micronutrients, add your products to the database</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">What\'s new?</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Added new training sessions</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Fixed some bugs</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Optimized code</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Added contacts</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">-V. 0. 8. 2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Contacts</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">For all questions and suggestions, write to</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600; color:#ffffff;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+        self.textBrowser_ru.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:28pt; font-weight:600;\">BeneFit: тренировки, питание, расчеты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"> - это универсальное фитнес приложение, объединяющее программы тренировок,подсчет макронутриентов, расчет различных показателей,таких как ИМТ и % жира.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br />Приложение состоит из следующих разделов:</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Калькулятор</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Рассчитайте ИМТ, % жира, дневную норму воды и множество других показателей</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Тренировки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Найдите программу тренировок подходящую имеено вам</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Питание</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Составляйте рационы, следите за макронутриетами, добавляйте свои продукты в базу данных<br /></span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Что нового?</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Добавлены новые тренировки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Исправлены некоторые ошибки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Оптимизирован код</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Добавлены контакты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- v.0.8.2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Контакты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">По всем вопросам и предложениям пишите на </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">benefitapphelp@yandex.ru</span></p></body></html>"))
         self.label_23.setText(_translate("MainWindow", "Язык интерфейса"))
-        self.comboBox.setItemText(0, _translate("MainWindow", "Русский"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "English"))
-        self.pushButton_calculator_2.setText(_translate("MainWindow", "Сохранить"))
+        self.comboBox_language.setItemText(0, _translate("MainWindow", "Русский"))
+        self.comboBox_language.setItemText(1, _translate("MainWindow", "English"))
+        self.pushButton_settings.setText(_translate("MainWindow", "Сохранить"))

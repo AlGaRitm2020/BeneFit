@@ -78,7 +78,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # события
         # рассчитать
-        self.pushButton_add.clicked.connect(self.calculate)
+        self.pushButton_calculate.clicked.connect(self.calculate)
         # показать доп поля
         self.checkBox_fat.clicked.connect(self.show_extra)
         # перейти в функцию сменить пол
@@ -97,18 +97,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # 
         # ПИТАНИЕ
         #
-
-        # установить выбранный язык
-        if self.language == "en":
-            self.setWindowTitle("Nutrition")
-            self.pushButton_add.setText("Add")
-            self.pushButton_clear.setText("Clear")
-            self.pushButton_save.setText("Save as")
-            self.pushButton_load.setText("Load")
-            self.pushButton_6.setText("Nutrition")
-            self.pushButton_7.setText("Main")
-        else:
-            self.setWindowTitle("Питание")
 
         # обнуление выбранных пользователем продуктов
         self.choice = []
@@ -205,6 +193,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # создать пользовательскую таблицу
         MainWindow.user_table(self)
+
+        # 
+        # /ПИТАНИЕ
+        #
+
+        # 
+        # НАСТРОЙКИ
+        #
+        self.pushButton_settings.clicked.connect(self.translate)
+        # 
+        # /НАСТРОЙКИ
+        #
 
     #
     # методы Главной страницы
@@ -505,7 +505,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             error()
         else:
             dialog = Add(self.language, self.table.currentIndex().data())
-            
+
             if dialog.exec():
                 weight = dialog.get()
             try:
@@ -609,7 +609,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except Exception:
             pass
 
+    #
+    # /методы Питания
+    #
 
+
+    #
+    # методы Настроек
+    #
+
+    def translate(self):
+        Functions.translate(self)
 
 
 if __name__ == "__main__":

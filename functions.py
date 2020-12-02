@@ -141,7 +141,7 @@ class Functions(MainWindow):
         self.btn_page_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_6))
 
 
-        # self.pushButton_sign.clicked.connect(self.open_login())
+        self.btn_login.clicked.connect(self.open_login)
         # self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
         # self.pushButton_training.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
         # self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
@@ -154,47 +154,88 @@ class Functions(MainWindow):
     #     log = LoginWindow('ru')
 
     def translate(self):
+        if self.comboBox_language.currentIndex() == 0:
+            self.language = "ru"
+        else:
+            self.language = "en"
+        
         if self.language == "en":
-            self.setWindowTitle("Calculator")
-            self.pushButton.setText("Calculate")
-            self.label_7.setText("Waist, cm             ")
-            self.label_8.setText("Neck, cm                ")
-            self.label_11.setText("Hip, cm                  ")
-            self.label_2.setText("Height, cm")
-            self.label_3.setText("Weight, kg")
-            self.label_4.setText("Age, years              ")
-            self.label_5.setText("Gender")
+            # калькулятор
+            self.pushButton_calculate.setText("Calculate and Save")
+            self.label_waist.setText("Waist, cm             ")
+            self.label_neck.setText("Neck, cm                ")
+            self.label_hip.setText("Hip, cm                  ")
+            self.label_wrist.setText("Wrist, cm")
+            self.label_height.setText("Height, cm")
+            self.label_weight.setText("Weight, kg")
+            self.label_age.setText("Age, years              ")
+            self.label_gender.setText("Gender")
             self.radioButton_male.setText("Male")
             self.radioButton_female.setText("Female")
-            self.label_6.setText("Activity")
+            self.label_activity.setText("Activity")
             self.comboBox_activity.setItemText(0, "Very low")
             self.comboBox_activity.setItemText(1, "Low")
             self.comboBox_activity.setItemText(2, "Average")
             self.comboBox_activity.setItemText(3, "High")
             self.comboBox_activity.setItemText(4, "Very high")
-            self.label_9.setText("Calculate fat %")
-            self.label_10.setText("Body Mass Index")
-            self.label_12.setText("Resting Metabolic")
-            self.label_13.setText("Heart Rate Max")
-            self.label_14.setText("Training Heart Rate")
-            self.label_15.setText("Daily Water Intake")
-            self.label_16.setText("fat %                     ")
-            self.pushButton_2.setText("Calculator")
-            self.pushButton_3.setText("Main")
-        else:
-            self.setWindowTitle('Калькулятор')
+            self.label_check_fat.setText("Calculate fat %")
+            self.label_IMT.setText("Body Mass Index")
+            self.label_metabolism.setText("Resting Metabolic")
+            self.label_hr_max.setText("Heart Rate Max")
+            self.label_hr_train.setText("Training Heart Rate")
+            self.label_water.setText("Daily Water Intake")
+            self.label_type.setText("Body type")
+            self.label_fat_percent.setText("fat %                     ")
 
-            # сменить язык
-    def translate(self):
-        if self.sender().text() == "EN":
-            self.language = "en"
+            # главная
             self.pushButton_calculator.setText("Calculator")
             self.pushButton_training.setText("Training")
             self.pushButton_nutrition.setText("Nutrition")
-            self.setWindowTitle("Main")
+            self.pushButton_info.setText("About app")
+            self.pushButton_sign.setText("Sign in") 
+
+            # питание
+            self.pushButton_add.setText("Add")
+            self.pushButton_clear.setText("Clear")
+            self.pushButton_save.setText("Save as")
+            self.pushButton_load.setText("Load")
+            
         else:
-            self.language = "ru"
+            self.pushButton_calculate.setText("Рассчитать и сохранить")
+            self.label_waist.setText("Талия, см             ")
+            self.label_neck.setText("Шея, см                ")
+            self.label_hip.setText("Бёдра, см              ")
+            self.label_wrist.setText("Запястья, см")
+            self.label_height.setText("Рост, см")
+            self.label_weight.setText("Масса, кг")
+            self.label_age.setText("Возраст, лет")
+            self.label_gender.setText("Пол")
+            self.radioButton_male.setText("Мужской")
+            self.radioButton_female.setText("Женский")
+            self.label_activity.setText("Активность")
+            self.comboBox_activity.setItemText(0, "Очень низкая")
+            self.comboBox_activity.setItemText(1, "Низкая")
+            self.comboBox_activity.setItemText(2, "Средняя")
+            self.comboBox_activity.setItemText(3, "Высокая")
+            self.comboBox_activity.setItemText(4, "Очень высокая")
+            self.label_check_fat.setText("Расчитать % жира")
+            self.label_IMT.setText("Индекс Массы Тела")
+            self.label_metabolism.setText("Дневной метаболизм")
+            self.label_hr_max.setText("ЧСС максимум")
+            self.label_hr_train.setText("ЧСС тренировочный")
+            self.label_water.setText("Норма воды в день")
+            self.label_type.setText("Тип телосложения")
+            self.label_fat_percent.setText("% жира                    ")
+
+            # главная
             self.pushButton_calculator.setText("Калькулятор")
             self.pushButton_training.setText("Тренировки")
             self.pushButton_nutrition.setText("Питание")
-            self.setWindowTitle("Главная")
+            self.pushButton_info.setText("О приложении")
+            self.pushButton_sign.setText("Войти")
+
+            # питание
+            self.pushButton_add.setText("Добавить")
+            self.pushButton_clear.setText("Очистить")
+            self.pushButton_save.setText("Сохранить")
+            self.pushButton_load.setText("Загрузить")
