@@ -199,6 +199,7 @@ class Functions(MainWindow):
             self.pushButton_clear.setText("Clear")
             self.pushButton_save.setText("Save as")
             self.pushButton_load.setText("Load")
+            MainWindow.update_table(self)
             
         else:
             self.pushButton_calculate.setText("Рассчитать и сохранить")

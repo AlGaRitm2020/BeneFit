@@ -14,7 +14,7 @@ class NutritionWindow(QMainWindow, Ui_NutritionWindow):
 
         # удалить предыдущую версию таблицы
         try:
-            self.centralWidget.removeWidget(self.table2)
+            self.page4.removeWidget(self.table2)
         except Exception:
             pass
 

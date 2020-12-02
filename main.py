@@ -111,69 +111,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 if row:
                     self.li.append((row[0], row[1], row[2], row[3], row[4]))
 
-        # получение данных из csv файла
-        if self.language == 'ru':
-            fname = 'src/pfcc.csv'
-        else:
-            fname = 'src/pfcc_en.csv'
-        with open(fname, encoding="utf-8") as csvfile:
-            reader = csv.reader(csvfile, delimiter=';', quotechar='"')
-            for index, row in enumerate(reader):
-                if row:
-                    self.li.append((row[0], row[1].replace(" ", ""), row[2].replace(
-                        " ", ""), row[3].replace(" ", ""), row[4].replace(" ", "")))
-
-        # создание модели таблицы
-        self.model = QStandardItemModel(len(self.li), 5)
-        if self.language == 'ru':
-            self.model.setHorizontalHeaderLabels(
-                ["Продукт", "Белки", "Жиры", "Углеводы", "ККал"])
-        else:
-            self.model.setHorizontalHeaderLabels(
-                ["Product", "Protein", "Fat", "Carbs", "Calories"])
-
-        # создание словаря {имя продукта : id}
-        self.id = {}
-
-        # заполнение таблицы
-        row = 0
-        for name, proteins, fats, carbs, calories in self.li:
-            # заполнение словаря {имя продукта : id}
-            self.id[name] = row
-            # заполнение модели
-            self.model.setItem(row, 0, QStandardItem(name.replace('.', ',')))
-            self.model.setItem(row, 1, QStandardItem(
-                proteins.replace('.', ',')))
-            self.model.setItem(row, 2, QStandardItem(fats.replace('.', ',')))
-            self.model.setItem(row, 3, QStandardItem(carbs.replace('.', ',')))
-            self.model.setItem(row, 4, QStandardItem(
-                calories.replace('.', ',')))
-            row += 1
-
-        # создание фильтра
-        self.filter_proxy_model = QSortFilterProxyModel()
-        self.filter_proxy_model.setSourceModel(self.model)
-        self.filter_proxy_model.setFilterCaseSensitivity((Qt.CaseInsensitive))
-        self.filter_proxy_model.setFilterKeyColumn(0)
-
-        # создание ввода поискового запроса
-        self.search_field.textChanged.connect(
-            self.filter_proxy_model.setFilterRegExp)
-
-        # инитилизация табличной оболочки
-        self.table.verticalHeader().setSectionResizeMode(QHeaderView.Stretch)
-
-        # добавление фильтра
-        self.table.setModel(self.filter_proxy_model)
-
-        # настройка длин столбцов
-        self.header = self.table.horizontalHeader()
-        self.header.setSectionResizeMode(4, QHeaderView.Stretch)
-        self.header.setSectionResizeMode(3, QHeaderView.Stretch)
-        self.header.setSectionResizeMode(2, QHeaderView.Stretch)
-        self.header.setSectionResizeMode(1, QHeaderView.Stretch)
-        self.header.setSectionResizeMode(0, QHeaderView.ResizeToContents)
-
+        
+        MainWindow.update_table(self)
         # кнопки
 
         # "добавить"
@@ -391,6 +330,78 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     #
     # методы Питания
     #
+    def update_table(self, *language):
+        # удалить предыдущую версию таблицы
+        # try:
+        #   self.page_4.
+        
+        # except Exception:
+        #     pass
+        
+        # получение данных из csv файла
+        if self.language == 'ru':
+            fname = 'src/pfcc.csv'
+          
+        else:
+            fname = 'src/pfcc_en.csv'
+        with open(fname, encoding="utf-8") as csvfile:
+            reader = csv.reader(csvfile, delimiter=';', quotechar='"')
+            for index, row in enumerate(reader):
+                if row:
+                    self.li.append((row[0], row[1].replace(" ", ""), row[2].replace(
+                        " ", ""), row[3].replace(" ", ""), row[4].replace(" ", "")))
+
+        # создание модели таблицы
+        self.model = QStandardItemModel(len(self.li), 5)
+        if self.language == 'ru':
+            self.model.setHorizontalHeaderLabels(
+                ["Продукт", "Белки", "Жиры", "Углеводы", "ККал"])
+        else:
+            self.model.setHorizontalHeaderLabels(
+                ["Product", "Protein", "Fat", "Carbs", "Calories"])
+
+        # создание словаря {имя продукта : id}
+        self.id = {}
+
+        # заполнение таблицы
+        row = 0
+        for name, proteins, fats, carbs, calories in self.li:
+            # заполнение словаря {имя продукта : id}
+            self.id[name] = row
+            # заполнение модели
+            self.model.setItem(row, 0, QStandardItem(name.replace('.', ',')))
+            self.model.setItem(row, 1, QStandardItem(
+                proteins.replace('.', ',')))
+            self.model.setItem(row, 2, QStandardItem(fats.replace('.', ',')))
+            self.model.setItem(row, 3, QStandardItem(carbs.replace('.', ',')))
+            self.model.setItem(row, 4, QStandardItem(
+                calories.replace('.', ',')))
+            row += 1
+
+        # создание фильтра
+        self.filter_proxy_model = QSortFilterProxyModel()
+        self.filter_proxy_model.setSourceModel(self.model)
+        self.filter_proxy_model.setFilterCaseSensitivity((Qt.CaseInsensitive))
+        self.filter_proxy_model.setFilterKeyColumn(0)
+
+        # создание ввода поискового запроса
+        self.search_field.textChanged.connect(
+            self.filter_proxy_model.setFilterRegExp)
+
+        # инитилизация табличной оболочки
+        self.table.verticalHeader().setSectionResizeMode(QHeaderView.Stretch)
+
+        # добавление фильтра
+        self.table.setModel(self.filter_proxy_model)
+
+        # настройка длин столбцов
+        self.header = self.table.horizontalHeader()
+        self.header.setSectionResizeMode(4, QHeaderView.Stretch)
+        self.header.setSectionResizeMode(3, QHeaderView.Stretch)
+        self.header.setSectionResizeMode(2, QHeaderView.Stretch)
+        self.header.setSectionResizeMode(1, QHeaderView.Stretch)
+        self.header.setSectionResizeMode(0, QHeaderView.ResizeToContents)
+        print(1)
 
     def user_table(self):
 
