@@ -505,7 +505,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             error()
         else:
             dialog = Add(self.language, self.table.currentIndex().data())
-
+            
             if dialog.exec():
                 weight = dialog.get()
             try:
@@ -520,7 +520,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 # обновить таблицу пользователя
                 self.user_table()
             except Exception:
-                pass
+                error()
 
     # очистить список пользователя
     def clear(self):
