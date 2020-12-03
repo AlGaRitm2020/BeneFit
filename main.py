@@ -11,6 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+# from PyQt5.QtSignals import *
 from login import LoginWindow
 from add_data import *
 
@@ -35,6 +36,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         global ID, LOGIN
         ID = 1
         LOGIN = "Guest"
+        self.language = "en"
 
         # скрыть дополнительные поля    
         self.btn_login.hide()
@@ -42,6 +44,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # функции переходов из меню 
         Functions.forward(self)
 
+        # формирование списка заголовков
+        if self.language == "ru":
+            titles = ["Главная", "Калькулятор", "Тренировки", "Питание", "О приложении", "Настройки"]
+        else:
+            titles = ["Home", "Calculator", "Training", "Nutrition", "About", "Settings"]
+
+        # обработка смены заголовка после смены страницы
+        self.stackedWidget.currentChanged['int'].connect(lambda: self.label_header.setText(f"{titles[self.stackedWidget.currentIndex()]}"))
+        
         # переходы из главной страницы
         self.pushButton_sign.clicked.connect(self.open_login)
         self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
@@ -65,7 +76,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # перемунные
         # создать переменную с языком
-        self.language = "ru"
+        self.comboBox_language.setCurrentIndex(0)
+        Functions.translate(self)
         # обнулить чекбокс
         self.check = False
         # пол
@@ -262,12 +274,22 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # тип телосложения
 
         # рассчитать для мужчин по формуле
-        if wrist < 18 and self.male or wrist < 15 and not self.male:
-            self.lineEdit_type.setText("Эктоморф")
-        elif wrist > 20 and self.male or wrist > 17 and not self.male:
-            self.lineEdit_type.setText('Эндоморф')
+        if self.language == "ru":
+            if wrist < 18 and self.male or wrist < 15 and not self.male:
+    
+                self.lineEdit_type.setText("Эктоморф")
+            elif wrist > 20 and self.male or wrist > 17 and not self.male:
+                self.lineEdit_type.setText('Эндоморф')
+            else:
+                self.lineEdit_type.setText("Мезоморф")
         else:
-            self.lineEdit_type.setText("Мезоморф")
+            if wrist < 18 and self.male or wrist < 15 and not self.male:
+    
+                self.lineEdit_type.setText("Ectomorph")
+            elif wrist > 20 and self.male or wrist > 17 and not self.male:
+                self.lineEdit_type.setText('Endomorph')
+            else:
+                self.lineEdit_type.setText("Mesomorph")
 
         # процент жира
         # рассчитивать только если пользователь выбрал эту возможность

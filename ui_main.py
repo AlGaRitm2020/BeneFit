@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1095, 742)
+        MainWindow.resize(1095, 741)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 500))
         MainWindow.setStyleSheet("background-color: rgb(45, 45, 45);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -709,7 +709,7 @@ class Ui_MainWindow(object):
         self.page_6 = QtWidgets.QWidget()
         self.page_6.setObjectName("page_6")
         self.formLayoutWidget_6 = QtWidgets.QWidget(self.page_6)
-        self.formLayoutWidget_6.setGeometry(QtCore.QRect(330, 100, 421, 321))
+        self.formLayoutWidget_6.setGeometry(QtCore.QRect(300, 100, 421, 321))
         self.formLayoutWidget_6.setObjectName("formLayoutWidget_6")
         self.formLayout_6 = QtWidgets.QFormLayout(self.formLayoutWidget_6)
         self.formLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -722,8 +722,16 @@ class Ui_MainWindow(object):
         self.comboBox_language.addItem("")
         self.comboBox_language.addItem("")
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBox_language)
+        self.label_24 = QtWidgets.QLabel(self.formLayoutWidget_6)
+        self.label_24.setObjectName("label_24")
+        self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_24)
+        self.comboBox_language_2 = QtWidgets.QComboBox(self.formLayoutWidget_6)
+        self.comboBox_language_2.setObjectName("comboBox_language_2")
+        self.comboBox_language_2.addItem("")
+        self.comboBox_language_2.addItem("")
+        self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.comboBox_language_2)
         self.pushButton_settings = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_settings.setGeometry(QtCore.QRect(330, 540, 421, 61))
+        self.pushButton_settings.setGeometry(QtCore.QRect(300, 540, 421, 61))
         self.pushButton_settings.setStyleSheet("QPushButton {\n"
 "border:1px solid #fff;\n"
 "font-size:20px;\n"
@@ -740,9 +748,10 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(5)
         self.comboBox_activity.setCurrentIndex(3)
-        self.stackedWidget_description.setCurrentIndex(0)
+        self.stackedWidget_description.setCurrentIndex(1)
+        self.stackedWidget.currentChanged['int'].connect(self.label_header.update)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -792,58 +801,61 @@ class Ui_MainWindow(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:28pt; font-weight:600;\">BeneFit: training, nutrition, calculates</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"> is a universal fitness app that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">The app consists of the following sections: </span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Calculator</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">Calculate your BMI, body fat%, daily water intake, and many other metrics</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Workout </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">Find a training program that is right for you</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Nutrition</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">Make diets, monitor micronutrients, add your products to the database</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">What\'s new?</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- Added new training sessions</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- Fixed some bugs</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- Optimized code</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- Added contacts</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">-V. 0. 8. 2</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Contacts</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">For all questions and suggestions, write to</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600; color:#ffffff;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"> is a universal fitness app that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">The app consists of the following sections: </span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Calculator</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Calculate your BMI, body fat%, daily water intake, and many other metrics</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Workout </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Find a training program that is right for you</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Nutrition</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Make diets, monitor micronutrients, add your products to the database</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">What\'s new?</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Added new training sessions</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Fixed some bugs</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Optimized code</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Added contacts</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">-V. 0. 8. 2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Contacts</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">For all questions and suggestions, write to</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600; color:#ffffff;\">benefitapphelp@yandex.ru</span></p></body></html>"))
         self.textBrowser_ru.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:28pt; font-weight:600;\">BeneFit: тренировки, питание, расчеты</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"> - это универсальное фитнес приложение, объединяющее программы тренировок,подсчет макронутриентов, расчет различных показателей,таких как ИМТ и % жира.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br />Приложение состоит из следующих разделов:</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Калькулятор</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">Рассчитайте ИМТ, % жира, дневную норму воды и множество других показателей</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Тренировки</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">Найдите программу тренировок подходящую имеено вам</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Питание</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">Составляйте рационы, следите за макронутриетами, добавляйте свои продукты в базу данных<br /></span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Что нового?</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- Добавлены новые тренировки</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- Исправлены некоторые ошибки</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- Оптимизирован код</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- Добавлены контакты</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">- v.0.8.2</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">Контакты</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt;\">По всем вопросам и предложениям пишите на </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:18pt; font-weight:600;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"> - это универсальное фитнес приложение, объединяющее программы тренировок,подсчет макронутриентов, расчет различных показателей,таких как ИМТ и % жира.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br />Приложение состоит из следующих разделов:</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Калькулятор</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Рассчитайте ИМТ, % жира, дневную норму воды и множество других показателей</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Тренировки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Найдите программу тренировок подходящую имеено вам</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Питание</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Составляйте рационы, следите за макронутриетами, добавляйте свои продукты в базу данных<br /></span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Что нового?</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Добавлены новые тренировки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Исправлены некоторые ошибки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Оптимизирован код</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Добавлены контакты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- v.0.8.2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Контакты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">По всем вопросам и предложениям пишите на </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">benefitapphelp@yandex.ru</span></p></body></html>"))
         self.label_23.setText(_translate("MainWindow", "Язык интерфейса"))
         self.comboBox_language.setItemText(0, _translate("MainWindow", "Русский"))
         self.comboBox_language.setItemText(1, _translate("MainWindow", "English"))
+        self.label_24.setText(_translate("MainWindow", "Система мер"))
+        self.comboBox_language_2.setItemText(0, _translate("MainWindow", "Метрическая(см,кг)"))
+        self.comboBox_language_2.setItemText(1, _translate("MainWindow", "Имперская(дюймы, фунты)"))
         self.pushButton_settings.setText(_translate("MainWindow", "Сохранить"))

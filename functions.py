@@ -200,6 +200,9 @@ class Functions(MainWindow):
             self.pushButton_save.setText("Save as")
             self.pushButton_load.setText("Load")
             MainWindow.update_table(self)
+
+            # описание
+            self.stackedWidget_description.setCurrentIndex(0)
             
         else:
             self.pushButton_calculate.setText("Рассчитать и сохранить")
@@ -240,3 +243,6 @@ class Functions(MainWindow):
             self.pushButton_clear.setText("Очистить")
             self.pushButton_save.setText("Сохранить")
             self.pushButton_load.setText("Загрузить")
+
+            # описание
+            self.stackedWidget_description.setCurrentIndex(1)
