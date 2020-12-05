@@ -69,6 +69,22 @@ class Ui_MainWindow(object):
 "font-size:24px;")
         self.label_header.setAlignment(QtCore.Qt.AlignCenter)
         self.label_header.setObjectName("label_header")
+        self.btn_page_7 = QtWidgets.QPushButton(self.frame_top)
+        self.btn_page_7.setGeometry(QtCore.QRect(0, 0, 68, 40))
+        self.btn_page_7.setMinimumSize(QtCore.QSize(0, 40))
+        self.btn_page_7.setStyleSheet("QPushButton {\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(35, 35, 35);\n"
+"    border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.btn_page_7.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("img/icons/home-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_7.setIcon(icon1)
+        self.btn_page_7.setObjectName("btn_page_7")
         self.horizontalLayout.addWidget(self.frame_top)
         self.verticalLayout.addWidget(self.Top_Bar)
         self.Content = QtWidgets.QFrame(self.centralwidget)
@@ -103,8 +119,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_1.setText("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("img/icons/home-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_page_1.setIcon(icon1)
         self.btn_page_1.setObjectName("btn_page_1")
         self.verticalLayout_3.addWidget(self.btn_page_1)
@@ -597,16 +611,19 @@ class Ui_MainWindow(object):
         self.stackedWidget_2.setObjectName("stackedWidget_2")
         self.page_8 = QtWidgets.QWidget()
         self.page_8.setObjectName("page_8")
+        self.textBrowser = QtWidgets.QTextBrowser(self.page_8)
+        self.textBrowser.setGeometry(QtCore.QRect(60, 50, 921, 541))
+        self.textBrowser.setObjectName("textBrowser")
         self.stackedWidget_2.addWidget(self.page_8)
         self.page_9 = QtWidgets.QWidget()
         self.page_9.setObjectName("page_9")
         self.tabWidget = QtWidgets.QTabWidget(self.page_9)
-        self.tabWidget.setGeometry(QtCore.QRect(20, 110, 1011, 551))
+        self.tabWidget.setGeometry(QtCore.QRect(20, 20, 1011, 551))
         self.tabWidget.setObjectName("tabWidget")
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.gridLayoutWidget = QtWidgets.QWidget(self.tab)
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(30, 100, 871, 151))
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(30, 70, 951, 230))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
@@ -621,9 +638,21 @@ class Ui_MainWindow(object):
         self.spinBox_6 = QtWidgets.QSpinBox(self.gridLayoutWidget)
         self.spinBox_6.setObjectName("spinBox_6")
         self.gridLayout.addWidget(self.spinBox_6, 3, 1, 1, 1)
+        self.spinBox_11 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_11.setObjectName("spinBox_11")
+        self.gridLayout.addWidget(self.spinBox_11, 5, 1, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 0, 0, 1, 1)
+        self.checkBox_8 = QtWidgets.QCheckBox(self.gridLayoutWidget)
+        self.checkBox_8.setObjectName("checkBox_8")
+        self.gridLayout.addWidget(self.checkBox_8, 5, 0, 1, 1)
         self.checkBox = QtWidgets.QCheckBox(self.gridLayoutWidget)
         self.checkBox.setObjectName("checkBox")
         self.gridLayout.addWidget(self.checkBox, 1, 0, 1, 1)
+        self.label_6 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_6.setObjectName("label_6")
+        self.gridLayout.addWidget(self.label_6, 0, 2, 1, 1)
         self.spinBox_2 = QtWidgets.QSpinBox(self.gridLayoutWidget)
         self.spinBox_2.setObjectName("spinBox_2")
         self.gridLayout.addWidget(self.spinBox_2, 1, 2, 1, 1)
@@ -633,27 +662,42 @@ class Ui_MainWindow(object):
         self.spinBox_7 = QtWidgets.QSpinBox(self.gridLayoutWidget)
         self.spinBox_7.setObjectName("spinBox_7")
         self.gridLayout.addWidget(self.spinBox_7, 2, 2, 1, 1)
+        self.checkBox_7 = QtWidgets.QCheckBox(self.gridLayoutWidget)
+        self.checkBox_7.setObjectName("checkBox_7")
+        self.gridLayout.addWidget(self.checkBox_7, 4, 0, 1, 1)
+        self.spinBox_10 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_10.setObjectName("spinBox_10")
+        self.gridLayout.addWidget(self.spinBox_10, 4, 2, 1, 1)
         self.checkBox_2 = QtWidgets.QCheckBox(self.gridLayoutWidget)
         self.checkBox_2.setObjectName("checkBox_2")
         self.gridLayout.addWidget(self.checkBox_2, 2, 0, 1, 1)
         self.spinBox_5 = QtWidgets.QSpinBox(self.gridLayoutWidget)
         self.spinBox_5.setObjectName("spinBox_5")
         self.gridLayout.addWidget(self.spinBox_5, 2, 1, 1, 1)
-        self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget)
-        self.label_2.setObjectName("label_2")
-        self.gridLayout.addWidget(self.label_2, 0, 0, 1, 1)
         self.label_5 = QtWidgets.QLabel(self.gridLayoutWidget)
         self.label_5.setObjectName("label_5")
         self.gridLayout.addWidget(self.label_5, 0, 1, 1, 1)
-        self.label_6 = QtWidgets.QLabel(self.gridLayoutWidget)
-        self.label_6.setObjectName("label_6")
-        self.gridLayout.addWidget(self.label_6, 0, 2, 1, 1)
+        self.spinBox_9 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_9.setObjectName("spinBox_9")
+        self.gridLayout.addWidget(self.spinBox_9, 4, 1, 1, 1)
+        self.spinBox_12 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_12.setObjectName("spinBox_12")
+        self.gridLayout.addWidget(self.spinBox_12, 5, 2, 1, 1)
         self.gridLayout.setColumnStretch(0, 3)
-        self.gridLayout.setColumnStretch(1, 1)
-        self.gridLayout.setColumnStretch(2, 1)
         self.label_8 = QtWidgets.QLabel(self.tab)
-        self.label_8.setGeometry(QtCore.QRect(30, 290, 981, 81))
+        self.label_8.setGeometry(QtCore.QRect(30, 300, 981, 81))
         self.label_8.setObjectName("label_8")
+        self.pushButton_nutrition_2 = QtWidgets.QPushButton(self.tab)
+        self.pushButton_nutrition_2.setGeometry(QtCore.QRect(280, 410, 421, 61))
+        self.pushButton_nutrition_2.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_nutrition_2.setObjectName("pushButton_nutrition_2")
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -718,13 +762,10 @@ class Ui_MainWindow(object):
         self.tab_17 = QtWidgets.QWidget()
         self.tab_17.setObjectName("tab_17")
         self.tabWidget.addTab(self.tab_17, "")
-        self.commandLinkButton = QtWidgets.QCommandLinkButton(self.page_9)
-        self.commandLinkButton.setGeometry(QtCore.QRect(20, 40, 361, 41))
-        self.commandLinkButton.setObjectName("commandLinkButton")
         self.stackedWidget_2.addWidget(self.page_9)
-        self.label_7 = QtWidgets.QLabel(self.page_3)
-        self.label_7.setGeometry(QtCore.QRect(310, 0, 481, 21))
-        self.label_7.setObjectName("label_7")
+        self.commandLinkButton = QtWidgets.QCommandLinkButton(self.page_3)
+        self.commandLinkButton.setGeometry(QtCore.QRect(250, -10, 501, 41))
+        self.commandLinkButton.setObjectName("commandLinkButton")
         self.stackedWidget.addWidget(self.page_3)
         self.page_4 = QtWidgets.QWidget()
         self.page_4.setStyleSheet("background-color: rgb(45, 45, 45);\n"
@@ -842,7 +883,7 @@ class Ui_MainWindow(object):
         self.page_6 = QtWidgets.QWidget()
         self.page_6.setObjectName("page_6")
         self.formLayoutWidget_6 = QtWidgets.QWidget(self.page_6)
-        self.formLayoutWidget_6.setGeometry(QtCore.QRect(300, 100, 421, 321))
+        self.formLayoutWidget_6.setGeometry(QtCore.QRect(300, 100, 450, 321))
         self.formLayoutWidget_6.setObjectName("formLayoutWidget_6")
         self.formLayout_6 = QtWidgets.QFormLayout(self.formLayoutWidget_6)
         self.formLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -926,13 +967,31 @@ class Ui_MainWindow(object):
         self.label_check_fat.setText(_translate("MainWindow", "Расчитать % жира"))
         self.label_wrist.setText(_translate("MainWindow", "Запястья, см"))
         self.pushButton_calculate.setText(_translate("MainWindow", "Рассчитать и сохранить"))
+        self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:26pt;\">Описание программы тренировок:</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:26pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Сложность:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> начинающий - продвинутый</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Фокус программы:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> набор мышечной массы, увеличение силы, мышечный рельеф</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Оборудование:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> нет (турник и брусья по возможности)</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">Программа &quot;Быстрый старт соответствует своему названию. Она поможет адаптироваться тем, кто вообще не занимался спортом, при этом заставит попотеть опытных спортсменов.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">Особенности: </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - все упражнения выполняются в технике 4/1: 4 секунды негативная фаза(опускание туловища в отжиманиях) и 1 секунда взрывная фаза(подъем туловища в отжиманиях)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - Вы можете заниматься по этой программе имея только пол и стену</span></p></body></html>"))
         self.checkBox_3.setText(_translate("MainWindow", "Французский жим"))
-        self.checkBox.setText(_translate("MainWindow", "Отжимания от пола широким хватом"))
-        self.checkBox_2.setText(_translate("MainWindow", "Отжимания от пола узким хватом"))
         self.label_2.setText(_translate("MainWindow", "Упражнение"))
-        self.label_5.setText(_translate("MainWindow", "Вес утяжелителя"))
+        self.checkBox_8.setText(_translate("MainWindow", "Французский жим"))
+        self.checkBox.setText(_translate("MainWindow", "Отжимания от пола широким хватом"))
         self.label_6.setText(_translate("MainWindow", " Повторения"))
+        self.checkBox_7.setText(_translate("MainWindow", "Французский жим"))
+        self.checkBox_2.setText(_translate("MainWindow", "Отжимания от пола узким хватом"))
+        self.label_5.setText(_translate("MainWindow", "Вес утяжелителя"))
         self.label_8.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:15pt;\">Особенности</span></p><p><span style=\" font-size:15pt;\"> - Все упражнения выполняются в технике 4*1(1 секунда активная фаза, 4 секунды пассивная)</span></p></body></html>"))
+        self.pushButton_nutrition_2.setText(_translate("MainWindow", "Завершить тренировку"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Tab 1"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Tab 2"))
         self.checkBox_4.setText(_translate("MainWindow", "CheckBox"))
@@ -953,8 +1012,7 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_15), _translate("MainWindow", "Page"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_16), _translate("MainWindow", "Page"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_17), _translate("MainWindow", "Page"))
-        self.commandLinkButton.setText(_translate("MainWindow", "Подробнее о программе"))
-        self.label_7.setText(_translate("MainWindow", "Программа тренировок \"Быстрый старт дома\""))
+        self.commandLinkButton.setText(_translate("MainWindow", "Программа тренировок \"Быстрый старт дома\""))
         self.pushButton_insert.setText(_translate("MainWindow", "+"))
         self.pushButton_save.setText(_translate("MainWindow", "Сохранить"))
         self.pushButton_load.setText(_translate("MainWindow", "Загрузить"))
