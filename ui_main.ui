@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1095</width>
+    <width>1119</width>
     <height>741</height>
    </rect>
   </property>
@@ -494,7 +494,7 @@ QPushButton:hover {
 font-size:20px;</string>
             </property>
             <property name="currentIndex">
-             <number>5</number>
+             <number>2</number>
             </property>
             <widget class="QWidget" name="page_1">
              <property name="styleSheet">
@@ -1322,7 +1322,359 @@ QPushButton:hover {
               </property>
              </widget>
             </widget>
-            <widget class="QWidget" name="page_3"/>
+            <widget class="QWidget" name="page_3">
+             <widget class="QStackedWidget" name="stackedWidget_2">
+              <property name="geometry">
+               <rect>
+                <x>-10</x>
+                <y>20</y>
+                <width>1041</width>
+                <height>661</height>
+               </rect>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="page_8">
+               <widget class="QTextBrowser" name="textBrowser">
+                <property name="geometry">
+                 <rect>
+                  <x>60</x>
+                  <y>50</y>
+                  <width>921</width>
+                  <height>541</height>
+                 </rect>
+                </property>
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:26pt;&quot;&gt;Описание программы тренировок:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:26pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600;&quot;&gt;Сложность:&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt; начинающий - продвинутый&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600;&quot;&gt;Фокус программы:&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt; набор мышечной массы, увеличение силы, мышечный рельеф&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600;&quot;&gt;Оборудование:&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt; нет (турник и брусья по возможности)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt;Программа &amp;quot;Быстрый старт соответствует своему названию. Она поможет адаптироваться тем, кто вообще не занимался спортом, при этом заставит попотеть опытных спортсменов.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt;Особенности: &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt; - все упражнения выполняются в технике 4/1: 4 секунды негативная фаза(опускание туловища в отжиманиях) и 1 секунда взрывная фаза(подъем туловища в отжиманиях)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt;&quot;&gt; - Вы можете заниматься по этой программе имея только пол и стену&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="page_9">
+               <widget class="QTabWidget" name="tabWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>20</y>
+                  <width>1011</width>
+                  <height>551</height>
+                 </rect>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab">
+                 <attribute name="title">
+                  <string>Tab 1</string>
+                 </attribute>
+                 <widget class="QWidget" name="gridLayoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>70</y>
+                    <width>951</width>
+                    <height>230</height>
+                   </rect>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0" columnstretch="3,0,0">
+                   <property name="horizontalSpacing">
+                    <number>30</number>
+                   </property>
+                   <item row="1" column="1">
+                    <widget class="QSpinBox" name="spinBox"/>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QCheckBox" name="checkBox_3">
+                     <property name="text">
+                      <string>Французский жим</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QSpinBox" name="spinBox_6"/>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QSpinBox" name="spinBox_11"/>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>Упражнение</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QCheckBox" name="checkBox_8">
+                     <property name="text">
+                      <string>Французский жим</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QCheckBox" name="checkBox">
+                     <property name="text">
+                      <string>Отжимания от пола широким хватом</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string> Повторения</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QSpinBox" name="spinBox_2"/>
+                   </item>
+                   <item row="3" column="2">
+                    <widget class="QSpinBox" name="spinBox_8"/>
+                   </item>
+                   <item row="2" column="2">
+                    <widget class="QSpinBox" name="spinBox_7"/>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QCheckBox" name="checkBox_7">
+                     <property name="text">
+                      <string>Французский жим</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="2">
+                    <widget class="QSpinBox" name="spinBox_10"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QCheckBox" name="checkBox_2">
+                     <property name="text">
+                      <string>Отжимания от пола узким хватом</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QSpinBox" name="spinBox_5"/>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>Вес утяжелителя</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QSpinBox" name="spinBox_9"/>
+                   </item>
+                   <item row="5" column="2">
+                    <widget class="QSpinBox" name="spinBox_12"/>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QLabel" name="label_8">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>300</y>
+                    <width>981</width>
+                    <height>81</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt;&quot;&gt;Особенности&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt;&quot;&gt; - Все упражнения выполняются в технике 4*1(1 секунда активная фаза, 4 секунды пассивная)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="pushButton_nutrition_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>280</x>
+                    <y>410</y>
+                    <width>421</width>
+                    <height>61</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+border:1px solid #fff;
+font-size:20px;
+color:#fff;
+}
+QPushButton:hover {
+	background-color: rgb(85, 170, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Завершить тренировку</string>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="tab_2">
+                 <attribute name="title">
+                  <string>Tab 2</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_3">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                 <widget class="QSpinBox" name="spinBox_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>490</x>
+                    <y>70</y>
+                    <width>42</width>
+                    <height>22</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="checkBox_4">
+                  <property name="geometry">
+                   <rect>
+                    <x>60</x>
+                    <y>150</y>
+                    <width>271</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>CheckBox</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="checkBox_5">
+                  <property name="geometry">
+                   <rect>
+                    <x>60</x>
+                    <y>70</y>
+                    <width>271</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>CheckBox</string>
+                  </property>
+                 </widget>
+                 <widget class="QSpinBox" name="spinBox_4">
+                  <property name="geometry">
+                   <rect>
+                    <x>400</x>
+                    <y>70</y>
+                    <width>42</width>
+                    <height>22</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="checkBox_6">
+                  <property name="geometry">
+                   <rect>
+                    <x>60</x>
+                    <y>110</y>
+                    <width>271</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>CheckBox</string>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="tab_6">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_4">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_5">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_8">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_7">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_9">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_10">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_11">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_12">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_13">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_14">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_15">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_16">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+                <widget class="QWidget" name="tab_17">
+                 <attribute name="title">
+                  <string>Page</string>
+                 </attribute>
+                </widget>
+               </widget>
+              </widget>
+             </widget>
+             <widget class="QCommandLinkButton" name="commandLinkButton">
+              <property name="geometry">
+               <rect>
+                <x>250</x>
+                <y>-10</y>
+                <width>501</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Программа тренировок &quot;Быстрый старт дома&quot;</string>
+              </property>
+             </widget>
+            </widget>
             <widget class="QWidget" name="page_4">
              <property name="styleSheet">
               <string notr="true">background-color: rgb(45, 45, 45);
@@ -1630,7 +1982,7 @@ p, li { white-space: pre-wrap; }
                <rect>
                 <x>300</x>
                 <y>100</y>
-                <width>421</width>
+                <width>450</width>
                 <height>321</height>
                </rect>
               </property>

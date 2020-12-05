@@ -158,6 +158,12 @@ class Functions(MainWindow):
             self.language = "ru"
         else:
             self.language = "en"
+        # формирование списка заголовков
+        if self.language == "ru":
+            self.titles = ["Главная", "Калькулятор", "Тренировки", "Питание", "О приложении", "Настройки"]
+        else:
+            self.titles = ["Home", "Calculator", "Training", "Nutrition", "About", "Settings"]
+
         
         if self.language == "en":
             # калькулятор
@@ -246,3 +252,6 @@ class Functions(MainWindow):
 
             # описание
             self.stackedWidget_description.setCurrentIndex(1)
+
+            # настройки
+            

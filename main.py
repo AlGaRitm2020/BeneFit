@@ -46,13 +46,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # формирование списка заголовков
         if self.language == "ru":
-            titles = ["Главная", "Калькулятор", "Тренировки", "Питание", "О приложении", "Настройки"]
+            self.titles = ["Главная", "Калькулятор", "Тренировки", "Питание", "О приложении", "Настройки"]
         else:
-            titles = ["Home", "Calculator", "Training", "Nutrition", "About", "Settings"]
+            self.titles = ["Home", "Calculator", "Training", "Nutrition", "About", "Settings"]
 
         # обработка смены заголовка после смены страницы
-        self.stackedWidget.currentChanged['int'].connect(lambda: self.label_header.setText(f"{titles[self.stackedWidget.currentIndex()]}"))
-        
+        self.stackedWidget.currentChanged['int'].connect(lambda: self.label_header.setText(f"{self.titles[self.stackedWidget.currentIndex()]}"))
+
         # переходы из главной страницы
         self.pushButton_sign.clicked.connect(self.open_login)
         self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
