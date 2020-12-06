@@ -12,7 +12,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 # from PyQt5.QtSignals import *
-from login import LoginWindow
+from login import *
 from add_data import *
 
 # GUI FILEL
@@ -35,14 +35,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # создать перемунные пользователя
         global ID, LOGIN
         ID = 1
-        LOGIN = "Guest"
+        LOGIN = ""
         self.language = "en"
 
         # скрыть дополнительные поля    
         self.btn_login.hide()
+        self.label_menu_login.hide()
+        
         
         # функции переходов из меню 
-        Functions.forward(self)
+        Functions.forward(self, LOGIN, self.language)
 
         # формирование списка заголовков
         if self.language == "ru":
@@ -55,6 +57,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # переходы из главной страницы
         self.pushButton_sign.clicked.connect(self.open_login)
+        
         self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
         self.pushButton_training.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
         self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
@@ -77,7 +80,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # перемунные
         # создать переменную с языком
         self.comboBox_language.setCurrentIndex(0)
+
         Functions.translate(self)
+        self.btn_page_1.setText('')
+        self.btn_page_2.setText('')
+        self.btn_page_3.setText('')
+        self.btn_page_4.setText('')
+        self.btn_page_5.setText('')
+        self.btn_page_6.setText('')
+        
         # обнулить чекбокс
         self.check = False
         # пол
@@ -104,6 +115,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # 
         # /КАЛЬКУЛЯТОР
+        #
+
+        # 
+        # ТРЕНИРОВКИ
+        #
+        
+        # смена тренировки на описание и наоборот
+        self.pushButton_quickStart_help.clicked.connect(lambda:self.stackedWidget_training.setCurrentIndex((self.stackedWidget_training.currentIndex()+1)%2))
+        # 
+        # /ТРЕНИРОВКИ
         #
 
         # 
@@ -151,7 +172,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # 
         # НАСТРОЙКИ
-        #
+        # перевести на другой язык
         self.pushButton_settings.clicked.connect(self.translate)
         # 
         # /НАСТРОЙКИ
@@ -162,8 +183,28 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     #
     # открыть вход
     def open_login(self):
-        global log
-        log = LoginWindow('ru')
+        global LOGIN, ID
+        if ID != 1:
+            ID = 1
+            if self.language == 'ru':
+                self.pushButton_sign.setText("Вход")
+                self.btn_login.setText("Вход")
+                self.label_menu_login.setText('')
+                self.label_name.setText("")
+        else:
+            try:
+                log = LoginWindow(self.language)
+                if log.exec():
+                    pass
+                ID, LOGIN = return_data()
+                if self.language == 'ru':
+                    self.pushButton_sign.setText("Выход")
+                    self.btn_login.setText("Выход")
+                self.label_name.setText(LOGIN)
+                self.label_menu_login.setText(LOGIN)
+            except Exception:
+                pass
+    
 
     #
     # /методы Главной страницы
@@ -177,6 +218,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def calculate(self):
         # параметры
         global ID
+       
         weight = self.spinBox_weight.value()
         height = self.spinBox_height.value()
         age = self.spinBox_age.value()

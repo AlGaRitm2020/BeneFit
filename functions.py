@@ -16,6 +16,9 @@ def cast(n):
     return n
 
 class Functions(MainWindow):
+    # def update_login(self):
+    #     global LOGIN
+    #     MainWindow.label_name.setText(LOGIN)
     def update_calculator(self, ID):
         
         if ID:
@@ -69,7 +72,7 @@ class Functions(MainWindow):
             self.spinBox_waist.setValue(info[8])
             self.spinBox_neck.setValue(info[9])
             self.spinBox_hip.setValue(info[10])
-    def toggleMenu(self, maxWidth, enable):
+    def toggleMenu(self, maxWidth, enable, login, language):
         if enable:
 
             # GET WIDTH
@@ -80,25 +83,26 @@ class Functions(MainWindow):
             # SET MAX WIDTH
             if width == 70:
                 widthExtended = maxExtend
-                self.btn_page_1.setText(" Главная")
-                self.btn_page_2.setText(" Калькулятор")
-                self.btn_page_3.setText(" Тренировки")
-                self.btn_page_4.setText(" Питание")
-                self.btn_page_5.setText(" Описание")
-                self.btn_page_6.setText(" Настройки")
+                
+                Functions.translate(self)
+                
+           
+               
+
                 self.btn_login.show()
-                self.label_menu_login.setText("login")
+                self.label_menu_login.show()
+                
                 
             else:
                 self.btn_login.hide()
-                self.label_menu_login.setText("")
+                self.label_menu_login.hide()
                 widthExtended = standard
-                self.btn_page_1.setText("")
-                self.btn_page_2.setText("")
-                self.btn_page_3.setText("")
-                self.btn_page_4.setText("")
-                self.btn_page_5.setText("")
-                self.btn_page_6.setText("")
+                self.btn_page_1.setText('')
+                self.btn_page_2.setText('')
+                self.btn_page_3.setText('')
+                self.btn_page_4.setText('')
+                self.btn_page_5.setText('')
+                self.btn_page_6.setText('')
                 
 
 
@@ -117,12 +121,12 @@ class Functions(MainWindow):
             self.animation2.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animation.start()
 
-    def forward(self):
+    def forward(self, login, language):
         ## TOGGLE/BURGUER MENU
         ########################################################################
 
       
-        self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 200, True))
+        self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 200, True, login, language))
 
         # self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 250, True))
 
@@ -200,6 +204,16 @@ class Functions(MainWindow):
             self.pushButton_info.setText("About app")
             self.pushButton_sign.setText("Sign in") 
 
+            self.btn_page_1.setText(" Home")
+            self.btn_page_2.setText(" Calculator")
+            self.btn_page_3.setText(" Training")
+            self.btn_page_4.setText(" Nutrition")
+            self.btn_page_5.setText(" About app")
+            self.btn_page_6.setText(" Settings")
+            self.pushButton_sign.setText(" Sign in") 
+
+            
+
             # питание
             self.pushButton_add.setText("Add")
             self.pushButton_clear.setText("Clear")
@@ -242,7 +256,14 @@ class Functions(MainWindow):
             self.pushButton_training.setText("Тренировки")
             self.pushButton_nutrition.setText("Питание")
             self.pushButton_info.setText("О приложении")
-            self.pushButton_sign.setText("Войти")
+            self.pushButton_sign.setText("Вход")
+
+            self.btn_page_1.setText(" Главная")
+            self.btn_page_2.setText(" Калькулятор")
+            self.btn_page_3.setText(" Тренировки")
+            self.btn_page_4.setText(" Питание")
+            self.btn_page_5.setText(" Описание")
+            self.btn_page_6.setText(" Настройки")
 
             # питание
             self.pushButton_add.setText("Добавить")
@@ -254,4 +275,3 @@ class Functions(MainWindow):
             self.stackedWidget_description.setCurrentIndex(1)
 
             # настройки
-            

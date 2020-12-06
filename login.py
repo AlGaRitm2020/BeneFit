@@ -4,11 +4,21 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import QIcon
 import sqlite3
+# from main import *
 
+def return_data():    
+    try:
+        global LOGIN, ID
+        
+        return ID, LOGIN
+    except Exception:
+        print('error')
 # главная страница
 class LoginWindow(QDialog, Ui_Dialog):
-    def __init__(self, language):
-        super().__init__()
+    def __init__(self, language, parent=None):
+        super().__init__(parent)
+        global LOGIN, ID
+        LOGIN, ID = 0, 0
         self.setupUi(self)
         self.setWindowIcon(QIcon("img/icons/4213426-about-description-help-info-information-notification_115427.ico"))
         self.setWindowTitle("Войти в систему")
@@ -58,9 +68,11 @@ class LoginWindow(QDialog, Ui_Dialog):
                 
                 self.label_status.setText("Такой логин уже существует!")
                 self.label_status.setStyleSheet('color:#ff0000;')
+                print(LOGIN)
 
 
     def authorization(self):
+        global ID, LOGIN
         # подключение к базе данных логинов и паролей
         with sqlite3.connect('db/dataBase2.db') as db:
         
@@ -88,14 +100,14 @@ class LoginWindow(QDialog, Ui_Dialog):
                 else:
                     self.label_status.setText("Успешный вход!")
                     self.label_status.setStyleSheet('color:#00ff00;')
+                    # MainWindow.label_name.setText(LOGIN)
                     # global log
                     # QTimer.singleShot(1000,lambda: log.close())
 
                     # получение ID аккаунта 
-                    global ID, LOGIN
+                    
                     ID, LOGIN = cursor.execute("""SELECT id, login FROM login WHERE login = ? AND password = ? 
                   """, (login,password,)).fetchall()[0]
-                 
 
 
 # запуск приложения
