@@ -34,7 +34,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # создать перемунные пользователя
         global ID, LOGIN
-        ID = 1
+        ID = 0
         LOGIN = ""
         self.language = "en"
 
@@ -88,7 +88,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.btn_page_4.setText('')
         self.btn_page_5.setText('')
         self.btn_page_6.setText('')
-        
+
         # обнулить чекбокс
         self.check = False
         # пол
@@ -184,8 +184,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # открыть вход
     def open_login(self):
         global LOGIN, ID
-        if ID != 1:
-            ID = 1
+        if ID != 0:
+            ID = 0
+            Functions.update_calculator(self, 0)
             if self.language == 'ru':
                 self.pushButton_sign.setText("Вход")
                 self.btn_login.setText("Вход")
@@ -197,6 +198,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 if log.exec():
                     pass
                 ID, LOGIN = return_data()
+                Functions.update_calculator(self, ID)
+
                 if self.language == 'ru':
                     self.pushButton_sign.setText("Выход")
                     self.btn_login.setText("Выход")
@@ -233,37 +236,37 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # рассчитать и вывести ИМТ
         self.lineEdit_IMT_value.setText(
             str(round(weight / (height / 100) ** 2, 1)))
-        k = float(self.lineEdit_IMT_value.text())
+        imt = float(self.lineEdit_IMT_value.text())
 
         # вывести расшифровку результата
         if self.language == "ru":
-            if k >= 40:
+            if imt >= 40:
                 self.lineEdit_IMT_status.setText("Ожирение 3-ей степени")
-            elif k >= 35:
+            elif imt >= 35:
                 self.lineEdit_IMT_status.setText("Ожирение 2-ей степени")
-            elif k >= 30:
+            elif imt >= 30:
                 self.lineEdit_IMT_status.setText("Ожирение 1-ей степени")
-            elif k >= 25:
+            elif imt >= 25:
                 self.lineEdit_IMT_status.setText("Избыточная масса тела")
-            elif k >= 18.5:
+            elif imt >= 18.5:
                 self.lineEdit_IMT_status.setText("Норма")
-            elif k >= 16:
+            elif imt >= 16:
                 self.lineEdit_IMT_status.setText("Недостаточная масса тела")
             else:
                 self.lineEdit_IMT_status.setText(
                     "Выраженный дефицит массы тела")
         else:
-            if k >= 40:
+            if imt >= 40:
                 self.lineEdit_IMT_status.setText("Obese Class 3")
-            elif k >= 35:
+            elif imt >= 35:
                 self.lineEdit_IMT_status.setText("Obese Class 2")
-            elif k >= 30:
+            elif imt >= 30:
                 self.lineEdit_IMT_status.setText("Obese Class 1")
-            elif k >= 25:
+            elif imt >= 25:
                 self.lineEdit_IMT_status.setText("Overweight")
-            elif k >= 18.5:
+            elif imt >= 18.5:
                 self.lineEdit_IMT_status.setText("Normal")
-            elif k >= 16:
+            elif imt >= 16:
                 self.lineEdit_IMT_status.setText("Mild Thinness")
             else:
                 self.lineEdit_IMT_status.setText("Severe Thinness")
@@ -320,18 +323,24 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if wrist < 18 and self.male or wrist < 15 and not self.male:
     
                 self.lineEdit_type.setText("Эктоморф")
+                body_type = 0
             elif wrist > 20 and self.male or wrist > 17 and not self.male:
                 self.lineEdit_type.setText('Эндоморф')
+                body_type = 2
             else:
                 self.lineEdit_type.setText("Мезоморф")
+                body_type = 1
         else:
             if wrist < 18 and self.male or wrist < 15 and not self.male:
     
                 self.lineEdit_type.setText("Ectomorph")
+                body_type = 0
             elif wrist > 20 and self.male or wrist > 17 and not self.male:
                 self.lineEdit_type.setText('Endomorph')
+                body_type = 2
             else:
                 self.lineEdit_type.setText("Mesomorph")
+                body_type = 1
 
         # процент жира
         # рассчитивать только если пользователь выбрал эту возможность
@@ -344,6 +353,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 # рассчитать для женщин по формуле
                 self.lineEdit_percent.setText(str(round(
                     495 / (1.29579 - 0.35004 * (log10(waist + hip - neck)) + 0.22100 * (log10(height))) - 450, 1)))
+        print(ID)
         if ID:
             # запись некоторых данных в БД
             with sqlite3.connect('db/dataBase2.db') as db:
@@ -352,8 +362,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 cursor = db.cursor()
                 cursor.execute(
                     f"""  UPDATE info SET (height, weight, age, gender, activity,
-                     wrist, fat_check, waist, neck, hip ) = {(height, weight,age,
-                      self.male, activity, wrist, self.check, waist, neck, hip)} WHERE ID = {ID}""")
+                     wrist, fat_check, waist, neck, hip, IMT, type, fat_percent) = {(height, weight,age,
+                      self.male, activity, wrist, self.check, waist, neck, hip, imt, body_type, float(self.lineEdit_percent.text()))} WHERE ID = {ID}""")
 
     # показать поле для расчета процента жира
     def show_extra(self):

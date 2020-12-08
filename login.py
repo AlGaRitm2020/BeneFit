@@ -35,7 +35,7 @@ class LoginWindow(QDialog, Ui_Dialog):
             cursor = db.cursor()
             
             # получение значений для ввода в БД
-            curent_id = max(cursor.execute(""" SELECT id FROM login """).fetchall())[0] + 1
+            current_id = max(cursor.execute(""" SELECT id FROM login """).fetchall())[0] + 1
             login = self.lineEdit_login.text()
             password = self.lineEdit_password.text()
 
@@ -51,18 +51,23 @@ class LoginWindow(QDialog, Ui_Dialog):
             elif (login,) not in cursor.execute("""SELECT login FROM login
               """).fetchall():
                 # создание кортежа для ввода в БД
-                insert = (curent_id, login, password)
+                insert = (current_id, login, password)
                 print(insert)
 
                 # ввод значений в БД
                 query = """  INSERT INTO login (id, login, password) VALUES(?, ?, ?) """
                 cursor.execute(query, insert)
+                print(3)
+                cursor.execute(
+                    f"""  INSERT INTO info (id, height, weight, age, gender, activity,
+                     wrist, fat_check, waist, neck, hip ) VALUES ({current_id}, {175}, {70}, {25},
+                      {True},{3} , {18}, {False}, {75}, {20}, {75})""")
 
                 # сообщение об успехе
                 self.label_status.setText("Регистрация прошла успешно!")
                 self.label_status.setStyleSheet('color:#00ff00;')
                 global ID
-                ID = curent_id
+                ID = current_id
             # логин уже зарегистрирован
             else:
                 
