@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Form implementation generated from reading ui file 'ui_main.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
@@ -12,10 +14,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1000, 500)
+        MainWindow.resize(1126, 741)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 500))
         MainWindow.setStyleSheet("background-color: rgb(45, 45, 45);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("font-size:20px;")
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -51,7 +54,7 @@ class Ui_MainWindow(object):
 "border: 0px solid;")
         self.Btn_Toggle.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../Downloads/hamburger_menu_icon_149466.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("img/icons/hamburger_menu_icon_149466.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.Btn_Toggle.setIcon(icon)
         self.Btn_Toggle.setObjectName("Btn_Toggle")
         self.verticalLayout_2.addWidget(self.Btn_Toggle)
@@ -60,9 +63,32 @@ class Ui_MainWindow(object):
         self.frame_top.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_top.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_top.setObjectName("frame_top")
+        self.label_header = QtWidgets.QLabel(self.frame_top)
+        self.label_header.setGeometry(QtCore.QRect(0, 2, 1021, 31))
+        self.label_header.setStyleSheet("color:#fff;\n"
+"font-size:24px;")
+        self.label_header.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_header.setObjectName("label_header")
+        self.btn_page_7 = QtWidgets.QPushButton(self.frame_top)
+        self.btn_page_7.setGeometry(QtCore.QRect(0, 0, 68, 40))
+        self.btn_page_7.setMinimumSize(QtCore.QSize(0, 40))
+        self.btn_page_7.setStyleSheet("QPushButton {\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(35, 35, 35);\n"
+"    border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.btn_page_7.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("img/icons/left_arrow_edited.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_7.setIcon(icon1)
+        self.btn_page_7.setObjectName("btn_page_7")
         self.horizontalLayout.addWidget(self.frame_top)
         self.verticalLayout.addWidget(self.Top_Bar)
         self.Content = QtWidgets.QFrame(self.centralwidget)
+        self.Content.setStyleSheet("")
         self.Content.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.Content.setFrameShadow(QtWidgets.QFrame.Raised)
         self.Content.setObjectName("Content")
@@ -73,22 +99,16 @@ class Ui_MainWindow(object):
         self.frame_left_menu = QtWidgets.QFrame(self.Content)
         self.frame_left_menu.setMinimumSize(QtCore.QSize(70, 0))
         self.frame_left_menu.setMaximumSize(QtCore.QSize(70, 16777215))
-        self.frame_left_menu.setStyleSheet("background-color: rgb(35, 35, 35);")
+        self.frame_left_menu.setStyleSheet("background-color: rgb(35, 35, 35);\n"
+"color:#fff;\n"
+"font-size:20px;")
         self.frame_left_menu.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_left_menu.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_left_menu.setObjectName("frame_left_menu")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame_left_menu)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.frame_top_menus = QtWidgets.QFrame(self.frame_left_menu)
-        self.frame_top_menus.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.frame_top_menus.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_top_menus.setObjectName("frame_top_menus")
-        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.frame_top_menus)
-        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout_4.setSpacing(0)
-        self.verticalLayout_4.setObjectName("verticalLayout_4")
-        self.btn_page_1 = QtWidgets.QPushButton(self.frame_top_menus)
+        self.btn_page_1 = QtWidgets.QPushButton(self.frame_left_menu)
         self.btn_page_1.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_1.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
@@ -99,12 +119,12 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_1.setText("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../BeneFit/img/icons/webpagehome_85808.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_1.setIcon(icon1)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("img/icons/home-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_1.setIcon(icon2)
         self.btn_page_1.setObjectName("btn_page_1")
-        self.verticalLayout_4.addWidget(self.btn_page_1)
-        self.btn_page_2 = QtWidgets.QPushButton(self.frame_top_menus)
+        self.verticalLayout_3.addWidget(self.btn_page_1)
+        self.btn_page_2 = QtWidgets.QPushButton(self.frame_left_menu)
         self.btn_page_2.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_2.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
@@ -115,12 +135,12 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_2.setText("")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../BeneFit/img/icons/calculator_icon-icons.com_50442.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_2.setIcon(icon2)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("img/icons/calculator_(1).ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_2.setIcon(icon3)
         self.btn_page_2.setObjectName("btn_page_2")
-        self.verticalLayout_4.addWidget(self.btn_page_2)
-        self.btn_page_3 = QtWidgets.QPushButton(self.frame_top_menus)
+        self.verticalLayout_3.addWidget(self.btn_page_2)
+        self.btn_page_3 = QtWidgets.QPushButton(self.frame_left_menu)
         self.btn_page_3.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_3.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
@@ -131,11 +151,91 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_3.setText("")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("../BeneFit/img/icons/BeneFit.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_3.setIcon(icon3)
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("img/icons/barrel-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_3.setIcon(icon4)
         self.btn_page_3.setObjectName("btn_page_3")
-        self.verticalLayout_4.addWidget(self.btn_page_3)
+        self.verticalLayout_3.addWidget(self.btn_page_3)
+        self.btn_page_4 = QtWidgets.QPushButton(self.frame_left_menu)
+        self.btn_page_4.setMinimumSize(QtCore.QSize(0, 40))
+        self.btn_page_4.setStyleSheet("QPushButton {\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(35, 35, 35);\n"
+"    border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.btn_page_4.setText("")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("img/icons/apple-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_4.setIcon(icon5)
+        self.btn_page_4.setObjectName("btn_page_4")
+        self.verticalLayout_3.addWidget(self.btn_page_4)
+        self.btn_page_5 = QtWidgets.QPushButton(self.frame_left_menu)
+        self.btn_page_5.setMinimumSize(QtCore.QSize(0, 40))
+        self.btn_page_5.setStyleSheet("QPushButton {\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(35, 35, 35);\n"
+"    border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.btn_page_5.setText("")
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("img/icons/info-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_5.setIcon(icon6)
+        self.btn_page_5.setObjectName("btn_page_5")
+        self.verticalLayout_3.addWidget(self.btn_page_5)
+        self.btn_page_6 = QtWidgets.QPushButton(self.frame_left_menu)
+        self.btn_page_6.setMinimumSize(QtCore.QSize(0, 40))
+        self.btn_page_6.setStyleSheet("QPushButton {\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(35, 35, 35);\n"
+"    border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.btn_page_6.setText("")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap("img/icons/settings-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_6.setIcon(icon7)
+        self.btn_page_6.setObjectName("btn_page_6")
+        self.verticalLayout_3.addWidget(self.btn_page_6)
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem)
+        self.label_menu_login = QtWidgets.QLabel(self.frame_left_menu)
+        self.label_menu_login.setStyleSheet("color:#fff;\n"
+"font-size:20px;")
+        self.label_menu_login.setText("")
+        self.label_menu_login.setObjectName("label_menu_login")
+        self.verticalLayout_3.addWidget(self.label_menu_login)
+        self.btn_login = QtWidgets.QPushButton(self.frame_left_menu)
+        self.btn_login.setEnabled(True)
+        self.btn_login.setMinimumSize(QtCore.QSize(0, 40))
+        self.btn_login.setStyleSheet("QPushButton {\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color: rgb(35, 35, 35);\n"
+"    border:1px solid #fff;\n"
+"    color:#fff;\n"
+"    font-size:20px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.btn_login.setIcon(icon2)
+        self.btn_login.setObjectName("btn_login")
+        self.verticalLayout_3.addWidget(self.btn_login)
+        self.frame_top_menus = QtWidgets.QFrame(self.frame_left_menu)
+        self.frame_top_menus.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frame_top_menus.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_top_menus.setObjectName("frame_top_menus")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.frame_top_menus)
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_4.setSpacing(0)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.verticalLayout_3.addWidget(self.frame_top_menus, 0, QtCore.Qt.AlignTop)
         self.horizontalLayout_2.addWidget(self.frame_left_menu)
         self.frame_pages = QtWidgets.QFrame(self.Content)
@@ -145,58 +245,924 @@ class Ui_MainWindow(object):
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.frame_pages)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.stackedWidget = QtWidgets.QStackedWidget(self.frame_pages)
+        self.stackedWidget.setStyleSheet("color:#ffffff;\n"
+"font-size:20px;")
         self.stackedWidget.setObjectName("stackedWidget")
         self.page_1 = QtWidgets.QWidget()
+        self.page_1.setStyleSheet("")
         self.page_1.setObjectName("page_1")
-        self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.page_1)
-        self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.label_1 = QtWidgets.QLabel(self.page_1)
-        font = QtGui.QFont()
-        font.setPointSize(40)
-        self.label_1.setFont(font)
-        self.label_1.setStyleSheet("color: #FFF;")
-        self.label_1.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_1.setObjectName("label_1")
-        self.verticalLayout_7.addWidget(self.label_1)
+        self.label_name = QtWidgets.QLabel(self.page_1)
+        self.label_name.setGeometry(QtCore.QRect(590, 40, 131, 31))
+        self.label_name.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.label_name.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.label_name.setStyleSheet("\n"
+"font-size:20px;\n"
+"color:#fff;")
+        self.label_name.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_name.setObjectName("label_name")
+        self.pushButton_calculator = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_calculator.setGeometry(QtCore.QRect(290, 300, 421, 61))
+        self.pushButton_calculator.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_calculator.setObjectName("pushButton_calculator")
+        self.pushButton_training = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_training.setGeometry(QtCore.QRect(290, 390, 421, 61))
+        self.pushButton_training.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_training.setObjectName("pushButton_training")
+        self.pushButton_info = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_info.setGeometry(QtCore.QRect(290, 570, 421, 61))
+        self.pushButton_info.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_info.setObjectName("pushButton_info")
+        self.label_3 = QtWidgets.QLabel(self.page_1)
+        self.label_3.setGeometry(QtCore.QRect(440, 30, 131, 111))
+        self.label_3.setText("")
+        self.label_3.setPixmap(QtGui.QPixmap("../BeneFit/img/filename.png"))
+        self.label_3.setObjectName("label_3")
+        self.pushButton_sign = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_sign.setGeometry(QtCore.QRect(730, 40, 71, 31))
+        self.pushButton_sign.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_sign.setObjectName("pushButton_sign")
+        self.pushButton_nutrition = QtWidgets.QPushButton(self.page_1)
+        self.pushButton_nutrition.setGeometry(QtCore.QRect(290, 480, 421, 61))
+        self.pushButton_nutrition.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_nutrition.setObjectName("pushButton_nutrition")
+        self.label_4 = QtWidgets.QLabel(self.page_1)
+        self.label_4.setGeometry(QtCore.QRect(290, 160, 421, 111))
+        self.label_4.setStyleSheet("font-size:130px;\n"
+"color:#fff;")
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setObjectName("label_4")
         self.stackedWidget.addWidget(self.page_1)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
-        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.page_2)
-        self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.label_2 = QtWidgets.QLabel(self.page_2)
-        font = QtGui.QFont()
-        font.setPointSize(40)
-        self.label_2.setFont(font)
-        self.label_2.setStyleSheet("color: #FFF;")
-        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout_6.addWidget(self.label_2)
+        self.groupBox_5 = QtWidgets.QGroupBox(self.page_2)
+        self.groupBox_5.setGeometry(QtCore.QRect(560, 110, 381, 401))
+        self.groupBox_5.setStyleSheet("color:#fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"background-color: rgb(35, 35, 35);")
+        self.groupBox_5.setTitle("")
+        self.groupBox_5.setObjectName("groupBox_5")
+        self.formLayoutWidget_4 = QtWidgets.QWidget(self.groupBox_5)
+        self.formLayoutWidget_4.setGeometry(QtCore.QRect(20, 10, 341, 222))
+        self.formLayoutWidget_4.setObjectName("formLayoutWidget_4")
+        self.formLayout_4 = QtWidgets.QFormLayout(self.formLayoutWidget_4)
+        self.formLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_4.setObjectName("formLayout_4")
+        self.label_IMT = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_IMT.setStyleSheet("border:none")
+        self.label_IMT.setObjectName("label_IMT")
+        self.formLayout_4.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_IMT)
+        self.lineEdit_IMT_value = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.lineEdit_IMT_value.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"border:none")
+        self.lineEdit_IMT_value.setReadOnly(True)
+        self.lineEdit_IMT_value.setObjectName("lineEdit_IMT_value")
+        self.formLayout_4.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_IMT_value)
+        self.label_metabolism = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_metabolism.setStyleSheet("border:none")
+        self.label_metabolism.setObjectName("label_metabolism")
+        self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_metabolism)
+        self.lineEdit_metabolism = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.lineEdit_metabolism.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"border:none;")
+        self.lineEdit_metabolism.setReadOnly(True)
+        self.lineEdit_metabolism.setObjectName("lineEdit_metabolism")
+        self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit_metabolism)
+        self.label_hr_max = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_hr_max.setStyleSheet("border:none")
+        self.label_hr_max.setObjectName("label_hr_max")
+        self.formLayout_4.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_hr_max)
+        self.lineEdit_hr_max = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.lineEdit_hr_max.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"border:none")
+        self.lineEdit_hr_max.setText("")
+        self.lineEdit_hr_max.setReadOnly(True)
+        self.lineEdit_hr_max.setObjectName("lineEdit_hr_max")
+        self.formLayout_4.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.lineEdit_hr_max)
+        self.label_hr_train = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_hr_train.setStyleSheet("border:none")
+        self.label_hr_train.setObjectName("label_hr_train")
+        self.formLayout_4.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label_hr_train)
+        self.lineEdit_hr_train = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.lineEdit_hr_train.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"border:none")
+        self.lineEdit_hr_train.setReadOnly(True)
+        self.lineEdit_hr_train.setObjectName("lineEdit_hr_train")
+        self.formLayout_4.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.lineEdit_hr_train)
+        self.label_water = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_water.setStyleSheet("border:none")
+        self.label_water.setObjectName("label_water")
+        self.formLayout_4.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_water)
+        self.lineEdit_water = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.lineEdit_water.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"border:none")
+        self.lineEdit_water.setReadOnly(True)
+        self.lineEdit_water.setObjectName("lineEdit_water")
+        self.formLayout_4.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.lineEdit_water)
+        self.lineEdit_IMT_status = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.lineEdit_IMT_status.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"border:none")
+        self.lineEdit_IMT_status.setReadOnly(True)
+        self.lineEdit_IMT_status.setObjectName("lineEdit_IMT_status")
+        self.formLayout_4.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_IMT_status)
+        self.label_type = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_type.setObjectName("label_type")
+        self.formLayout_4.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_type)
+        self.lineEdit_type = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.lineEdit_type.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"border:none")
+        self.lineEdit_type.setReadOnly(True)
+        self.lineEdit_type.setObjectName("lineEdit_type")
+        self.formLayout_4.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.lineEdit_type)
+        self.groupBox_4 = QtWidgets.QGroupBox(self.groupBox_5)
+        self.groupBox_4.setGeometry(QtCore.QRect(0, 240, 381, 31))
+        self.groupBox_4.setStyleSheet("border:none")
+        self.groupBox_4.setTitle("")
+        self.groupBox_4.setObjectName("groupBox_4")
+        self.formLayoutWidget_5 = QtWidgets.QWidget(self.groupBox_4)
+        self.formLayoutWidget_5.setGeometry(QtCore.QRect(20, 0, 341, 31))
+        self.formLayoutWidget_5.setObjectName("formLayoutWidget_5")
+        self.formLayout_5 = QtWidgets.QFormLayout(self.formLayoutWidget_5)
+        self.formLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_5.setObjectName("formLayout_5")
+        self.label_fat_percent = QtWidgets.QLabel(self.formLayoutWidget_5)
+        self.label_fat_percent.setObjectName("label_fat_percent")
+        self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_fat_percent)
+        self.lineEdit_percent = QtWidgets.QLineEdit(self.formLayoutWidget_5)
+        self.lineEdit_percent.setEnabled(True)
+        self.lineEdit_percent.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.lineEdit_percent.setReadOnly(True)
+        self.lineEdit_percent.setObjectName("lineEdit_percent")
+        self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_percent)
+        self.label_img_calculator = QtWidgets.QLabel(self.page_2)
+        self.label_img_calculator.setGeometry(QtCore.QRect(450, 0, 111, 101))
+        self.label_img_calculator.setText("")
+        self.label_img_calculator.setPixmap(QtGui.QPixmap("../BeneFit/img/calculator3.png"))
+        self.label_img_calculator.setObjectName("label_img_calculator")
+        self.groupBox_3 = QtWidgets.QGroupBox(self.page_2)
+        self.groupBox_3.setGeometry(QtCore.QRect(60, 110, 381, 401))
+        self.groupBox_3.setStyleSheet("border-radius:25px;\n"
+"font-size:20px;\n"
+"background-color: rgb(35, 35, 35);\n"
+"color:#fff;")
+        self.groupBox_3.setTitle("")
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.groupBox = QtWidgets.QGroupBox(self.groupBox_3)
+        self.groupBox.setEnabled(True)
+        self.groupBox.setGeometry(QtCore.QRect(0, 260, 381, 71))
+        self.groupBox.setStyleSheet("border:none;")
+        self.groupBox.setTitle("")
+        self.groupBox.setObjectName("groupBox")
+        self.formLayoutWidget_2 = QtWidgets.QWidget(self.groupBox)
+        self.formLayoutWidget_2.setGeometry(QtCore.QRect(20, 10, 341, 120))
+        self.formLayoutWidget_2.setObjectName("formLayoutWidget_2")
+        self.formLayout_2 = QtWidgets.QFormLayout(self.formLayoutWidget_2)
+        self.formLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_2.setObjectName("formLayout_2")
+        self.label_waist = QtWidgets.QLabel(self.formLayoutWidget_2)
+        self.label_waist.setObjectName("label_waist")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_waist)
+        self.spinBox_waist = QtWidgets.QSpinBox(self.formLayoutWidget_2)
+        self.spinBox_waist.setEnabled(True)
+        self.spinBox_waist.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.spinBox_waist.setMinimum(38)
+        self.spinBox_waist.setMaximum(170)
+        self.spinBox_waist.setProperty("value", 70)
+        self.spinBox_waist.setObjectName("spinBox_waist")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.spinBox_waist)
+        self.label_neck = QtWidgets.QLabel(self.formLayoutWidget_2)
+        self.label_neck.setObjectName("label_neck")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_neck)
+        self.spinBox_neck = QtWidgets.QSpinBox(self.formLayoutWidget_2)
+        self.spinBox_neck.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.spinBox_neck.setMinimum(10)
+        self.spinBox_neck.setMaximum(50)
+        self.spinBox_neck.setProperty("value", 25)
+        self.spinBox_neck.setObjectName("spinBox_neck")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.spinBox_neck)
+        self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox_3)
+        self.groupBox_2.setGeometry(QtCore.QRect(0, 340, 381, 31))
+        self.groupBox_2.setStyleSheet("border:none;")
+        self.groupBox_2.setTitle("")
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.formLayoutWidget_3 = QtWidgets.QWidget(self.groupBox_2)
+        self.formLayoutWidget_3.setGeometry(QtCore.QRect(20, 0, 341, 31))
+        self.formLayoutWidget_3.setObjectName("formLayoutWidget_3")
+        self.formLayout_3 = QtWidgets.QFormLayout(self.formLayoutWidget_3)
+        self.formLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_3.setObjectName("formLayout_3")
+        self.label_hip = QtWidgets.QLabel(self.formLayoutWidget_3)
+        self.label_hip.setObjectName("label_hip")
+        self.formLayout_3.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_hip)
+        self.spinBox_hip = QtWidgets.QSpinBox(self.formLayoutWidget_3)
+        self.spinBox_hip.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.spinBox_hip.setMinimum(40)
+        self.spinBox_hip.setMaximum(170)
+        self.spinBox_hip.setProperty("value", 70)
+        self.spinBox_hip.setObjectName("spinBox_hip")
+        self.formLayout_3.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.spinBox_hip)
+        self.formLayoutWidget = QtWidgets.QWidget(self.groupBox_3)
+        self.formLayoutWidget.setGeometry(QtCore.QRect(20, 10, 341, 261))
+        self.formLayoutWidget.setObjectName("formLayoutWidget")
+        self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
+        self.formLayout.setContentsMargins(0, 0, 0, 0)
+        self.formLayout.setObjectName("formLayout")
+        self.label_height = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_height.setStyleSheet("border:none")
+        self.label_height.setObjectName("label_height")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_height)
+        self.spinBox_height = QtWidgets.QSpinBox(self.formLayoutWidget)
+        self.spinBox_height.setStyleSheet("border:none;\n"
+"background-color: rgb(45, 45, 45);")
+        self.spinBox_height.setMinimum(54)
+        self.spinBox_height.setMaximum(272)
+        self.spinBox_height.setProperty("value", 175)
+        self.spinBox_height.setObjectName("spinBox_height")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.spinBox_height)
+        self.label_weight = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_weight.setStyleSheet("border:none")
+        self.label_weight.setObjectName("label_weight")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_weight)
+        self.spinBox_weight = QtWidgets.QSpinBox(self.formLayoutWidget)
+        self.spinBox_weight.setStyleSheet("border:none;\n"
+"background-color: rgb(45, 45, 45);")
+        self.spinBox_weight.setMinimum(17)
+        self.spinBox_weight.setMaximum(635)
+        self.spinBox_weight.setProperty("value", 70)
+        self.spinBox_weight.setObjectName("spinBox_weight")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.spinBox_weight)
+        self.label_age = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_age.setStyleSheet("border:none")
+        self.label_age.setObjectName("label_age")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_age)
+        self.spinBox_age = QtWidgets.QSpinBox(self.formLayoutWidget)
+        self.spinBox_age.setStyleSheet("border:none;\n"
+"background-color: rgb(45, 45, 45);")
+        self.spinBox_age.setMinimum(14)
+        self.spinBox_age.setMaximum(120)
+        self.spinBox_age.setProperty("value", 16)
+        self.spinBox_age.setObjectName("spinBox_age")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.spinBox_age)
+        self.label_gender = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_gender.setStyleSheet("border:none")
+        self.label_gender.setObjectName("label_gender")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_gender)
+        self.radioButton_male = QtWidgets.QRadioButton(self.formLayoutWidget)
+        self.radioButton_male.setStyleSheet("border:none;\n"
+"background-color: rgb(45, 45, 45);")
+        self.radioButton_male.setChecked(True)
+        self.radioButton_male.setObjectName("radioButton_male")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.radioButton_male)
+        self.radioButton_female = QtWidgets.QRadioButton(self.formLayoutWidget)
+        self.radioButton_female.setStyleSheet("border:none;\n"
+"background-color: rgb(45, 45, 45);")
+        self.radioButton_female.setObjectName("radioButton_female")
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.radioButton_female)
+        self.label_activity = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_activity.setStyleSheet("border:none")
+        self.label_activity.setObjectName("label_activity")
+        self.formLayout.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_activity)
+        self.comboBox_activity = QtWidgets.QComboBox(self.formLayoutWidget)
+        self.comboBox_activity.setStyleSheet("border:none;\n"
+"background-color: rgb(45, 45, 45);")
+        self.comboBox_activity.setObjectName("comboBox_activity")
+        self.comboBox_activity.addItem("")
+        self.comboBox_activity.addItem("")
+        self.comboBox_activity.addItem("")
+        self.comboBox_activity.addItem("")
+        self.comboBox_activity.addItem("")
+        self.formLayout.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.comboBox_activity)
+        self.label_check_fat = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_check_fat.setStyleSheet("border:none")
+        self.label_check_fat.setObjectName("label_check_fat")
+        self.formLayout.setWidget(7, QtWidgets.QFormLayout.LabelRole, self.label_check_fat)
+        self.checkBox_fat = QtWidgets.QCheckBox(self.formLayoutWidget)
+        self.checkBox_fat.setText("")
+        self.checkBox_fat.setChecked(False)
+        self.checkBox_fat.setObjectName("checkBox_fat")
+        self.formLayout.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.checkBox_fat)
+        self.label_wrist = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_wrist.setObjectName("label_wrist")
+        self.formLayout.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_wrist)
+        self.spinBox_wrist = QtWidgets.QSpinBox(self.formLayoutWidget)
+        self.spinBox_wrist.setStyleSheet("border:none;\n"
+"background-color: rgb(45, 45, 45);")
+        self.spinBox_wrist.setMinimum(10)
+        self.spinBox_wrist.setMaximum(50)
+        self.spinBox_wrist.setProperty("value", 18)
+        self.spinBox_wrist.setObjectName("spinBox_wrist")
+        self.formLayout.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.spinBox_wrist)
+        self.pushButton_calculate = QtWidgets.QPushButton(self.page_2)
+        self.pushButton_calculate.setGeometry(QtCore.QRect(290, 560, 421, 71))
+        self.pushButton_calculate.setStyleSheet("\n"
+"QPushButton {\n"
+"border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_calculate.setObjectName("pushButton_calculate")
+        self.label_img_arrow = QtWidgets.QLabel(self.page_2)
+        self.label_img_arrow.setGeometry(QtCore.QRect(450, 230, 111, 141))
+        self.label_img_arrow.setText("")
+        self.label_img_arrow.setPixmap(QtGui.QPixmap("img/right-arrow - Copy.png"))
+        self.label_img_arrow.setObjectName("label_img_arrow")
         self.stackedWidget.addWidget(self.page_2)
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
-        self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.page_3)
-        self.verticalLayout_8.setObjectName("verticalLayout_8")
-        self.label = QtWidgets.QLabel(self.page_3)
-        font = QtGui.QFont()
-        font.setPointSize(40)
-        self.label.setFont(font)
-        self.label.setStyleSheet("color: #FFF;")
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.label.setObjectName("label")
-        self.verticalLayout_8.addWidget(self.label)
+        self.stackedWidget_training = QtWidgets.QStackedWidget(self.page_3)
+        self.stackedWidget_training.setGeometry(QtCore.QRect(-10, 20, 1041, 661))
+        self.stackedWidget_training.setObjectName("stackedWidget_training")
+        self.page_8 = QtWidgets.QWidget()
+        self.page_8.setObjectName("page_8")
+        self.textBrowser = QtWidgets.QTextBrowser(self.page_8)
+        self.textBrowser.setGeometry(QtCore.QRect(60, 50, 921, 541))
+        self.textBrowser.setObjectName("textBrowser")
+        self.stackedWidget_training.addWidget(self.page_8)
+        self.page_9 = QtWidgets.QWidget()
+        self.page_9.setObjectName("page_9")
+        self.tabWidget = QtWidgets.QTabWidget(self.page_9)
+        self.tabWidget.setGeometry(QtCore.QRect(20, 20, 1011, 551))
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.gridLayoutWidget = QtWidgets.QWidget(self.tab)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(30, 70, 951, 230))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout_1 = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout_1.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_1.setHorizontalSpacing(30)
+        self.gridLayout_1.setObjectName("gridLayout_1")
+        self.spinBox_extraWeight_1_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_extraWeight_1_1.setObjectName("spinBox_extraWeight_1_1")
+        self.gridLayout_1.addWidget(self.spinBox_extraWeight_1_1, 1, 1, 1, 1)
+        self.checkBox_exersize_3_1 = QtWidgets.QCheckBox(self.gridLayoutWidget)
+        self.checkBox_exersize_3_1.setObjectName("checkBox_exersize_3_1")
+        self.gridLayout_1.addWidget(self.checkBox_exersize_3_1, 3, 0, 1, 1)
+        self.spinBox_extraWeight_3_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_extraWeight_3_1.setObjectName("spinBox_extraWeight_3_1")
+        self.gridLayout_1.addWidget(self.spinBox_extraWeight_3_1, 3, 1, 1, 1)
+        self.spinBox_extraWeight_5_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_extraWeight_5_1.setObjectName("spinBox_extraWeight_5_1")
+        self.gridLayout_1.addWidget(self.spinBox_extraWeight_5_1, 5, 1, 1, 1)
+        self.label_exersize_1 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_exersize_1.setObjectName("label_exersize_1")
+        self.gridLayout_1.addWidget(self.label_exersize_1, 0, 0, 1, 1)
+        self.checkBox_exersize_5_1 = QtWidgets.QCheckBox(self.gridLayoutWidget)
+        self.checkBox_exersize_5_1.setChecked(False)
+        self.checkBox_exersize_5_1.setObjectName("checkBox_exersize_5_1")
+        self.gridLayout_1.addWidget(self.checkBox_exersize_5_1, 5, 0, 1, 1)
+        self.checkBox_exersize_1_1 = QtWidgets.QCheckBox(self.gridLayoutWidget)
+        self.checkBox_exersize_1_1.setChecked(False)
+        self.checkBox_exersize_1_1.setObjectName("checkBox_exersize_1_1")
+        self.gridLayout_1.addWidget(self.checkBox_exersize_1_1, 1, 0, 1, 1)
+        self.label_reps_1 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_reps_1.setObjectName("label_reps_1")
+        self.gridLayout_1.addWidget(self.label_reps_1, 0, 2, 1, 1)
+        self.spinBox_reps_1_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_reps_1_1.setObjectName("spinBox_reps_1_1")
+        self.gridLayout_1.addWidget(self.spinBox_reps_1_1, 1, 2, 1, 1)
+        self.spinBox_reps_3_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_reps_3_1.setObjectName("spinBox_reps_3_1")
+        self.gridLayout_1.addWidget(self.spinBox_reps_3_1, 3, 2, 1, 1)
+        self.spinBox_reps_2_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_reps_2_1.setObjectName("spinBox_reps_2_1")
+        self.gridLayout_1.addWidget(self.spinBox_reps_2_1, 2, 2, 1, 1)
+        self.checkBox_exersize_4_1 = QtWidgets.QCheckBox(self.gridLayoutWidget)
+        self.checkBox_exersize_4_1.setObjectName("checkBox_exersize_4_1")
+        self.gridLayout_1.addWidget(self.checkBox_exersize_4_1, 4, 0, 1, 1)
+        self.spinBox_reps_4_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_reps_4_1.setObjectName("spinBox_reps_4_1")
+        self.gridLayout_1.addWidget(self.spinBox_reps_4_1, 4, 2, 1, 1)
+        self.checkBox_exersize_2_1 = QtWidgets.QCheckBox(self.gridLayoutWidget)
+        self.checkBox_exersize_2_1.setObjectName("checkBox_exersize_2_1")
+        self.gridLayout_1.addWidget(self.checkBox_exersize_2_1, 2, 0, 1, 1)
+        self.spinBox_extraWeight_2_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_extraWeight_2_1.setObjectName("spinBox_extraWeight_2_1")
+        self.gridLayout_1.addWidget(self.spinBox_extraWeight_2_1, 2, 1, 1, 1)
+        self.label_extraWeigh_1 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_extraWeigh_1.setObjectName("label_extraWeigh_1")
+        self.gridLayout_1.addWidget(self.label_extraWeigh_1, 0, 1, 1, 1)
+        self.spinBox_extraWeight_4_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_extraWeight_4_1.setObjectName("spinBox_extraWeight_4_1")
+        self.gridLayout_1.addWidget(self.spinBox_extraWeight_4_1, 4, 1, 1, 1)
+        self.spinBox_reps_5_1 = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        self.spinBox_reps_5_1.setObjectName("spinBox_reps_5_1")
+        self.gridLayout_1.addWidget(self.spinBox_reps_5_1, 5, 2, 1, 1)
+        self.gridLayout_1.setColumnStretch(0, 3)
+        self.pushButton_complete_1 = QtWidgets.QPushButton(self.tab)
+        self.pushButton_complete_1.setGeometry(QtCore.QRect(280, 410, 421, 61))
+        self.pushButton_complete_1.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_complete_1.setObjectName("pushButton_complete_1")
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.gridLayoutWidget_2 = QtWidgets.QWidget(self.tab_2)
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(30, 110, 951, 230))
+        self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_2.setHorizontalSpacing(30)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.spinBox_extraWeight_1_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_extraWeight_1_2.setObjectName("spinBox_extraWeight_1_2")
+        self.gridLayout_2.addWidget(self.spinBox_extraWeight_1_2, 1, 1, 1, 1)
+        self.checkBox_exersize_3_2 = QtWidgets.QCheckBox(self.gridLayoutWidget_2)
+        self.checkBox_exersize_3_2.setObjectName("checkBox_exersize_3_2")
+        self.gridLayout_2.addWidget(self.checkBox_exersize_3_2, 3, 0, 1, 1)
+        self.spinBox_extraWeight_3_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_extraWeight_3_2.setObjectName("spinBox_extraWeight_3_2")
+        self.gridLayout_2.addWidget(self.spinBox_extraWeight_3_2, 3, 1, 1, 1)
+        self.spinBox_extraWeight_5_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_extraWeight_5_2.setObjectName("spinBox_extraWeight_5_2")
+        self.gridLayout_2.addWidget(self.spinBox_extraWeight_5_2, 5, 1, 1, 1)
+        self.label_exersize_2 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_exersize_2.setObjectName("label_exersize_2")
+        self.gridLayout_2.addWidget(self.label_exersize_2, 0, 0, 1, 1)
+        self.checkBox_exersize_5_2 = QtWidgets.QCheckBox(self.gridLayoutWidget_2)
+        self.checkBox_exersize_5_2.setChecked(False)
+        self.checkBox_exersize_5_2.setObjectName("checkBox_exersize_5_2")
+        self.gridLayout_2.addWidget(self.checkBox_exersize_5_2, 5, 0, 1, 1)
+        self.checkBox_exersize_1_2 = QtWidgets.QCheckBox(self.gridLayoutWidget_2)
+        self.checkBox_exersize_1_2.setChecked(False)
+        self.checkBox_exersize_1_2.setObjectName("checkBox_exersize_1_2")
+        self.gridLayout_2.addWidget(self.checkBox_exersize_1_2, 1, 0, 1, 1)
+        self.label_reps_2 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_reps_2.setObjectName("label_reps_2")
+        self.gridLayout_2.addWidget(self.label_reps_2, 0, 2, 1, 1)
+        self.spinBox_reps_1_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_reps_1_2.setObjectName("spinBox_reps_1_2")
+        self.gridLayout_2.addWidget(self.spinBox_reps_1_2, 1, 2, 1, 1)
+        self.spinBox_reps_3_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_reps_3_2.setObjectName("spinBox_reps_3_2")
+        self.gridLayout_2.addWidget(self.spinBox_reps_3_2, 3, 2, 1, 1)
+        self.spinBox_reps_2_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_reps_2_2.setObjectName("spinBox_reps_2_2")
+        self.gridLayout_2.addWidget(self.spinBox_reps_2_2, 2, 2, 1, 1)
+        self.checkBox_exersize_4_2 = QtWidgets.QCheckBox(self.gridLayoutWidget_2)
+        self.checkBox_exersize_4_2.setObjectName("checkBox_exersize_4_2")
+        self.gridLayout_2.addWidget(self.checkBox_exersize_4_2, 4, 0, 1, 1)
+        self.spinBox_reps_4_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_reps_4_2.setObjectName("spinBox_reps_4_2")
+        self.gridLayout_2.addWidget(self.spinBox_reps_4_2, 4, 2, 1, 1)
+        self.checkBox_exersize_2_2 = QtWidgets.QCheckBox(self.gridLayoutWidget_2)
+        self.checkBox_exersize_2_2.setObjectName("checkBox_exersize_2_2")
+        self.gridLayout_2.addWidget(self.checkBox_exersize_2_2, 2, 0, 1, 1)
+        self.spinBox_extraWeight_2_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_extraWeight_2_2.setObjectName("spinBox_extraWeight_2_2")
+        self.gridLayout_2.addWidget(self.spinBox_extraWeight_2_2, 2, 1, 1, 1)
+        self.label_extraWeigh_2 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_extraWeigh_2.setObjectName("label_extraWeigh_2")
+        self.gridLayout_2.addWidget(self.label_extraWeigh_2, 0, 1, 1, 1)
+        self.spinBox_extraWeight_4_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_extraWeight_4_2.setObjectName("spinBox_extraWeight_4_2")
+        self.gridLayout_2.addWidget(self.spinBox_extraWeight_4_2, 4, 1, 1, 1)
+        self.spinBox_reps_5_2 = QtWidgets.QSpinBox(self.gridLayoutWidget_2)
+        self.spinBox_reps_5_2.setObjectName("spinBox_reps_5_2")
+        self.gridLayout_2.addWidget(self.spinBox_reps_5_2, 5, 2, 1, 1)
+        self.gridLayout_2.setColumnStretch(0, 3)
+        self.tabWidget.addTab(self.tab_2, "")
+        self.tab_3 = QtWidgets.QWidget()
+        self.tab_3.setObjectName("tab_3")
+        self.spinBox_3 = QtWidgets.QSpinBox(self.tab_3)
+        self.spinBox_3.setGeometry(QtCore.QRect(490, 70, 42, 22))
+        self.spinBox_3.setObjectName("spinBox_3")
+        self.checkBox_4 = QtWidgets.QCheckBox(self.tab_3)
+        self.checkBox_4.setGeometry(QtCore.QRect(60, 150, 271, 17))
+        self.checkBox_4.setObjectName("checkBox_4")
+        self.checkBox_5 = QtWidgets.QCheckBox(self.tab_3)
+        self.checkBox_5.setGeometry(QtCore.QRect(60, 70, 271, 17))
+        self.checkBox_5.setObjectName("checkBox_5")
+        self.spinBox_4 = QtWidgets.QSpinBox(self.tab_3)
+        self.spinBox_4.setGeometry(QtCore.QRect(400, 70, 42, 22))
+        self.spinBox_4.setObjectName("spinBox_4")
+        self.checkBox_6 = QtWidgets.QCheckBox(self.tab_3)
+        self.checkBox_6.setGeometry(QtCore.QRect(60, 110, 271, 17))
+        self.checkBox_6.setObjectName("checkBox_6")
+        self.tabWidget.addTab(self.tab_3, "")
+        self.tab_6 = QtWidgets.QWidget()
+        self.tab_6.setObjectName("tab_6")
+        self.tabWidget.addTab(self.tab_6, "")
+        self.tab_4 = QtWidgets.QWidget()
+        self.tab_4.setObjectName("tab_4")
+        self.tabWidget.addTab(self.tab_4, "")
+        self.tab_5 = QtWidgets.QWidget()
+        self.tab_5.setObjectName("tab_5")
+        self.tabWidget.addTab(self.tab_5, "")
+        self.tab_8 = QtWidgets.QWidget()
+        self.tab_8.setObjectName("tab_8")
+        self.tabWidget.addTab(self.tab_8, "")
+        self.tab_7 = QtWidgets.QWidget()
+        self.tab_7.setObjectName("tab_7")
+        self.tabWidget.addTab(self.tab_7, "")
+        self.tab_9 = QtWidgets.QWidget()
+        self.tab_9.setObjectName("tab_9")
+        self.tabWidget.addTab(self.tab_9, "")
+        self.tab_10 = QtWidgets.QWidget()
+        self.tab_10.setObjectName("tab_10")
+        self.tabWidget.addTab(self.tab_10, "")
+        self.tab_11 = QtWidgets.QWidget()
+        self.tab_11.setObjectName("tab_11")
+        self.tabWidget.addTab(self.tab_11, "")
+        self.tab_12 = QtWidgets.QWidget()
+        self.tab_12.setObjectName("tab_12")
+        self.tabWidget.addTab(self.tab_12, "")
+        self.tab_13 = QtWidgets.QWidget()
+        self.tab_13.setObjectName("tab_13")
+        self.tabWidget.addTab(self.tab_13, "")
+        self.tab_14 = QtWidgets.QWidget()
+        self.tab_14.setObjectName("tab_14")
+        self.tabWidget.addTab(self.tab_14, "")
+        self.tab_15 = QtWidgets.QWidget()
+        self.tab_15.setObjectName("tab_15")
+        self.tabWidget.addTab(self.tab_15, "")
+        self.tab_16 = QtWidgets.QWidget()
+        self.tab_16.setObjectName("tab_16")
+        self.tabWidget.addTab(self.tab_16, "")
+        self.tab_17 = QtWidgets.QWidget()
+        self.tab_17.setObjectName("tab_17")
+        self.tabWidget.addTab(self.tab_17, "")
+        self.stackedWidget_training.addWidget(self.page_9)
+        self.label_2 = QtWidgets.QLabel(self.page_3)
+        self.label_2.setGeometry(QtCore.QRect(310, -10, 411, 41))
+        self.label_2.setObjectName("label_2")
+        self.pushButton_quickStart_help = QtWidgets.QPushButton(self.page_3)
+        self.pushButton_quickStart_help.setGeometry(QtCore.QRect(720, 0, 41, 31))
+        self.pushButton_quickStart_help.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:30px;\n"
+"color:#fff;\n"
+"border-radius:10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_quickStart_help.setObjectName("pushButton_quickStart_help")
         self.stackedWidget.addWidget(self.page_3)
+        self.page_4 = QtWidgets.QWidget()
+        self.page_4.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+"color:#fff;")
+        self.page_4.setObjectName("page_4")
+        self.table = QtWidgets.QTableView(self.page_4)
+        self.table.setGeometry(QtCore.QRect(70, 120, 681, 221))
+        self.table.setStyleSheet("font-size:15px;\n"
+"height:20px;\n"
+"color:#fff;\n"
+"\n"
+"")
+        self.table.setObjectName("table")
+        self.pushButton_insert = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_insert.setGeometry(QtCore.QRect(770, 120, 171, 71))
+        self.pushButton_insert.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:60px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_insert.setObjectName("pushButton_insert")
+        self.label = QtWidgets.QLabel(self.page_4)
+        self.label.setGeometry(QtCore.QRect(790, 210, 131, 131))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("img/frut.png"))
+        self.label.setObjectName("label")
+        self.pushButton_save = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_save.setGeometry(QtCore.QRect(70, 600, 331, 61))
+        self.pushButton_save.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}\n"
+"")
+        self.pushButton_save.setObjectName("pushButton_save")
+        self.pushButton_load = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_load.setGeometry(QtCore.QRect(440, 600, 311, 61))
+        self.pushButton_load.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}\n"
+"")
+        self.pushButton_load.setObjectName("pushButton_load")
+        self.table2 = QtWidgets.QTableView(self.page_4)
+        self.table2.setGeometry(QtCore.QRect(70, 370, 681, 221))
+        self.table2.setStyleSheet("font-size:15px;height:20px;\n"
+"")
+        self.table2.setObjectName("table2")
+        self.search_field = QtWidgets.QLineEdit(self.page_4)
+        self.search_field.setGeometry(QtCore.QRect(70, 20, 871, 71))
+        self.search_field.setStyleSheet("font-size:35px;\n"
+"height: 60px;\n"
+"border:1px solid #fff;")
+        self.search_field.setText("")
+        self.search_field.setObjectName("search_field")
+        self.pushButton_clear = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_clear.setGeometry(QtCore.QRect(770, 490, 171, 101))
+        self.pushButton_clear.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_clear.setObjectName("pushButton_clear")
+        self.pushButton_add = QtWidgets.QPushButton(self.page_4)
+        self.pushButton_add.setGeometry(QtCore.QRect(770, 370, 171, 101))
+        self.pushButton_add.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"border-radius:25px;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_add.setObjectName("pushButton_add")
+        self.stackedWidget.addWidget(self.page_4)
+        self.page_5 = QtWidgets.QWidget()
+        self.page_5.setObjectName("page_5")
+        self.stackedWidget_description = QtWidgets.QStackedWidget(self.page_5)
+        self.stackedWidget_description.setGeometry(QtCore.QRect(9, 9, 981, 661))
+        self.stackedWidget_description.setStyleSheet("color:#fff;")
+        self.stackedWidget_description.setObjectName("stackedWidget_description")
+        self.page_des_en = QtWidgets.QWidget()
+        self.page_des_en.setObjectName("page_des_en")
+        self.textBrowser_en = QtWidgets.QTextBrowser(self.page_des_en)
+        self.textBrowser_en.setGeometry(QtCore.QRect(20, 20, 921, 631))
+        self.textBrowser_en.setStyleSheet("")
+        self.textBrowser_en.setObjectName("textBrowser_en")
+        self.stackedWidget_description.addWidget(self.page_des_en)
+        self.page_des_ru = QtWidgets.QWidget()
+        self.page_des_ru.setObjectName("page_des_ru")
+        self.textBrowser_ru = QtWidgets.QTextBrowser(self.page_des_ru)
+        self.textBrowser_ru.setGeometry(QtCore.QRect(20, 20, 921, 631))
+        self.textBrowser_ru.setStyleSheet("")
+        self.textBrowser_ru.setObjectName("textBrowser_ru")
+        self.stackedWidget_description.addWidget(self.page_des_ru)
+        self.stackedWidget.addWidget(self.page_5)
+        self.page_6 = QtWidgets.QWidget()
+        self.page_6.setObjectName("page_6")
+        self.formLayoutWidget_6 = QtWidgets.QWidget(self.page_6)
+        self.formLayoutWidget_6.setGeometry(QtCore.QRect(300, 100, 450, 321))
+        self.formLayoutWidget_6.setObjectName("formLayoutWidget_6")
+        self.formLayout_6 = QtWidgets.QFormLayout(self.formLayoutWidget_6)
+        self.formLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_6.setObjectName("formLayout_6")
+        self.label_23 = QtWidgets.QLabel(self.formLayoutWidget_6)
+        self.label_23.setObjectName("label_23")
+        self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_23)
+        self.comboBox_language = QtWidgets.QComboBox(self.formLayoutWidget_6)
+        self.comboBox_language.setObjectName("comboBox_language")
+        self.comboBox_language.addItem("")
+        self.comboBox_language.addItem("")
+        self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBox_language)
+        self.label_24 = QtWidgets.QLabel(self.formLayoutWidget_6)
+        self.label_24.setObjectName("label_24")
+        self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_24)
+        self.comboBox_language_2 = QtWidgets.QComboBox(self.formLayoutWidget_6)
+        self.comboBox_language_2.setObjectName("comboBox_language_2")
+        self.comboBox_language_2.addItem("")
+        self.comboBox_language_2.addItem("")
+        self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.comboBox_language_2)
+        self.pushButton_settings = QtWidgets.QPushButton(self.page_6)
+        self.pushButton_settings.setGeometry(QtCore.QRect(300, 540, 421, 61))
+        self.pushButton_settings.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_settings.setObjectName("pushButton_settings")
+        self.stackedWidget.addWidget(self.page_6)
         self.verticalLayout_5.addWidget(self.stackedWidget)
         self.horizontalLayout_2.addWidget(self.frame_pages)
         self.verticalLayout.addWidget(self.Content)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
+        self.comboBox_activity.setCurrentIndex(3)
+        self.stackedWidget_training.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(1)
+        self.stackedWidget_description.setCurrentIndex(1)
+        self.stackedWidget.currentChanged['int'].connect(self.label_header.update)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_1.setText(_translate("MainWindow", "PAGE 1"))
-        self.label_2.setText(_translate("MainWindow", "PAGE 2"))
-        self.label.setText(_translate("MainWindow", "PAGE 3"))
+        self.label_header.setText(_translate("MainWindow", "Главная страница"))
+        self.btn_login.setText(_translate("MainWindow", "Вход"))
+        self.label_name.setText(_translate("MainWindow", "<html><head/><body><p align=\"right\"><br/></p></body></html>"))
+        self.pushButton_calculator.setText(_translate("MainWindow", "Калькулятор"))
+        self.pushButton_training.setText(_translate("MainWindow", "Тренировки"))
+        self.pushButton_info.setText(_translate("MainWindow", "О приложении"))
+        self.pushButton_sign.setText(_translate("MainWindow", "Вход"))
+        self.pushButton_nutrition.setText(_translate("MainWindow", "Питание"))
+        self.label_4.setText(_translate("MainWindow", "BeneFit"))
+        self.label_IMT.setText(_translate("MainWindow", "Индекс Массы Тела"))
+        self.label_metabolism.setText(_translate("MainWindow", "Дневной метаболизм"))
+        self.label_hr_max.setText(_translate("MainWindow", "ЧСС максимум"))
+        self.label_hr_train.setText(_translate("MainWindow", "ЧСС тренировочный"))
+        self.label_water.setText(_translate("MainWindow", "Норма воды в день"))
+        self.label_type.setText(_translate("MainWindow", "Тип Телосложения"))
+        self.label_fat_percent.setText(_translate("MainWindow", "% жира                    "))
+        self.label_waist.setText(_translate("MainWindow", "Талия, см             "))
+        self.label_neck.setText(_translate("MainWindow", "Шея, см                "))
+        self.label_hip.setText(_translate("MainWindow", "Бёдра, см              "))
+        self.label_height.setText(_translate("MainWindow", "Рост, см"))
+        self.label_weight.setText(_translate("MainWindow", "Масса, кг"))
+        self.label_age.setText(_translate("MainWindow", "Возраст, лет"))
+        self.label_gender.setText(_translate("MainWindow", "Пол"))
+        self.radioButton_male.setText(_translate("MainWindow", "Мужской"))
+        self.radioButton_female.setText(_translate("MainWindow", "Женский"))
+        self.label_activity.setText(_translate("MainWindow", "Активность"))
+        self.comboBox_activity.setItemText(0, _translate("MainWindow", "Очень низкая"))
+        self.comboBox_activity.setItemText(1, _translate("MainWindow", "Низкая"))
+        self.comboBox_activity.setItemText(2, _translate("MainWindow", "Средняя"))
+        self.comboBox_activity.setItemText(3, _translate("MainWindow", "Высокая"))
+        self.comboBox_activity.setItemText(4, _translate("MainWindow", "Очень высокая"))
+        self.label_check_fat.setText(_translate("MainWindow", "Расчитать % жира"))
+        self.label_wrist.setText(_translate("MainWindow", "Запястья, см"))
+        self.pushButton_calculate.setText(_translate("MainWindow", "Рассчитать и сохранить"))
+        self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:26pt;\">Описание программы тренировок:</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:26pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Сложность:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> начинающий - продвинутый</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Фокус программы:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> набор мышечной массы, увеличение силы, мышечный рельеф</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Оборудование:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> нет (турник и брусья по возможности)</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">Программа &quot;Быстрый старт соответствует своему названию. Она поможет адаптироваться тем, кто вообще не занимался спортом, при этом заставит попотеть опытных спортсменов.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">Особенности: </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - все упражнения выполняются в технике 4/1: 4 секунды негативная фаза(опускание туловища в отжиманиях) и 1 секунда взрывная фаза(подъем туловища в отжиманиях)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - Вы можете заниматься по этой программе имея только пол и стену</span></p></body></html>"))
+        self.checkBox_exersize_3_1.setText(_translate("MainWindow", "Армейские отжимания"))
+        self.label_exersize_1.setText(_translate("MainWindow", "Упражнение"))
+        self.checkBox_exersize_5_1.setText(_translate("MainWindow", "Французский жим"))
+        self.checkBox_exersize_1_1.setText(_translate("MainWindow", "Отжимания от пола широким хватом"))
+        self.label_reps_1.setText(_translate("MainWindow", " Повторения"))
+        self.checkBox_exersize_4_1.setText(_translate("MainWindow", "Бомбардировщик"))
+        self.checkBox_exersize_2_1.setText(_translate("MainWindow", "Отжимания от пола узким хватом"))
+        self.label_extraWeigh_1.setText(_translate("MainWindow", "Вес утяжелителя"))
+        self.pushButton_complete_1.setText(_translate("MainWindow", "Завершить тренировку"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Tab 1"))
+        self.checkBox_exersize_3_2.setText(_translate("MainWindow", "Армейские отжимания"))
+        self.label_exersize_2.setText(_translate("MainWindow", "Упражнение"))
+        self.checkBox_exersize_5_2.setText(_translate("MainWindow", "Французский жим"))
+        self.checkBox_exersize_1_2.setText(_translate("MainWindow", "Отжимания от пола широким хватом"))
+        self.label_reps_2.setText(_translate("MainWindow", " Повторения"))
+        self.checkBox_exersize_4_2.setText(_translate("MainWindow", "Бомбардировщик"))
+        self.checkBox_exersize_2_2.setText(_translate("MainWindow", "Отжимания от пола узким хватом"))
+        self.label_extraWeigh_2.setText(_translate("MainWindow", "Вес утяжелителя"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Tab 2"))
+        self.checkBox_4.setText(_translate("MainWindow", "CheckBox"))
+        self.checkBox_5.setText(_translate("MainWindow", "CheckBox"))
+        self.checkBox_6.setText(_translate("MainWindow", "CheckBox"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_9), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_10), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_11), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_12), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_13), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_14), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_15), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_16), _translate("MainWindow", "Page"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_17), _translate("MainWindow", "Page"))
+        self.label_2.setText(_translate("MainWindow", "Программа тренировок \"Быстрый старт\""))
+        self.pushButton_quickStart_help.setText(_translate("MainWindow", "?"))
+        self.pushButton_insert.setText(_translate("MainWindow", "+"))
+        self.pushButton_save.setText(_translate("MainWindow", "Сохранить"))
+        self.pushButton_load.setText(_translate("MainWindow", "Загрузить"))
+        self.pushButton_clear.setText(_translate("MainWindow", "Очистить"))
+        self.pushButton_add.setText(_translate("MainWindow", "Добавить"))
+        self.textBrowser_en.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:28pt; font-weight:600;\">BeneFit: training, nutrition, calculates</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"> is a universal fitness app that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">The app consists of the following sections: </span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Calculator</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Calculate your BMI, body fat%, daily water intake, and many other metrics</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Workout </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Find a training program that is right for you</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Nutrition</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Make diets, monitor micronutrients, add your products to the database</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">What\'s new?</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Added new training sessions</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Fixed some bugs</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Optimized code</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Added contacts</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">-V. 0. 8. 2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Contacts</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">For all questions and suggestions, write to</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600; color:#ffffff;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+        self.textBrowser_ru.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:28pt; font-weight:600;\">BeneFit: тренировки, питание, расчеты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"> - это универсальное фитнес приложение, объединяющее программы тренировок,подсчет макронутриентов, расчет различных показателей,таких как ИМТ и % жира.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br />Приложение состоит из следующих разделов:</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Калькулятор</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Рассчитайте ИМТ, % жира, дневную норму воды и множество других показателей</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Тренировки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Найдите программу тренировок подходящую имеено вам</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Питание</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Составляйте рационы, следите за макронутриетами, добавляйте свои продукты в базу данных<br /></span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Что нового?</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Добавлены новые тренировки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Исправлены некоторые ошибки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Оптимизирован код</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Добавлены контакты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- v.0.8.2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Контакты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">По всем вопросам и предложениям пишите на </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+        self.label_23.setText(_translate("MainWindow", "Язык интерфейса"))
+        self.comboBox_language.setItemText(0, _translate("MainWindow", "Русский"))
+        self.comboBox_language.setItemText(1, _translate("MainWindow", "English"))
+        self.label_24.setText(_translate("MainWindow", "Система мер"))
+        self.comboBox_language_2.setItemText(0, _translate("MainWindow", "Метрическая(см,кг)"))
+        self.comboBox_language_2.setItemText(1, _translate("MainWindow", "Имперская(дюймы, фунты)"))
+        self.pushButton_settings.setText(_translate("MainWindow", "Сохранить"))
