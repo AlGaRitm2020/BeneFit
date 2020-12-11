@@ -19,11 +19,11 @@ from add_data import *
 from ui_main import Ui_MainWindow
 
 # IMPORT FUNCTIONS
-# from objects_dict import *
 from functions import *
 import sqlite3
 import csv
 from math import log10
+
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
