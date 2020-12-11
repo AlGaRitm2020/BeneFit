@@ -6,6 +6,7 @@ from PyQt5.QtGui import QIcon
 import sqlite3
 # from main import *
 
+# отправить логин и id в main
 def return_data():    
     try:
         global LOGIN, ID
@@ -62,6 +63,11 @@ class LoginWindow(QDialog, Ui_Dialog):
                     f"""  INSERT INTO info (id, height, weight, age, gender, activity,
                      wrist, fat_check, waist, neck, hip ) VALUES ({current_id}, {175}, {70}, {25},
                       {True},{3} , {18}, {False}, {75}, {20}, {75})""")
+                for day in range(21):
+                    print(day)
+                    cursor.execute(
+                    f"""  INSERT INTO quick_start (id, day, ex1_check, ex2_check, ex3_check, ex4_check,
+                     ex5_check, weight1, weight2, weight3, weight4, weight5, reps1, reps2, reps3, reps4, reps5) VALUES ({current_id}, {day}, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)""")
 
                 # сообщение об успехе
                 self.label_status.setText("Регистрация прошла успешно!")

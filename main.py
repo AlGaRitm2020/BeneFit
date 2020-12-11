@@ -19,6 +19,7 @@ from add_data import *
 from ui_main import Ui_MainWindow
 
 # IMPORT FUNCTIONS
+# from objects_dict import *
 from functions import *
 import sqlite3
 import csv
@@ -123,7 +124,38 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         
         # смена тренировки на описание и наоборот
         self.pushButton_quickStart_help.clicked.connect(lambda:self.stackedWidget_training.setCurrentIndex((self.stackedWidget_training.currentIndex()+1)%2))
-        # 
+        
+        self.objects_list_of_quick_start = [
+        # первый день
+        [
+        (self.checkBox_exersize_1_1,self.spinBox_extraWeight_1_1, self.spinBox_reps_1_1), 
+        (self.checkBox_exersize_2_1,self.spinBox_extraWeight_2_1, self.spinBox_reps_2_1), 
+        (self.checkBox_exersize_3_1,self.spinBox_extraWeight_3_1, self.spinBox_reps_3_1), 
+        (self.checkBox_exersize_4_1,self.spinBox_extraWeight_4_1, self.spinBox_reps_4_1), 
+        (self.checkBox_exersize_5_1,self.spinBox_extraWeight_5_1, self.spinBox_reps_5_1)
+        ], 
+
+        [
+        (self.checkBox_exersize_1_2,self.spinBox_extraWeight_1_2, self.spinBox_reps_1_2), 
+        (self.checkBox_exersize_2_2,self.spinBox_extraWeight_2_2, self.spinBox_reps_2_2), 
+        (self.checkBox_exersize_3_2,self.spinBox_extraWeight_3_2, self.spinBox_reps_3_2), 
+        (self.checkBox_exersize_4_2,self.spinBox_extraWeight_4_2, self.spinBox_reps_4_2), 
+        (self.checkBox_exersize_5_2,self.spinBox_extraWeight_5_2, self.spinBox_reps_5_2)
+        ]
+
+        ]
+        self.exersises = ["ex1_check", "ex2_check", "ex3_check", "ex4_check", "ex5_check"]
+        self.weights = ['weight1', 'weight2', 'weight3', 'weight4', 'weight5']
+        self.reps = ['reps1', 'reps1', 'reps3', 'reps4', 'reps5']
+        # список кнопок 
+        buttons = [self.pushButton_complete_1]
+
+        for btn in buttons:
+            btn.clicked.connect(self.save_training)
+
+        Functions.update_training(self, ID)
+
+        # # 
         # /ТРЕНИРОВКИ
         #
 
@@ -183,6 +215,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     #
     # открыть вход
     def open_login(self):
+        
+        
         global LOGIN, ID
         if ID != 0:
             ID = 0
@@ -206,7 +240,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.label_name.setText(LOGIN)
                 self.label_menu_login.setText(LOGIN)
             except Exception:
-                pass
+                if self.language == 'ru':
+                    self.pushButton_sign.setText("Вход")
+                    self.btn_login.setText("Вход")
     
 
     #
@@ -400,6 +436,28 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # /методы Калькулятора
     #
 
+
+    #
+    # методы Тренировок
+    #
+
+    def save_training(self):
+        for day, daily_list in enumerate(self.objects_list_of_quick_start):
+            for i, data in enumerate(daily_list):
+                ex = data[0].isChecked()
+                weight = data[1].value()
+                rep = data[2].value()
+
+                with sqlite3.connect('db/dataBase2.db') as db:
+
+                # создание курсора
+                    cursor = db.cursor()
+                    cursor.execute(
+                        f"""  UPDATE quick_start SET ({self.exersises[i]}, {self.weights[i]}, {self.reps[i]}) = {(ex, weight,rep)} WHERE ID = {ID} AND day = {day}""")
+
+    #
+    # /методы Тренировок
+    #
 
     #
     # методы Питания

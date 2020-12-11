@@ -72,6 +72,21 @@ class Functions(MainWindow):
         self.spinBox_waist.setValue(info[8])
         self.spinBox_neck.setValue(info[9])
         self.spinBox_hip.setValue(info[10])
+    def update_training(self, ID):
+        with sqlite3.connect('db/dataBase2.db') as db:
+            # создание курсора
+            cursor = db.cursor()
+            for day, daily_list in enumerate(self.objects_list_of_quick_start):
+                data = cursor.execute(
+                f"""SELECT * FROM quick_start WHERE id = {ID} AND day = {day}""").fetchall()
+                for row, info in enumerate(daily_list):
+                    print(data[0][5])
+                    info[0].setChecked(data[0][row+2])
+                    info[1].setValue(data[0][row+7])
+                    info[2].setValue(data[0][row+12])
+                # for i in data:
+                #     _, _ , ex1, ex2, ex3, ex4, ex5 = i
+                # # print(data[-1])
     def toggleMenu(self, maxWidth, enable, login, language):
         if enable:
 
