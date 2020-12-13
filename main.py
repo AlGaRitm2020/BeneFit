@@ -29,20 +29,27 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
         # покключить интерфейс
         self.setupUi(self)
+
         #
         # ГЛАВНАЯ СТРАНИЦА
         #
 
-        # создать перемунные пользователя
+        # гостевой пользователь
         global ID, LOGIN
         ID = 0
         LOGIN = ""
-        self.language = "en"
+        # импорт языка гостевого пользователя из БД
+        with sqlite3.connect('db/dataBase2.db') as db:
+            cursor = db.cursor()
+            self.language = cursor.execute(f""" SELECT language FROM login WHERE ID = {ID}""").fetchall()[0][0]
+        # перевод интерфейса на язык гостевого пользователя
+        Functions.translate(self, 'order')
 
+
+        # навигация по приложению
         # скрыть дополнительные поля    
         self.btn_login.hide()
         self.label_menu_login.hide()
-        
         
         # функции переходов из меню 
         Functions.forward(self, LOGIN, self.language)
@@ -55,6 +62,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # обработка смены заголовка после смены страницы
         self.stackedWidget.currentChanged['int'].connect(lambda: self.label_header.setText(f"{self.titles[self.stackedWidget.currentIndex()]}"))
+
 
         # переходы из главной страницы
         self.pushButton_sign.clicked.connect(self.open_login)
@@ -80,9 +88,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # перемунные
         # создать переменную с языком
-        self.comboBox_language.setCurrentIndex(0)
 
-        Functions.translate(self)
+        # Functions.translate(self)
         self.btn_page_1.setText('')
         self.btn_page_2.setText('')
         self.btn_page_3.setText('')
@@ -224,15 +231,21 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if self.language == 'ru':
                 self.pushButton_sign.setText("Вход")
                 self.btn_login.setText("Вход")
-                self.label_menu_login.setText('')
-                self.label_name.setText("")
+            self.label_menu_login.setText('')
+            self.label_name.setText("")
         else:
             try:
+                # создание диалогового окна для входа в систему
                 log = LoginWindow(self.language)
                 if log.exec():
                     pass
+                # получение логина и ID 
                 ID, LOGIN = return_data()
+
+                # обновление калькулятора согласно новым данным
                 Functions.update_calculator(self, ID)
+
+                
 
                 if self.language == 'ru':
                     self.pushButton_sign.setText("Выход")
@@ -243,6 +256,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 if self.language == 'ru':
                     self.pushButton_sign.setText("Вход")
                     self.btn_login.setText("Вход")
+
+        # импорт языка пользователя из БД
+        with sqlite3.connect('db/dataBase2.db') as db:
+            cursor = db.cursor()
+            self.language = cursor.execute(f""" SELECT language FROM login WHERE ID = {ID}""").fetchall()[0][0]
+        # перевод интерфейса на язык пользователя
+        Functions.translate(self, 'order')
     
 
     #
@@ -389,7 +409,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 # рассчитать для женщин по формуле
                 self.lineEdit_percent.setText(str(round(
                     495 / (1.29579 - 0.35004 * (log10(waist + hip - neck)) + 0.22100 * (log10(height))) - 450, 1)))
-        print(ID)
+        print(float(self.lineEdit_percent.text()))
         if ID:
             # запись некоторых данных в БД
             with sqlite3.connect('db/dataBase2.db') as db:
@@ -762,7 +782,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     #
 
     def translate(self):
-        Functions.translate(self)
+        Functions.translate(self, 'null')
 
 
 if __name__ == "__main__":

@@ -99,7 +99,7 @@ class Functions(MainWindow):
             if width == 70:
                 widthExtended = maxExtend
                 
-                Functions.translate(self)
+                Functions.translate(self, 'show_header')
                 
            
                
@@ -172,11 +172,17 @@ class Functions(MainWindow):
     #     global log
     #     log = LoginWindow('ru')
 
-    def translate(self):
-        if self.comboBox_language.currentIndex() == 0:
-            self.language = "ru"
-        else:
-            self.language = "en"
+    def translate(self, *flag):
+        # Functions.toggleMenu(self,200, True, 'f', 'en')
+        print(flag[0])
+        if flag[0] != 'order':
+            if self.comboBox_language.currentIndex() == 0:
+                self.language = "ru"
+            else:
+                self.language = "en"
+
+        print(self.language)
+        self.comboBox_language.setCurrentIndex(1)
         # формирование списка заголовков
         if self.language == "ru":
             self.titles = ["Главная", "Калькулятор", "Тренировки", "Питание", "О приложении", "Настройки"]
@@ -218,14 +224,14 @@ class Functions(MainWindow):
             self.pushButton_nutrition.setText("Nutrition")
             self.pushButton_info.setText("About app")
             self.pushButton_sign.setText("Sign in") 
-
-            self.btn_page_1.setText(" Home")
-            self.btn_page_2.setText(" Calculator")
-            self.btn_page_3.setText(" Training")
-            self.btn_page_4.setText(" Nutrition")
-            self.btn_page_5.setText(" About app")
-            self.btn_page_6.setText(" Settings")
-            self.pushButton_sign.setText(" Sign in") 
+            if flag[0] == 'show_header':
+                self.btn_page_1.setText(" Home")
+                self.btn_page_2.setText(" Calculator")
+                self.btn_page_3.setText(" Training")
+                self.btn_page_4.setText(" Nutrition")
+                self.btn_page_5.setText(" About app")
+                self.btn_page_6.setText(" Settings")
+                self.pushButton_sign.setText(" Sign in") 
 
             
 
@@ -234,10 +240,15 @@ class Functions(MainWindow):
             self.pushButton_clear.setText("Clear")
             self.pushButton_save.setText("Save as")
             self.pushButton_load.setText("Load")
-            MainWindow.update_table(self)
+            # MainWindow.update_table(self)
 
             # описание
             self.stackedWidget_description.setCurrentIndex(0)
+
+            # настройки
+            self.comboBox_language.setCurrentIndex(1)
+            print(self.comboBox_language.currentIndex())
+
             
         else:
             self.pushButton_calculate.setText("Рассчитать и сохранить")
@@ -273,12 +284,13 @@ class Functions(MainWindow):
             self.pushButton_info.setText("О приложении")
             self.pushButton_sign.setText("Вход")
 
-            self.btn_page_1.setText(" Главная")
-            self.btn_page_2.setText(" Калькулятор")
-            self.btn_page_3.setText(" Тренировки")
-            self.btn_page_4.setText(" Питание")
-            self.btn_page_5.setText(" Описание")
-            self.btn_page_6.setText(" Настройки")
+            if flag[0] == 'show_header':
+                self.btn_page_1.setText(" Главная")
+                self.btn_page_2.setText(" Калькулятор")
+                self.btn_page_3.setText(" Тренировки")
+                self.btn_page_4.setText(" Питание")
+                self.btn_page_5.setText(" Описание")
+                self.btn_page_6.setText(" Настройки")
 
             # питание
             self.pushButton_add.setText("Добавить")
@@ -290,3 +302,4 @@ class Functions(MainWindow):
             self.stackedWidget_description.setCurrentIndex(1)
 
             # настройки
+            self.comboBox_language.setCurrentIndex(0)
