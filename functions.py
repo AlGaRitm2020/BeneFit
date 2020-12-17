@@ -80,10 +80,12 @@ class Functions(MainWindow):
                 data = cursor.execute(
                 f"""SELECT * FROM quick_start WHERE id = {ID} AND day = {day}""").fetchall()
                 for row, info in enumerate(daily_list):
-                    print(data[0][5])
                     info[0].setChecked(data[0][row+2])
                     info[1].setValue(data[0][row+7])
                     info[2].setValue(data[0][row+12])
+
+            self.tabWidget.setCurrentIndex(cursor.execute(
+                f"""SELECT current_training FROM info WHERE id = {ID}""").fetchall()[0][0])
                 # for i in data:
                 #     _, _ , ex1, ex2, ex3, ex4, ex5 = i
                 # # print(data[-1])
@@ -174,14 +176,12 @@ class Functions(MainWindow):
 
     def translate(self, *flag):
         # Functions.toggleMenu(self,200, True, 'f', 'en')
-        print(flag[0])
         if flag[0] != 'order':
             if self.comboBox_language.currentIndex() == 0:
                 self.language = "ru"
             else:
                 self.language = "en"
 
-        print(self.language)
         self.comboBox_language.setCurrentIndex(1)
         # формирование списка заголовков
         if self.language == "ru":
@@ -247,8 +247,10 @@ class Functions(MainWindow):
 
             # настройки
             self.comboBox_language.setCurrentIndex(1)
-            print(self.comboBox_language.currentIndex())
+           
 
+            # тренировки
+            
             
         else:
             self.pushButton_calculate.setText("Рассчитать и сохранить")

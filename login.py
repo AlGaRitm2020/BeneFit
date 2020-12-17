@@ -80,13 +80,14 @@ class LoginWindow(QDialog, Ui_Dialog):
                 
                 cursor.execute(
                     f"""  INSERT INTO info (id, height, weight, age, gender, activity,
-                     wrist, fat_check, waist, neck, hip, IMT, type, fat_percent) VALUES ({current_id}, {175}, {70}, {25},
-                      {True},{3} , {18}, {False}, {75}, {20}, {75}, {22.9}, {1}, {15.3})""")
+                     wrist, fat_check, waist, neck, hip, IMT, type, fat_percent, current_training) VALUES ({current_id}, {175}, {70}, {25},
+                      {True},{3} , {18}, {False}, {75}, {20}, {75}, {22.9}, {1}, {15.3}, {0})""")
                 for day in range(21):
                     print(day)
                     cursor.execute(
                     f"""  INSERT INTO quick_start (id, day, ex1_check, ex2_check, ex3_check, ex4_check,
-                     ex5_check, weight1, weight2, weight3, weight4, weight5, reps1, reps2, reps3, reps4, reps5) VALUES ({current_id}, {day}, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)""")
+                     ex5_check, weight1, weight2, weight3, weight4, weight5, reps1, reps2, reps3, reps4, reps5)
+                      VALUES ({current_id}, {day}, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)""")
 
                 # сообщение об успехе
                 if self.language == 'ru':
