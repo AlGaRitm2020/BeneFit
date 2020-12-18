@@ -1935,7 +1935,7 @@ p, li { white-space: pre-wrap; }
                  <enum>QTabWidget::Rounded</enum>
                 </property>
                 <property name="currentIndex">
-                 <number>20</number>
+                 <number>5</number>
                 </property>
                 <widget class="QWidget" name="tab">
                  <attribute name="icon">
@@ -2233,20 +2233,26 @@ QPushButton:hover {
                    <property name="horizontalSpacing">
                     <number>30</number>
                    </property>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_3">
-                     <property name="text">
-                      <string>Отжимания от пола или на брусьях узким хватом</string>
-                     </property>
-                    </widget>
-                   </item>
                    <item row="1" column="1">
                     <widget class="QSpinBox" name="spinBox_extraWeight_1_3"/>
                    </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_3">
+                   <item row="3" column="0">
+                    <widget class="QCheckBox" name="checkBox_exersize_3_3">
                      <property name="text">
-                      <string> Повторения</string>
+                      <string>Отжимания от пола или на брусьях широким хватом</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QSpinBox" name="spinBox_extraWeight_3_3"/>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QSpinBox" name="spinBox_extraWeight_5_3"/>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_exersize_3">
+                     <property name="text">
+                      <string>Упражнение</string>
                      </property>
                     </widget>
                    </item>
@@ -2260,40 +2266,41 @@ QPushButton:hover {
                      </property>
                     </widget>
                    </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_3"/>
+                   <item row="1" column="0">
+                    <widget class="QCheckBox" name="checkBox_exersize_1_3">
+                     <property name="text">
+                      <string>Армейские отжимания</string>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QLabel" name="label_reps_3">
+                     <property name="text">
+                      <string> Повторения</string>
+                     </property>
+                    </widget>
                    </item>
                    <item row="1" column="2">
                     <widget class="QSpinBox" name="spinBox_reps_1_3"/>
                    </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_3"/>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_3"/>
+                   <item row="3" column="2">
+                    <widget class="QSpinBox" name="spinBox_reps_3_3"/>
                    </item>
                    <item row="2" column="2">
                     <widget class="QSpinBox" name="spinBox_reps_2_3"/>
                    </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_3"/>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_3">
+                   <item row="4" column="0">
+                    <widget class="QCheckBox" name="checkBox_exersize_4_3">
                      <property name="text">
-                      <string>Отжимания от пола или на брусьях широким хватом</string>
+                      <string>Отжимания от пола или на брусьях узким хватом</string>
                      </property>
                     </widget>
                    </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_3"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_3">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
+                   <item row="4" column="2">
+                    <widget class="QSpinBox" name="spinBox_reps_4_3"/>
                    </item>
                    <item row="2" column="0">
                     <widget class="QCheckBox" name="checkBox_exersize_2_3">
@@ -2305,21 +2312,8 @@ QPushButton:hover {
                      </property>
                     </widget>
                    </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_3"/>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_3">
-                     <property name="text">
-                      <string>Армейские отжимания</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_3"/>
+                   <item row="2" column="1">
+                    <widget class="QSpinBox" name="spinBox_extraWeight_2_3"/>
                    </item>
                    <item row="0" column="1">
                     <widget class="QLabel" name="label_extraWeigh_3">
@@ -2327,6 +2321,12 @@ QPushButton:hover {
                       <string>Вес утяжелителя</string>
                      </property>
                     </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QSpinBox" name="spinBox_extraWeight_4_3"/>
+                   </item>
+                   <item row="5" column="2">
+                    <widget class="QSpinBox" name="spinBox_reps_5_3"/>
                    </item>
                   </layout>
                  </widget>
@@ -2352,48 +2352,6 @@ QPushButton:hover {
                   <property name="text">
                    <string>Завершить тренировку</string>
                   </property>
-                 </widget>
-                 <widget class="QGroupBox" name="groupBox_rest_day_2">
-                  <property name="geometry">
-                   <rect>
-                    <x>20</x>
-                    <y>10</y>
-                    <width>971</width>
-                    <height>381</height>
-                   </rect>
-                  </property>
-                  <property name="title">
-                   <string/>
-                  </property>
-                  <widget class="QLabel" name="label_rest_day_2">
-                   <property name="geometry">
-                    <rect>
-                     <x>50</x>
-                     <y>20</y>
-                     <width>871</width>
-                     <height>161</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;День восстановления&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Дай своим мыщцам отдохнуть. Продолжай правильно питаться и соблюдать режим дня.&lt;/p&gt;&lt;p&gt; Благодаря этому твои тренировки будут давать мыщцам расти.&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                   </property>
-                  </widget>
-                  <widget class="QLabel" name="label_rest_day_img_2">
-                   <property name="geometry">
-                    <rect>
-                     <x>400</x>
-                     <y>210</y>
-                     <width>141</width>
-                     <height>141</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap>img/lighting_3.png</pixmap>
-                   </property>
-                  </widget>
                  </widget>
                 </widget>
                 <widget class="QWidget" name="tab_4">
@@ -2808,7 +2766,7 @@ QPushButton:hover {
                   <property name="geometry">
                    <rect>
                     <x>30</x>
-                    <y>330</y>
+                    <y>332</y>
                     <width>951</width>
                     <height>41</height>
                    </rect>
@@ -2963,7 +2921,7 @@ QPushButton:hover {
                   <property name="geometry">
                    <rect>
                     <x>20</x>
-                    <y>10</y>
+                    <y>9</y>
                     <width>971</width>
                     <height>381</height>
                    </rect>
@@ -3406,48 +3364,6 @@ QPushButton:hover {
                    <string>Завершить тренировку</string>
                   </property>
                  </widget>
-                 <widget class="QGroupBox" name="groupBox_rest_day_3">
-                  <property name="geometry">
-                   <rect>
-                    <x>20</x>
-                    <y>10</y>
-                    <width>971</width>
-                    <height>381</height>
-                   </rect>
-                  </property>
-                  <property name="title">
-                   <string/>
-                  </property>
-                  <widget class="QLabel" name="label_rest_day_3">
-                   <property name="geometry">
-                    <rect>
-                     <x>50</x>
-                     <y>20</y>
-                     <width>871</width>
-                     <height>161</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;День восстановления&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Дай своим мыщцам отдохнуть. Продолжай правильно питаться и соблюдать режим дня.&lt;/p&gt;&lt;p&gt; Благодаря этому твои тренировки будут давать мыщцам расти.&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                   </property>
-                  </widget>
-                  <widget class="QLabel" name="label_rest_day_img_3">
-                   <property name="geometry">
-                    <rect>
-                     <x>400</x>
-                     <y>210</y>
-                     <width>141</width>
-                     <height>141</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap>img/lighting_3.png</pixmap>
-                   </property>
-                  </widget>
-                 </widget>
                 </widget>
                 <widget class="QWidget" name="tab_11">
                  <attribute name="title">
@@ -3475,113 +3391,6 @@ QPushButton:hover {
                   <property name="text">
                    <string>Завершить тренировку</string>
                   </property>
-                 </widget>
-                 <widget class="QWidget" name="gridLayoutWidget_11">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>70</y>
-                    <width>951</width>
-                    <height>230</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_11" rowstretch="0,0,0,0,0,0" columnstretch="3,0,0">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
-                   </property>
-                   <item row="1" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_1_11"/>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_11">
-                     <property name="text">
-                      <string>Молотки</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_5_11">
-                     <property name="text">
-                      <string>Скручивания</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="QLabel" name="label_extraWeigh_11">
-                     <property name="text">
-                      <string>Вес утяжелителя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_11"/>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_11">
-                     <property name="text">
-                      <string>Подтягивания</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_2_11">
-                     <property name="text">
-                      <string>Тяга в наклоне</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_11"/>
-                   </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_11">
-                     <property name="text">
-                      <string> Повторения</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_11">
-                     <property name="text">
-                      <string>Обратные подтягивания</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_1_11"/>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_2_11"/>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_11"/>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_11"/>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_11"/>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_11"/>
-                   </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_11"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_11">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
                  </widget>
                 </widget>
                 <widget class="QWidget" name="tab_12">
@@ -3611,113 +3420,6 @@ QPushButton:hover {
                    <string>Завершить тренировку</string>
                   </property>
                  </widget>
-                 <widget class="QWidget" name="gridLayoutWidget_12">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>70</y>
-                    <width>951</width>
-                    <height>230</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_12" rowstretch="0,0,0,0,0,0" columnstretch="3,0,0">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
-                   </property>
-                   <item row="1" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_1_12"/>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_12">
-                     <property name="text">
-                      <string>Подъем перед собой</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_12"/>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_12"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_12">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_5_12">
-                     <property name="text">
-                      <string>Обратные скручивания</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_12">
-                     <property name="text">
-                      <string>Жим сидя одной рукой</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_12">
-                     <property name="text">
-                      <string> Повторения</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_1_12"/>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_12"/>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_2_12"/>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_12">
-                     <property name="text">
-                      <string>Шраги</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_12"/>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_2_12">
-                     <property name="text">
-                      <string>Разведение одной рукой стоя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_12"/>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="QLabel" name="label_extraWeigh_12">
-                     <property name="text">
-                      <string>Вес утяжелителя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_12"/>
-                   </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_12"/>
-                   </item>
-                  </layout>
-                 </widget>
                 </widget>
                 <widget class="QWidget" name="tab_13">
                  <attribute name="title">
@@ -3744,137 +3446,6 @@ QPushButton:hover {
                   </property>
                   <property name="text">
                    <string>Завершить тренировку</string>
-                  </property>
-                 </widget>
-                 <widget class="QWidget" name="gridLayoutWidget_13">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>70</y>
-                    <width>951</width>
-                    <height>230</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_13" rowstretch="0,0,0,0,0,0" columnstretch="3,0,0">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
-                   </property>
-                   <item row="1" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_1_13"/>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_13">
-                     <property name="text">
-                      <string>Косые скручивания</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_13"/>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_13"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_13">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_5_13">
-                     <property name="text">
-                      <string>Планка</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_13">
-                     <property name="text">
-                      <string>Подъем ног в висе</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_13">
-                     <property name="text">
-                      <string> Повторения</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_1_13"/>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_13"/>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_2_13"/>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_13">
-                     <property name="text">
-                      <string>Обратные скручивания</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_13"/>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_2_13">
-                     <property name="text">
-                      <string>Подъем коленей в висе</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_13"/>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="QLabel" name="label_extraWeigh_13">
-                     <property name="text">
-                      <string>Вес утяжелителя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_13"/>
-                   </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_13">
-                     <property name="maximum">
-                      <number>3600</number>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QPushButton" name="pushButton_training_advice_2">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>330</y>
-                    <width>951</width>
-                    <height>41</height>
-                   </rect>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(35, 35, 35);</string>
-                  </property>
-                  <property name="text">
-                   <string>В повторениях планки запишите продолжительность выполнения в секундах</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>img/icons/info-_1_.ico</normaloff>img/icons/info-_1_.ico</iconset>
                   </property>
                  </widget>
                 </widget>
@@ -4012,48 +3583,6 @@ QPushButton:hover {
                    <string>Завершить тренировку</string>
                   </property>
                  </widget>
-                 <widget class="QGroupBox" name="groupBox_rest_day_4">
-                  <property name="geometry">
-                   <rect>
-                    <x>20</x>
-                    <y>10</y>
-                    <width>971</width>
-                    <height>381</height>
-                   </rect>
-                  </property>
-                  <property name="title">
-                   <string/>
-                  </property>
-                  <widget class="QLabel" name="label_rest_day_4">
-                   <property name="geometry">
-                    <rect>
-                     <x>50</x>
-                     <y>20</y>
-                     <width>871</width>
-                     <height>161</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;День восстановления&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Дай своим мыщцам отдохнуть. Продолжай правильно питаться и соблюдать режим дня.&lt;/p&gt;&lt;p&gt; Благодаря этому твои тренировки будут давать мыщцам расти.&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                   </property>
-                  </widget>
-                  <widget class="QLabel" name="label_rest_day_img_4">
-                   <property name="geometry">
-                    <rect>
-                     <x>400</x>
-                     <y>210</y>
-                     <width>141</width>
-                     <height>141</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap>img/lighting_3.png</pixmap>
-                   </property>
-                  </widget>
-                 </widget>
                 </widget>
                 <widget class="QWidget" name="tab_15">
                  <attribute name="title">
@@ -4082,113 +3611,6 @@ QPushButton:hover {
                    <string>Завершить тренировку</string>
                   </property>
                  </widget>
-                 <widget class="QWidget" name="gridLayoutWidget_15">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>70</y>
-                    <width>951</width>
-                    <height>230</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_15" rowstretch="0,0,0,0,0,0" columnstretch="3,0,0">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
-                   </property>
-                   <item row="1" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_1_15"/>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_15">
-                     <property name="text">
-                      <string>Разведение одной рукой лежа</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_15"/>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_15"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_15">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_5_15">
-                     <property name="text">
-                      <string>Отжимания от пола узким хватом</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_15">
-                     <property name="text">
-                      <string>Отжимания на брусьях или от скамьи широким хватом</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_15">
-                     <property name="text">
-                      <string> Повторения</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_1_15"/>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_15"/>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_2_15"/>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_15">
-                     <property name="text">
-                      <string>Отжимания на брусьях или от скамьи узким хватом</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_15"/>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_2_15">
-                     <property name="text">
-                      <string>Отжимания от пола широким хватом</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_15"/>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="QLabel" name="label_extraWeigh_15">
-                     <property name="text">
-                      <string>Вес утяжелителя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_15"/>
-                   </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_15"/>
-                   </item>
-                  </layout>
-                 </widget>
                 </widget>
                 <widget class="QWidget" name="tab_16">
                  <attribute name="title">
@@ -4216,113 +3638,6 @@ QPushButton:hover {
                   <property name="text">
                    <string>Завершить тренировку</string>
                   </property>
-                 </widget>
-                 <widget class="QWidget" name="gridLayoutWidget_16">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>70</y>
-                    <width>951</width>
-                    <height>230</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_16" rowstretch="0,0,0,0,0,0" columnstretch="3,0,0">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
-                   </property>
-                   <item row="1" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_1_16"/>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_16">
-                     <property name="text">
-                      <string>Выпады</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_16"/>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_16"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_16">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_5_16">
-                     <property name="text">
-                      <string>Подъемы на носки</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_16">
-                     <property name="text">
-                      <string>Фронтальные приседания</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_16">
-                     <property name="text">
-                      <string> Повторения</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_1_16"/>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_16"/>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_2_16"/>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_16">
-                     <property name="text">
-                      <string>Наклоны вперед</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_16"/>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_2_16">
-                     <property name="text">
-                      <string>Приседания</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_16"/>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="QLabel" name="label_extraWeigh_16">
-                     <property name="text">
-                      <string>Вес утяжелителя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_16"/>
-                   </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_16"/>
-                   </item>
-                  </layout>
                  </widget>
                 </widget>
                 <widget class="QWidget" name="tab_17">
@@ -4459,48 +3774,6 @@ QPushButton:hover {
                    <string>Завершить тренировку</string>
                   </property>
                  </widget>
-                 <widget class="QGroupBox" name="groupBox_rest_day_5">
-                  <property name="geometry">
-                   <rect>
-                    <x>20</x>
-                    <y>10</y>
-                    <width>971</width>
-                    <height>381</height>
-                   </rect>
-                  </property>
-                  <property name="title">
-                   <string/>
-                  </property>
-                  <widget class="QLabel" name="label_rest_day_5">
-                   <property name="geometry">
-                    <rect>
-                     <x>50</x>
-                     <y>20</y>
-                     <width>871</width>
-                     <height>161</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;День восстановления&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Дай своим мыщцам отдохнуть. Продолжай правильно питаться и соблюдать режим дня.&lt;/p&gt;&lt;p&gt; Благодаря этому твои тренировки будут давать мыщцам расти.&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                   </property>
-                  </widget>
-                  <widget class="QLabel" name="label_rest_day_img_5">
-                   <property name="geometry">
-                    <rect>
-                     <x>400</x>
-                     <y>210</y>
-                     <width>141</width>
-                     <height>141</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap>img/lighting_3.png</pixmap>
-                   </property>
-                  </widget>
-                 </widget>
                 </widget>
                 <widget class="QWidget" name="tab_18">
                  <attribute name="title">
@@ -4528,113 +3801,6 @@ QPushButton:hover {
                   <property name="text">
                    <string>Завершить тренировку</string>
                   </property>
-                 </widget>
-                 <widget class="QWidget" name="gridLayoutWidget_18">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>70</y>
-                    <width>951</width>
-                    <height>230</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_18" rowstretch="0,0,0,0,0,0" columnstretch="3,0,0">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
-                   </property>
-                   <item row="1" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_1_18"/>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_18">
-                     <property name="text">
-                      <string>Молотки</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_5_18">
-                     <property name="text">
-                      <string>Скручивания</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="QLabel" name="label_extraWeigh_18">
-                     <property name="text">
-                      <string>Вес утяжелителя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_18"/>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_18">
-                     <property name="text">
-                      <string>Подтягивания</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_2_18">
-                     <property name="text">
-                      <string>Тяга в наклоне</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_18"/>
-                   </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_18">
-                     <property name="text">
-                      <string> Повторения</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_18">
-                     <property name="text">
-                      <string>Обратные подтягивания</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_1_18"/>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_2_18"/>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_18"/>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_18"/>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_18"/>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_18"/>
-                   </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_18"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_18">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
                  </widget>
                 </widget>
                 <widget class="QWidget" name="tab_19">
@@ -4664,113 +3830,6 @@ QPushButton:hover {
                    <string>Завершить тренировку</string>
                   </property>
                  </widget>
-                 <widget class="QWidget" name="gridLayoutWidget_19">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>70</y>
-                    <width>951</width>
-                    <height>230</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_19" rowstretch="0,0,0,0,0,0" columnstretch="3,0,0">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
-                   </property>
-                   <item row="1" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_1_19"/>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_19">
-                     <property name="text">
-                      <string>Подъем перед собой</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_19"/>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_19"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_19">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_5_19">
-                     <property name="text">
-                      <string>Обратные скручивания</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_19">
-                     <property name="text">
-                      <string>Жим сидя одной рукой</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_19">
-                     <property name="text">
-                      <string> Повторения</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_1_19"/>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_19"/>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_2_19"/>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_19">
-                     <property name="text">
-                      <string>Шраги</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_19"/>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_2_19">
-                     <property name="text">
-                      <string>Разведение одной рукой стоя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_19"/>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="QLabel" name="label_extraWeigh_19">
-                     <property name="text">
-                      <string>Вес утяжелителя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_19"/>
-                   </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_19"/>
-                   </item>
-                  </layout>
-                 </widget>
                 </widget>
                 <widget class="QWidget" name="tab_20">
                  <attribute name="title">
@@ -4797,137 +3856,6 @@ QPushButton:hover {
                   </property>
                   <property name="text">
                    <string>Завершить тренировку</string>
-                  </property>
-                 </widget>
-                 <widget class="QWidget" name="gridLayoutWidget_20">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>70</y>
-                    <width>951</width>
-                    <height>230</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_20" rowstretch="0,0,0,0,0,0" columnstretch="3,0,0">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
-                   </property>
-                   <item row="1" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_1_20"/>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_3_20">
-                     <property name="text">
-                      <string>Косые скручивания</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_3_20"/>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_5_20"/>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label_exersize_20">
-                     <property name="text">
-                      <string>Упражнение</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_5_20">
-                     <property name="text">
-                      <string>Планка</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_1_20">
-                     <property name="text">
-                      <string>Подъем ног в висе</string>
-                     </property>
-                     <property name="checked">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="2">
-                    <widget class="QLabel" name="label_reps_20">
-                     <property name="text">
-                      <string> Повторения</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_1_20"/>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_3_20"/>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_2_20"/>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_4_20">
-                     <property name="text">
-                      <string>Обратные скручивания</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_4_20"/>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QCheckBox" name="checkBox_exersize_2_20">
-                     <property name="text">
-                      <string>Подъем коленей в висе</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_2_20"/>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="QLabel" name="label_extraWeigh_20">
-                     <property name="text">
-                      <string>Вес утяжелителя</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QSpinBox" name="spinBox_extraWeight_4_20"/>
-                   </item>
-                   <item row="5" column="2">
-                    <widget class="QSpinBox" name="spinBox_reps_5_20">
-                     <property name="maximum">
-                      <number>3600</number>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QPushButton" name="pushButton_training_advice_3">
-                  <property name="geometry">
-                   <rect>
-                    <x>30</x>
-                    <y>330</y>
-                    <width>951</width>
-                    <height>41</height>
-                   </rect>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(35, 35, 35);</string>
-                  </property>
-                  <property name="text">
-                   <string>В повторениях планки запишите продолжительность выполнения в секундах</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>img/icons/info-_1_.ico</normaloff>img/icons/info-_1_.ico</iconset>
                   </property>
                  </widget>
                 </widget>
@@ -5064,48 +3992,6 @@ QPushButton:hover {
                   <property name="text">
                    <string>Завершить тренировку</string>
                   </property>
-                 </widget>
-                 <widget class="QGroupBox" name="groupBox_rest_day_6">
-                  <property name="geometry">
-                   <rect>
-                    <x>20</x>
-                    <y>20</y>
-                    <width>971</width>
-                    <height>381</height>
-                   </rect>
-                  </property>
-                  <property name="title">
-                   <string/>
-                  </property>
-                  <widget class="QLabel" name="label_rest_day_6">
-                   <property name="geometry">
-                    <rect>
-                     <x>50</x>
-                     <y>20</y>
-                     <width>871</width>
-                     <height>161</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;День восстановления&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Дай своим мыщцам отдохнуть. Продолжай правильно питаться и соблюдать режим дня.&lt;/p&gt;&lt;p&gt; Благодаря этому твои тренировки будут давать мыщцам расти.&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                   </property>
-                  </widget>
-                  <widget class="QLabel" name="label_rest_day_img_6">
-                   <property name="geometry">
-                    <rect>
-                     <x>400</x>
-                     <y>210</y>
-                     <width>141</width>
-                     <height>141</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap>img/lighting_3.png</pixmap>
-                   </property>
-                  </widget>
                  </widget>
                 </widget>
                </widget>

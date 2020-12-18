@@ -339,7 +339,88 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         for btn in self.buttons_training:
             btn.clicked.connect(self.save_training)
 
+
         Functions.update_training(self, ID)
+        # создание анимаций (gif)
+        self.movie_squats = QMovie("img/gifs/squats2.gif")
+        self.movie_front_squats = QMovie("img/gifs/front_squats.gif")
+        self.movie_lunges = QMovie("img/gifs/lunges.gif")
+        self.movie_leaning_forward = QMovie("img/gifs/leaning_forward.gif")
+        self.movie_rise_calf = QMovie("img/gifs/rise_calf.gif")
+        self.movie_twistings = QMovie("img/gifs/twistings.gif")
+        self.movie_iverted_twistings = QMovie("img/gifs/inverted_twistings.gif")
+        self.movie_vise_lift = QMovie("img/gifs/vise_lift.gif")
+        self.movie_pushups = QMovie("img/gifs/pushups.gif")
+        self.movie_bars_pushups = QMovie("img/gifs/bars_pushups.gif")
+        self.movie_bench_pushups = QMovie("img/gifs/bench_pushups.gif")
+        self.movie_chest_breading = QMovie("img/gifs/chest_breeding.gif")
+        self.movie_delts_breading = QMovie("img/gifs/delts_breading.gif")
+        self.movie_bench_press = QMovie("img/gifs/bench_press.gif")
+        self.movie_front_delts = QMovie("img/gifs/front_delts.gif")
+        self.movie_twistings = QMovie("img/gifs/twistings.gif")
+        self.movie_pullups = QMovie("img/gifs/pullups_2.gif")
+        self.movie_inverted_pullups = QMovie("img/gifs/inverted_pullups.gif")
+        self.movie_hummers = QMovie("img/gifs/hummers.gif")
+        self.movie_dumbbell_pull = QMovie("img/gifs/dumbbell pull.gif")
+        self.movie_scars = QMovie("img/gifs/scars.gif")
+        self.movie_oblique_twists = QMovie("img/gifs/oblique_twists.gif")
+        self.movie_vise_knees = QMovie("img/gifs/vise_knees.gif")
+
+        self.label_gif_0.setMovie(self.movie_lunges)
+        self.label_gif_1.setMovie(self.movie_bench_press)
+        self.label_gif_2.setMovie(self.movie_oblique_twists)
+        self.label_gif_3.setMovie(self.movie_hummers)
+        self.label_gif_4.setMovie(self.movie_leaning_forward)
+        self.label_gif_5.setMovie(self.movie_inverted_pullups)
+        self.label_gif_6.setMovie(self.movie_iverted_twistings)
+        self.label_gif_7.setMovie(self.movie_bars_pushups)
+        self.label_gif_8.setMovie(self.movie_pushups)
+        self.label_gif_9.setMovie(self.movie_bench_pushups)
+        self.label_gif_11.setMovie(self.movie_pullups)
+        self.label_gif_12.setMovie(self.movie_vise_knees)
+        self.label_gif_13.setMovie(self.movie_vise_lift)
+        self.label_gif_14.setMovie(self.movie_front_delts)
+        self.label_gif_15.setMovie(self.movie_rise_calf)
+        self.label_gif_16.setMovie(self.movie_squats)
+        self.label_gif_17.setMovie(self.movie_chest_breading)
+        self.label_gif_18.setMovie(self.movie_delts_breading)
+        self.label_gif_19.setMovie(self.movie_twistings)
+        self.label_gif_20.setMovie(self.movie_dumbbell_pull)
+        self.label_gif_21.setMovie(self.movie_front_squats)
+        self.label_gif_22.setMovie(self.movie_scars)
+       
+        # print(self.label_gif_14.text())
+        
+        # старт всех анимаций
+        self.movie_squats.start()
+        self.movie_front_squats.start()
+        self.movie_lunges.start()
+        self.movie_leaning_forward.start()
+        self.movie_rise_calf.start()
+        self.movie_twistings.start()
+        self.movie_iverted_twistings.start()
+        self.movie_vise_lift.start()
+        self.movie_pushups.start()
+        self.movie_bars_pushups.start()
+        self.movie_bench_pushups.start()
+        self.movie_chest_breading.start()
+        self.movie_delts_breading.start()
+        self.movie_bench_press.start()
+        self.movie_front_delts.start()
+        self.movie_twistings.start()
+        self.movie_pullups.start()
+        self.movie_inverted_pullups.start()
+        self.movie_hummers.start()
+        self.movie_dumbbell_pull.start()
+        self.movie_scars.start()
+        self.movie_vise_knees.start()
+        self.movie_oblique_twists.start()
+        
+
+        self.listWidget_exersizes.clicked.connect(lambda :self.stackedWidget_gifs.setCurrentIndex(self.listWidget_exersizes.currentRow()))
+
+        
+        # self.movie_squats.stop()
 
         # # 
         # /ТРЕНИРОВКИ
@@ -668,7 +749,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # icon8 = QtGui.QIcon()
         # icon8.addPixmap(QtGui.QPixmap("img/icons/checkmarkcircle_111048-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         # self.tabWidget.se
-
+    
     #
     # /методы Тренировок
     #
