@@ -33,16 +33,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         #
         # ГЛАВНАЯ СТРАНИЦА
         #
-        # гостевой пользователь
+
+        # восстановление предыдущего аккаунта
         global ID, LOGIN
-        ID = 0
-        LOGIN = ""
-        # импорт языка гостевого пользователя из БД
         with sqlite3.connect('db/dataBase2.db') as db:
             cursor = db.cursor()
+            ID = cursor.execute(f""" SELECT id FROM current_id""").fetchall()[0][0]
+            LOGIN = cursor.execute(f""" SELECT login FROM login WHERE ID = {ID}""").fetchall()[0][0]
             self.language = cursor.execute(f""" SELECT language FROM login WHERE ID = {ID}""").fetchall()[0][0]
+            
+        # обновить интерфейс под пользователя
+        Functions.update_login(self, ID, LOGIN)
         
-
 
         # навигация по приложению
         # скрыть дополнительные поля    
@@ -64,7 +66,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # переходы из главной страницы
         self.pushButton_sign.clicked.connect(self.open_login)
-        
         self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
         self.pushButton_training.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
         self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
@@ -73,12 +74,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # установить иконку окна
         self.setWindowIcon(QIcon("img/icons/barbell-48_44982.ico"))
 
-        # показать имя пользователя
-        self.label_name.setText(LOGIN)
+        # # показать имя пользователя
+        # self.label_name.setText(LOGIN)
 
-        #
-        # /ГЛАВНАЯ СТРАНИЦА
-        #
         
         # 
         # КАЛЬКУЛЯТОР
@@ -118,10 +116,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         Functions.update_calculator(self, ID)
 
         self.show()
-
-        # 
-        # /КАЛЬКУЛЯТОР
-        #
 
         # 
         # ТРЕНИРОВКИ
@@ -418,17 +412,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         
 
         self.listWidget_exersizes.clicked.connect(lambda :self.stackedWidget_gifs.setCurrentIndex(self.listWidget_exersizes.currentRow()))
-
-        
-        # self.movie_squats.stop()
-
-        # # 
-        # /ТРЕНИРОВКИ
+    
         #
-
-        # 
         # ПИТАНИЕ
         #
+
+        #
+        # Продукты питания
 
         # обнуление выбранных пользователем продуктов
         self.choice = []
@@ -465,17 +455,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # создать пользовательскую таблицу
         MainWindow.user_table(self)
 
-        # 
-        # /ПИТАНИЕ
         #
+        # персональные рекомендации
 
+        self.pushButton_personal_recommendations_login.clicked.connect(self.open_login)
+        Functions.update_recommendations(self, ID)
+
+        self.listWidget_asks.clicked.connect(self.asks)
+  
         # 
         # НАСТРОЙКИ
         # перевести на другой язык
         self.pushButton_settings.clicked.connect(self.translate)
-        # 
-        # /НАСТРОЙКИ
-        #
+
         # перевод интерфейса на язык гостевого пользователя
         Functions.translate(self, 'order')
 
@@ -484,19 +476,25 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     #
     # открыть вход
     def open_login(self):
-        
+        def login_update():
+                # перевод интерфейса на язык пользователя
+            Functions.translate(self, 'order')
+            # обновление разделов согласно новым данным
+            Functions.update_calculator(self, 0)
+            Functions.update_training(self, ID)
+            Functions.update_recommendations(self, ID)
+            Functions.update_login(self, ID, LOGIN)
+
+            # импорт языка пользователя из БД
+            with sqlite3.connect('db/dataBase2.db') as db:
+                cursor = db.cursor()
+                self.language = cursor.execute(f""" SELECT language FROM login WHERE ID = {ID}""").fetchall()[0][0]
+            
         
         global LOGIN, ID, log
         if ID != 0:
             ID = 0
-            # обновление разделов
-            Functions.update_calculator(self, 0)
-            Functions.update_training(self, ID)
-            if self.language == 'ru':
-                self.pushButton_sign.setText("Вход")
-                self.btn_login.setText("Вход")
-            self.label_menu_login.setText('')
-            self.label_name.setText("")
+            login_update()
         else:
             try:
                 # создание диалогового окна для входа в систему
@@ -505,36 +503,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     pass
                 # получение логина и ID 
                 ID, LOGIN = return_data()
-                print(LOGIN)
-                # обновление калькулятора согласно новым данным
-                Functions.update_calculator(self, ID)
-                # обновление тренировок согласно новым данным
-                Functions.update_training(self, ID)
-
-
+                login_update()
+                
                 
 
-                if self.language == 'ru':
-                    self.pushButton_sign.setText("Выход")
-                    self.btn_login.setText("Выход")
-                self.label_name.setText(LOGIN)
-                self.label_menu_login.setText(LOGIN)
             except Exception:
-                if self.language == 'ru':
-                    self.pushButton_sign.setText("Вход")
-                    self.btn_login.setText("Вход")
+                pass
+                # if self.language == 'ru':
+                #     self.pushButton_sign.setText("Вход")
+                #     self.btn_login.setText("Вход")
 
-        # импорт языка пользователя из БД
-        with sqlite3.connect('db/dataBase2.db') as db:
-            cursor = db.cursor()
-            self.language = cursor.execute(f""" SELECT language FROM login WHERE ID = {ID}""").fetchall()[0][0]
-        # перевод интерфейса на язык пользователя
-        Functions.translate(self, 'order')
-    
-
-    #
-    # /методы Главной страницы
-    #
+        
 
 
     #
@@ -544,7 +523,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def calculate(self):
         # параметры
         global ID
-       
         weight = self.spinBox_weight.value()
         height = self.spinBox_height.value()
         age = self.spinBox_age.value()
@@ -594,16 +572,28 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             else:
                 self.lineEdit_IMT_status.setText("Severe Thinness")
 
-        # базовый метаболизм
+
+        # рассчет КФА (коофицент физической активности)
+        if activity == 0:
+            kfa = 1.2
+        elif activity == 1:
+            kfa = 1.375
+        elif activity == 2:
+            kfa = 1.55
+        elif activity == 3:
+            kfa = 1.725
+        else:
+            kfa = 1.9
+        # норма калорий Миффлина-Сен Жеора
 
         if self.male:
             # рассчитать для мужчин по формуле
             self.lineEdit_metabolism.setText(
-                str(round(10 * weight + 6.25 * height - 5 * age + 5)))
+                str(round((((weight*10) + (height*6.25) - (age*5)) + 5) * kfa)))
         else:
             # рассчитать для женщин по формуле
             self.lineEdit_metabolism.setText(
-                str(round(10 * weight + 6.25 * height - 5 * age - 161)))
+                str(round((((weight*10) + (height*6.25) - (age*5)) - 161) * kfa)))
         # вывести результат и единицы измерения
         if self.language == "ru":
             self.lineEdit_metabolism.setText(
@@ -646,24 +636,24 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if wrist < 18 and self.male or wrist < 15 and not self.male:
     
                 self.lineEdit_type.setText("Эктоморф")
-                body_type = 0
+                self.body_type = 0
             elif wrist > 20 and self.male or wrist > 17 and not self.male:
                 self.lineEdit_type.setText('Эндоморф')
-                body_type = 2
+                self.body_type = 2
             else:
                 self.lineEdit_type.setText("Мезоморф")
-                body_type = 1
+                self.body_type = 1
         else:
             if wrist < 18 and self.male or wrist < 15 and not self.male:
     
                 self.lineEdit_type.setText("Ectomorph")
-                body_type = 0
+                self.body_type = 0
             elif wrist > 20 and self.male or wrist > 17 and not self.male:
                 self.lineEdit_type.setText('Endomorph')
-                body_type = 2
+                self.body_type = 2
             else:
                 self.lineEdit_type.setText("Mesomorph")
-                body_type = 1
+                self.body_type = 1
 
         # процент жира
         # рассчитивать только если пользователь выбрал эту возможность
@@ -676,7 +666,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 # рассчитать для женщин по формуле
                 self.lineEdit_percent.setText(str(round(
                     495 / (1.29579 - 0.35004 * (log10(waist + hip - neck)) + 0.22100 * (log10(height))) - 450, 1)))
-        print(float(self.lineEdit_percent.text()))
         if ID:
             # запись некоторых данных в БД
             with sqlite3.connect('db/dataBase2.db') as db:
@@ -686,7 +675,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 cursor.execute(
                     f"""  UPDATE info SET (height, weight, age, gender, activity,
                      wrist, fat_check, waist, neck, hip, IMT, type, fat_percent) = {(height, weight,age,
-                      self.male, activity, wrist, self.check, waist, neck, hip, imt, body_type, float(self.lineEdit_percent.text()))} WHERE ID = {ID}""")
+                      self.male, activity, wrist, self.check, waist, neck, hip, imt, self.body_type, float(self.lineEdit_percent.text()))} WHERE ID = {ID}""")
 
     # показать поле для расчета процента жира
     def show_extra(self):
@@ -719,9 +708,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if self.check is True:
                 self.groupBox_2.hide()
 
-    #
-    # /методы Калькулятора
-    #
 
 
     #
@@ -745,14 +731,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     self.tabWidget.currentIndex()
                     cursor.execute(
                         f"""  UPDATE info SET (current_training) = {self.tabWidget.currentIndex()} WHERE ID = {ID}""")
-        # print(self.tabWidget.currentTabIcon())
-        # icon8 = QtGui.QIcon()
-        # icon8.addPixmap(QtGui.QPixmap("img/icons/checkmarkcircle_111048-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        # self.tabWidget.se
-    
-    #
-    # /методы Тренировок
-    #
+
+
 
     #
     # методы Питания
@@ -1004,6 +984,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             fname = QFileDialog.getSaveFileName(
                 self, 'Сохранить базу данных', 'user_files',
                 'База данных (*.csv)')[0]
+            print(fname)
         else:
             fname = QFileDialog.getSaveFileName(
                 self, 'Save database', 'user_files',
@@ -1019,19 +1000,25 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except Exception:
             pass
 
-    def load(self):
-        # получить имя файла с помощью QFileDialog
-        if self.language == 'ru':
-            fname = QFileDialog.getOpenFileName(
-                self, 'Открыть базу данных', 'user_files',
-                'База данных (*.csv)')[0]
+    def load(self, *file_name):
+        if file_name[0]:
+            fname = file_name[0]
         else:
-            fname = QFileDialog.getOpenFileName(
-                self, 'Open database', 'user_files',
-                'Database (*.csv)')[0]
-
+            # получить имя файла с помощью QFileDialog
+            if self.language == 'ru':
+                fname = QFileDialog.getOpenFileName(
+                    self, 'Открыть базу данных', 'user_files',
+                    'База данных (*.csv)')[0]
+                print(fname)
+            else:
+                fname = QFileDialog.getOpenFileName(
+                    self, 'Open database', 'user_files',
+                    'Database (*.csv)')[0]
+   
         # считать таблицу пользователя из csv
         self.choice = []
+        
+ 
         try:
             with open(fname, 'r', encoding="utf-8") as csvfile:
                 reader = csv.reader(csvfile, delimiter=';', quotechar='"')
@@ -1044,12 +1031,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # обновить таблицу пользователя
             self.user_table()
 
-        except Exception:
-            pass
 
-    #
-    # /методы Питания
-    #
+        except Exception:
+            print('12')
+
+
+    def asks(self):
+        if self.listWidget_asks.currentRow() == 4:
+            names = ["user_files/system_rations/ectomorph_ration.csv","user_files/system_rations/mesomorph_ration.csv", "user_files/system_rations/endomorph_ration.csv"]
+            MainWindow.load(self, names[self.body_type])
+            self
+
+        else:
+            self.stackedWidget_advices.setCurrentIndex(self.listWidget_asks.currentRow() * 3 + self.body_type)
+        
 
 
     #

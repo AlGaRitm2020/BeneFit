@@ -226,7 +226,7 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("../../../.designer/backup/img/icons/home-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap("img/icons/sigh_in.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_login.setIcon(icon8)
         self.btn_login.setObjectName("btn_login")
         self.verticalLayout_3.addWidget(self.btn_login)
@@ -248,7 +248,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.stackedWidget = QtWidgets.QStackedWidget(self.frame_pages)
         self.stackedWidget.setStyleSheet("color:#ffffff;\n"
-"font-size:20px;")
+"font-size:20px;\n"
+"background-image: url(imп/wallpapers.jpg);")
         self.stackedWidget.setObjectName("stackedWidget")
         self.page_1 = QtWidgets.QWidget()
         self.page_1.setStyleSheet("")
@@ -2606,19 +2607,30 @@ class Ui_MainWindow(object):
         self.page_4.setStyleSheet("background-color: rgb(45, 45, 45);\n"
 "color:#fff;")
         self.page_4.setObjectName("page_4")
-        self.table = QtWidgets.QTableView(self.page_4)
-        self.table.setGeometry(QtCore.QRect(70, 120, 681, 221))
+        self.tabWidget_nutrition = QtWidgets.QTabWidget(self.page_4)
+        self.tabWidget_nutrition.setGeometry(QtCore.QRect(-10, 0, 1061, 701))
+        self.tabWidget_nutrition.setObjectName("tabWidget_nutrition")
+        self.tab_24 = QtWidgets.QWidget()
+        self.tab_24.setObjectName("tab_24")
+        self.table = QtWidgets.QTableView(self.tab_24)
+        self.table.setGeometry(QtCore.QRect(70, 110, 681, 221))
         self.table.setStyleSheet("font-size:15px;\n"
 "height:20px;\n"
 "color:#fff;\n"
 "\n"
 "")
         self.table.setObjectName("table")
-        self.pushButton_insert = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_insert.setGeometry(QtCore.QRect(770, 120, 171, 71))
+        self.search_field = QtWidgets.QLineEdit(self.tab_24)
+        self.search_field.setGeometry(QtCore.QRect(70, 10, 871, 71))
+        self.search_field.setStyleSheet("font-size:35px;\n"
+"height: 60px;\n"
+"border:1px solid #fff;")
+        self.search_field.setText("")
+        self.search_field.setObjectName("search_field")
+        self.pushButton_insert = QtWidgets.QPushButton(self.tab_24)
+        self.pushButton_insert.setGeometry(QtCore.QRect(770, 110, 171, 71))
         self.pushButton_insert.setStyleSheet("QPushButton {\n"
 "border:1px solid #fff;\n"
-"border-radius:25px;\n"
 "font-size:60px;\n"
 "color:#fff;\n"
 "}\n"
@@ -2626,16 +2638,21 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.pushButton_insert.setObjectName("pushButton_insert")
-        self.label = QtWidgets.QLabel(self.page_4)
-        self.label.setGeometry(QtCore.QRect(790, 210, 131, 131))
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("img/frut.png"))
-        self.label.setObjectName("label")
-        self.pushButton_save = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_save.setGeometry(QtCore.QRect(70, 600, 331, 61))
+        self.pushButton_clear = QtWidgets.QPushButton(self.tab_24)
+        self.pushButton_clear.setGeometry(QtCore.QRect(770, 470, 171, 171))
+        self.pushButton_clear.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_clear.setObjectName("pushButton_clear")
+        self.pushButton_save = QtWidgets.QPushButton(self.tab_24)
+        self.pushButton_save.setGeometry(QtCore.QRect(70, 580, 331, 61))
         self.pushButton_save.setStyleSheet("QPushButton {\n"
 "border:1px solid #fff;\n"
-"border-radius:25px;\n"
 "font-size:20px;\n"
 "color:#fff;\n"
 "}\n"
@@ -2644,11 +2661,31 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.pushButton_save.setObjectName("pushButton_save")
-        self.pushButton_load = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_load.setGeometry(QtCore.QRect(440, 600, 311, 61))
+        self.pushButton_add = QtWidgets.QPushButton(self.tab_24)
+        self.pushButton_add.setGeometry(QtCore.QRect(770, 350, 171, 101))
+        self.pushButton_add.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_add.setObjectName("pushButton_add")
+        self.table2 = QtWidgets.QTableView(self.tab_24)
+        self.table2.setGeometry(QtCore.QRect(70, 350, 681, 221))
+        self.table2.setStyleSheet("font-size:15px;height:20px;\n"
+"")
+        self.table2.setObjectName("table2")
+        self.label = QtWidgets.QLabel(self.tab_24)
+        self.label.setGeometry(QtCore.QRect(790, 200, 131, 131))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("img/frut.png"))
+        self.label.setObjectName("label")
+        self.pushButton_load = QtWidgets.QPushButton(self.tab_24)
+        self.pushButton_load.setGeometry(QtCore.QRect(440, 580, 311, 61))
         self.pushButton_load.setStyleSheet("QPushButton {\n"
 "border:1px solid #fff;\n"
-"border-radius:25px;\n"
 "font-size:20px;\n"
 "color:#fff;;\n"
 "}\n"
@@ -2657,42 +2694,132 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.pushButton_load.setObjectName("pushButton_load")
-        self.table2 = QtWidgets.QTableView(self.page_4)
-        self.table2.setGeometry(QtCore.QRect(70, 370, 681, 221))
-        self.table2.setStyleSheet("font-size:15px;height:20px;\n"
-"")
-        self.table2.setObjectName("table2")
-        self.search_field = QtWidgets.QLineEdit(self.page_4)
-        self.search_field.setGeometry(QtCore.QRect(70, 20, 871, 71))
-        self.search_field.setStyleSheet("font-size:35px;\n"
-"height: 60px;\n"
-"border:1px solid #fff;")
-        self.search_field.setText("")
-        self.search_field.setObjectName("search_field")
-        self.pushButton_clear = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_clear.setGeometry(QtCore.QRect(770, 490, 171, 101))
-        self.pushButton_clear.setStyleSheet("QPushButton {\n"
+        self.tabWidget_nutrition.addTab(self.tab_24, "")
+        self.tab_25 = QtWidgets.QWidget()
+        self.tab_25.setObjectName("tab_25")
+        self.stackedWidget_personal_recommendations = QtWidgets.QStackedWidget(self.tab_25)
+        self.stackedWidget_personal_recommendations.setGeometry(QtCore.QRect(10, 10, 991, 621))
+        self.stackedWidget_personal_recommendations.setObjectName("stackedWidget_personal_recommendations")
+        self.page_31 = QtWidgets.QWidget()
+        self.page_31.setObjectName("page_31")
+        self.pushButton_personal_recommendations_login = QtWidgets.QPushButton(self.page_31)
+        self.pushButton_personal_recommendations_login.setGeometry(QtCore.QRect(70, 500, 891, 91))
+        self.pushButton_personal_recommendations_login.setStyleSheet("QPushButton {\n"
 "border:1px solid #fff;\n"
-"border-radius:25px;\n"
 "font-size:20px;\n"
-"color:#fff;\n"
+"color:#fff;;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
-        self.pushButton_clear.setObjectName("pushButton_clear")
-        self.pushButton_add = QtWidgets.QPushButton(self.page_4)
-        self.pushButton_add.setGeometry(QtCore.QRect(770, 370, 171, 101))
-        self.pushButton_add.setStyleSheet("QPushButton {\n"
-"border:1px solid #fff;\n"
-"border-radius:25px;\n"
-"font-size:20px;\n"
-"color:#fff;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(85, 170, 255);\n"
-"}")
-        self.pushButton_add.setObjectName("pushButton_add")
+        self.pushButton_personal_recommendations_login.setObjectName("pushButton_personal_recommendations_login")
+        self.label_5 = QtWidgets.QLabel(self.page_31)
+        self.label_5.setGeometry(QtCore.QRect(80, 70, 891, 101))
+        self.label_5.setStyleSheet("font-size:40px;")
+        self.label_5.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_5.setObjectName("label_5")
+        self.stackedWidget_personal_recommendations.addWidget(self.page_31)
+        self.page_32 = QtWidgets.QWidget()
+        self.page_32.setObjectName("page_32")
+        self.listWidget_asks = QtWidgets.QListWidget(self.page_32)
+        self.listWidget_asks.setGeometry(QtCore.QRect(15, 21, 321, 591))
+        self.listWidget_asks.setObjectName("listWidget_asks")
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_asks.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_asks.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_asks.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_asks.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_asks.addItem(item)
+        self.stackedWidget_advices = QtWidgets.QStackedWidget(self.page_32)
+        self.stackedWidget_advices.setGeometry(QtCore.QRect(370, 30, 611, 581))
+        self.stackedWidget_advices.setObjectName("stackedWidget_advices")
+        self.page_33 = QtWidgets.QWidget()
+        self.page_33.setObjectName("page_33")
+        self.label_advice_0 = QtWidgets.QLabel(self.page_33)
+        self.label_advice_0.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_0.setObjectName("label_advice_0")
+        self.stackedWidget_advices.addWidget(self.page_33)
+        self.page_34 = QtWidgets.QWidget()
+        self.page_34.setObjectName("page_34")
+        self.label_advice_3 = QtWidgets.QLabel(self.page_34)
+        self.label_advice_3.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_3.setObjectName("label_advice_3")
+        self.stackedWidget_advices.addWidget(self.page_34)
+        self.page_35 = QtWidgets.QWidget()
+        self.page_35.setObjectName("page_35")
+        self.label_advice_4 = QtWidgets.QLabel(self.page_35)
+        self.label_advice_4.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_4.setObjectName("label_advice_4")
+        self.stackedWidget_advices.addWidget(self.page_35)
+        self.page_36 = QtWidgets.QWidget()
+        self.page_36.setObjectName("page_36")
+        self.label_advice_5 = QtWidgets.QLabel(self.page_36)
+        self.label_advice_5.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_5.setObjectName("label_advice_5")
+        self.stackedWidget_advices.addWidget(self.page_36)
+        self.page_37 = QtWidgets.QWidget()
+        self.page_37.setObjectName("page_37")
+        self.label_advice_1 = QtWidgets.QLabel(self.page_37)
+        self.label_advice_1.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_1.setObjectName("label_advice_1")
+        self.stackedWidget_advices.addWidget(self.page_37)
+        self.page_38 = QtWidgets.QWidget()
+        self.page_38.setObjectName("page_38")
+        self.label_advice_2 = QtWidgets.QLabel(self.page_38)
+        self.label_advice_2.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_2.setObjectName("label_advice_2")
+        self.stackedWidget_advices.addWidget(self.page_38)
+        self.page_39 = QtWidgets.QWidget()
+        self.page_39.setObjectName("page_39")
+        self.label_advice_6 = QtWidgets.QLabel(self.page_39)
+        self.label_advice_6.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_6.setObjectName("label_advice_6")
+        self.stackedWidget_advices.addWidget(self.page_39)
+        self.page_40 = QtWidgets.QWidget()
+        self.page_40.setObjectName("page_40")
+        self.label_advice_7 = QtWidgets.QLabel(self.page_40)
+        self.label_advice_7.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_7.setObjectName("label_advice_7")
+        self.stackedWidget_advices.addWidget(self.page_40)
+        self.page_41 = QtWidgets.QWidget()
+        self.page_41.setObjectName("page_41")
+        self.label_advice_8 = QtWidgets.QLabel(self.page_41)
+        self.label_advice_8.setGeometry(QtCore.QRect(0, 10, 611, 291))
+        self.label_advice_8.setObjectName("label_advice_8")
+        self.stackedWidget_advices.addWidget(self.page_41)
+        self.page_42 = QtWidgets.QWidget()
+        self.page_42.setObjectName("page_42")
+        self.label_advice_9 = QtWidgets.QLabel(self.page_42)
+        self.label_advice_9.setGeometry(QtCore.QRect(0, 0, 611, 291))
+        self.label_advice_9.setObjectName("label_advice_9")
+        self.stackedWidget_advices.addWidget(self.page_42)
+        self.page_43 = QtWidgets.QWidget()
+        self.page_43.setObjectName("page_43")
+        self.label_advice_10 = QtWidgets.QLabel(self.page_43)
+        self.label_advice_10.setGeometry(QtCore.QRect(0, 0, 611, 291))
+        self.label_advice_10.setObjectName("label_advice_10")
+        self.stackedWidget_advices.addWidget(self.page_43)
+        self.page_44 = QtWidgets.QWidget()
+        self.page_44.setObjectName("page_44")
+        self.label_advice_11 = QtWidgets.QLabel(self.page_44)
+        self.label_advice_11.setGeometry(QtCore.QRect(0, 0, 611, 291))
+        self.label_advice_11.setObjectName("label_advice_11")
+        self.stackedWidget_advices.addWidget(self.page_44)
+        self.page_45 = QtWidgets.QWidget()
+        self.page_45.setObjectName("page_45")
+        self.stackedWidget_advices.addWidget(self.page_45)
+        self.page_46 = QtWidgets.QWidget()
+        self.page_46.setObjectName("page_46")
+        self.stackedWidget_advices.addWidget(self.page_46)
+        self.page_47 = QtWidgets.QWidget()
+        self.page_47.setObjectName("page_47")
+        self.stackedWidget_advices.addWidget(self.page_47)
+        self.stackedWidget_personal_recommendations.addWidget(self.page_32)
+        self.tabWidget_nutrition.addTab(self.tab_25, "")
         self.stackedWidget.addWidget(self.page_4)
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
@@ -2757,13 +2884,16 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(3)
         self.comboBox_activity.setCurrentIndex(3)
-        self.stackedWidget_training.setCurrentIndex(1)
+        self.stackedWidget_training.setCurrentIndex(0)
         self.tabWidget_training_description.setCurrentIndex(1)
         self.listWidget_exersizes.setCurrentRow(-1)
         self.stackedWidget_gifs.setCurrentIndex(12)
         self.tabWidget.setCurrentIndex(20)
+        self.tabWidget_nutrition.setCurrentIndex(1)
+        self.stackedWidget_personal_recommendations.setCurrentIndex(1)
+        self.stackedWidget_advices.setCurrentIndex(11)
         self.stackedWidget_description.setCurrentIndex(1)
         self.comboBox_language.setCurrentIndex(0)
         self.stackedWidget.currentChanged['int'].connect(self.label_header.update)
@@ -2782,7 +2912,7 @@ class Ui_MainWindow(object):
         self.pushButton_nutrition.setText(_translate("MainWindow", "Питание"))
         self.label_4.setText(_translate("MainWindow", "BeneFit"))
         self.label_IMT.setText(_translate("MainWindow", "Индекс Массы Тела"))
-        self.label_metabolism.setText(_translate("MainWindow", "Дневной метаболизм"))
+        self.label_metabolism.setText(_translate("MainWindow", "Норма калорий"))
         self.label_hr_max.setText(_translate("MainWindow", "ЧСС максимум"))
         self.label_hr_train.setText(_translate("MainWindow", "ЧСС тренировочный"))
         self.label_water.setText(_translate("MainWindow", "Норма воды в день"))
@@ -2822,7 +2952,7 @@ class Ui_MainWindow(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">Особенности: </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - все упражнения выполняются в технике 4/1: 4 секунды негативная фаза(опускание туловища в отжиманиях) и 1 секунда взрывная фаза(подъем туловища в отжиманиях)</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - Вы можете заниматься по этой программе имея только пол и стену</span></p></body></html>"))
-        self.tabWidget_training_description.setTabText(self.tabWidget_training_description.indexOf(self.tab_22), _translate("MainWindow", "Tab 1"))
+        self.tabWidget_training_description.setTabText(self.tabWidget_training_description.indexOf(self.tab_22), _translate("MainWindow", "Описание программы"))
         __sortingEnabled = self.listWidget_exersizes.isSortingEnabled()
         self.listWidget_exersizes.setSortingEnabled(False)
         item = self.listWidget_exersizes.item(0)
@@ -2872,7 +3002,7 @@ class Ui_MainWindow(object):
         item = self.listWidget_exersizes.item(22)
         item.setText(_translate("MainWindow", "Шраги"))
         self.listWidget_exersizes.setSortingEnabled(__sortingEnabled)
-        self.tabWidget_training_description.setTabText(self.tabWidget_training_description.indexOf(self.tab_23), _translate("MainWindow", "Tab 2"))
+        self.tabWidget_training_description.setTabText(self.tabWidget_training_description.indexOf(self.tab_23), _translate("MainWindow", "Архив упражнений"))
         self.checkBox_exersize_3_1.setText(_translate("MainWindow", "Разведение одной рукой лежа"))
         self.label_exersize_1.setText(_translate("MainWindow", "Упражнение"))
         self.checkBox_exersize_5_1.setText(_translate("MainWindow", "Отжимания от пола узким хватом"))
@@ -3095,10 +3225,39 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Программа тренировок \"Быстрый старт\""))
         self.pushButton_quickStart_help.setText(_translate("MainWindow", "?"))
         self.pushButton_insert.setText(_translate("MainWindow", "+"))
-        self.pushButton_save.setText(_translate("MainWindow", "Сохранить"))
-        self.pushButton_load.setText(_translate("MainWindow", "Загрузить"))
         self.pushButton_clear.setText(_translate("MainWindow", "Очистить"))
+        self.pushButton_save.setText(_translate("MainWindow", "Сохранить"))
         self.pushButton_add.setText(_translate("MainWindow", "Добавить"))
+        self.pushButton_load.setText(_translate("MainWindow", "Загрузить"))
+        self.tabWidget_nutrition.setTabText(self.tabWidget_nutrition.indexOf(self.tab_24), _translate("MainWindow", "Продукты питания"))
+        self.pushButton_personal_recommendations_login.setText(_translate("MainWindow", "Войдите в аккаунт и заполните данные в разделе калькулятор"))
+        self.label_5.setText(_translate("MainWindow", "Вы не вошли в аккаунт"))
+        __sortingEnabled = self.listWidget_asks.isSortingEnabled()
+        self.listWidget_asks.setSortingEnabled(False)
+        item = self.listWidget_asks.item(0)
+        item.setText(_translate("MainWindow", "Процентное соотношение БЖУ"))
+        item = self.listWidget_asks.item(1)
+        item.setText(_translate("MainWindow", "Сколько \"съедать\" ккал?"))
+        item = self.listWidget_asks.item(2)
+        item.setText(_translate("MainWindow", "Количество приёмов пищи"))
+        item = self.listWidget_asks.item(3)
+        item.setText(_translate("MainWindow", "Чёрный список продуктов"))
+        item = self.listWidget_asks.item(4)
+        item.setText(_translate("MainWindow", "Пример плана питания"))
+        self.listWidget_asks.setSortingEnabled(__sortingEnabled)
+        self.label_advice_0.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Для вас будет оптимальным соотношение</p><p align=\"center\">белков жиров и углеводов: 25/20/55 % </p></body></html>"))
+        self.label_advice_3.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Для вас будет оптимальным соотношение</p><p align=\"center\">белков жиров и углеводов: 40/20/40 % </p></body></html>"))
+        self.label_advice_4.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Для вас будет оптимальным соотношение</p><p align=\"center\">белков жиров и углеводов: 45/15/40 % </p></body></html>"))
+        self.label_advice_5.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Для вас будет оптимальным норма калорий</p><p align=\"center\">увеличенная на 10%. </p><p align=\"center\">(Норму калорий можно рассчитать в разделе калькулятор)</p></body></html>"))
+        self.label_advice_1.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Для вас будет оптимальным норма калорий</p><p align=\"center\">увеличенная на 5%. </p><p align=\"center\">(Норму калорий можно рассчитать в разделе калькулятор)</p></body></html>"))
+        self.label_advice_2.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Для вас будет оптимальным норма калорий</p><p align=\"center\">уменьшенная на 10%. </p><p align=\"center\">(Норму калорий можно рассчитать в разделе калькулятор)</p></body></html>"))
+        self.label_advice_6.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Питайтесь как можно чаще!</p><p align=\"center\">Желательно 6-8 раз в день.</p><p align=\"center\">Избегайте больших перерывов между приемами пищи</p><p align=\"center\"><br/></p></body></html>"))
+        self.label_advice_7.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Питайтесь часто!</p><p align=\"center\">Желательно 5 раз в день.</p><p align=\"center\">Перерыв между приемами пищи не более 3,5 часов</p></body></html>"))
+        self.label_advice_8.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Для вас количество приемов не так важно.</p><p align=\"center\">Главное питайтесь хотя-бы 3 раза в день.</p></body></html>"))
+        self.label_advice_9.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Вы именно тот человек, который может есть и не толстеть,</p><p align=\"center\">поэтому для вас нет запрещенных продуктов. Но не увлекайтесь:</p><p align=\"center\">правильное питание в любом случае полезнее, чем фастфуд.</p><p align=\"center\"><br/></p></body></html>"))
+        self.label_advice_10.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Вам следует ограничить упротребление простых углеводов</p><p align=\"center\">(сахар, мучные изделия), но не обязательно исключать их</p><p align=\"center\">полностью. </p></body></html>"))
+        self.label_advice_11.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Вам следует полностью отказаться от простых углеводов</p><p align=\"center\">(сахар, мучные изделия) и от фастфуда. Ограничьте</p><p align=\"center\"> потребление жирной пищи.</p></body></html>"))
+        self.tabWidget_nutrition.setTabText(self.tabWidget_nutrition.indexOf(self.tab_25), _translate("MainWindow", "Персональные рекомендации"))
         self.textBrowser_en.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

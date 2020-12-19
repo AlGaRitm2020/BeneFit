@@ -22,7 +22,7 @@ class LoginWindow(QDialog, Ui_Dialog):
         global LOGIN, ID
         LOGIN, ID = 0, 0
         self.setupUi(self)
-        self.setWindowIcon(QIcon("img/icons/4213426-about-description-help-info-information-notification_115427.ico"))
+        self.setWindowIcon(QIcon("img/icons/sigh_in_black.ico"))
         if self.language == 'ru':
             self.setWindowTitle("Войти в систему")
         else:

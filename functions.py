@@ -1,12 +1,5 @@
-################################################################################
-##
-## BY: WANDERSON M.PIMENTA
-## PROJECT MADE WITH: Qt Designer and PySide2
-## V: 1.0.0
-##
-################################################################################
 
-## ==> GUI FILE
+
 from main import *
 
 # функция отбрасывания дробной части
@@ -16,9 +9,27 @@ def cast(n):
     return n
 
 class Functions(MainWindow):
-    # def update_login(self):
-    #     global LOGIN
-    #     MainWindow.label_name.setText(LOGIN)
+    def update_login(self, ID, LOGIN):
+        if ID == 0:
+            if self.language == 'ru':
+                self.pushButton_sign.setText("Вход")
+                self.btn_login.setText("Вход")
+            else:
+                self.pushButton_sign.setText("Sign in")
+                self.btn_login.setText("Sign in")
+
+            self.label_menu_login.setText('')
+            self.label_name.setText("")
+        else:
+            if self.language == 'ru':
+                self.pushButton_sign.setText("Выход")
+                self.btn_login.setText("Выход")
+            else:
+                self.pushButton_sign.setText("Sign out")
+                self.btn_login.setText("Sign out")
+            self.label_name.setText(LOGIN)
+            self.label_menu_login.setText(LOGIN)
+
     def update_calculator(self, ID):
         
         
@@ -89,6 +100,20 @@ class Functions(MainWindow):
                 # for i in data:
                 #     _, _ , ex1, ex2, ex3, ex4, ex5 = i
                 # # print(data[-1])
+
+    def update_recommendations(self, ID):
+        if ID != 0:
+            self.stackedWidget_personal_recommendations.setCurrentIndex(1)
+
+            with sqlite3.connect('db/dataBase2.db') as db:
+                cursor = db.cursor()
+                self.body_type = cursor.execute(
+                f"""SELECT type FROM info WHERE id = {ID}""").fetchall()[0][0]
+
+
+        else:
+            self.stackedWidget_personal_recommendations.setCurrentIndex(0)
+
     def toggleMenu(self, maxWidth, enable, login, language):
         if enable:
 
@@ -175,14 +200,13 @@ class Functions(MainWindow):
     #     log = LoginWindow('ru')
 
     def translate(self, *flag):
-        # Functions.toggleMenu(self,200, True, 'f', 'en')
         if flag[0] != 'order':
             if self.comboBox_language.currentIndex() == 0:
                 self.language = "ru"
             else:
                 self.language = "en"
 
-        self.comboBox_language.setCurrentIndex(1)
+        # self.comboBox_language.setCurrentIndex(1)
         # формирование списка заголовков
         if self.language == "ru":
             self.titles = ["Главная", "Калькулятор", "Тренировки", "Питание", "О приложении", "Настройки"]
@@ -211,7 +235,7 @@ class Functions(MainWindow):
             self.comboBox_activity.setItemText(4, "Very high")
             self.label_check_fat.setText("Calculate fat %")
             self.label_IMT.setText("Body Mass Index")
-            self.label_metabolism.setText("Resting Metabolic")
+            self.label_metabolism.setText("Intake of calories")
             self.label_hr_max.setText("Heart Rate Max")
             self.label_hr_train.setText("Training Heart Rate")
             self.label_water.setText("Daily Water Intake")
@@ -224,6 +248,8 @@ class Functions(MainWindow):
             self.pushButton_nutrition.setText("Nutrition")
             self.pushButton_info.setText("About app")
             self.pushButton_sign.setText("Sign in") 
+
+            # показать навигацию
             if flag[0] == 'show_header':
                 self.btn_page_1.setText(" Home")
                 self.btn_page_2.setText(" Calculator")
@@ -272,7 +298,7 @@ class Functions(MainWindow):
             self.comboBox_activity.setItemText(4, "Очень высокая")
             self.label_check_fat.setText("Расчитать % жира")
             self.label_IMT.setText("Индекс Массы Тела")
-            self.label_metabolism.setText("Дневной метаболизм")
+            self.label_metabolism.setText("Норма калорий")
             self.label_hr_max.setText("ЧСС максимум")
             self.label_hr_train.setText("ЧСС тренировочный")
             self.label_water.setText("Норма воды в день")
@@ -286,6 +312,7 @@ class Functions(MainWindow):
             self.pushButton_info.setText("О приложении")
             self.pushButton_sign.setText("Вход")
 
+            # показать навигацию
             if flag[0] == 'show_header':
                 self.btn_page_1.setText(" Главная")
                 self.btn_page_2.setText(" Калькулятор")
