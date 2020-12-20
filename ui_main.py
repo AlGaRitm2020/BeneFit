@@ -14,9 +14,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1120, 741)
+        MainWindow.resize(1128, 741)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 500))
-        MainWindow.setStyleSheet("background-color: rgb(45, 45, 45);")
+        MainWindow.setStyleSheet("")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setStyleSheet("font-size:20px;")
         self.centralwidget.setObjectName("centralwidget")
@@ -60,6 +60,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addWidget(self.Btn_Toggle)
         self.horizontalLayout.addWidget(self.frame_toggle)
         self.frame_top = QtWidgets.QFrame(self.Top_Bar)
+        self.frame_top.setStyleSheet("background-color:rgb(12,12,12);")
         self.frame_top.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_top.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_top.setObjectName("frame_top")
@@ -69,22 +70,6 @@ class Ui_MainWindow(object):
 "font-size:24px;")
         self.label_header.setAlignment(QtCore.Qt.AlignCenter)
         self.label_header.setObjectName("label_header")
-        self.btn_page_7 = QtWidgets.QPushButton(self.frame_top)
-        self.btn_page_7.setGeometry(QtCore.QRect(0, 0, 68, 40))
-        self.btn_page_7.setMinimumSize(QtCore.QSize(0, 40))
-        self.btn_page_7.setStyleSheet("QPushButton {\n"
-"    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
-"    border: 0px solid;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(85, 170, 255);\n"
-"}")
-        self.btn_page_7.setText("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../../../.designer/backup/img/icons/left_arrow_edited.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_7.setIcon(icon1)
-        self.btn_page_7.setObjectName("btn_page_7")
         self.horizontalLayout.addWidget(self.frame_top)
         self.verticalLayout.addWidget(self.Top_Bar)
         self.Content = QtWidgets.QFrame(self.centralwidget)
@@ -99,7 +84,7 @@ class Ui_MainWindow(object):
         self.frame_left_menu = QtWidgets.QFrame(self.Content)
         self.frame_left_menu.setMinimumSize(QtCore.QSize(70, 0))
         self.frame_left_menu.setMaximumSize(QtCore.QSize(70, 16777215))
-        self.frame_left_menu.setStyleSheet("background-color: rgb(35, 35, 35);\n"
+        self.frame_left_menu.setStyleSheet("background-color:rgb(12,12,12);\n"
 "color:#fff;\n"
 "font-size:20px;")
         self.frame_left_menu.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -112,96 +97,90 @@ class Ui_MainWindow(object):
         self.btn_page_1.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_1.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
 "    border: 0px solid;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_1.setText("")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("img/icons/home-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_1.setIcon(icon2)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("img/icons/home-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_1.setIcon(icon1)
         self.btn_page_1.setObjectName("btn_page_1")
         self.verticalLayout_3.addWidget(self.btn_page_1)
         self.btn_page_2 = QtWidgets.QPushButton(self.frame_left_menu)
         self.btn_page_2.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_2.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
 "    border: 0px solid;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_2.setText("")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("img/icons/calculator_(1).ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_2.setIcon(icon3)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("img/icons/calculator_(1).ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_2.setIcon(icon2)
         self.btn_page_2.setObjectName("btn_page_2")
         self.verticalLayout_3.addWidget(self.btn_page_2)
         self.btn_page_3 = QtWidgets.QPushButton(self.frame_left_menu)
         self.btn_page_3.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_3.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
 "    border: 0px solid;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_3.setText("")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("img/icons/barrel-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_3.setIcon(icon4)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("img/icons/barrel-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_3.setIcon(icon3)
         self.btn_page_3.setObjectName("btn_page_3")
         self.verticalLayout_3.addWidget(self.btn_page_3)
         self.btn_page_4 = QtWidgets.QPushButton(self.frame_left_menu)
         self.btn_page_4.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_4.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
 "    border: 0px solid;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_4.setText("")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("img/icons/apple-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_4.setIcon(icon5)
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("img/icons/apple-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_4.setIcon(icon4)
         self.btn_page_4.setObjectName("btn_page_4")
         self.verticalLayout_3.addWidget(self.btn_page_4)
         self.btn_page_5 = QtWidgets.QPushButton(self.frame_left_menu)
         self.btn_page_5.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_5.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
 "    border: 0px solid;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_5.setText("")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("img/icons/info-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_5.setIcon(icon6)
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("img/icons/info-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_5.setIcon(icon5)
         self.btn_page_5.setObjectName("btn_page_5")
         self.verticalLayout_3.addWidget(self.btn_page_5)
         self.btn_page_6 = QtWidgets.QPushButton(self.frame_left_menu)
         self.btn_page_6.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_page_6.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
 "    border: 0px solid;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.btn_page_6.setText("")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("img/icons/settings-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_6.setIcon(icon7)
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("img/icons/settings-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_page_6.setIcon(icon6)
         self.btn_page_6.setObjectName("btn_page_6")
         self.verticalLayout_3.addWidget(self.btn_page_6)
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -217,7 +196,6 @@ class Ui_MainWindow(object):
         self.btn_login.setMinimumSize(QtCore.QSize(0, 40))
         self.btn_login.setStyleSheet("QPushButton {\n"
 "    color: rgb(255, 255, 255);\n"
-"    background-color: rgb(35, 35, 35);\n"
 "    border:1px solid #fff;\n"
 "    color:#fff;\n"
 "    font-size:20px;\n"
@@ -225,12 +203,13 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("img/icons/sigh_in.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_login.setIcon(icon8)
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap("img/icons/sigh_in.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_login.setIcon(icon7)
         self.btn_login.setObjectName("btn_login")
         self.verticalLayout_3.addWidget(self.btn_login)
         self.frame_top_menus = QtWidgets.QFrame(self.frame_left_menu)
+        self.frame_top_menus.setStyleSheet("")
         self.frame_top_menus.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_top_menus.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_top_menus.setObjectName("frame_top_menus")
@@ -241,15 +220,85 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.addWidget(self.frame_top_menus, 0, QtCore.Qt.AlignTop)
         self.horizontalLayout_2.addWidget(self.frame_left_menu)
         self.frame_pages = QtWidgets.QFrame(self.Content)
+        self.frame_pages.setStyleSheet("QStackedWidget{\n"
+"background:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(12, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"}\n"
+"")
         self.frame_pages.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_pages.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_pages.setObjectName("frame_pages")
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.frame_pages)
-        self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.stackedWidget = QtWidgets.QStackedWidget(self.frame_pages)
-        self.stackedWidget.setStyleSheet("color:#ffffff;\n"
-"font-size:20px;\n"
-"background-image: url(imп/wallpapers.jpg);")
+        self.stackedWidget.setGeometry(QtCore.QRect(-1, 0, 1061, 701))
+        self.stackedWidget.setStyleSheet("QWidget{\n"
+"    \n"
+"    \n"
+"    \n"
+"    \n"
+"    \n"
+"    background-image: url(:/fasd/img/wallpapers7_edited_2.jpg);\n"
+"    color:white;\n"
+"}\n"
+"QPushButton{\n"
+"background:none;\n"
+"background-color:rgb(35,35,35);\n"
+"\n"
+"}\n"
+"QGroupBox{\n"
+"    background:none;\n"
+"    background-color:rgb(25,25,25);\n"
+"background-image: url(:/fasd/img/wallpapers2.jpg);\n"
+"    border: 2px solid white;\n"
+"    \n"
+"\n"
+"}\n"
+"QSpinBox {\n"
+"    background:none;\n"
+"    \n"
+"}\n"
+"QLabel {\n"
+"    background:none;\n"
+"    \n"
+"}\n"
+"QComboBox {\n"
+"    background:none;\n"
+"    background-color:rgb(35,35,35);\n"
+"\n"
+"    \n"
+"}\n"
+"QLineEdit {\n"
+"    background:none;\n"
+"    background-color:rgb(35,35,35);\n"
+"    \n"
+"}\n"
+"QRadioButton {\n"
+"    background:none;\n"
+"    \n"
+"}\n"
+"QCheckBox {\n"
+"    background:none;\n"
+"    \n"
+"    \n"
+"}\n"
+"QTabWidget {\n"
+"    background:none;\n"
+"    background-color:black;\n"
+"    \n"
+"}\n"
+"QListWidget {\n"
+"    background:none;\n"
+"    \n"
+"    background-image: url(:/fasd/img/wallpapers2.jpg);\n"
+"    \n"
+"    \n"
+"}\n"
+"QGridLayout {\n"
+"    background:none;\n"
+"}\n"
+"QFormLayout {\n"
+"    background:none;\n"
+"}\n"
+"color:#ffffff;\n"
+"font-size:20px;")
         self.stackedWidget.setObjectName("stackedWidget")
         self.page_1 = QtWidgets.QWidget()
         self.page_1.setStyleSheet("")
@@ -297,9 +346,9 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_info.setObjectName("pushButton_info")
         self.label_3 = QtWidgets.QLabel(self.page_1)
-        self.label_3.setGeometry(QtCore.QRect(420, 30, 161, 111))
+        self.label_3.setGeometry(QtCore.QRect(440, 30, 161, 111))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("img/main_img.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("img/filename.png"))
         self.label_3.setObjectName("label_3")
         self.pushButton_sign = QtWidgets.QPushButton(self.page_1)
         self.pushButton_sign.setGeometry(QtCore.QRect(730, 40, 71, 31))
@@ -333,15 +382,20 @@ class Ui_MainWindow(object):
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
         self.groupBox_5 = QtWidgets.QGroupBox(self.page_2)
-        self.groupBox_5.setGeometry(QtCore.QRect(560, 110, 381, 401))
-        self.groupBox_5.setStyleSheet("color:#fff;\n"
+        self.groupBox_5.setGeometry(QtCore.QRect(570, 110, 391, 401))
+        self.groupBox_5.setStyleSheet("QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}\n"
+"QGroupBox{\n"
+"color:#fff;\n"
 "border-radius:25px;\n"
 "font-size:20px;\n"
-"background-color: rgb(35, 35, 35);")
+"}\n"
+"")
         self.groupBox_5.setTitle("")
         self.groupBox_5.setObjectName("groupBox_5")
         self.formLayoutWidget_4 = QtWidgets.QWidget(self.groupBox_5)
-        self.formLayoutWidget_4.setGeometry(QtCore.QRect(20, 10, 341, 222))
+        self.formLayoutWidget_4.setGeometry(QtCore.QRect(30, 10, 341, 222))
         self.formLayoutWidget_4.setObjectName("formLayoutWidget_4")
         self.formLayout_4 = QtWidgets.QFormLayout(self.formLayoutWidget_4)
         self.formLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -351,8 +405,12 @@ class Ui_MainWindow(object):
         self.label_IMT.setObjectName("label_IMT")
         self.formLayout_4.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_IMT)
         self.lineEdit_IMT_value = QtWidgets.QLineEdit(self.formLayoutWidget_4)
-        self.lineEdit_IMT_value.setStyleSheet("background-color: rgb(45, 45, 45);\n"
-"border:none")
+        self.lineEdit_IMT_value.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_IMT_value.setReadOnly(True)
         self.lineEdit_IMT_value.setObjectName("lineEdit_IMT_value")
         self.formLayout_4.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_IMT_value)
@@ -361,8 +419,12 @@ class Ui_MainWindow(object):
         self.label_metabolism.setObjectName("label_metabolism")
         self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_metabolism)
         self.lineEdit_metabolism = QtWidgets.QLineEdit(self.formLayoutWidget_4)
-        self.lineEdit_metabolism.setStyleSheet("background-color: rgb(45, 45, 45);\n"
-"border:none;")
+        self.lineEdit_metabolism.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_metabolism.setReadOnly(True)
         self.lineEdit_metabolism.setObjectName("lineEdit_metabolism")
         self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit_metabolism)
@@ -371,8 +433,12 @@ class Ui_MainWindow(object):
         self.label_hr_max.setObjectName("label_hr_max")
         self.formLayout_4.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_hr_max)
         self.lineEdit_hr_max = QtWidgets.QLineEdit(self.formLayoutWidget_4)
-        self.lineEdit_hr_max.setStyleSheet("background-color: rgb(45, 45, 45);\n"
-"border:none")
+        self.lineEdit_hr_max.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_hr_max.setText("")
         self.lineEdit_hr_max.setReadOnly(True)
         self.lineEdit_hr_max.setObjectName("lineEdit_hr_max")
@@ -382,8 +448,12 @@ class Ui_MainWindow(object):
         self.label_hr_train.setObjectName("label_hr_train")
         self.formLayout_4.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label_hr_train)
         self.lineEdit_hr_train = QtWidgets.QLineEdit(self.formLayoutWidget_4)
-        self.lineEdit_hr_train.setStyleSheet("background-color: rgb(45, 45, 45);\n"
-"border:none")
+        self.lineEdit_hr_train.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_hr_train.setReadOnly(True)
         self.lineEdit_hr_train.setObjectName("lineEdit_hr_train")
         self.formLayout_4.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.lineEdit_hr_train)
@@ -392,14 +462,22 @@ class Ui_MainWindow(object):
         self.label_water.setObjectName("label_water")
         self.formLayout_4.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_water)
         self.lineEdit_water = QtWidgets.QLineEdit(self.formLayoutWidget_4)
-        self.lineEdit_water.setStyleSheet("background-color: rgb(45, 45, 45);\n"
-"border:none")
+        self.lineEdit_water.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_water.setReadOnly(True)
         self.lineEdit_water.setObjectName("lineEdit_water")
         self.formLayout_4.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.lineEdit_water)
         self.lineEdit_IMT_status = QtWidgets.QLineEdit(self.formLayoutWidget_4)
-        self.lineEdit_IMT_status.setStyleSheet("background-color: rgb(45, 45, 45);\n"
-"border:none")
+        self.lineEdit_IMT_status.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_IMT_status.setReadOnly(True)
         self.lineEdit_IMT_status.setObjectName("lineEdit_IMT_status")
         self.formLayout_4.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_IMT_status)
@@ -407,18 +485,22 @@ class Ui_MainWindow(object):
         self.label_type.setObjectName("label_type")
         self.formLayout_4.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_type)
         self.lineEdit_type = QtWidgets.QLineEdit(self.formLayoutWidget_4)
-        self.lineEdit_type.setStyleSheet("background-color: rgb(45, 45, 45);\n"
-"border:none")
+        self.lineEdit_type.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_type.setReadOnly(True)
         self.lineEdit_type.setObjectName("lineEdit_type")
         self.formLayout_4.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.lineEdit_type)
         self.groupBox_4 = QtWidgets.QGroupBox(self.groupBox_5)
-        self.groupBox_4.setGeometry(QtCore.QRect(0, 240, 381, 31))
+        self.groupBox_4.setGeometry(QtCore.QRect(30, 240, 351, 31))
         self.groupBox_4.setStyleSheet("border:none")
         self.groupBox_4.setTitle("")
         self.groupBox_4.setObjectName("groupBox_4")
         self.formLayoutWidget_5 = QtWidgets.QWidget(self.groupBox_4)
-        self.formLayoutWidget_5.setGeometry(QtCore.QRect(20, 0, 341, 31))
+        self.formLayoutWidget_5.setGeometry(QtCore.QRect(0, 0, 341, 31))
         self.formLayoutWidget_5.setObjectName("formLayoutWidget_5")
         self.formLayout_5 = QtWidgets.QFormLayout(self.formLayoutWidget_5)
         self.formLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -428,31 +510,42 @@ class Ui_MainWindow(object):
         self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_fat_percent)
         self.lineEdit_percent = QtWidgets.QLineEdit(self.formLayoutWidget_5)
         self.lineEdit_percent.setEnabled(True)
-        self.lineEdit_percent.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.lineEdit_percent.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.lineEdit_percent.setText("")
         self.lineEdit_percent.setReadOnly(True)
         self.lineEdit_percent.setObjectName("lineEdit_percent")
         self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_percent)
         self.label_img_calculator = QtWidgets.QLabel(self.page_2)
-        self.label_img_calculator.setGeometry(QtCore.QRect(450, 0, 111, 101))
+        self.label_img_calculator.setGeometry(QtCore.QRect(460, 0, 111, 101))
         self.label_img_calculator.setText("")
         self.label_img_calculator.setPixmap(QtGui.QPixmap("img/icons/calculator3.ico"))
         self.label_img_calculator.setObjectName("label_img_calculator")
         self.groupBox_3 = QtWidgets.QGroupBox(self.page_2)
-        self.groupBox_3.setGeometry(QtCore.QRect(60, 110, 381, 401))
-        self.groupBox_3.setStyleSheet("border-radius:25px;\n"
+        self.groupBox_3.setGeometry(QtCore.QRect(50, 110, 391, 401))
+        self.groupBox_3.setStyleSheet("\n"
+"\n"
+"\n"
+"QGroupBox{\n"
+"border-radius:25px;\n"
 "font-size:20px;\n"
-"background-color: rgb(35, 35, 35);\n"
-"color:#fff;")
+"\n"
+"}\n"
+"")
         self.groupBox_3.setTitle("")
         self.groupBox_3.setObjectName("groupBox_3")
         self.groupBox = QtWidgets.QGroupBox(self.groupBox_3)
         self.groupBox.setEnabled(True)
-        self.groupBox.setGeometry(QtCore.QRect(0, 260, 381, 71))
+        self.groupBox.setGeometry(QtCore.QRect(10, 260, 361, 71))
         self.groupBox.setStyleSheet("border:none;")
         self.groupBox.setTitle("")
         self.groupBox.setObjectName("groupBox")
         self.formLayoutWidget_2 = QtWidgets.QWidget(self.groupBox)
-        self.formLayoutWidget_2.setGeometry(QtCore.QRect(20, 10, 341, 120))
+        self.formLayoutWidget_2.setGeometry(QtCore.QRect(20, 9, 341, 101))
         self.formLayoutWidget_2.setObjectName("formLayoutWidget_2")
         self.formLayout_2 = QtWidgets.QFormLayout(self.formLayoutWidget_2)
         self.formLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -462,7 +555,12 @@ class Ui_MainWindow(object):
         self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_waist)
         self.spinBox_waist = QtWidgets.QSpinBox(self.formLayoutWidget_2)
         self.spinBox_waist.setEnabled(True)
-        self.spinBox_waist.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.spinBox_waist.setStyleSheet("QSpinBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QSpinBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.spinBox_waist.setMinimum(38)
         self.spinBox_waist.setMaximum(170)
         self.spinBox_waist.setProperty("value", 70)
@@ -472,14 +570,19 @@ class Ui_MainWindow(object):
         self.label_neck.setObjectName("label_neck")
         self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_neck)
         self.spinBox_neck = QtWidgets.QSpinBox(self.formLayoutWidget_2)
-        self.spinBox_neck.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.spinBox_neck.setStyleSheet("QSpinBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QSpinBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.spinBox_neck.setMinimum(10)
         self.spinBox_neck.setMaximum(50)
         self.spinBox_neck.setProperty("value", 25)
         self.spinBox_neck.setObjectName("spinBox_neck")
         self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.spinBox_neck)
         self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox_3)
-        self.groupBox_2.setGeometry(QtCore.QRect(0, 340, 381, 31))
+        self.groupBox_2.setGeometry(QtCore.QRect(10, 340, 371, 31))
         self.groupBox_2.setStyleSheet("border:none;")
         self.groupBox_2.setTitle("")
         self.groupBox_2.setObjectName("groupBox_2")
@@ -493,14 +596,19 @@ class Ui_MainWindow(object):
         self.label_hip.setObjectName("label_hip")
         self.formLayout_3.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_hip)
         self.spinBox_hip = QtWidgets.QSpinBox(self.formLayoutWidget_3)
-        self.spinBox_hip.setStyleSheet("background-color: rgb(45, 45, 45);")
+        self.spinBox_hip.setStyleSheet("QSpinBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QSpinBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.spinBox_hip.setMinimum(40)
         self.spinBox_hip.setMaximum(170)
         self.spinBox_hip.setProperty("value", 70)
         self.spinBox_hip.setObjectName("spinBox_hip")
         self.formLayout_3.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.spinBox_hip)
         self.formLayoutWidget = QtWidgets.QWidget(self.groupBox_3)
-        self.formLayoutWidget.setGeometry(QtCore.QRect(20, 10, 341, 261))
+        self.formLayoutWidget.setGeometry(QtCore.QRect(30, 10, 341, 261))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
         self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
         self.formLayout.setContentsMargins(0, 0, 0, 0)
@@ -510,8 +618,12 @@ class Ui_MainWindow(object):
         self.label_height.setObjectName("label_height")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_height)
         self.spinBox_height = QtWidgets.QSpinBox(self.formLayoutWidget)
-        self.spinBox_height.setStyleSheet("border:none;\n"
-"background-color: rgb(45, 45, 45);")
+        self.spinBox_height.setStyleSheet("QSpinBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QSpinBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.spinBox_height.setMinimum(54)
         self.spinBox_height.setMaximum(272)
         self.spinBox_height.setProperty("value", 175)
@@ -522,8 +634,12 @@ class Ui_MainWindow(object):
         self.label_weight.setObjectName("label_weight")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_weight)
         self.spinBox_weight = QtWidgets.QSpinBox(self.formLayoutWidget)
-        self.spinBox_weight.setStyleSheet("border:none;\n"
-"background-color: rgb(45, 45, 45);")
+        self.spinBox_weight.setStyleSheet("QSpinBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QSpinBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.spinBox_weight.setMinimum(17)
         self.spinBox_weight.setMaximum(635)
         self.spinBox_weight.setProperty("value", 70)
@@ -534,8 +650,12 @@ class Ui_MainWindow(object):
         self.label_age.setObjectName("label_age")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_age)
         self.spinBox_age = QtWidgets.QSpinBox(self.formLayoutWidget)
-        self.spinBox_age.setStyleSheet("border:none;\n"
-"background-color: rgb(45, 45, 45);")
+        self.spinBox_age.setStyleSheet("QSpinBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QSpinBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.spinBox_age.setMinimum(14)
         self.spinBox_age.setMaximum(120)
         self.spinBox_age.setProperty("value", 16)
@@ -546,14 +666,22 @@ class Ui_MainWindow(object):
         self.label_gender.setObjectName("label_gender")
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_gender)
         self.radioButton_male = QtWidgets.QRadioButton(self.formLayoutWidget)
-        self.radioButton_male.setStyleSheet("border:none;\n"
-"background-color: rgb(45, 45, 45);")
+        self.radioButton_male.setStyleSheet("QRadioButton{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QRadioButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.radioButton_male.setChecked(True)
         self.radioButton_male.setObjectName("radioButton_male")
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.radioButton_male)
         self.radioButton_female = QtWidgets.QRadioButton(self.formLayoutWidget)
-        self.radioButton_female.setStyleSheet("border:none;\n"
-"background-color: rgb(45, 45, 45);")
+        self.radioButton_female.setStyleSheet("QRadioButton{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QRadioButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.radioButton_female.setObjectName("radioButton_female")
         self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.radioButton_female)
         self.label_activity = QtWidgets.QLabel(self.formLayoutWidget)
@@ -561,8 +689,14 @@ class Ui_MainWindow(object):
         self.label_activity.setObjectName("label_activity")
         self.formLayout.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.label_activity)
         self.comboBox_activity = QtWidgets.QComboBox(self.formLayoutWidget)
-        self.comboBox_activity.setStyleSheet("border:none;\n"
-"background-color: rgb(45, 45, 45);")
+        self.comboBox_activity.setStyleSheet("\n"
+"QComboBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);\n"
+"}\n"
+"QComboBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.comboBox_activity.setObjectName("comboBox_activity")
         self.comboBox_activity.addItem("")
         self.comboBox_activity.addItem("")
@@ -575,6 +709,12 @@ class Ui_MainWindow(object):
         self.label_check_fat.setObjectName("label_check_fat")
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.LabelRole, self.label_check_fat)
         self.checkBox_fat = QtWidgets.QCheckBox(self.formLayoutWidget)
+        self.checkBox_fat.setStyleSheet("QCheckBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QCheckBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.checkBox_fat.setText("")
         self.checkBox_fat.setChecked(False)
         self.checkBox_fat.setObjectName("checkBox_fat")
@@ -583,8 +723,12 @@ class Ui_MainWindow(object):
         self.label_wrist.setObjectName("label_wrist")
         self.formLayout.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_wrist)
         self.spinBox_wrist = QtWidgets.QSpinBox(self.formLayoutWidget)
-        self.spinBox_wrist.setStyleSheet("border:none;\n"
-"background-color: rgb(45, 45, 45);")
+        self.spinBox_wrist.setStyleSheet("QSpinBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QSpinBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.spinBox_wrist.setMinimum(10)
         self.spinBox_wrist.setMaximum(50)
         self.spinBox_wrist.setProperty("value", 18)
@@ -612,23 +756,30 @@ class Ui_MainWindow(object):
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
         self.stackedWidget_training = QtWidgets.QStackedWidget(self.page_3)
-        self.stackedWidget_training.setGeometry(QtCore.QRect(-10, 20, 1041, 661))
+        self.stackedWidget_training.setGeometry(QtCore.QRect(-10, 20, 1071, 691))
+        self.stackedWidget_training.setStyleSheet("QTabWidget{\n"
+"background-color:rgb(45,45,45);\n"
+"}")
         self.stackedWidget_training.setObjectName("stackedWidget_training")
         self.page_8 = QtWidgets.QWidget()
         self.page_8.setObjectName("page_8")
         self.tabWidget_training_description = QtWidgets.QTabWidget(self.page_8)
         self.tabWidget_training_description.setGeometry(QtCore.QRect(0, 10, 1081, 671))
+        self.tabWidget_training_description.setStyleSheet("background-color:#454545;\n"
+"\n"
+"")
         self.tabWidget_training_description.setObjectName("tabWidget_training_description")
         self.tab_22 = QtWidgets.QWidget()
         self.tab_22.setObjectName("tab_22")
         self.textBrowser = QtWidgets.QTextBrowser(self.tab_22)
-        self.textBrowser.setGeometry(QtCore.QRect(50, 20, 921, 561))
+        self.textBrowser.setGeometry(QtCore.QRect(10, 0, 1061, 631))
         self.textBrowser.setObjectName("textBrowser")
         self.tabWidget_training_description.addTab(self.tab_22, "")
         self.tab_23 = QtWidgets.QWidget()
         self.tab_23.setObjectName("tab_23")
         self.listWidget_exersizes = QtWidgets.QListWidget(self.tab_23)
-        self.listWidget_exersizes.setGeometry(QtCore.QRect(30, 0, 321, 611))
+        self.listWidget_exersizes.setGeometry(QtCore.QRect(30, 0, 321, 631))
+        self.listWidget_exersizes.setStyleSheet("font-size:18px;")
         self.listWidget_exersizes.setMovement(QtWidgets.QListView.Static)
         self.listWidget_exersizes.setProperty("isWrapping", False)
         self.listWidget_exersizes.setObjectName("listWidget_exersizes")
@@ -679,7 +830,8 @@ class Ui_MainWindow(object):
         item = QtWidgets.QListWidgetItem()
         self.listWidget_exersizes.addItem(item)
         self.stackedWidget_gifs = QtWidgets.QStackedWidget(self.tab_23)
-        self.stackedWidget_gifs.setGeometry(QtCore.QRect(380, 10, 641, 591))
+        self.stackedWidget_gifs.setGeometry(QtCore.QRect(350, -40, 721, 671))
+        self.stackedWidget_gifs.setStyleSheet("QLabel{background:none;}")
         self.stackedWidget_gifs.setObjectName("stackedWidget_gifs")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
@@ -846,9 +998,32 @@ class Ui_MainWindow(object):
         self.tabWidget_training_description.addTab(self.tab_23, "")
         self.stackedWidget_training.addWidget(self.page_8)
         self.page_9 = QtWidgets.QWidget()
+        self.page_9.setStyleSheet("background-color:#454545;")
         self.page_9.setObjectName("page_9")
         self.tabWidget = QtWidgets.QTabWidget(self.page_9)
-        self.tabWidget.setGeometry(QtCore.QRect(10, 20, 1011, 641))
+        self.tabWidget.setGeometry(QtCore.QRect(0, 20, 1071, 691))
+        self.tabWidget.setStyleSheet("QSpinBox{\n"
+"border:none;\n"
+"background-color: rgb(45, 45, 45);}\n"
+"QSpinBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}\n"
+"QCheckBox{\n"
+"border:none;\n"
+"background-color:rgb(35,35,35);\n"
+"}\n"
+"QLabel{\n"
+"background:none;\n"
+"}\n"
+"QPushButton{\n"
+"background-color:rgb(35,35,35);\n"
+"}\n"
+"QCheckBox:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}\n"
+"\n"
+"\n"
+"")
         self.tabWidget.setTabPosition(QtWidgets.QTabWidget.North)
         self.tabWidget.setTabShape(QtWidgets.QTabWidget.Rounded)
         self.tabWidget.setObjectName("tabWidget")
@@ -929,10 +1104,10 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.pushButton_complete_1.setObjectName("pushButton_complete_1")
-        icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap("../../../.designer/backup/img/icons/checkmarkcircle_111048-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        icon9.addPixmap(QtGui.QPixmap("../../../.designer/backup/img/icons/calculator_(1).ico"), QtGui.QIcon.Active, QtGui.QIcon.On)
-        self.tabWidget.addTab(self.tab, icon9, "")
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap("../../../.designer/backup/img/icons/checkmarkcircle_111048-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap("../../../.designer/backup/img/icons/calculator_(1).ico"), QtGui.QIcon.Active, QtGui.QIcon.On)
+        self.tabWidget.addTab(self.tab, icon8, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
         self.gridLayoutWidget_2 = QtWidgets.QWidget(self.tab_2)
@@ -1010,9 +1185,9 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.pushButton_complete_2.setObjectName("pushButton_complete_2")
-        icon10 = QtGui.QIcon()
-        icon10.addPixmap(QtGui.QPixmap("../../../.designer/backup/img/icons/checkmarkcircle_111048-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.tabWidget.addTab(self.tab_2, icon10, "")
+        icon9 = QtGui.QIcon()
+        icon9.addPixmap(QtGui.QPixmap("../../../.designer/backup/img/icons/checkmarkcircle_111048-_1_.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.tabWidget.addTab(self.tab_2, icon9, "")
         self.tab_3 = QtWidgets.QWidget()
         self.tab_3.setObjectName("tab_3")
         self.gridLayoutWidget_3 = QtWidgets.QWidget(self.tab_3)
@@ -1093,6 +1268,7 @@ class Ui_MainWindow(object):
         self.pushButton_complete_3.setObjectName("pushButton_complete_3")
         self.groupBox_rest_day_2 = QtWidgets.QGroupBox(self.tab_3)
         self.groupBox_rest_day_2.setGeometry(QtCore.QRect(20, 10, 971, 381))
+        self.groupBox_rest_day_2.setStyleSheet("background-image: url(:/wallpapers/img/wallpapers2.jpg);")
         self.groupBox_rest_day_2.setTitle("")
         self.groupBox_rest_day_2.setObjectName("groupBox_rest_day_2")
         self.label_rest_day_2 = QtWidgets.QLabel(self.groupBox_rest_day_2)
@@ -1341,7 +1517,7 @@ class Ui_MainWindow(object):
         self.pushButton_training_advice_1 = QtWidgets.QPushButton(self.tab_6)
         self.pushButton_training_advice_1.setGeometry(QtCore.QRect(30, 330, 951, 41))
         self.pushButton_training_advice_1.setStyleSheet("background-color: rgb(35, 35, 35);")
-        self.pushButton_training_advice_1.setIcon(icon6)
+        self.pushButton_training_advice_1.setIcon(icon5)
         self.pushButton_training_advice_1.setObjectName("pushButton_training_advice_1")
         self.tabWidget.addTab(self.tab_6, "")
         self.tab_7 = QtWidgets.QWidget()
@@ -1423,6 +1599,7 @@ class Ui_MainWindow(object):
         self.pushButton_complete_7.setObjectName("pushButton_complete_7")
         self.groupBox_rest_day = QtWidgets.QGroupBox(self.tab_7)
         self.groupBox_rest_day.setGeometry(QtCore.QRect(20, 10, 971, 381))
+        self.groupBox_rest_day.setStyleSheet("background-image: url(:/wallpapers/img/wallpapers2.jpg);")
         self.groupBox_rest_day.setTitle("")
         self.groupBox_rest_day.setObjectName("groupBox_rest_day")
         self.label_rest_day = QtWidgets.QLabel(self.groupBox_rest_day)
@@ -1669,6 +1846,7 @@ class Ui_MainWindow(object):
         self.pushButton_complete_10.setObjectName("pushButton_complete_10")
         self.groupBox_rest_day_3 = QtWidgets.QGroupBox(self.tab_10)
         self.groupBox_rest_day_3.setGeometry(QtCore.QRect(20, 10, 971, 381))
+        self.groupBox_rest_day_3.setStyleSheet("background-image: url(:/wallpapers/img/wallpapers2.jpg);")
         self.groupBox_rest_day_3.setTitle("")
         self.groupBox_rest_day_3.setObjectName("groupBox_rest_day_3")
         self.label_rest_day_3 = QtWidgets.QLabel(self.groupBox_rest_day_3)
@@ -1857,6 +2035,7 @@ class Ui_MainWindow(object):
         self.gridLayout_13.setHorizontalSpacing(30)
         self.gridLayout_13.setObjectName("gridLayout_13")
         self.spinBox_extraWeight_1_13 = QtWidgets.QSpinBox(self.gridLayoutWidget_13)
+        self.spinBox_extraWeight_1_13.setStyleSheet("")
         self.spinBox_extraWeight_1_13.setObjectName("spinBox_extraWeight_1_13")
         self.gridLayout_13.addWidget(self.spinBox_extraWeight_1_13, 1, 1, 1, 1)
         self.checkBox_exersize_3_13 = QtWidgets.QCheckBox(self.gridLayoutWidget_13)
@@ -1917,7 +2096,7 @@ class Ui_MainWindow(object):
         self.pushButton_training_advice_2 = QtWidgets.QPushButton(self.tab_13)
         self.pushButton_training_advice_2.setGeometry(QtCore.QRect(30, 330, 951, 41))
         self.pushButton_training_advice_2.setStyleSheet("background-color: rgb(35, 35, 35);")
-        self.pushButton_training_advice_2.setIcon(icon6)
+        self.pushButton_training_advice_2.setIcon(icon5)
         self.pushButton_training_advice_2.setObjectName("pushButton_training_advice_2")
         self.tabWidget.addTab(self.tab_13, "")
         self.tab_14 = QtWidgets.QWidget()
@@ -1999,6 +2178,7 @@ class Ui_MainWindow(object):
         self.pushButton_complete_14.setObjectName("pushButton_complete_14")
         self.groupBox_rest_day_4 = QtWidgets.QGroupBox(self.tab_14)
         self.groupBox_rest_day_4.setGeometry(QtCore.QRect(20, 10, 971, 381))
+        self.groupBox_rest_day_4.setStyleSheet("background-image: url(:/wallpapers/img/wallpapers2.jpg);")
         self.groupBox_rest_day_4.setTitle("")
         self.groupBox_rest_day_4.setObjectName("groupBox_rest_day_4")
         self.label_rest_day_4 = QtWidgets.QLabel(self.groupBox_rest_day_4)
@@ -2245,6 +2425,7 @@ class Ui_MainWindow(object):
         self.pushButton_complete_17.setObjectName("pushButton_complete_17")
         self.groupBox_rest_day_5 = QtWidgets.QGroupBox(self.tab_17)
         self.groupBox_rest_day_5.setGeometry(QtCore.QRect(20, 10, 971, 381))
+        self.groupBox_rest_day_5.setStyleSheet("background-image: url(:/wallpapers/img/wallpapers2.jpg);")
         self.groupBox_rest_day_5.setTitle("")
         self.groupBox_rest_day_5.setObjectName("groupBox_rest_day_5")
         self.label_rest_day_5 = QtWidgets.QLabel(self.groupBox_rest_day_5)
@@ -2493,7 +2674,7 @@ class Ui_MainWindow(object):
         self.pushButton_training_advice_3 = QtWidgets.QPushButton(self.tab_20)
         self.pushButton_training_advice_3.setGeometry(QtCore.QRect(30, 330, 951, 41))
         self.pushButton_training_advice_3.setStyleSheet("background-color: rgb(35, 35, 35);")
-        self.pushButton_training_advice_3.setIcon(icon6)
+        self.pushButton_training_advice_3.setIcon(icon5)
         self.pushButton_training_advice_3.setObjectName("pushButton_training_advice_3")
         self.tabWidget.addTab(self.tab_20, "")
         self.tab_21 = QtWidgets.QWidget()
@@ -2575,6 +2756,7 @@ class Ui_MainWindow(object):
         self.pushButton_complete_21.setObjectName("pushButton_complete_21")
         self.groupBox_rest_day_6 = QtWidgets.QGroupBox(self.tab_21)
         self.groupBox_rest_day_6.setGeometry(QtCore.QRect(20, 20, 971, 381))
+        self.groupBox_rest_day_6.setStyleSheet("background-image: url(:/wallpapers/img/wallpapers2.jpg);")
         self.groupBox_rest_day_6.setTitle("")
         self.groupBox_rest_day_6.setObjectName("groupBox_rest_day_6")
         self.label_rest_day_6 = QtWidgets.QLabel(self.groupBox_rest_day_6)
@@ -2604,11 +2786,20 @@ class Ui_MainWindow(object):
         self.pushButton_quickStart_help.setObjectName("pushButton_quickStart_help")
         self.stackedWidget.addWidget(self.page_3)
         self.page_4 = QtWidgets.QWidget()
-        self.page_4.setStyleSheet("background-color: rgb(45, 45, 45);\n"
+        self.page_4.setStyleSheet("\n"
+"background-color:rgb(45,45,45);\n"
 "color:#fff;")
         self.page_4.setObjectName("page_4")
         self.tabWidget_nutrition = QtWidgets.QTabWidget(self.page_4)
-        self.tabWidget_nutrition.setGeometry(QtCore.QRect(-10, 0, 1061, 701))
+        self.tabWidget_nutrition.setGeometry(QtCore.QRect(-10, 0, 1081, 701))
+        self.tabWidget_nutrition.setStyleSheet("QLabel{\n"
+"background:none;}\n"
+"QPushButton{\n"
+"background-color:rgb(35,35,35);}")
+        self.tabWidget_nutrition.setDocumentMode(True)
+        self.tabWidget_nutrition.setTabsClosable(False)
+        self.tabWidget_nutrition.setMovable(False)
+        self.tabWidget_nutrition.setTabBarAutoHide(True)
         self.tabWidget_nutrition.setObjectName("tabWidget_nutrition")
         self.tab_24 = QtWidgets.QWidget()
         self.tab_24.setObjectName("tab_24")
@@ -2617,14 +2808,19 @@ class Ui_MainWindow(object):
         self.table.setStyleSheet("font-size:15px;\n"
 "height:20px;\n"
 "color:#fff;\n"
+"background-color:#454545;\n"
 "\n"
 "")
         self.table.setObjectName("table")
         self.search_field = QtWidgets.QLineEdit(self.tab_24)
         self.search_field.setGeometry(QtCore.QRect(70, 10, 871, 71))
-        self.search_field.setStyleSheet("font-size:35px;\n"
-"height: 60px;\n"
-"border:1px solid #fff;")
+        self.search_field.setStyleSheet("QLineEdit{\n"
+"border:none;\n"
+"background-color: rgb(35, 35, 35);\n"
+"font-size:50px;}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.search_field.setText("")
         self.search_field.setObjectName("search_field")
         self.pushButton_insert = QtWidgets.QPushButton(self.tab_24)
@@ -2674,8 +2870,9 @@ class Ui_MainWindow(object):
         self.pushButton_add.setObjectName("pushButton_add")
         self.table2 = QtWidgets.QTableView(self.tab_24)
         self.table2.setGeometry(QtCore.QRect(70, 350, 681, 221))
-        self.table2.setStyleSheet("font-size:15px;height:20px;\n"
-"")
+        self.table2.setStyleSheet("font-size:15px;\n"
+"height:20px;\n"
+"background-color:#454545;")
         self.table2.setObjectName("table2")
         self.label = QtWidgets.QLabel(self.tab_24)
         self.label.setGeometry(QtCore.QRect(790, 200, 131, 131))
@@ -2698,7 +2895,7 @@ class Ui_MainWindow(object):
         self.tab_25 = QtWidgets.QWidget()
         self.tab_25.setObjectName("tab_25")
         self.stackedWidget_personal_recommendations = QtWidgets.QStackedWidget(self.tab_25)
-        self.stackedWidget_personal_recommendations.setGeometry(QtCore.QRect(10, 10, 991, 621))
+        self.stackedWidget_personal_recommendations.setGeometry(QtCore.QRect(10, 0, 1061, 661))
         self.stackedWidget_personal_recommendations.setObjectName("stackedWidget_personal_recommendations")
         self.page_31 = QtWidgets.QWidget()
         self.page_31.setObjectName("page_31")
@@ -2722,7 +2919,7 @@ class Ui_MainWindow(object):
         self.page_32 = QtWidgets.QWidget()
         self.page_32.setObjectName("page_32")
         self.listWidget_asks = QtWidgets.QListWidget(self.page_32)
-        self.listWidget_asks.setGeometry(QtCore.QRect(15, 21, 321, 591))
+        self.listWidget_asks.setGeometry(QtCore.QRect(5, 21, 331, 641))
         self.listWidget_asks.setObjectName("listWidget_asks")
         item = QtWidgets.QListWidgetItem()
         self.listWidget_asks.addItem(item)
@@ -2735,7 +2932,8 @@ class Ui_MainWindow(object):
         item = QtWidgets.QListWidgetItem()
         self.listWidget_asks.addItem(item)
         self.stackedWidget_advices = QtWidgets.QStackedWidget(self.page_32)
-        self.stackedWidget_advices.setGeometry(QtCore.QRect(370, 30, 611, 581))
+        self.stackedWidget_advices.setGeometry(QtCore.QRect(340, 20, 721, 641))
+        self.stackedWidget_advices.setStyleSheet("")
         self.stackedWidget_advices.setObjectName("stackedWidget_advices")
         self.page_33 = QtWidgets.QWidget()
         self.page_33.setObjectName("page_33")
@@ -2824,7 +3022,7 @@ class Ui_MainWindow(object):
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
         self.stackedWidget_description = QtWidgets.QStackedWidget(self.page_5)
-        self.stackedWidget_description.setGeometry(QtCore.QRect(9, 9, 981, 661))
+        self.stackedWidget_description.setGeometry(QtCore.QRect(0, 10, 1061, 691))
         self.stackedWidget_description.setStyleSheet("color:#fff;")
         self.stackedWidget_description.setObjectName("stackedWidget_description")
         self.page_des_en = QtWidgets.QWidget()
@@ -2837,15 +3035,16 @@ class Ui_MainWindow(object):
         self.page_des_ru = QtWidgets.QWidget()
         self.page_des_ru.setObjectName("page_des_ru")
         self.textBrowser_ru = QtWidgets.QTextBrowser(self.page_des_ru)
-        self.textBrowser_ru.setGeometry(QtCore.QRect(20, 20, 921, 631))
+        self.textBrowser_ru.setGeometry(QtCore.QRect(0, -10, 1061, 701))
         self.textBrowser_ru.setStyleSheet("")
         self.textBrowser_ru.setObjectName("textBrowser_ru")
         self.stackedWidget_description.addWidget(self.page_des_ru)
         self.stackedWidget.addWidget(self.page_5)
         self.page_6 = QtWidgets.QWidget()
+        self.page_6.setStyleSheet("")
         self.page_6.setObjectName("page_6")
         self.formLayoutWidget_6 = QtWidgets.QWidget(self.page_6)
-        self.formLayoutWidget_6.setGeometry(QtCore.QRect(300, 100, 450, 321))
+        self.formLayoutWidget_6.setGeometry(QtCore.QRect(300, 100, 450, 71))
         self.formLayoutWidget_6.setObjectName("formLayoutWidget_6")
         self.formLayout_6 = QtWidgets.QFormLayout(self.formLayoutWidget_6)
         self.formLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -2854,6 +3053,7 @@ class Ui_MainWindow(object):
         self.label_23.setObjectName("label_23")
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_23)
         self.comboBox_language = QtWidgets.QComboBox(self.formLayoutWidget_6)
+        self.comboBox_language.setStyleSheet("background:#454545;")
         self.comboBox_language.setObjectName("comboBox_language")
         self.comboBox_language.addItem("")
         self.comboBox_language.addItem("")
@@ -2862,12 +3062,13 @@ class Ui_MainWindow(object):
         self.label_24.setObjectName("label_24")
         self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_24)
         self.comboBox_language_2 = QtWidgets.QComboBox(self.formLayoutWidget_6)
+        self.comboBox_language_2.setStyleSheet("background:#454545;")
         self.comboBox_language_2.setObjectName("comboBox_language_2")
         self.comboBox_language_2.addItem("")
         self.comboBox_language_2.addItem("")
         self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.comboBox_language_2)
         self.pushButton_settings = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_settings.setGeometry(QtCore.QRect(300, 540, 421, 61))
+        self.pushButton_settings.setGeometry(QtCore.QRect(300, 540, 451, 61))
         self.pushButton_settings.setStyleSheet("QPushButton {\n"
 "border:1px solid #fff;\n"
 "font-size:20px;\n"
@@ -2877,8 +3078,18 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.pushButton_settings.setObjectName("pushButton_settings")
+        self.pushButton_settings_delete = QtWidgets.QPushButton(self.page_6)
+        self.pushButton_settings_delete.setGeometry(QtCore.QRect(300, 180, 451, 41))
+        self.pushButton_settings_delete.setStyleSheet("QPushButton {\n"
+"border:1px solid #fff;\n"
+"font-size:20px;\n"
+"color:#fff;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_settings_delete.setObjectName("pushButton_settings_delete")
         self.stackedWidget.addWidget(self.page_6)
-        self.verticalLayout_5.addWidget(self.stackedWidget)
         self.horizontalLayout_2.addWidget(self.frame_pages)
         self.verticalLayout.addWidget(self.Content)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -2886,14 +3097,14 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(3)
         self.comboBox_activity.setCurrentIndex(3)
-        self.stackedWidget_training.setCurrentIndex(0)
+        self.stackedWidget_training.setCurrentIndex(1)
         self.tabWidget_training_description.setCurrentIndex(1)
         self.listWidget_exersizes.setCurrentRow(-1)
-        self.stackedWidget_gifs.setCurrentIndex(12)
-        self.tabWidget.setCurrentIndex(20)
-        self.tabWidget_nutrition.setCurrentIndex(1)
+        self.stackedWidget_gifs.setCurrentIndex(13)
+        self.tabWidget.setCurrentIndex(3)
+        self.tabWidget_nutrition.setCurrentIndex(0)
         self.stackedWidget_personal_recommendations.setCurrentIndex(1)
-        self.stackedWidget_advices.setCurrentIndex(11)
+        self.stackedWidget_advices.setCurrentIndex(12)
         self.stackedWidget_description.setCurrentIndex(1)
         self.comboBox_language.setCurrentIndex(0)
         self.stackedWidget.currentChanged['int'].connect(self.label_header.update)
@@ -2917,8 +3128,7 @@ class Ui_MainWindow(object):
         self.label_hr_train.setText(_translate("MainWindow", "ЧСС тренировочный"))
         self.label_water.setText(_translate("MainWindow", "Норма воды в день"))
         self.label_type.setText(_translate("MainWindow", "Тип Телосложения"))
-        self.label_fat_percent.setText(_translate("MainWindow", "% жира                    "))
-        self.lineEdit_percent.setText(_translate("MainWindow", "15.3"))
+        self.label_fat_percent.setText(_translate("MainWindow", "% жира                   "))
         self.label_waist.setText(_translate("MainWindow", "Талия, см             "))
         self.label_neck.setText(_translate("MainWindow", "Шея, см                "))
         self.label_hip.setText(_translate("MainWindow", "Бёдра, см              "))
@@ -2945,13 +3155,25 @@ class Ui_MainWindow(object):
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:26pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Сложность:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> начинающий - продвинутый</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Фокус программы:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> набор мышечной массы, увеличение силы, мышечный рельеф</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Оборудование:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> нет (турник и брусья по возможности)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Оборудование:</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> турник, брусья, гантели</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">Программа &quot;Быстрый старт соответствует своему названию. Она поможет адаптироваться тем, кто вообще не занимался спортом, при этом заставит попотеть опытных спортсменов.</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">Особенности: </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - все упражнения выполняются в технике 4/1: 4 секунды негативная фаза(опускание туловища в отжиманиях) и 1 секунда взрывная фаза(подъем туловища в отжиманиях)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - Вы можете заниматься по этой программе имея только пол и стену</span></p></body></html>"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - каждое упражнение выполняется в течении 4 подходов</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - отдых между подходами и упражениями 90 секунд</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - все подходы выполняются &quot;в отказ&quot; </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\"> - вы можете использовать приложение в качестве дневника прогресса</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\"> - по всем упражнениям доступен просмотр правильной техники выполнения во вкладке архив упражнений</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\"> - есть прогрессия нагрузок за счет увеличения веса </span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">Примечания:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - если у вас нет гантелей, то возьмите 2 пятилитровые бутылки и заполните из водой</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - для таких упражнений как подтягивания можете в качестве утяжелителя использовать рюкзак с книгами</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - записывайте в столбец &quot;повторения&quot; количество повторений в лучшем подходе</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - если во всех подходах упражения вы сделали более 15 повторений, то повышайте вес</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\"> - если во всех подходах упражения вы сделали менее 6 повторений, то понижайте вес</span></p></body></html>"))
         self.tabWidget_training_description.setTabText(self.tabWidget_training_description.indexOf(self.tab_22), _translate("MainWindow", "Описание программы"))
         __sortingEnabled = self.listWidget_exersizes.isSortingEnabled()
         self.listWidget_exersizes.setSortingEnabled(False)
@@ -3321,3 +3543,5 @@ class Ui_MainWindow(object):
         self.comboBox_language_2.setItemText(0, _translate("MainWindow", "Метрическая(см,кг)"))
         self.comboBox_language_2.setItemText(1, _translate("MainWindow", "Имперская(дюймы, фунты)"))
         self.pushButton_settings.setText(_translate("MainWindow", "Сохранить"))
+        self.pushButton_settings_delete.setText(_translate("MainWindow", "Удалить данные пользователя"))
+

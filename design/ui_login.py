@@ -29,12 +29,24 @@ class Ui_Dialog(object):
         self.label_login.setObjectName("label_login")
         self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_login)
         self.lineEdit_login = QtWidgets.QLineEdit(self.formLayoutWidget_2)
+        self.lineEdit_login.setStyleSheet("QLineEdit {\n"
+"\n"
+"}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_login.setObjectName("lineEdit_login")
         self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_login)
         self.label_password = QtWidgets.QLabel(self.formLayoutWidget_2)
         self.label_password.setObjectName("label_password")
         self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_password)
         self.lineEdit_password = QtWidgets.QLineEdit(self.formLayoutWidget_2)
+        self.lineEdit_password.setStyleSheet("QLineEdit {\n"
+"\n"
+"}\n"
+"QLineEdit:hover {\n"
+"    background-color: rgb(85, 170, 255);\n"
+"}")
         self.lineEdit_password.setEchoMode(QtWidgets.QLineEdit.Password)
         self.lineEdit_password.setObjectName("lineEdit_password")
         self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_password)

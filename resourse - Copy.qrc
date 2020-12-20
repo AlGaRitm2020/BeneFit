@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="wallpapers">
+    <file>img/wallpapers5.jpg</file>
+    <file>img/wallpapers5.jpg</file>
+    <file>img/wallpapers4.jpg</file>
+    <file>img/wallpapers.jpg</file>
+    <file>img/wallpapers2.jpg</file>
+  </qresource>
+  <qresource prefix="new"/>
+</RCC>

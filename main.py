@@ -24,6 +24,8 @@ import sqlite3
 import csv
 from math import log10
 
+# импорт файла ресурсов
+import resourse
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -33,7 +35,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         #
         # ГЛАВНАЯ СТРАНИЦА
         #
-
+        # oImage = QImage("img/wallpapers.jpg")
+        # sImage = oImage.scaled(QSize(self.height(), self.width()))
+        # palette = QPalette()
+        # palette.setBrush(QPalette.Window, QBrush(sImage))
+        # self.setPalette(palette)
         # восстановление предыдущего аккаунта
         global ID, LOGIN
         with sqlite3.connect('db/dataBase2.db') as db:
@@ -1040,7 +1046,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if self.listWidget_asks.currentRow() == 4:
             names = ["user_files/system_rations/ectomorph_ration.csv","user_files/system_rations/mesomorph_ration.csv", "user_files/system_rations/endomorph_ration.csv"]
             MainWindow.load(self, names[self.body_type])
-            self
+            self.tabWidget_nutrition.setCurrentIndex(0)
 
         else:
             self.stackedWidget_advices.setCurrentIndex(self.listWidget_asks.currentRow() * 3 + self.body_type)

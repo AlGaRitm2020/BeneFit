@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="fasd">
+    <file>img/wallpapers7_edited_2.jpg</file>
+    <file>img/wallpapers7_edited_1.jpg</file>
+    <file>img/wallpapers8.jpg</file>
+    <file>img/wallpapers7.jpg</file>
+    <file>img/wallpapers.jpg</file>
+    <file>img/wallpapers3.jpg</file>
+    <file>img/wallpapers6.jpg</file>
+    <file>img/wallpapers5.jpg</file>
+    <file>img/wallpapers2.jpg</file>
+    <file>img/wallpapers.jpg</file>
+  </qresource>
+</RCC>
