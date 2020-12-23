@@ -2,13 +2,10 @@
 
 from main import *
 
-# функция отбрасывания дробной части
-def cast(n):
-    if n == int(n):
-        return int(n)
-    return n
+
 
 class Functions(MainWindow):
+    # обновить информацию о входе в аккаунт
     def update_login(self, ID, LOGIN):
         if ID == 0:
             if self.language == 'ru':
@@ -30,8 +27,8 @@ class Functions(MainWindow):
             self.label_name.setText(LOGIN)
             self.label_menu_login.setText(LOGIN)
 
+    # обновить раздел калькулятр согласно данным пользователя
     def update_calculator(self, ID):
-        
         
         # подключение к базе данных информации о пользователе
         with sqlite3.connect('db/dataBase2.db') as db:
@@ -83,11 +80,14 @@ class Functions(MainWindow):
         self.spinBox_waist.setValue(info[8])
         self.spinBox_neck.setValue(info[9])
         self.spinBox_hip.setValue(info[10])
+
+    # обновить раздел тренировок согласно данным пользователя
     def update_training(self, ID):
         with sqlite3.connect('db/dataBase2.db') as db:
             # создание курсора
             cursor = db.cursor()
             for day, daily_list in enumerate(self.objects_list_of_quick_start):
+                # получить данные о тренировочном дне данного пользователя
                 data = cursor.execute(
                 f"""SELECT * FROM quick_start WHERE id = {ID} AND day = {day}""").fetchall()
                 for row, info in enumerate(daily_list):
@@ -95,12 +95,11 @@ class Functions(MainWindow):
                     info[1].setValue(data[0][row+7])
                     info[2].setValue(data[0][row+12])
 
+            # открыть полследний завершенный тренировочный день
             self.tabWidget.setCurrentIndex(cursor.execute(
                 f"""SELECT current_training FROM info WHERE id = {ID}""").fetchall()[0][0])
-                # for i in data:
-                #     _, _ , ex1, ex2, ex3, ex4, ex5 = i
-                # # print(data[-1])
 
+    # обновить подраздел рекомендации согласно данным пользователя
     def update_recommendations(self, ID):
         if ID != 0:
             self.stackedWidget_personal_recommendations.setCurrentIndex(1)
@@ -114,106 +113,97 @@ class Functions(MainWindow):
         else:
             self.stackedWidget_personal_recommendations.setCurrentIndex(0)
 
+    # открыть/закрыть меню с навигацией
     def toggleMenu(self, maxWidth, enable, login, language):
         if enable:
 
-            # GET WIDTH
+            # получить ширину фрейма
             width = self.frame_left_menu.width()
+
+            # установить переменные максимальной и стандартной ширины
             maxExtend = maxWidth
             standard = 70
 
-            # SET MAX WIDTH
-            if width == 70:
+            # изменить ширину 
+            if width == standard:
                 widthExtended = maxExtend
-                
+                # перевести на язык пользователя навигацию с флагом "show_header"
                 Functions.translate(self, 'show_header')
-                
-           
-               
 
+                # показать кнопку логина и имя пользователя
                 self.btn_login.show()
                 self.label_menu_login.show()
-                
-                
+                 
             else:
-                self.btn_login.hide()
-                self.label_menu_login.hide()
+                
                 widthExtended = standard
+
+                # скрыть текст кнопок навигации
                 self.btn_page_1.setText('')
                 self.btn_page_2.setText('')
                 self.btn_page_3.setText('')
                 self.btn_page_4.setText('')
                 self.btn_page_5.setText('')
                 self.btn_page_6.setText('')
+
+                # скрыть кнопку логина и имя пользователя
+                self.btn_login.hide()
+                self.label_menu_login.hide()
                 
 
 
-            # ANIMATION
+            # анимации нажатия на кнопку открытия навигации
             self.animation = QPropertyAnimation(self.frame_left_menu, b"minimumWidth")
-            self.animation.setDuration(400)
+            self.animation.setDuration(300)
             self.animation.setStartValue(width)
             self.animation.setEndValue(widthExtended)
             self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animation.start()
 
-            self.animation2 = QPropertyAnimation(self.btn_page_2, b"text")
-            self.animation2.setDuration(400)
-            self.animation2.setStartValue("")
-            self.animation2.setEndValue("widthExtended")
-            self.animation2.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
-            self.animation.start()
 
     def forward(self, login, language):
-        ## TOGGLE/BURGUER MENU
-        ########################################################################
 
-      
+        # нажатие на кнопку открытия навигации
         self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 200, True, login, language))
-
-        # self.Btn_Toggle.clicked.connect(lambda: Functions.toggleMenu(self, 250, True))
 
         # PAGE 1
         self.btn_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_1))
 
         # PAGE2
         self.btn_page_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
+
         # PAGE3
         self.btn_page_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
 
+        # PAGE4
         self.btn_page_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
 
+        # PAGE5
         self.btn_page_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
 
+        # PAGE6
         self.btn_page_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_6))
 
 
         self.btn_login.clicked.connect(self.open_login)
-        # self.pushButton_calculator.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_2))
-        # self.pushButton_training.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_3))
-        # self.pushButton_nutrition.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_4))
-        # self.pushButton_info.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
 
-
-        # self.btn_login.clicked.connect(self.open_login)
-    # def open_login(self):
-    #     global log
-    #     log = LoginWindow('ru')
 
     def translate(self, *flag):
+        # изменить язык в зависимости от настроек 
+        # не менять язык если есть спец доступ
         if flag[0] != 'order':
             if self.comboBox_language.currentIndex() == 0:
                 self.language = "ru"
             else:
                 self.language = "en"
 
-        # self.comboBox_language.setCurrentIndex(1)
         # формирование списка заголовков
         if self.language == "ru":
             self.titles = ["Главная", "Калькулятор", "Тренировки", "Питание", "О приложении", "Настройки"]
         else:
             self.titles = ["Home", "Calculator", "Training", "Nutrition", "About", "Settings"]
 
-        
+        # перевести на английский язык
         if self.language == "en":
             # калькулятор
             self.pushButton_calculate.setText("Calculate and Save")
@@ -260,7 +250,6 @@ class Functions(MainWindow):
                 self.pushButton_sign.setText(" Sign in") 
 
             
-
             # питание
             self.pushButton_add.setText("Add")
             self.pushButton_clear.setText("Clear")
@@ -275,10 +264,11 @@ class Functions(MainWindow):
             self.comboBox_language.setCurrentIndex(1)
            
 
-            # тренировки
             
-            
+        
+        # перевести на английский язык
         else:
+            # калькулятор
             self.pushButton_calculate.setText("Рассчитать и сохранить")
             self.label_waist.setText("Талия, см             ")
             self.label_neck.setText("Шея, см                ")
@@ -310,7 +300,7 @@ class Functions(MainWindow):
             self.pushButton_training.setText("Тренировки")
             self.pushButton_nutrition.setText("Питание")
             self.pushButton_info.setText("О приложении")
-            self.pushButton_sign.setText("Вход")
+            # self.pushButton_sign.setText("Вход")
 
             # показать навигацию
             if flag[0] == 'show_header':

@@ -3021,24 +3021,135 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_4)
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
-        self.stackedWidget_description = QtWidgets.QStackedWidget(self.page_5)
-        self.stackedWidget_description.setGeometry(QtCore.QRect(0, 10, 1061, 691))
+        self.tabWidget_2 = QtWidgets.QTabWidget(self.page_5)
+        self.tabWidget_2.setGeometry(QtCore.QRect(-10, 0, 1071, 731))
+        self.tabWidget_2.setStyleSheet("background-color:rgb(45,45,45);")
+        self.tabWidget_2.setObjectName("tabWidget_2")
+        self.tab_26 = QtWidgets.QWidget()
+        self.tab_26.setObjectName("tab_26")
+        self.stackedWidget_description = QtWidgets.QStackedWidget(self.tab_26)
+        self.stackedWidget_description.setGeometry(QtCore.QRect(0, 0, 1071, 701))
         self.stackedWidget_description.setStyleSheet("color:#fff;")
         self.stackedWidget_description.setObjectName("stackedWidget_description")
         self.page_des_en = QtWidgets.QWidget()
         self.page_des_en.setObjectName("page_des_en")
         self.textBrowser_en = QtWidgets.QTextBrowser(self.page_des_en)
-        self.textBrowser_en.setGeometry(QtCore.QRect(20, 20, 921, 631))
+        self.textBrowser_en.setGeometry(QtCore.QRect(10, 0, 1061, 681))
         self.textBrowser_en.setStyleSheet("")
         self.textBrowser_en.setObjectName("textBrowser_en")
         self.stackedWidget_description.addWidget(self.page_des_en)
         self.page_des_ru = QtWidgets.QWidget()
         self.page_des_ru.setObjectName("page_des_ru")
         self.textBrowser_ru = QtWidgets.QTextBrowser(self.page_des_ru)
-        self.textBrowser_ru.setGeometry(QtCore.QRect(0, -10, 1061, 701))
+        self.textBrowser_ru.setGeometry(QtCore.QRect(10, 0, 1061, 671))
         self.textBrowser_ru.setStyleSheet("")
         self.textBrowser_ru.setObjectName("textBrowser_ru")
         self.stackedWidget_description.addWidget(self.page_des_ru)
+        self.tabWidget_2.addTab(self.tab_26, "")
+        self.tab_27 = QtWidgets.QWidget()
+        self.tab_27.setObjectName("tab_27")
+        self.listWidget_faq = QtWidgets.QListWidget(self.tab_27)
+        self.listWidget_faq.setGeometry(QtCore.QRect(10, 0, 381, 671))
+        self.listWidget_faq.setStyleSheet("font-size:18px;")
+        self.listWidget_faq.setObjectName("listWidget_faq")
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_faq.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_faq.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_faq.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_faq.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_faq.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_faq.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_faq.addItem(item)
+        item = QtWidgets.QListWidgetItem()
+        self.listWidget_faq.addItem(item)
+        self.stackedWidget_faq = QtWidgets.QStackedWidget(self.tab_27)
+        self.stackedWidget_faq.setGeometry(QtCore.QRect(340, 0, 731, 671))
+        self.stackedWidget_faq.setStyleSheet("QLabel{background:none;}")
+        self.stackedWidget_faq.setObjectName("stackedWidget_faq")
+        self.page_65 = QtWidgets.QWidget()
+        self.page_65.setObjectName("page_65")
+        self.label_faq_0 = QtWidgets.QLabel(self.page_65)
+        self.label_faq_0.setGeometry(QtCore.QRect(50, 30, 661, 291))
+        self.label_faq_0.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_faq_0.setObjectName("label_faq_0")
+        self.stackedWidget_faq.addWidget(self.page_65)
+        self.page_66 = QtWidgets.QWidget()
+        self.page_66.setObjectName("page_66")
+        self.label_faq_1 = QtWidgets.QLabel(self.page_66)
+        self.label_faq_1.setGeometry(QtCore.QRect(50, 30, 661, 291))
+        self.label_faq_1.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_faq_1.setObjectName("label_faq_1")
+        self.stackedWidget_faq.addWidget(self.page_66)
+        self.page_67 = QtWidgets.QWidget()
+        self.page_67.setObjectName("page_67")
+        self.label_faq_2 = QtWidgets.QLabel(self.page_67)
+        self.label_faq_2.setGeometry(QtCore.QRect(50, 30, 661, 291))
+        self.label_faq_2.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_faq_2.setObjectName("label_faq_2")
+        self.stackedWidget_faq.addWidget(self.page_67)
+        self.page_68 = QtWidgets.QWidget()
+        self.page_68.setObjectName("page_68")
+        self.label_faq_3 = QtWidgets.QLabel(self.page_68)
+        self.label_faq_3.setGeometry(QtCore.QRect(50, 30, 661, 291))
+        self.label_faq_3.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_faq_3.setObjectName("label_faq_3")
+        self.stackedWidget_faq.addWidget(self.page_68)
+        self.page_69 = QtWidgets.QWidget()
+        self.page_69.setObjectName("page_69")
+        self.label_faq_4 = QtWidgets.QLabel(self.page_69)
+        self.label_faq_4.setGeometry(QtCore.QRect(50, 30, 661, 291))
+        self.label_faq_4.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_faq_4.setObjectName("label_faq_4")
+        self.stackedWidget_faq.addWidget(self.page_69)
+        self.page_70 = QtWidgets.QWidget()
+        self.page_70.setObjectName("page_70")
+        self.label_faq_5 = QtWidgets.QLabel(self.page_70)
+        self.label_faq_5.setGeometry(QtCore.QRect(50, 30, 661, 291))
+        self.label_faq_5.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_faq_5.setObjectName("label_faq_5")
+        self.stackedWidget_faq.addWidget(self.page_70)
+        self.page_71 = QtWidgets.QWidget()
+        self.page_71.setObjectName("page_71")
+        self.label_faq_6 = QtWidgets.QLabel(self.page_71)
+        self.label_faq_6.setGeometry(QtCore.QRect(50, 30, 661, 621))
+        self.label_faq_6.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_faq_6.setObjectName("label_faq_6")
+        self.stackedWidget_faq.addWidget(self.page_71)
+        self.page_72 = QtWidgets.QWidget()
+        self.page_72.setObjectName("page_72")
+        self.label_faq_7 = QtWidgets.QLabel(self.page_72)
+        self.label_faq_7.setGeometry(QtCore.QRect(50, 30, 661, 291))
+        self.label_faq_7.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_faq_7.setObjectName("label_faq_7")
+        self.stackedWidget_faq.addWidget(self.page_72)
+        self.page_73 = QtWidgets.QWidget()
+        self.page_73.setObjectName("page_73")
+        self.stackedWidget_faq.addWidget(self.page_73)
+        self.page_74 = QtWidgets.QWidget()
+        self.page_74.setObjectName("page_74")
+        self.stackedWidget_faq.addWidget(self.page_74)
+        self.page_75 = QtWidgets.QWidget()
+        self.page_75.setObjectName("page_75")
+        self.stackedWidget_faq.addWidget(self.page_75)
+        self.page_76 = QtWidgets.QWidget()
+        self.page_76.setObjectName("page_76")
+        self.stackedWidget_faq.addWidget(self.page_76)
+        self.page_77 = QtWidgets.QWidget()
+        self.page_77.setObjectName("page_77")
+        self.stackedWidget_faq.addWidget(self.page_77)
+        self.page_78 = QtWidgets.QWidget()
+        self.page_78.setObjectName("page_78")
+        self.stackedWidget_faq.addWidget(self.page_78)
+        self.page_79 = QtWidgets.QWidget()
+        self.page_79.setObjectName("page_79")
+        self.stackedWidget_faq.addWidget(self.page_79)
+        self.tabWidget_2.addTab(self.tab_27, "")
         self.stackedWidget.addWidget(self.page_5)
         self.page_6 = QtWidgets.QWidget()
         self.page_6.setStyleSheet("")
@@ -3095,17 +3206,19 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(4)
         self.comboBox_activity.setCurrentIndex(3)
         self.stackedWidget_training.setCurrentIndex(1)
         self.tabWidget_training_description.setCurrentIndex(1)
         self.listWidget_exersizes.setCurrentRow(-1)
         self.stackedWidget_gifs.setCurrentIndex(13)
         self.tabWidget.setCurrentIndex(3)
-        self.tabWidget_nutrition.setCurrentIndex(0)
+        self.tabWidget_nutrition.setCurrentIndex(1)
         self.stackedWidget_personal_recommendations.setCurrentIndex(1)
         self.stackedWidget_advices.setCurrentIndex(12)
+        self.tabWidget_2.setCurrentIndex(0)
         self.stackedWidget_description.setCurrentIndex(1)
+        self.stackedWidget_faq.setCurrentIndex(7)
         self.comboBox_language.setCurrentIndex(0)
         self.stackedWidget.currentChanged['int'].connect(self.label_header.update)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -3514,28 +3627,61 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:28pt; font-weight:600;\">BeneFit: тренировки, питание, расчеты</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"> - это универсальное фитнес приложение, объединяющее программы тренировок,подсчет макронутриентов, расчет различных показателей,таких как ИМТ и % жира.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br />Приложение состоит из следующих разделов:</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Калькулятор</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Рассчитайте ИМТ, % жира, дневную норму воды и множество других показателей</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Тренировки</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Найдите программу тренировок подходящую имеено вам</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Питание</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Составляйте рационы, следите за макронутриетами, добавляйте свои продукты в базу данных<br /></span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Что нового?</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Добавлены новые тренировки</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Исправлены некоторые ошибки</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Оптимизирован код</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Добавлены контакты</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- v.0.8.2</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Контакты</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">По всем вопросам и предложениям пишите на </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">BeneFit: тренировки, питание, расчеты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"> - это универсальное фитнес приложение, объединяющее программы тренировок,подсчет макронутриентов, расчет различных показателей,таких как ИМТ и % жира.<br />Приложение состоит из следующих разделов:</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Калькулятор</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">Рассчитайте ИМТ, % жира, дневную норму воды и множество других показателей. Сохраните результаты вычислений в базу данных пользователя.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Тренировки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">Тренируйтесь дома с минимальным количеством оборудования. Ведите дневник тренировок. Смотрите правильную технику выполнения упражнений.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Питание</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">Составляйте рационы, следите за макронутриетами, добавляйте свои продукты в базу данных. Получите персональные рекомендации в зависимости от данных пользователя.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Описание</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">Просмотрите описание приложения. Разберитесь с его функциями и возможностями. Найдите ответы на часто задаваемые вопросы.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Настройки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">Выберите язык интерфейса и систему единиц измерения.<br /></span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Что нового?</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">- Добавлена возможность создавать аккаунт и сохранять в него результаты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">- Исправлены некоторые ошибки</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">- Оптимизирована логика приложения</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">- Новый дизайн</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">- v.1.8.2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Контакты</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">По всем вопросам и предложениям пишите на </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_26), _translate("MainWindow", "Описание приложения"))
+        __sortingEnabled = self.listWidget_faq.isSortingEnabled()
+        self.listWidget_faq.setSortingEnabled(False)
+        item = self.listWidget_faq.item(0)
+        item.setText(_translate("MainWindow", "Чем это приложение лучше остальных?"))
+        item = self.listWidget_faq.item(1)
+        item.setText(_translate("MainWindow", "Зачем нужен аккаунт в приложении?"))
+        item = self.listWidget_faq.item(2)
+        item.setText(_translate("MainWindow", "Как выполнять упражнения?"))
+        item = self.listWidget_faq.item(3)
+        item.setText(_translate("MainWindow", "Как граммотно составить рацион?"))
+        item = self.listWidget_faq.item(4)
+        item.setText(_translate("MainWindow", "Что делать если нет гантель?"))
+        item = self.listWidget_faq.item(5)
+        item.setText(_translate("MainWindow", "Что делать если нет турника?"))
+        item = self.listWidget_faq.item(6)
+        item.setText(_translate("MainWindow", "Как определить уровень активности?"))
+        item = self.listWidget_faq.item(7)
+        item.setText(_translate("MainWindow", "Какие формулы используются?"))
+        self.listWidget_faq.setSortingEnabled(__sortingEnabled)
+        self.label_faq_0.setText(_translate("MainWindow", "<html><head/><body><p>Приложение BeneFit отличается тем, что в нём собрано всё</p><p>для здорового образа жизни: тренировки, питание, расчёты,</p><p>а также тем, что оно полностью бесплатно</p><p>и в нём отсутствует реклама.</p></body></html>"))
+        self.label_faq_1.setText(_translate("MainWindow", "<html><head/><body><p>Аккаунт в приложении нужен для того чтобы:</p><p>- сохранять данные в калькуляторе</p><p>- вести дневник тренировок</p><p>- просматривать персональные рекомендации</p><p>- сохранять настройки</p><p><br/></p></body></html>"))
+        self.label_faq_2.setText(_translate("MainWindow", "<html><head/><body><p>Для просмотра данной информации:</p><p>1) зайдите в раздел тренировок</p><p>2) нажмите в правом верхнем углу на кнопку &quot;?&quot;</p><p>3) просмотрите описание тренировок и правильную технику</p><p><br/></p></body></html>"))
+        self.label_faq_3.setText(_translate("MainWindow", "<html><head/><body><p>Для граммотного составления рациона:</p><p>1) введите все свои данные в разделе калькулятор</p><p>2) нажмите на кнопку рассчитать и сохранить</p><p>3) измените норму калорий, которая указана в калькуляторе,</p><p>как это указано в разделе питание/персональные рекомендации</p><p>4) составте рацион с рассчитаной вами суточной калорийностью, при</p><p>соблюдении проборций БЖУ в разделе питание/персональные</p><p> рекомендации</p><p><br/></p></body></html>"))
+        self.label_faq_4.setText(_translate("MainWindow", "<html><head/><body><p>Если у вас нет гантель, вы можете использовать рюкзак</p><p>заполненныйчем-то тяжелым. Это могут быть книги, но</p><p>я рекомендую взять 2 пустыепятилитровые бутылки от воды</p><p>и заполнить их водой или песком. Также эти бутылки вы можете</p><p>использовать отдельно, в упражнениях, которые требуют 2 гантели.</p><p><br/></p></body></html>"))
+        self.label_faq_5.setText(_translate("MainWindow", "<html><head/><body><p>Если у вас нет турника, то лучшим решением будут тренировки</p><p>на улице в том месте где есть турник. Найти такое место не </p><p>составит труда, т.к. турники на улице повсюду.</p><p><br/></p><p><br/></p></body></html>"))
+        self.label_faq_6.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Очень низкий уровень</p><p>Сидячий образ жизни</p><p><br/></p><p align=\"center\">Низкий уровень</p><p>Немного дневной активности и легкие упражнения 1 - 3 раза в неделю</p><p><br/></p><p align=\"center\">Средний уровень</p><p>Тренировки 4 - 5 раз в неделю или работа средней тяжести</p><p><br/></p><p align=\"center\">Высокий уровень</p><p>Тренировки 6 - 7 раз в неделю </p><p><br/></p><p align=\"center\">Очень высокий уровень</p><p>Ежедневные интенсивные тренировки или тяжелая физическая работа </p><p><br/></p><p><br/></p><p><br/></p></body></html>"))
+        self.label_faq_7.setText(_translate("MainWindow", "<html><head/><body><p> - Для расчета дневной калорийности используется формула</p><p>Миффлина-Сен Жеора</p><p> - Для расчета процента жира используется формула ВМС США</p><p><br/></p><p><br/></p><p><br/></p></body></html>"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_27), _translate("MainWindow", "Часто задаваемые вопросы"))
         self.label_23.setText(_translate("MainWindow", "Язык интерфейса"))
         self.comboBox_language.setItemText(0, _translate("MainWindow", "Русский"))
         self.comboBox_language.setItemText(1, _translate("MainWindow", "English"))
@@ -3544,4 +3690,3 @@ class Ui_MainWindow(object):
         self.comboBox_language_2.setItemText(1, _translate("MainWindow", "Имперская(дюймы, фунты)"))
         self.pushButton_settings.setText(_translate("MainWindow", "Сохранить"))
         self.pushButton_settings_delete.setText(_translate("MainWindow", "Удалить данные пользователя"))
-
