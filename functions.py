@@ -262,6 +262,8 @@ class Functions(MainWindow):
 
             # настройки
             self.comboBox_language.setCurrentIndex(1)
+            self.label_language.setText("Interface language")
+            self.pushButton_settings.setText("Save")
            
 
             
@@ -308,7 +310,7 @@ class Functions(MainWindow):
                 self.btn_page_2.setText(" Калькулятор")
                 self.btn_page_3.setText(" Тренировки")
                 self.btn_page_4.setText(" Питание")
-                self.btn_page_5.setText(" Описание")
+                self.btn_page_5.setText(" О приложении")
                 self.btn_page_6.setText(" Настройки")
 
             # питание
@@ -322,3 +324,5 @@ class Functions(MainWindow):
 
             # настройки
             self.comboBox_language.setCurrentIndex(0)
+            self.label_language.setText("Язык интерфейса")
+            self.pushButton_settings.setText("Сохранить")

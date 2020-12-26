@@ -116,9 +116,9 @@ class LoginWindow(QDialog, Ui_Dialog):
 
                 # сообщение об успехе
                 if self.language == 'ru':
-                    self.label_status.setText("Registration was successful!")
+                    self.label_status.setText("Регистрация прошла успешно!")
                 else:
-                    self.label_status.setText("")
+                    self.label_status.setText("Registration was successful!")
                 self.label_status.setStyleSheet('color:#00ff00;')
 
                 # запомнить ID

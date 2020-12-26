@@ -69,7 +69,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.pushButton_info.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_5))
 
         # установить иконку окна
-        self.setWindowIcon(QIcon("img/icons/barbell-48_44982.ico"))
+        self.setWindowIcon(QIcon("BeneFit.ico"))
+        self.setWindowTitle("BeneFit")
 
 
         
@@ -483,7 +484,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # перевод интерфейса на язык пользователя
             Functions.translate(self, 'order')
             # обновление разделов согласно новым данным
-            Functions.update_calculator(self, 0)
+            Functions.update_calculator(self, ID)
             Functions.update_training(self, ID)
             Functions.update_recommendations(self, ID)
             Functions.update_login(self, ID, LOGIN)
@@ -492,6 +493,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             with sqlite3.connect('db/dataBase2.db') as db:
                 cursor = db.cursor()
                 self.language = cursor.execute(f""" SELECT language FROM login WHERE ID = {ID}""").fetchall()[0][0]
+
+                cursor.execute(f"""   UPDATE current_id SET id = {ID}""")
+
             
         
         global LOGIN, ID, log
@@ -679,8 +683,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 print(float(self.lineEdit_percent.text()))
                 cursor.execute(
                     f"""  UPDATE info SET (height, weight, age, gender, activity,
-                     wrist, fat_check, waist, neck, hip, IMT, type, fat_percent) = {(height, weight,age,
-                      self.male, activity, wrist, self.check, waist, neck, hip, imt, self.body_type, float(self.lineEdit_percent.text()))} WHERE ID = {ID}""")
+                     wrist, fat_check, waist, neck, hip, IMT, type) = {(height, weight,age,
+                      self.male, activity, wrist, self.check, waist, neck, hip, imt, self.body_type)} WHERE ID = {ID}""")
+                
 
     # показать поле для расчета процента жира
     def show_extra(self):

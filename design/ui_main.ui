@@ -573,7 +573,7 @@ color:#ffffff;
 font-size:20px;</string>
           </property>
           <property name="currentIndex">
-           <number>4</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="page_1">
            <property name="styleSheet">
@@ -1363,6 +1363,7 @@ QRadioButton:hover {
                  <string notr="true">
 QComboBox{
 border:none;
+color:white;
 background-color: rgb(45, 45, 45);
 }
 QComboBox:hover {
@@ -1420,7 +1421,7 @@ QCheckBox:hover {
 }</string>
                 </property>
                 <property name="text">
-                 <string/>
+                 <string> </string>
                 </property>
                 <property name="checked">
                  <bool>false</bool>
@@ -1534,7 +1535,7 @@ background-color:rgb(45,45,45);
 </string>
               </property>
               <property name="currentIndex">
-               <number>1</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="tab_22">
                <attribute name="title">
@@ -5390,7 +5391,7 @@ QPushButton{
 background-color:rgb(35,35,35);}</string>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <property name="documentMode">
              <bool>true</bool>
@@ -5667,6 +5668,9 @@ QPushButton:hover {
                   <height>641</height>
                  </rect>
                 </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgb(25,25,25);</string>
+                </property>
                 <item>
                  <property name="text">
                   <string>Процентное соотношение БЖУ</string>
@@ -5706,7 +5710,7 @@ QPushButton:hover {
                  <string notr="true"/>
                 </property>
                 <property name="currentIndex">
-                 <number>12</number>
+                 <number>9</number>
                 </property>
                 <widget class="QWidget" name="page_33">
                  <widget class="QLabel" name="label_advice_0">
@@ -5950,32 +5954,36 @@ QPushButton:hover {
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:28pt; font-weight:600;&quot;&gt;BeneFit: training, nutrition, calculates&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt; font-weight:600;&quot;&gt;BeneFit&lt;/span&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt; is a universal fitness app that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;The app consists of the following sections: &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt; font-weight:600;&quot;&gt;Calculator&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;Calculate your BMI, body fat%, daily water intake, and many other metrics&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt; font-weight:600;&quot;&gt;Workout &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;Find a training program that is right for you&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt; font-weight:600;&quot;&gt;Nutrition&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;Make diets, monitor micronutrients, add your products to the database&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt; font-weight:600;&quot;&gt;What's new?&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;- Added new training sessions&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;- Fixed some bugs&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;- Optimized code&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;- Added contacts&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;-V. 0. 8. 2&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt; font-weight:600;&quot;&gt;Contacts&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt;&quot;&gt;For all questions and suggestions, write to&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:20pt; font-weight:600; color:#ffffff;&quot;&gt;benefitapphelp@yandex.ru&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:600; text-decoration: underline;&quot;&gt;BeneFit: training, nutrition, calculations&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600;&quot;&gt;BeneFit&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt; is a universal fitness application that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;The application consists of the following sections:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600;&quot;&gt;Calculator&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;Calculate your BMI, body fat percentage, daily water intake, and many other metrics. Save the calculation results to the user's database.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600;&quot;&gt;Training&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;Train at home with minimal equipment. Keep a training diary. See the correct technique for performing the exercises.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600;&quot;&gt;Food&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;Make diets, keep track of macronutrients, add your products to the database. Get personalized recommendations based on the user's data.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600;&quot;&gt;Description&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;View the app description. Understand its functions and features. Find answers to frequently asked questions.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600;&quot;&gt;Settings&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;Select the interface language and unit system.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600;&quot;&gt;What's new?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;- Added the ability to create an account and save results to it&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;- Fixed some bugs&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;- Optimized application logic&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;- New design&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;-V. 1. 8. 2&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:600;&quot;&gt;Contacts&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px;&quot;&gt;For all questions and suggestions, write to &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-style:italic; text-decoration: underline;&quot;&gt;benefitapphelp@yandex.ru&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                </widget>
               </widget>
@@ -5997,7 +6005,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:20px; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt; font-weight:600;&quot;&gt;BeneFit: тренировки, питание, расчеты&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt; font-weight:600; text-decoration: underline;&quot;&gt;BeneFit: тренировки, питание, расчеты&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt; font-weight:600;&quot;&gt;BeneFit&lt;/span&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt;&quot;&gt; - это универсальное фитнес приложение, объединяющее программы тренировок,подсчет макронутриентов, расчет различных показателей,таких как ИМТ и % жира.&lt;br /&gt;Приложение состоит из следующих разделов:&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt; font-weight:600;&quot;&gt;Калькулятор&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt;&quot;&gt;Рассчитайте ИМТ, % жира, дневную норму воды и множество других показателей. Сохраните результаты вычислений в базу данных пользователя.&lt;/span&gt;&lt;/p&gt;
@@ -6022,7 +6030,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt; font-weight:600;&quot;&gt;Контакты&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt;&quot;&gt;По всем вопросам и предложениям пишите на &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt; font-weight:600;&quot;&gt;benefitapphelp@yandex.ru&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Franklin Gothic Mediumi','sand-serif'; font-size:16pt; font-style:italic; text-decoration: underline;&quot;&gt;benefitapphelp@yandex.ru&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                </widget>
               </widget>
@@ -6042,7 +6050,8 @@ p, li { white-space: pre-wrap; }
                </rect>
               </property>
               <property name="styleSheet">
-               <string notr="true">font-size:18px;</string>
+               <string notr="true">font-size:18px;
+background-color:rgb(25,25,25);</string>
               </property>
               <item>
                <property name="text">
@@ -6098,7 +6107,7 @@ p, li { white-space: pre-wrap; }
                <string notr="true">QLabel{background:none;}</string>
               </property>
               <property name="currentIndex">
-               <number>7</number>
+               <number>8</number>
               </property>
               <widget class="QWidget" name="page_65">
                <widget class="QLabel" name="label_faq_0">
@@ -6270,7 +6279,7 @@ p, li { white-space: pre-wrap; }
             </property>
             <layout class="QFormLayout" name="formLayout_6">
              <item row="0" column="0">
-              <widget class="QLabel" name="label_23">
+              <widget class="QLabel" name="label_language">
                <property name="text">
                 <string>Язык интерфейса</string>
                </property>
@@ -6292,30 +6301,6 @@ p, li { white-space: pre-wrap; }
                <item>
                 <property name="text">
                  <string>English</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QLabel" name="label_24">
-               <property name="text">
-                <string>Система мер</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QComboBox" name="comboBox_language_2">
-               <property name="styleSheet">
-                <string notr="true">background:#454545;</string>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Метрическая(см,кг)</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Имперская(дюймы, фунты)</string>
                 </property>
                </item>
               </widget>
@@ -6345,29 +6330,6 @@ QPushButton:hover {
              <string>Сохранить</string>
             </property>
            </widget>
-           <widget class="QPushButton" name="pushButton_settings_delete">
-            <property name="geometry">
-             <rect>
-              <x>300</x>
-              <y>180</y>
-              <width>451</width>
-              <height>41</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
-border:1px solid #fff;
-font-size:20px;
-color:#fff;
-}
-QPushButton:hover {
-	background-color: rgb(85, 170, 255);
-}</string>
-            </property>
-            <property name="text">
-             <string>Удалить данные пользователя</string>
-            </property>
-           </widget>
           </widget>
          </widget>
         </widget>
@@ -6379,7 +6341,7 @@ QPushButton:hover {
   </widget>
  </widget>
  <resources>
-  <include location="resourse.qrc"/>
+  <include location="../resourse.qrc"/>
  </resources>
  <connections>
   <connection>

@@ -692,6 +692,7 @@ class Ui_MainWindow(object):
         self.comboBox_activity.setStyleSheet("\n"
 "QComboBox{\n"
 "border:none;\n"
+"color:white;\n"
 "background-color: rgb(45, 45, 45);\n"
 "}\n"
 "QComboBox:hover {\n"
@@ -715,7 +716,6 @@ class Ui_MainWindow(object):
 "QCheckBox:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
-        self.checkBox_fat.setText("")
         self.checkBox_fat.setChecked(False)
         self.checkBox_fat.setObjectName("checkBox_fat")
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.checkBox_fat)
@@ -2920,6 +2920,7 @@ class Ui_MainWindow(object):
         self.page_32.setObjectName("page_32")
         self.listWidget_asks = QtWidgets.QListWidget(self.page_32)
         self.listWidget_asks.setGeometry(QtCore.QRect(5, 21, 331, 641))
+        self.listWidget_asks.setStyleSheet("background-color:rgb(25,25,25);")
         self.listWidget_asks.setObjectName("listWidget_asks")
         item = QtWidgets.QListWidgetItem()
         self.listWidget_asks.addItem(item)
@@ -3050,7 +3051,8 @@ class Ui_MainWindow(object):
         self.tab_27.setObjectName("tab_27")
         self.listWidget_faq = QtWidgets.QListWidget(self.tab_27)
         self.listWidget_faq.setGeometry(QtCore.QRect(10, 0, 381, 671))
-        self.listWidget_faq.setStyleSheet("font-size:18px;")
+        self.listWidget_faq.setStyleSheet("font-size:18px;\n"
+"background-color:rgb(25,25,25);")
         self.listWidget_faq.setObjectName("listWidget_faq")
         item = QtWidgets.QListWidgetItem()
         self.listWidget_faq.addItem(item)
@@ -3160,24 +3162,15 @@ class Ui_MainWindow(object):
         self.formLayout_6 = QtWidgets.QFormLayout(self.formLayoutWidget_6)
         self.formLayout_6.setContentsMargins(0, 0, 0, 0)
         self.formLayout_6.setObjectName("formLayout_6")
-        self.label_23 = QtWidgets.QLabel(self.formLayoutWidget_6)
-        self.label_23.setObjectName("label_23")
-        self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_23)
+        self.label_language = QtWidgets.QLabel(self.formLayoutWidget_6)
+        self.label_language.setObjectName("label_language")
+        self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_language)
         self.comboBox_language = QtWidgets.QComboBox(self.formLayoutWidget_6)
         self.comboBox_language.setStyleSheet("background:#454545;")
         self.comboBox_language.setObjectName("comboBox_language")
         self.comboBox_language.addItem("")
         self.comboBox_language.addItem("")
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.comboBox_language)
-        self.label_24 = QtWidgets.QLabel(self.formLayoutWidget_6)
-        self.label_24.setObjectName("label_24")
-        self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_24)
-        self.comboBox_language_2 = QtWidgets.QComboBox(self.formLayoutWidget_6)
-        self.comboBox_language_2.setStyleSheet("background:#454545;")
-        self.comboBox_language_2.setObjectName("comboBox_language_2")
-        self.comboBox_language_2.addItem("")
-        self.comboBox_language_2.addItem("")
-        self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.comboBox_language_2)
         self.pushButton_settings = QtWidgets.QPushButton(self.page_6)
         self.pushButton_settings.setGeometry(QtCore.QRect(300, 540, 451, 61))
         self.pushButton_settings.setStyleSheet("QPushButton {\n"
@@ -3189,36 +3182,25 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 255);\n"
 "}")
         self.pushButton_settings.setObjectName("pushButton_settings")
-        self.pushButton_settings_delete = QtWidgets.QPushButton(self.page_6)
-        self.pushButton_settings_delete.setGeometry(QtCore.QRect(300, 180, 451, 41))
-        self.pushButton_settings_delete.setStyleSheet("QPushButton {\n"
-"border:1px solid #fff;\n"
-"font-size:20px;\n"
-"color:#fff;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(85, 170, 255);\n"
-"}")
-        self.pushButton_settings_delete.setObjectName("pushButton_settings_delete")
         self.stackedWidget.addWidget(self.page_6)
         self.horizontalLayout_2.addWidget(self.frame_pages)
         self.verticalLayout.addWidget(self.Content)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(0)
         self.comboBox_activity.setCurrentIndex(3)
         self.stackedWidget_training.setCurrentIndex(1)
-        self.tabWidget_training_description.setCurrentIndex(1)
+        self.tabWidget_training_description.setCurrentIndex(0)
         self.listWidget_exersizes.setCurrentRow(-1)
         self.stackedWidget_gifs.setCurrentIndex(13)
         self.tabWidget.setCurrentIndex(3)
-        self.tabWidget_nutrition.setCurrentIndex(1)
+        self.tabWidget_nutrition.setCurrentIndex(0)
         self.stackedWidget_personal_recommendations.setCurrentIndex(1)
-        self.stackedWidget_advices.setCurrentIndex(12)
+        self.stackedWidget_advices.setCurrentIndex(9)
         self.tabWidget_2.setCurrentIndex(0)
         self.stackedWidget_description.setCurrentIndex(1)
-        self.stackedWidget_faq.setCurrentIndex(7)
+        self.stackedWidget_faq.setCurrentIndex(8)
         self.comboBox_language.setCurrentIndex(0)
         self.stackedWidget.currentChanged['int'].connect(self.label_header.update)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -3258,6 +3240,7 @@ class Ui_MainWindow(object):
         self.comboBox_activity.setItemText(3, _translate("MainWindow", "Высокая"))
         self.comboBox_activity.setItemText(4, _translate("MainWindow", "Очень высокая"))
         self.label_check_fat.setText(_translate("MainWindow", "Расчитать % жира"))
+        self.checkBox_fat.setText(_translate("MainWindow", " "))
         self.label_wrist.setText(_translate("MainWindow", "Запястья, см"))
         self.pushButton_calculate.setText(_translate("MainWindow", "Рассчитать и сохранить"))
         self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -3597,37 +3580,41 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:28pt; font-weight:600;\">BeneFit: training, nutrition, calculates</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"> is a universal fitness app that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">The app consists of the following sections: </span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Calculator</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Calculate your BMI, body fat%, daily water intake, and many other metrics</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Workout </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Find a training program that is right for you</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Nutrition</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">Make diets, monitor micronutrients, add your products to the database</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">What\'s new?</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Added new training sessions</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Fixed some bugs</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Optimized code</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">- Added contacts</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">-V. 0. 8. 2</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600;\">Contacts</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt;\">For all questions and suggestions, write to</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:20pt; font-weight:600; color:#ffffff;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:18pt; font-weight:600; text-decoration: underline;\">BeneFit: training, nutrition, calculations</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:600;\">BeneFit</span><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\"> is a universal fitness application that combines training programs, macronutrient counting, and calculation of various indicators such as BMI and fat%.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">The application consists of the following sections:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:600;\">Calculator</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">Calculate your BMI, body fat percentage, daily water intake, and many other metrics. Save the calculation results to the user\'s database.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:600;\">Training</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">Train at home with minimal equipment. Keep a training diary. See the correct technique for performing the exercises.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:600;\">Food</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">Make diets, keep track of macronutrients, add your products to the database. Get personalized recommendations based on the user\'s data.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:600;\">Description</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">View the app description. Understand its functions and features. Find answers to frequently asked questions.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:600;\">Settings</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">Select the interface language and unit system.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:600;\">What\'s new?</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">- Added the ability to create an account and save results to it</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">- Fixed some bugs</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">- Optimized application logic</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">- New design</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">-V. 1. 8. 2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\';\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:600;\">Contacts</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px;\">For all questions and suggestions, write to </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-style:italic; text-decoration: underline;\">benefitapphelp@yandex.ru</span></p></body></html>"))
         self.textBrowser_ru.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:20px; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">BeneFit: тренировки, питание, расчеты</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600; text-decoration: underline;\">BeneFit: тренировки, питание, расчеты</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">BeneFit</span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"> - это универсальное фитнес приложение, объединяющее программы тренировок,подсчет макронутриентов, расчет различных показателей,таких как ИМТ и % жира.<br />Приложение состоит из следующих разделов:</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></span><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Калькулятор</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">Рассчитайте ИМТ, % жира, дневную норму воды и множество других показателей. Сохраните результаты вычислений в базу данных пользователя.</span></p>\n"
@@ -3652,7 +3639,7 @@ class Ui_MainWindow(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\"><br /></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">Контакты</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt;\">По всем вопросам и предложениям пишите на </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-weight:600;\">benefitapphelp@yandex.ru</span></p></body></html>"))
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Franklin Gothic Mediumi\',\'sand-serif\'; font-size:16pt; font-style:italic; text-decoration: underline;\">benefitapphelp@yandex.ru</span></p></body></html>"))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_26), _translate("MainWindow", "Описание приложения"))
         __sortingEnabled = self.listWidget_faq.isSortingEnabled()
         self.listWidget_faq.setSortingEnabled(False)
@@ -3682,11 +3669,8 @@ class Ui_MainWindow(object):
         self.label_faq_6.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Очень низкий уровень</p><p>Сидячий образ жизни</p><p><br/></p><p align=\"center\">Низкий уровень</p><p>Немного дневной активности и легкие упражнения 1 - 3 раза в неделю</p><p><br/></p><p align=\"center\">Средний уровень</p><p>Тренировки 4 - 5 раз в неделю или работа средней тяжести</p><p><br/></p><p align=\"center\">Высокий уровень</p><p>Тренировки 6 - 7 раз в неделю </p><p><br/></p><p align=\"center\">Очень высокий уровень</p><p>Ежедневные интенсивные тренировки или тяжелая физическая работа </p><p><br/></p><p><br/></p><p><br/></p></body></html>"))
         self.label_faq_7.setText(_translate("MainWindow", "<html><head/><body><p> - Для расчета дневной калорийности используется формула</p><p>Миффлина-Сен Жеора</p><p> - Для расчета процента жира используется формула ВМС США</p><p><br/></p><p><br/></p><p><br/></p></body></html>"))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_27), _translate("MainWindow", "Часто задаваемые вопросы"))
-        self.label_23.setText(_translate("MainWindow", "Язык интерфейса"))
+        self.label_language.setText(_translate("MainWindow", "Язык интерфейса"))
         self.comboBox_language.setItemText(0, _translate("MainWindow", "Русский"))
         self.comboBox_language.setItemText(1, _translate("MainWindow", "English"))
-        self.label_24.setText(_translate("MainWindow", "Система мер"))
-        self.comboBox_language_2.setItemText(0, _translate("MainWindow", "Метрическая(см,кг)"))
-        self.comboBox_language_2.setItemText(1, _translate("MainWindow", "Имперская(дюймы, фунты)"))
         self.pushButton_settings.setText(_translate("MainWindow", "Сохранить"))
-        self.pushButton_settings_delete.setText(_translate("MainWindow", "Удалить данные пользователя"))
+
