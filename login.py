@@ -21,6 +21,7 @@ def return_data():
     except Exception:
         pass
 
+
 # главная страница
 
 class LoginWindow(QDialog, Ui_Dialog):

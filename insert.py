@@ -1,15 +1,17 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
+
 # функция отбрасывания дробной части
 def cast(n):
     if n == int(n):
         return int(n)
     return n
 
+
 # добавить данные в БД
 class Insert_Nutrition(QDialog):
-    def __init__(self,language, parent=None):
+    def __init__(self, language, parent=None):
         super().__init__(parent)
 
         # установить иконку окна
@@ -20,7 +22,7 @@ class Insert_Nutrition(QDialog):
             self.setWindowTitle('Добавить данные в БД')
         else:
             self.setWindowTitle('Add data to the database')
-        
+
         # добавить стили
         self.setStyleSheet("background-color: rgb(35, 35, 35);;color:#fff")
 
@@ -31,7 +33,7 @@ class Insert_Nutrition(QDialog):
         self.carbs = QDoubleSpinBox(self)
         self.calories = QDoubleSpinBox(self)
         self.calories.setMaximum(900)
-        
+
         buttonBox = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel, self);
 
         # заполение форм лайаута
@@ -56,6 +58,6 @@ class Insert_Nutrition(QDialog):
 
     # получить значения
     def getInputs(self):
-        return (self.name.text(), str(cast(self.proteins.value())).replace('.',','),
-         str(cast(self.fats.value())).replace('.',','), str(cast(self.carbs.value())).replace('.',','),
-          str(cast(self.calories.value())).replace('.',','))
+        return (self.name.text(), str(cast(self.proteins.value())).replace('.', ','),
+                str(cast(self.fats.value())).replace('.', ','), str(cast(self.carbs.value())).replace('.', ','),
+                str(cast(self.calories.value())).replace('.', ','))

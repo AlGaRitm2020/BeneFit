@@ -1,4 +1,3 @@
-
 import sys
 
 # импорт PyQt5 объектов
@@ -26,6 +25,7 @@ from math import log10
 # импорт файла ресурсов
 import resourse
 
+
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -36,7 +36,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # ГЛАВНАЯ СТРАНИЦА
         #
 
-
         # вход в последний активный аккаунт
         global ID, LOGIN
         with sqlite3.connect('db/dataBase2.db') as db:
@@ -44,22 +43,21 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             ID = cursor.execute(f""" SELECT id FROM current_id""").fetchall()[0][0]
             LOGIN = cursor.execute(f""" SELECT login FROM login WHERE ID = {ID}""").fetchall()[0][0]
             self.language = cursor.execute(f""" SELECT language FROM login WHERE ID = {ID}""").fetchall()[0][0]
-            
+
         # обновить интерфейс под пользователя
         Functions.update_login(self, ID, LOGIN)
-        
 
         # навигация по приложению
         # скрыть дополнительные поля    
         self.btn_login.hide()
         self.label_menu_login.hide()
-        
+
         # функции переходов из меню 
         Functions.forward(self, LOGIN, self.language)
 
         # обработка смены заголовка после смены страницы
-        self.stackedWidget.currentChanged['int'].connect(lambda: self.label_header.setText(f"{self.titles[self.stackedWidget.currentIndex()]}"))
-
+        self.stackedWidget.currentChanged['int'].connect(
+            lambda: self.label_header.setText(f"{self.titles[self.stackedWidget.currentIndex()]}"))
 
         # переходы из главной страницы
         self.pushButton_sign.clicked.connect(self.open_login)
@@ -72,9 +70,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setWindowIcon(QIcon("BeneFit.ico"))
         self.setWindowTitle("BeneFit")
 
-
-        
-        # 
+        #
         # КАЛЬКУЛЯТОР
         #
 
@@ -116,197 +112,198 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # 
         # ТРЕНИРОВКИ
         #
-        
+
         # смена тренировки на описание и наоборот
-        self.pushButton_quickStart_help.clicked.connect(lambda:self.stackedWidget_training.setCurrentIndex((self.stackedWidget_training.currentIndex()+1)%2))
-        
+        self.pushButton_quickStart_help.clicked.connect(
+            lambda: self.stackedWidget_training.setCurrentIndex((self.stackedWidget_training.currentIndex() + 1) % 2))
+
         # список всех полей для заполнения данных
         self.objects_list_of_quick_start = [
-        # первый день
-        [
-        (self.checkBox_exersize_1_1,self.spinBox_extraWeight_1_1, self.spinBox_reps_1_1), 
-        (self.checkBox_exersize_2_1,self.spinBox_extraWeight_2_1, self.spinBox_reps_2_1), 
-        (self.checkBox_exersize_3_1,self.spinBox_extraWeight_3_1, self.spinBox_reps_3_1), 
-        (self.checkBox_exersize_4_1,self.spinBox_extraWeight_4_1, self.spinBox_reps_4_1), 
-        (self.checkBox_exersize_5_1,self.spinBox_extraWeight_5_1, self.spinBox_reps_5_1)
-        ], 
+            # первый день
+            [
+                (self.checkBox_exersize_1_1, self.spinBox_extraWeight_1_1, self.spinBox_reps_1_1),
+                (self.checkBox_exersize_2_1, self.spinBox_extraWeight_2_1, self.spinBox_reps_2_1),
+                (self.checkBox_exersize_3_1, self.spinBox_extraWeight_3_1, self.spinBox_reps_3_1),
+                (self.checkBox_exersize_4_1, self.spinBox_extraWeight_4_1, self.spinBox_reps_4_1),
+                (self.checkBox_exersize_5_1, self.spinBox_extraWeight_5_1, self.spinBox_reps_5_1)
+            ],
 
-        [
-        (self.checkBox_exersize_1_2,self.spinBox_extraWeight_1_2, self.spinBox_reps_1_2), 
-        (self.checkBox_exersize_2_2,self.spinBox_extraWeight_2_2, self.spinBox_reps_2_2), 
-        (self.checkBox_exersize_3_2,self.spinBox_extraWeight_3_2, self.spinBox_reps_3_2), 
-        (self.checkBox_exersize_4_2,self.spinBox_extraWeight_4_2, self.spinBox_reps_4_2), 
-        (self.checkBox_exersize_5_2,self.spinBox_extraWeight_5_2, self.spinBox_reps_5_2)
-        ],
+            [
+                (self.checkBox_exersize_1_2, self.spinBox_extraWeight_1_2, self.spinBox_reps_1_2),
+                (self.checkBox_exersize_2_2, self.spinBox_extraWeight_2_2, self.spinBox_reps_2_2),
+                (self.checkBox_exersize_3_2, self.spinBox_extraWeight_3_2, self.spinBox_reps_3_2),
+                (self.checkBox_exersize_4_2, self.spinBox_extraWeight_4_2, self.spinBox_reps_4_2),
+                (self.checkBox_exersize_5_2, self.spinBox_extraWeight_5_2, self.spinBox_reps_5_2)
+            ],
 
-        # третий день
-        [
-        (self.checkBox_exersize_1_3,self.spinBox_extraWeight_1_3, self.spinBox_reps_1_3), 
-        (self.checkBox_exersize_2_3,self.spinBox_extraWeight_2_3, self.spinBox_reps_2_3), 
-        (self.checkBox_exersize_3_3,self.spinBox_extraWeight_3_3, self.spinBox_reps_3_3), 
-        (self.checkBox_exersize_4_3,self.spinBox_extraWeight_4_3, self.spinBox_reps_4_3), 
-        (self.checkBox_exersize_5_3,self.spinBox_extraWeight_5_3, self.spinBox_reps_5_3)
-        ],
-        # четвертый день
-        [
-        (self.checkBox_exersize_1_4,self.spinBox_extraWeight_1_4, self.spinBox_reps_1_4), 
-        (self.checkBox_exersize_2_4,self.spinBox_extraWeight_2_4, self.spinBox_reps_2_4), 
-        (self.checkBox_exersize_3_4,self.spinBox_extraWeight_3_4, self.spinBox_reps_3_4), 
-        (self.checkBox_exersize_4_4,self.spinBox_extraWeight_4_4, self.spinBox_reps_4_4), 
-        (self.checkBox_exersize_5_4,self.spinBox_extraWeight_5_4, self.spinBox_reps_5_4)
-        ],
-        # пятый день
-        [
-        (self.checkBox_exersize_1_5,self.spinBox_extraWeight_1_5, self.spinBox_reps_1_5), 
-        (self.checkBox_exersize_2_5,self.spinBox_extraWeight_2_5, self.spinBox_reps_2_5), 
-        (self.checkBox_exersize_3_5,self.spinBox_extraWeight_3_5, self.spinBox_reps_3_5), 
-        (self.checkBox_exersize_4_5,self.spinBox_extraWeight_4_5, self.spinBox_reps_4_5), 
-        (self.checkBox_exersize_5_5,self.spinBox_extraWeight_5_5, self.spinBox_reps_5_5)
-        ], 
+            # третий день
+            [
+                (self.checkBox_exersize_1_3, self.spinBox_extraWeight_1_3, self.spinBox_reps_1_3),
+                (self.checkBox_exersize_2_3, self.spinBox_extraWeight_2_3, self.spinBox_reps_2_3),
+                (self.checkBox_exersize_3_3, self.spinBox_extraWeight_3_3, self.spinBox_reps_3_3),
+                (self.checkBox_exersize_4_3, self.spinBox_extraWeight_4_3, self.spinBox_reps_4_3),
+                (self.checkBox_exersize_5_3, self.spinBox_extraWeight_5_3, self.spinBox_reps_5_3)
+            ],
+            # четвертый день
+            [
+                (self.checkBox_exersize_1_4, self.spinBox_extraWeight_1_4, self.spinBox_reps_1_4),
+                (self.checkBox_exersize_2_4, self.spinBox_extraWeight_2_4, self.spinBox_reps_2_4),
+                (self.checkBox_exersize_3_4, self.spinBox_extraWeight_3_4, self.spinBox_reps_3_4),
+                (self.checkBox_exersize_4_4, self.spinBox_extraWeight_4_4, self.spinBox_reps_4_4),
+                (self.checkBox_exersize_5_4, self.spinBox_extraWeight_5_4, self.spinBox_reps_5_4)
+            ],
+            # пятый день
+            [
+                (self.checkBox_exersize_1_5, self.spinBox_extraWeight_1_5, self.spinBox_reps_1_5),
+                (self.checkBox_exersize_2_5, self.spinBox_extraWeight_2_5, self.spinBox_reps_2_5),
+                (self.checkBox_exersize_3_5, self.spinBox_extraWeight_3_5, self.spinBox_reps_3_5),
+                (self.checkBox_exersize_4_5, self.spinBox_extraWeight_4_5, self.spinBox_reps_4_5),
+                (self.checkBox_exersize_5_5, self.spinBox_extraWeight_5_5, self.spinBox_reps_5_5)
+            ],
 
-        # шестой день
-        [
-        (self.checkBox_exersize_1_6,self.spinBox_extraWeight_1_6, self.spinBox_reps_1_6), 
-        (self.checkBox_exersize_2_6,self.spinBox_extraWeight_2_6, self.spinBox_reps_2_6), 
-        (self.checkBox_exersize_3_6,self.spinBox_extraWeight_3_6, self.spinBox_reps_3_6), 
-        (self.checkBox_exersize_4_6,self.spinBox_extraWeight_4_6, self.spinBox_reps_4_6), 
-        (self.checkBox_exersize_5_6,self.spinBox_extraWeight_5_6, self.spinBox_reps_5_6)
-        ],
+            # шестой день
+            [
+                (self.checkBox_exersize_1_6, self.spinBox_extraWeight_1_6, self.spinBox_reps_1_6),
+                (self.checkBox_exersize_2_6, self.spinBox_extraWeight_2_6, self.spinBox_reps_2_6),
+                (self.checkBox_exersize_3_6, self.spinBox_extraWeight_3_6, self.spinBox_reps_3_6),
+                (self.checkBox_exersize_4_6, self.spinBox_extraWeight_4_6, self.spinBox_reps_4_6),
+                (self.checkBox_exersize_5_6, self.spinBox_extraWeight_5_6, self.spinBox_reps_5_6)
+            ],
 
-        # седьмой день
-        [
-        (self.checkBox_exersize_1_7,self.spinBox_extraWeight_1_7, self.spinBox_reps_1_7), 
-        (self.checkBox_exersize_2_7,self.spinBox_extraWeight_2_7, self.spinBox_reps_2_7), 
-        (self.checkBox_exersize_3_7,self.spinBox_extraWeight_3_7, self.spinBox_reps_3_7), 
-        (self.checkBox_exersize_4_7,self.spinBox_extraWeight_4_7, self.spinBox_reps_4_7), 
-        (self.checkBox_exersize_5_7,self.spinBox_extraWeight_5_7, self.spinBox_reps_5_7)
-        ],
+            # седьмой день
+            [
+                (self.checkBox_exersize_1_7, self.spinBox_extraWeight_1_7, self.spinBox_reps_1_7),
+                (self.checkBox_exersize_2_7, self.spinBox_extraWeight_2_7, self.spinBox_reps_2_7),
+                (self.checkBox_exersize_3_7, self.spinBox_extraWeight_3_7, self.spinBox_reps_3_7),
+                (self.checkBox_exersize_4_7, self.spinBox_extraWeight_4_7, self.spinBox_reps_4_7),
+                (self.checkBox_exersize_5_7, self.spinBox_extraWeight_5_7, self.spinBox_reps_5_7)
+            ],
 
-        # восьмой день
-        [
-        (self.checkBox_exersize_1_8,self.spinBox_extraWeight_1_8, self.spinBox_reps_1_8), 
-        (self.checkBox_exersize_2_8,self.spinBox_extraWeight_2_8, self.spinBox_reps_2_8), 
-        (self.checkBox_exersize_3_8,self.spinBox_extraWeight_3_8, self.spinBox_reps_3_8), 
-        (self.checkBox_exersize_4_8,self.spinBox_extraWeight_4_8, self.spinBox_reps_4_8), 
-        (self.checkBox_exersize_5_8,self.spinBox_extraWeight_5_8, self.spinBox_reps_5_8)
-        ],
+            # восьмой день
+            [
+                (self.checkBox_exersize_1_8, self.spinBox_extraWeight_1_8, self.spinBox_reps_1_8),
+                (self.checkBox_exersize_2_8, self.spinBox_extraWeight_2_8, self.spinBox_reps_2_8),
+                (self.checkBox_exersize_3_8, self.spinBox_extraWeight_3_8, self.spinBox_reps_3_8),
+                (self.checkBox_exersize_4_8, self.spinBox_extraWeight_4_8, self.spinBox_reps_4_8),
+                (self.checkBox_exersize_5_8, self.spinBox_extraWeight_5_8, self.spinBox_reps_5_8)
+            ],
 
-        # девятый день
-        [
-        (self.checkBox_exersize_1_9,self.spinBox_extraWeight_1_9, self.spinBox_reps_1_9), 
-        (self.checkBox_exersize_2_9,self.spinBox_extraWeight_2_9, self.spinBox_reps_2_9), 
-        (self.checkBox_exersize_3_9,self.spinBox_extraWeight_3_9, self.spinBox_reps_3_9), 
-        (self.checkBox_exersize_4_9,self.spinBox_extraWeight_4_9, self.spinBox_reps_4_9), 
-        (self.checkBox_exersize_5_9,self.spinBox_extraWeight_5_9, self.spinBox_reps_5_9)
-        ],
+            # девятый день
+            [
+                (self.checkBox_exersize_1_9, self.spinBox_extraWeight_1_9, self.spinBox_reps_1_9),
+                (self.checkBox_exersize_2_9, self.spinBox_extraWeight_2_9, self.spinBox_reps_2_9),
+                (self.checkBox_exersize_3_9, self.spinBox_extraWeight_3_9, self.spinBox_reps_3_9),
+                (self.checkBox_exersize_4_9, self.spinBox_extraWeight_4_9, self.spinBox_reps_4_9),
+                (self.checkBox_exersize_5_9, self.spinBox_extraWeight_5_9, self.spinBox_reps_5_9)
+            ],
 
-        # десятый день
-        [
-        (self.checkBox_exersize_1_10,self.spinBox_extraWeight_1_10, self.spinBox_reps_1_10), 
-        (self.checkBox_exersize_2_10,self.spinBox_extraWeight_2_10, self.spinBox_reps_2_10), 
-        (self.checkBox_exersize_3_10,self.spinBox_extraWeight_3_10, self.spinBox_reps_3_10), 
-        (self.checkBox_exersize_4_10,self.spinBox_extraWeight_4_10, self.spinBox_reps_4_10), 
-        (self.checkBox_exersize_5_10,self.spinBox_extraWeight_5_10, self.spinBox_reps_5_10)
-        ],
+            # десятый день
+            [
+                (self.checkBox_exersize_1_10, self.spinBox_extraWeight_1_10, self.spinBox_reps_1_10),
+                (self.checkBox_exersize_2_10, self.spinBox_extraWeight_2_10, self.spinBox_reps_2_10),
+                (self.checkBox_exersize_3_10, self.spinBox_extraWeight_3_10, self.spinBox_reps_3_10),
+                (self.checkBox_exersize_4_10, self.spinBox_extraWeight_4_10, self.spinBox_reps_4_10),
+                (self.checkBox_exersize_5_10, self.spinBox_extraWeight_5_10, self.spinBox_reps_5_10)
+            ],
 
-        # одиннадцатый день
-        [
-        (self.checkBox_exersize_1_11,self.spinBox_extraWeight_1_11, self.spinBox_reps_1_11), 
-        (self.checkBox_exersize_2_11,self.spinBox_extraWeight_2_11, self.spinBox_reps_2_11), 
-        (self.checkBox_exersize_3_11,self.spinBox_extraWeight_3_11, self.spinBox_reps_3_11), 
-        (self.checkBox_exersize_4_11,self.spinBox_extraWeight_4_11, self.spinBox_reps_4_11), 
-        (self.checkBox_exersize_5_11,self.spinBox_extraWeight_5_11, self.spinBox_reps_5_11)
-        ], 
+            # одиннадцатый день
+            [
+                (self.checkBox_exersize_1_11, self.spinBox_extraWeight_1_11, self.spinBox_reps_1_11),
+                (self.checkBox_exersize_2_11, self.spinBox_extraWeight_2_11, self.spinBox_reps_2_11),
+                (self.checkBox_exersize_3_11, self.spinBox_extraWeight_3_11, self.spinBox_reps_3_11),
+                (self.checkBox_exersize_4_11, self.spinBox_extraWeight_4_11, self.spinBox_reps_4_11),
+                (self.checkBox_exersize_5_11, self.spinBox_extraWeight_5_11, self.spinBox_reps_5_11)
+            ],
 
-        # двеннадцатый день
-        [
-        (self.checkBox_exersize_1_12,self.spinBox_extraWeight_1_12, self.spinBox_reps_1_12), 
-        (self.checkBox_exersize_2_12,self.spinBox_extraWeight_2_12, self.spinBox_reps_2_12), 
-        (self.checkBox_exersize_3_12,self.spinBox_extraWeight_3_12, self.spinBox_reps_3_12), 
-        (self.checkBox_exersize_4_12,self.spinBox_extraWeight_4_12, self.spinBox_reps_4_12), 
-        (self.checkBox_exersize_5_12,self.spinBox_extraWeight_5_12, self.spinBox_reps_5_12)
-        ], 
+            # двеннадцатый день
+            [
+                (self.checkBox_exersize_1_12, self.spinBox_extraWeight_1_12, self.spinBox_reps_1_12),
+                (self.checkBox_exersize_2_12, self.spinBox_extraWeight_2_12, self.spinBox_reps_2_12),
+                (self.checkBox_exersize_3_12, self.spinBox_extraWeight_3_12, self.spinBox_reps_3_12),
+                (self.checkBox_exersize_4_12, self.spinBox_extraWeight_4_12, self.spinBox_reps_4_12),
+                (self.checkBox_exersize_5_12, self.spinBox_extraWeight_5_12, self.spinBox_reps_5_12)
+            ],
 
-        # триннадцатый день
-        [
-        (self.checkBox_exersize_1_13,self.spinBox_extraWeight_1_13, self.spinBox_reps_1_13), 
-        (self.checkBox_exersize_2_13,self.spinBox_extraWeight_2_13, self.spinBox_reps_2_13), 
-        (self.checkBox_exersize_3_13,self.spinBox_extraWeight_3_13, self.spinBox_reps_3_13), 
-        (self.checkBox_exersize_4_13,self.spinBox_extraWeight_4_13, self.spinBox_reps_4_13), 
-        (self.checkBox_exersize_5_13,self.spinBox_extraWeight_5_13, self.spinBox_reps_5_13)
-        ], 
+            # триннадцатый день
+            [
+                (self.checkBox_exersize_1_13, self.spinBox_extraWeight_1_13, self.spinBox_reps_1_13),
+                (self.checkBox_exersize_2_13, self.spinBox_extraWeight_2_13, self.spinBox_reps_2_13),
+                (self.checkBox_exersize_3_13, self.spinBox_extraWeight_3_13, self.spinBox_reps_3_13),
+                (self.checkBox_exersize_4_13, self.spinBox_extraWeight_4_13, self.spinBox_reps_4_13),
+                (self.checkBox_exersize_5_13, self.spinBox_extraWeight_5_13, self.spinBox_reps_5_13)
+            ],
 
-        # четырнадцатый день
-        [
-        (self.checkBox_exersize_1_14,self.spinBox_extraWeight_1_14, self.spinBox_reps_1_14), 
-        (self.checkBox_exersize_2_14,self.spinBox_extraWeight_2_14, self.spinBox_reps_2_14), 
-        (self.checkBox_exersize_3_14,self.spinBox_extraWeight_3_14, self.spinBox_reps_3_14), 
-        (self.checkBox_exersize_4_14,self.spinBox_extraWeight_4_14, self.spinBox_reps_4_14), 
-        (self.checkBox_exersize_5_14,self.spinBox_extraWeight_5_14, self.spinBox_reps_5_14)
-        ], 
+            # четырнадцатый день
+            [
+                (self.checkBox_exersize_1_14, self.spinBox_extraWeight_1_14, self.spinBox_reps_1_14),
+                (self.checkBox_exersize_2_14, self.spinBox_extraWeight_2_14, self.spinBox_reps_2_14),
+                (self.checkBox_exersize_3_14, self.spinBox_extraWeight_3_14, self.spinBox_reps_3_14),
+                (self.checkBox_exersize_4_14, self.spinBox_extraWeight_4_14, self.spinBox_reps_4_14),
+                (self.checkBox_exersize_5_14, self.spinBox_extraWeight_5_14, self.spinBox_reps_5_14)
+            ],
 
-        # пятнадцатый день
-        [
-        (self.checkBox_exersize_1_15,self.spinBox_extraWeight_1_15, self.spinBox_reps_1_15), 
-        (self.checkBox_exersize_2_15,self.spinBox_extraWeight_2_15, self.spinBox_reps_2_15), 
-        (self.checkBox_exersize_3_15,self.spinBox_extraWeight_3_15, self.spinBox_reps_3_15), 
-        (self.checkBox_exersize_4_15,self.spinBox_extraWeight_4_15, self.spinBox_reps_4_15), 
-        (self.checkBox_exersize_5_15,self.spinBox_extraWeight_5_15, self.spinBox_reps_5_15)
-        ], 
+            # пятнадцатый день
+            [
+                (self.checkBox_exersize_1_15, self.spinBox_extraWeight_1_15, self.spinBox_reps_1_15),
+                (self.checkBox_exersize_2_15, self.spinBox_extraWeight_2_15, self.spinBox_reps_2_15),
+                (self.checkBox_exersize_3_15, self.spinBox_extraWeight_3_15, self.spinBox_reps_3_15),
+                (self.checkBox_exersize_4_15, self.spinBox_extraWeight_4_15, self.spinBox_reps_4_15),
+                (self.checkBox_exersize_5_15, self.spinBox_extraWeight_5_15, self.spinBox_reps_5_15)
+            ],
 
-        # шестнадцатый день
-        [
-        (self.checkBox_exersize_1_16,self.spinBox_extraWeight_1_16, self.spinBox_reps_1_16), 
-        (self.checkBox_exersize_2_16,self.spinBox_extraWeight_2_16, self.spinBox_reps_2_16), 
-        (self.checkBox_exersize_3_16,self.spinBox_extraWeight_3_16, self.spinBox_reps_3_16), 
-        (self.checkBox_exersize_4_16,self.spinBox_extraWeight_4_16, self.spinBox_reps_4_16), 
-        (self.checkBox_exersize_5_16,self.spinBox_extraWeight_5_16, self.spinBox_reps_5_16)
-        ], 
+            # шестнадцатый день
+            [
+                (self.checkBox_exersize_1_16, self.spinBox_extraWeight_1_16, self.spinBox_reps_1_16),
+                (self.checkBox_exersize_2_16, self.spinBox_extraWeight_2_16, self.spinBox_reps_2_16),
+                (self.checkBox_exersize_3_16, self.spinBox_extraWeight_3_16, self.spinBox_reps_3_16),
+                (self.checkBox_exersize_4_16, self.spinBox_extraWeight_4_16, self.spinBox_reps_4_16),
+                (self.checkBox_exersize_5_16, self.spinBox_extraWeight_5_16, self.spinBox_reps_5_16)
+            ],
 
-        # семнадцатый день
-        [
-        (self.checkBox_exersize_1_17,self.spinBox_extraWeight_1_17, self.spinBox_reps_1_17), 
-        (self.checkBox_exersize_2_17,self.spinBox_extraWeight_2_17, self.spinBox_reps_2_17), 
-        (self.checkBox_exersize_3_17,self.spinBox_extraWeight_3_17, self.spinBox_reps_3_17), 
-        (self.checkBox_exersize_4_17,self.spinBox_extraWeight_4_17, self.spinBox_reps_4_17), 
-        (self.checkBox_exersize_5_17,self.spinBox_extraWeight_5_17, self.spinBox_reps_5_17)
-        ], 
+            # семнадцатый день
+            [
+                (self.checkBox_exersize_1_17, self.spinBox_extraWeight_1_17, self.spinBox_reps_1_17),
+                (self.checkBox_exersize_2_17, self.spinBox_extraWeight_2_17, self.spinBox_reps_2_17),
+                (self.checkBox_exersize_3_17, self.spinBox_extraWeight_3_17, self.spinBox_reps_3_17),
+                (self.checkBox_exersize_4_17, self.spinBox_extraWeight_4_17, self.spinBox_reps_4_17),
+                (self.checkBox_exersize_5_17, self.spinBox_extraWeight_5_17, self.spinBox_reps_5_17)
+            ],
 
-        # восемнадцатый день
-        [
-        (self.checkBox_exersize_1_18,self.spinBox_extraWeight_1_18, self.spinBox_reps_1_18), 
-        (self.checkBox_exersize_2_18,self.spinBox_extraWeight_2_18, self.spinBox_reps_2_18), 
-        (self.checkBox_exersize_3_18,self.spinBox_extraWeight_3_18, self.spinBox_reps_3_18), 
-        (self.checkBox_exersize_4_18,self.spinBox_extraWeight_4_18, self.spinBox_reps_4_18), 
-        (self.checkBox_exersize_5_18,self.spinBox_extraWeight_5_18, self.spinBox_reps_5_18)
-        ], 
+            # восемнадцатый день
+            [
+                (self.checkBox_exersize_1_18, self.spinBox_extraWeight_1_18, self.spinBox_reps_1_18),
+                (self.checkBox_exersize_2_18, self.spinBox_extraWeight_2_18, self.spinBox_reps_2_18),
+                (self.checkBox_exersize_3_18, self.spinBox_extraWeight_3_18, self.spinBox_reps_3_18),
+                (self.checkBox_exersize_4_18, self.spinBox_extraWeight_4_18, self.spinBox_reps_4_18),
+                (self.checkBox_exersize_5_18, self.spinBox_extraWeight_5_18, self.spinBox_reps_5_18)
+            ],
 
-        # девятнадцатый день
-        [
-        (self.checkBox_exersize_1_19,self.spinBox_extraWeight_1_19, self.spinBox_reps_1_19), 
-        (self.checkBox_exersize_2_19,self.spinBox_extraWeight_2_19, self.spinBox_reps_2_19), 
-        (self.checkBox_exersize_3_19,self.spinBox_extraWeight_3_19, self.spinBox_reps_3_19), 
-        (self.checkBox_exersize_4_19,self.spinBox_extraWeight_4_19, self.spinBox_reps_4_19), 
-        (self.checkBox_exersize_5_19,self.spinBox_extraWeight_5_19, self.spinBox_reps_5_19)
-        ], 
+            # девятнадцатый день
+            [
+                (self.checkBox_exersize_1_19, self.spinBox_extraWeight_1_19, self.spinBox_reps_1_19),
+                (self.checkBox_exersize_2_19, self.spinBox_extraWeight_2_19, self.spinBox_reps_2_19),
+                (self.checkBox_exersize_3_19, self.spinBox_extraWeight_3_19, self.spinBox_reps_3_19),
+                (self.checkBox_exersize_4_19, self.spinBox_extraWeight_4_19, self.spinBox_reps_4_19),
+                (self.checkBox_exersize_5_19, self.spinBox_extraWeight_5_19, self.spinBox_reps_5_19)
+            ],
 
-        # двадцатый день
-        [
-        (self.checkBox_exersize_1_20,self.spinBox_extraWeight_1_20, self.spinBox_reps_1_20), 
-        (self.checkBox_exersize_2_20,self.spinBox_extraWeight_2_20, self.spinBox_reps_2_20), 
-        (self.checkBox_exersize_3_20,self.spinBox_extraWeight_3_20, self.spinBox_reps_3_20), 
-        (self.checkBox_exersize_4_20,self.spinBox_extraWeight_4_20, self.spinBox_reps_4_20), 
-        (self.checkBox_exersize_5_20,self.spinBox_extraWeight_5_20, self.spinBox_reps_5_20)
-        ], 
+            # двадцатый день
+            [
+                (self.checkBox_exersize_1_20, self.spinBox_extraWeight_1_20, self.spinBox_reps_1_20),
+                (self.checkBox_exersize_2_20, self.spinBox_extraWeight_2_20, self.spinBox_reps_2_20),
+                (self.checkBox_exersize_3_20, self.spinBox_extraWeight_3_20, self.spinBox_reps_3_20),
+                (self.checkBox_exersize_4_20, self.spinBox_extraWeight_4_20, self.spinBox_reps_4_20),
+                (self.checkBox_exersize_5_20, self.spinBox_extraWeight_5_20, self.spinBox_reps_5_20)
+            ],
 
-        # двадцатьпервый день
-        [
-        (self.checkBox_exersize_1_21,self.spinBox_extraWeight_1_21, self.spinBox_reps_1_21), 
-        (self.checkBox_exersize_2_21,self.spinBox_extraWeight_2_21, self.spinBox_reps_2_21), 
-        (self.checkBox_exersize_3_21,self.spinBox_extraWeight_3_21, self.spinBox_reps_3_21), 
-        (self.checkBox_exersize_4_21,self.spinBox_extraWeight_4_21, self.spinBox_reps_4_21), 
-        (self.checkBox_exersize_5_21,self.spinBox_extraWeight_5_21, self.spinBox_reps_5_21)
-        ]
+            # двадцатьпервый день
+            [
+                (self.checkBox_exersize_1_21, self.spinBox_extraWeight_1_21, self.spinBox_reps_1_21),
+                (self.checkBox_exersize_2_21, self.spinBox_extraWeight_2_21, self.spinBox_reps_2_21),
+                (self.checkBox_exersize_3_21, self.spinBox_extraWeight_3_21, self.spinBox_reps_3_21),
+                (self.checkBox_exersize_4_21, self.spinBox_extraWeight_4_21, self.spinBox_reps_4_21),
+                (self.checkBox_exersize_5_21, self.spinBox_extraWeight_5_21, self.spinBox_reps_5_21)
+            ]
         ]
         # списки столбцов в БД с дневником тренировок
         self.exersises = ["ex1_check", "ex2_check", "ex3_check", "ex4_check", "ex5_check"]
@@ -315,13 +312,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # список кнопок 
         self.buttons_training = [self.pushButton_complete_1, self.pushButton_complete_2,
-         self.pushButton_complete_3, self.pushButton_complete_4,self.pushButton_complete_5,
-         self.pushButton_complete_6, self.pushButton_complete_7, self.pushButton_complete_8,
-         self.pushButton_complete_9, self.pushButton_complete_10, self.pushButton_complete_11,
-         self.pushButton_complete_12, self.pushButton_complete_13, self.pushButton_complete_14,
-         self.pushButton_complete_15, self.pushButton_complete_16, self.pushButton_complete_17,
-         self.pushButton_complete_18, self.pushButton_complete_19, self.pushButton_complete_20,
-         self.pushButton_complete_21,]
+                                 self.pushButton_complete_3, self.pushButton_complete_4, self.pushButton_complete_5,
+                                 self.pushButton_complete_6, self.pushButton_complete_7, self.pushButton_complete_8,
+                                 self.pushButton_complete_9, self.pushButton_complete_10, self.pushButton_complete_11,
+                                 self.pushButton_complete_12, self.pushButton_complete_13, self.pushButton_complete_14,
+                                 self.pushButton_complete_15, self.pushButton_complete_16, self.pushButton_complete_17,
+                                 self.pushButton_complete_18, self.pushButton_complete_19, self.pushButton_complete_20,
+                                 self.pushButton_complete_21, ]
 
         # сохнанение тренировок(21 кнопка)
         for btn in self.buttons_training:
@@ -381,7 +378,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.label_gif_20.setMovie(self.movie_dumbbell_pull)
         self.label_gif_21.setMovie(self.movie_front_squats)
         self.label_gif_22.setMovie(self.movie_scars)
-        
+
         # старт всех анимаций
         self.movie_squats.start()
         self.movie_front_squats.start()
@@ -406,10 +403,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.movie_scars.start()
         self.movie_vise_knees.start()
         self.movie_oblique_twists.start()
-        
+
         # перейти во вкладку с конкретным упражнеием (gif-анимацией)
-        self.listWidget_exersizes.clicked.connect(lambda :self.stackedWidget_gifs.setCurrentIndex(self.listWidget_exersizes.currentRow()))
-    
+        self.listWidget_exersizes.clicked.connect(
+            lambda: self.stackedWidget_gifs.setCurrentIndex(self.listWidget_exersizes.currentRow()))
+
         #
         # ПИТАНИЕ
         #
@@ -463,7 +461,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         #
         # Описание
         #
-        self.listWidget_faq.clicked.connect(lambda:self.stackedWidget_faq.setCurrentIndex(self.listWidget_faq.currentRow()))
+        self.listWidget_faq.clicked.connect(
+            lambda: self.stackedWidget_faq.setCurrentIndex(self.listWidget_faq.currentRow()))
 
         # 
         # НАСТРОЙКИ
@@ -496,8 +495,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
                 cursor.execute(f"""   UPDATE current_id SET id = {ID}""")
 
-            
-        
         global LOGIN, ID, log
 
         # выйти из аккаунта
@@ -516,12 +513,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 # получение логина и ID 
                 ID, LOGIN = return_data()
                 login_update()
-                
-                
+
+
 
             except Exception:
                 pass
-
 
     #
     # методы Калькулятора
@@ -579,7 +575,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             else:
                 self.lineEdit_IMT_status.setText("Severe Thinness")
 
-
         # рассчет КФА (коофицент физической активности)
         if activity == 0:
             kfa = 1.2
@@ -596,11 +591,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if self.male:
             # рассчитать для мужчин по формуле
             self.lineEdit_metabolism.setText(
-                str(round((((weight*10) + (height*6.25) - (age*5)) + 5) * kfa)))
+                str(round((((weight * 10) + (height * 6.25) - (age * 5)) + 5) * kfa)))
         else:
             # рассчитать для женщин по формуле
             self.lineEdit_metabolism.setText(
-                str(round((((weight*10) + (height*6.25) - (age*5)) - 161) * kfa)))
+                str(round((((weight * 10) + (height * 6.25) - (age * 5)) - 161) * kfa)))
 
         # вывести результат и единицы измерения
         if self.language == "ru":
@@ -641,7 +636,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         if self.language == "ru":
             if wrist < 18 and self.male or wrist < 15 and not self.male:
-    
+
                 self.lineEdit_type.setText("Эктоморф")
                 self.body_type = 0
             elif wrist > 20 and self.male or wrist > 17 and not self.male:
@@ -652,7 +647,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.body_type = 1
         else:
             if wrist < 18 and self.male or wrist < 15 and not self.male:
-    
+
                 self.lineEdit_type.setText("Ectomorph")
                 self.body_type = 0
             elif wrist > 20 and self.male or wrist > 17 and not self.male:
@@ -677,15 +672,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if ID:
             # запись некоторых данных в БД
             with sqlite3.connect('db/dataBase2.db') as db:
-
                 # создание курсора
                 cursor = db.cursor()
                 print(float(self.lineEdit_percent.text()))
                 cursor.execute(
                     f"""  UPDATE info SET (height, weight, age, gender, activity,
-                     wrist, fat_check, waist, neck, hip, IMT, type) = {(height, weight,age,
-                      self.male, activity, wrist, self.check, waist, neck, hip, imt, self.body_type)} WHERE ID = {ID}""")
-                
+                     wrist, fat_check, waist, neck, hip, IMT, type) = {(height, weight, age,
+                                                                        self.male, activity, wrist, self.check, waist, neck, hip, imt, self.body_type)} WHERE ID = {ID}""")
 
     # показать поле для расчета процента жира
     def show_extra(self):
@@ -718,8 +711,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if self.check is True:
                 self.groupBox_2.hide()
 
-
-
     #
     # методы Тренировок
     #
@@ -735,18 +726,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 rep = data[2].value()
 
                 with sqlite3.connect('db/dataBase2.db') as db:
-                # создание курсора
+                    # создание курсора
                     cursor = db.cursor()
                     # обновление данных о текущем дне
                     cursor.execute(
                         f"""  UPDATE quick_start SET ({self.exersises[i]}, {self.weights[i]},
-                         {self.reps[i]}) = {(ex, weight,rep)} WHERE ID = {ID} AND day = {day}""")
-                    
+                         {self.reps[i]}) = {(ex, weight, rep)} WHERE ID = {ID} AND day = {day}""")
+
                     # изменить индекс последнего тренировочного дня 
                     cursor.execute(
                         f"""  UPDATE info SET (current_training) = {self.tabWidget.currentIndex()} WHERE ID = {ID}""")
-
-
 
     #
     # методы Питания
@@ -755,14 +744,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # удалить предыдущую версию таблицы
         # try:
         #   self.page_4.
-        
+
         # except Exception:
         #     pass
-        
+
         # получение данных из csv файла
         if self.language == 'ru':
             fname = 'src/pfcc.csv'
-          
+
         else:
             fname = 'src/pfcc_en.csv'
         with open(fname, encoding="utf-8") as csvfile:
@@ -822,7 +811,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.header.setSectionResizeMode(2, QHeaderView.Stretch)
         self.header.setSectionResizeMode(1, QHeaderView.Stretch)
         self.header.setSectionResizeMode(0, QHeaderView.ResizeToContents)
-        
+
     def user_table(self):
 
         # удалить предыдущую версию таблицы
@@ -915,7 +904,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.header2.setSectionResizeMode(1, QHeaderView.Stretch)
         self.header2.setSectionResizeMode(0, QHeaderView.ResizeToContents)
 
-
     # выбор продукта
     def add(self):
 
@@ -944,7 +932,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 name, proteins, fats, carbs, calories = self.li[self.id[self.table.currentIndex(
                 ).data()]]
                 # добавление нового кортежа в список пользователя
-                
+
                 self.choice.append(
                     (name, str(weight), proteins, fats, carbs, calories))
 
@@ -997,7 +985,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             fname = QFileDialog.getSaveFileName(
                 self, 'Сохранить базу данных', 'user_files',
                 'База данных (*.csv)')[0]
-            
+
         else:
             fname = QFileDialog.getSaveFileName(
                 self, 'Save database', 'user_files',
@@ -1013,7 +1001,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except Exception:
             pass
 
-     # загрузить таблицу пользователя
+    # загрузить таблицу пользователя
     def load(self, *file_name):
         if file_name[0]:
             fname = file_name[0]
@@ -1023,12 +1011,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 fname = QFileDialog.getOpenFileName(
                     self, 'Открыть базу данных', 'user_files',
                     'База данных (*.csv)')[0]
-                
+
             else:
                 fname = QFileDialog.getOpenFileName(
                     self, 'Open database', 'user_files',
                     'Database (*.csv)')[0]
-   
+
         # считать таблицу пользователя из csv
         self.choice = []
         try:
@@ -1050,22 +1038,32 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # Показать конкретную рекомендацию
     def asks(self):
         if self.listWidget_asks.currentRow() == 4:
-            names = ["user_files/system_rations/ectomorph_ration.csv","user_files/system_rations/mesomorph_ration.csv", "user_files/system_rations/endomorph_ration.csv"]
+            names = ["user_files/system_rations/ectomorph_ration.csv", "user_files/system_rations/mesomorph_ration.csv",
+                     "user_files/system_rations/endomorph_ration.csv"]
             MainWindow.load(self, names[self.body_type])
             self.tabWidget_nutrition.setCurrentIndex(0)
 
         else:
             self.stackedWidget_advices.setCurrentIndex(self.listWidget_asks.currentRow() * 3 + self.body_type)
-        
-
 
     #
     # методы Настроек
     #
 
     def translate(self):
+        global ID
         # перевести страницу с флагом null
         Functions.translate(self, 'null')
+
+        with sqlite3.connect('db/dataBase2.db') as db:
+            cursor = db.cursor()
+            # обновление данных о текущем дне
+            print(self.language)
+            print(cursor.execute(
+                f"""  SELECT language FROM login  WHERE ID = {ID}""").fetchall()[0][0])
+            # cursor.execute(
+            #     f"""  UPDATE login SET language = {self.language}""")
+            cursor.execute(f"""   UPDATE login SET language = {str("None")} WHERE ID = {ID}""")
 
 
 if __name__ == "__main__":

@@ -1,7 +1,4 @@
-
-
 from main import *
-
 
 
 class Functions(MainWindow):
@@ -29,7 +26,7 @@ class Functions(MainWindow):
 
     # обновить раздел калькулятр согласно данным пользователя
     def update_calculator(self, ID):
-        
+
         # подключение к базе данных информации о пользователе
         with sqlite3.connect('db/dataBase2.db') as db:
 
@@ -89,11 +86,11 @@ class Functions(MainWindow):
             for day, daily_list in enumerate(self.objects_list_of_quick_start):
                 # получить данные о тренировочном дне данного пользователя
                 data = cursor.execute(
-                f"""SELECT * FROM quick_start WHERE id = {ID} AND day = {day}""").fetchall()
+                    f"""SELECT * FROM quick_start WHERE id = {ID} AND day = {day}""").fetchall()
                 for row, info in enumerate(daily_list):
-                    info[0].setChecked(data[0][row+2])
-                    info[1].setValue(data[0][row+7])
-                    info[2].setValue(data[0][row+12])
+                    info[0].setChecked(data[0][row + 2])
+                    info[1].setValue(data[0][row + 7])
+                    info[2].setValue(data[0][row + 12])
 
             # открыть полследний завершенный тренировочный день
             self.tabWidget.setCurrentIndex(cursor.execute(
@@ -107,7 +104,7 @@ class Functions(MainWindow):
             with sqlite3.connect('db/dataBase2.db') as db:
                 cursor = db.cursor()
                 self.body_type = cursor.execute(
-                f"""SELECT type FROM info WHERE id = {ID}""").fetchall()[0][0]
+                    f"""SELECT type FROM info WHERE id = {ID}""").fetchall()[0][0]
 
 
         else:
@@ -133,9 +130,9 @@ class Functions(MainWindow):
                 # показать кнопку логина и имя пользователя
                 self.btn_login.show()
                 self.label_menu_login.show()
-                 
+
             else:
-                
+
                 widthExtended = standard
 
                 # скрыть текст кнопок навигации
@@ -149,8 +146,6 @@ class Functions(MainWindow):
                 # скрыть кнопку логина и имя пользователя
                 self.btn_login.hide()
                 self.label_menu_login.hide()
-                
-
 
             # анимации нажатия на кнопку открытия навигации
             self.animation = QPropertyAnimation(self.frame_left_menu, b"minimumWidth")
@@ -159,7 +154,6 @@ class Functions(MainWindow):
             self.animation.setEndValue(widthExtended)
             self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
             self.animation.start()
-
 
     def forward(self, login, language):
 
@@ -184,9 +178,7 @@ class Functions(MainWindow):
         # PAGE6
         self.btn_page_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_6))
 
-
         self.btn_login.clicked.connect(self.open_login)
-
 
     def translate(self, *flag):
         # изменить язык в зависимости от настроек 
@@ -237,7 +229,7 @@ class Functions(MainWindow):
             self.pushButton_training.setText("Training")
             self.pushButton_nutrition.setText("Nutrition")
             self.pushButton_info.setText("About app")
-            self.pushButton_sign.setText("Sign in") 
+            self.pushButton_sign.setText("Sign in")
 
             # показать навигацию
             if flag[0] == 'show_header':
@@ -247,10 +239,9 @@ class Functions(MainWindow):
                 self.btn_page_4.setText(" Nutrition")
                 self.btn_page_5.setText(" About app")
                 self.btn_page_6.setText(" Settings")
-                self.pushButton_sign.setText(" Sign in") 
+                self.pushButton_sign.setText(" Sign in")
 
-            
-            # питание
+                # питание
             self.pushButton_add.setText("Add")
             self.pushButton_clear.setText("Clear")
             self.pushButton_save.setText("Save as")
@@ -264,10 +255,10 @@ class Functions(MainWindow):
             self.comboBox_language.setCurrentIndex(1)
             self.label_language.setText("Interface language")
             self.pushButton_settings.setText("Save")
-           
 
-            
-        
+
+
+
         # перевести на английский язык
         else:
             # калькулятор

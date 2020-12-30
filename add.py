@@ -1,9 +1,10 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
+
 # добавить продукт в пользовательскую таблицу
 class Add(QDialog):
-    def __init__(self,language,name, parent=None):
+    def __init__(self, language, name, parent=None):
         super().__init__(parent)
         # установить иконку окна
         self.setWindowIcon(QIcon("img/icons/1491254405-plusaddmoredetail_82972.ico"))
@@ -20,7 +21,7 @@ class Add(QDialog):
         # формы для заполнения
         self.grams = QSpinBox(self)
         self.grams.setMaximum(5000)
-        
+
         buttonBox = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel, self);
 
         # заполение форм лайаута
