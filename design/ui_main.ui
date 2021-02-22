@@ -678,17 +678,20 @@ QPushButton:hover {
            <widget class="QLabel" name="label_3">
             <property name="geometry">
              <rect>
-              <x>440</x>
-              <y>30</y>
-              <width>161</width>
-              <height>111</height>
+              <x>430</x>
+              <y>40</y>
+              <width>141</width>
+              <height>141</height>
              </rect>
             </property>
             <property name="text">
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>img/filename.png</pixmap>
+             <pixmap>../img/filename.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
             </property>
            </widget>
            <widget class="QPushButton" name="pushButton_sign">
@@ -1421,7 +1424,7 @@ QCheckBox:hover {
 }</string>
                 </property>
                 <property name="text">
-                 <string> </string>
+                 <string/>
                 </property>
                 <property name="checked">
                  <bool>false</bool>

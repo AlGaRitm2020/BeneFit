@@ -346,9 +346,10 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_info.setObjectName("pushButton_info")
         self.label_3 = QtWidgets.QLabel(self.page_1)
-        self.label_3.setGeometry(QtCore.QRect(440, 30, 161, 111))
+        self.label_3.setGeometry(QtCore.QRect(430, 40, 141, 141))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("img/filename.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("img/logo.png"))
+        self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.pushButton_sign = QtWidgets.QPushButton(self.page_1)
         self.pushButton_sign.setGeometry(QtCore.QRect(730, 40, 71, 31))
@@ -710,12 +711,14 @@ class Ui_MainWindow(object):
         self.label_check_fat.setObjectName("label_check_fat")
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.LabelRole, self.label_check_fat)
         self.checkBox_fat = QtWidgets.QCheckBox(self.formLayoutWidget)
+
         self.checkBox_fat.setStyleSheet("QCheckBox{\n"
 "border:none;\n"
 "background-color: rgb(45, 45, 45);}\n"
 "QCheckBox:hover {\n"
 "    background-color: rgb(85, 170, 255);\n"
 "}")
+        self.checkBox_fat.setText(" ")
         self.checkBox_fat.setChecked(False)
         self.checkBox_fat.setObjectName("checkBox_fat")
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.checkBox_fat)
@@ -3240,7 +3243,6 @@ class Ui_MainWindow(object):
         self.comboBox_activity.setItemText(3, _translate("MainWindow", "Высокая"))
         self.comboBox_activity.setItemText(4, _translate("MainWindow", "Очень высокая"))
         self.label_check_fat.setText(_translate("MainWindow", "Расчитать % жира"))
-        self.checkBox_fat.setText(_translate("MainWindow", " "))
         self.label_wrist.setText(_translate("MainWindow", "Запястья, см"))
         self.pushButton_calculate.setText(_translate("MainWindow", "Рассчитать и сохранить"))
         self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['main.py'],
-             pathex=['C:\\Users\\Lenovo\\MyProjects\\PyProjects\\BeneFit_v.2.0.3\\BeneFit'],
+             pathex=['C:\\Users\\Lenovo\\MyProjects\\PyProjects\\BeneFit - Copy'],
              binaries=[],
              datas=[],
              hiddenimports=[],

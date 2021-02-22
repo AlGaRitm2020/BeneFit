@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="fasd">
+    <file>img/logo.png</file>
     <file>img/wallpapers7_edited_2.jpg</file>
     <file>img/wallpapers7_edited_1.jpg</file>
     <file>img/wallpapers8.jpg</file>
