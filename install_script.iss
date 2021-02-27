@@ -22,9 +22,9 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-OutputDir=C:\Users\Lenovo\Desktop\BeneFit_installers
+OutputDir=C:\Users\Lenovo\Desktop\BeneFit_installers_pyinst
 OutputBaseFilename=BeneFit_setup
-SetupIconFile=C:\Users\Lenovo\MyProjects\PyProjects\BeneFit - Copy - Copy (2)\main.dist\BeneFit.ico
+SetupIconFile=D:\MyProjects\PyProjects\BeneFit\Demo\BeneFit.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -37,8 +37,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\Users\Lenovo\MyProjects\PyProjects\BeneFit - Copy - Copy (2)\main.dist\main.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Lenovo\MyProjects\PyProjects\BeneFit - Copy - Copy (2)\main.dist\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\MyProjects\PyProjects\BeneFit\Demo\main.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\MyProjects\PyProjects\BeneFit\Demo\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

@@ -1,0 +1,1124 @@
+[2021-02-26T17:44:40.259109 5312 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:40.260108 14424] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:40.260108 9068 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:40.259109 980  ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) base_dir = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) compiler = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) compression = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) debug = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) disable = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) hard_link = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:40.259109 5312 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) max_files = 0
+[2021-02-26T17:44:40.259109 5312 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) path = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) read_only = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) recache = false
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) stats = true
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:40.259109 5312 ] Config: (default) umask = 
+[2021-02-26T17:44:40.264103 5312 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o __helpers.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src __helpers.c
+[2021-02-26T17:44:40.265104 5312 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) base_dir = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) compiler = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) compression = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) debug = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) disable = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) hard_link = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:40.260108 9068 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) max_files = 0
+[2021-02-26T17:44:40.260108 9068 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) path = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) read_only = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) recache = false
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) stats = true
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:40.260108 9068 ] Config: (default) umask = 
+[2021-02-26T17:44:40.265104 9068 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o __constants.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src __constants.c
+[2021-02-26T17:44:40.265104 9068 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:40.265104 9068 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:40.266103 5312 ] Source file: __helpers.c
+[2021-02-26T17:44:40.266103 5312 ] Object file: __helpers.o
+[2021-02-26T17:44:40.266103 5312 ] Trying direct lookup
+[2021-02-26T17:44:40.266103 9068 ] Source file: __constants.c
+[2021-02-26T17:44:40.266103 9068 ] Object file: __constants.o
+[2021-02-26T17:44:40.266103 9068 ] Trying direct lookup
+[2021-02-26T17:44:40.267103 5312 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/c/409290cf1500d1cb6b487847dc3ade-78450.manifest
+[2021-02-26T17:44:40.267103 9068 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/3/ac7a75676a2ee08aac5329accf4ab2-4784.manifest
+[2021-02-26T17:44:40.259109 980  ] Config: (default) base_dir = 
+[2021-02-26T17:44:40.259109 980  ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:40.259109 980  ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:40.259109 980  ] Config: (default) compiler = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:40.259109 980  ] Config: (default) compression = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) compression_level = 6
+[2021-02-26T17:44:40.259109 980  ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) debug = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) depend_mode = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) direct_mode = true
+[2021-02-26T17:44:40.259109 980  ] Config: (default) disable = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) hard_link = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) hash_dir = true
+[2021-02-26T17:44:40.259109 980  ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:40.259109 980  ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:40.259109 980  ] Config: (default) max_files = 0
+[2021-02-26T17:44:40.259109 980  ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:40.259109 980  ] Config: (default) path = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) prefix_command = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) read_only = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) recache = false
+[2021-02-26T17:44:40.259109 980  ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:40.259109 980  ] Config: (default) sloppiness = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) stats = true
+[2021-02-26T17:44:40.259109 980  ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:40.259109 980  ] Config: (default) umask = 
+[2021-02-26T17:44:40.264103 980  ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o __loader.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src __loader.c
+[2021-02-26T17:44:40.260108 14424] Config: (default) base_dir = 
+[2021-02-26T17:44:40.260108 14424] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:40.260108 14424] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:40.260108 14424] Config: (default) compiler = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:40.260108 14424] Config: (default) compression = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) compression_level = 6
+[2021-02-26T17:44:40.260108 14424] Config: (default) cpp_extension = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) debug = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) depend_mode = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) direct_mode = true
+[2021-02-26T17:44:40.260108 14424] Config: (default) disable = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) hard_link = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) hash_dir = true
+[2021-02-26T17:44:40.260108 14424] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:40.260108 14424] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:40.260108 14424] Config: (default) max_files = 0
+[2021-02-26T17:44:40.260108 14424] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:40.260108 14424] Config: (default) path = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) prefix_command = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) read_only = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) read_only_direct = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) recache = false
+[2021-02-26T17:44:40.260108 14424] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:40.260108 14424] Config: (default) sloppiness = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) stats = true
+[2021-02-26T17:44:40.260108 14424] Config: (default) temporary_dir = 
+[2021-02-26T17:44:40.260108 14424] Config: (default) umask = 
+[2021-02-26T17:44:40.264103 14424] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.PyQt5-preLoad.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.PyQt5-preLoad.c
+[2021-02-26T17:44:40.267103 14424] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:40.267103 980  ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:40.268100 14424] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:40.268100 980  ] Source file: __loader.c
+-preLoad.c
+[2021-02-26T17:44:40.268100 980  ] Object file: __loader.o
+-preLoad.o
+[2021-02-26T17:44:40.269098 14424] Trying direct lookup
+[2021-02-26T17:44:40.269098 980  ] Trying direct lookup
+[2021-02-26T17:44:40.269098 14424] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/1/48446f3dcc2d37639257a87169f0e5-27969.manifest
+[2021-02-26T17:44:40.269098 980  ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/f/4e4d2981989c5e316706c3649973fb-52001.manifest
+[2021-02-26T17:44:41.393061 980  ] Got object file hash from manifest
+[2021-02-26T17:44:41.395054 5312 ] Got object file hash from manifest
+[2021-02-26T17:44:41.395054 14424] Got object file hash from manifest
+[2021-02-26T17:44:41.397052 9068 ] Got object file hash from manifest
+[2021-02-26T17:44:41.423028 9068 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/f/1d0ea88db3e2ada04391e70e87af0f-626915.o to __constants.o (uncompressed)
+[2021-02-26T17:44:41.424026 5312 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/f/fd9d25ea53727107d1872d53702b5c-675006.o to __helpers.o (uncompressed)
+[2021-02-26T17:44:41.425026 9068 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/f/1d0ea88db3e2ada04391e70e87af0f-626915.o -> __constants.o
+[2021-02-26T17:44:41.426024 9068 ] Succeeded getting cached result
+[2021-02-26T17:44:41.426024 9068 ] Result: cache hit (direct)
+[2021-02-26T17:44:41.426024 9068 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-02-26T17:44:41.453000 14424] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/a/f3a95bff80b242b2c4d87540f797dc-642010.o to module.PyQt5-preLoad.o (uncompressed)
+[2021-02-26T17:44:41.454000 980  ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/b/5b50c69935064b119e30f4f96d98e9-482165.o to __loader.o (uncompressed)
+[2021-02-26T17:44:41.465989 14424] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/a/f3a95bff80b242b2c4d87540f797dc-642010.o -> module.PyQt5-preLoad.o
+[2021-02-26T17:44:41.466987 14424] Succeeded getting cached result
+[2021-02-26T17:44:41.466987 14424] Result: cache hit (direct)
+[2021-02-26T17:44:41.466987 14424] lockfile_acquire: CreateFile C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock: error code 32
+[2021-02-26T17:44:41.466987 14424] lockfile_acquire: failed to acquire C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock; sleeping 1000 microseconds
+[2021-02-26T17:44:41.469985 980  ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/b/5b50c69935064b119e30f4f96d98e9-482165.o -> __loader.o
+[2021-02-26T17:44:41.470991 9068 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-02-26T17:44:41.470991 980  ] Succeeded getting cached result
+[2021-02-26T17:44:41.470991 980  ] Result: cache hit (direct)
+[2021-02-26T17:44:41.471983 5312 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/f/fd9d25ea53727107d1872d53702b5c-675006.o -> __helpers.o
+[2021-02-26T17:44:41.471983 980  ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock
+[2021-02-26T17:44:41.472982 5312 ] Succeeded getting cached result
+[2021-02-26T17:44:41.472982 5312 ] Result: cache hit (direct)
+[2021-02-26T17:44:41.472982 5312 ] lockfile_acquire: CreateFile C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock: error code 32
+[2021-02-26T17:44:41.472982 5312 ] lockfile_acquire: failed to acquire C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock; sleeping 1000 microseconds
+[2021-02-26T17:44:41.475984 14424] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-02-26T17:44:41.491963 14424] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-02-26T17:44:41.498957 980  ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock
+[2021-02-26T17:44:41.505951 5312 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock
+[2021-02-26T17:44:41.563897 5312 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock
+[2021-02-26T17:44:41.622845 6448 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) base_dir = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) compiler = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) compression = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) debug = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) disable = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) hard_link = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:41.622845 6448 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) max_files = 0
+[2021-02-26T17:44:41.622845 6448 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) path = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) read_only = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) recache = false
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) stats = true
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:41.622845 6448 ] Config: (default) umask = 
+[2021-02-26T17:44:41.624852 6448 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.PyQt5.QtCore-postLoad.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.PyQt5.QtCore-postLoad.c
+[2021-02-26T17:44:41.624852 6448 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:41.624852 6448 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:41.625847 6448 ] Source file: module.PyQt5.QtCore-postLoad.c
+[2021-02-26T17:44:41.625847 6448 ] Object file: module.PyQt5.QtCore-postLoad.o
+[2021-02-26T17:44:41.625847 6448 ] Trying direct lookup
+[2021-02-26T17:44:41.626844 6448 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/e/249a102121283418080c19c0acc27f-30483.manifest
+[2021-02-26T17:44:41.826654 6556 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) base_dir = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) compiler = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) compression = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) debug = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) disable = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) hard_link = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:41.826654 6556 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) max_files = 0
+[2021-02-26T17:44:41.826654 6556 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) path = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) read_only = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) recache = false
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) stats = true
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:41.826654 6556 ] Config: (default) umask = 
+[2021-02-26T17:44:41.827653 6556 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.PyQt5.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.PyQt5.c
+[2021-02-26T17:44:41.827653 6556 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:41.827653 6556 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:41.828652 6556 ] Source file: module.PyQt5.c
+[2021-02-26T17:44:41.828652 6556 ] Object file: module.PyQt5.o
+[2021-02-26T17:44:41.828652 6556 ] Trying direct lookup
+[2021-02-26T17:44:41.829650 6556 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/9/c81021e30d513fdb7fed21340ad298-71899.manifest
+[2021-02-26T17:44:41.843642 6448 ] Got object file hash from manifest
+[2021-02-26T17:44:41.863620 6448 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/6/08d759525028501a0f41a3fb12ce61-644963.o to module.PyQt5.QtCore-postLoad.o (uncompressed)
+[2021-02-26T17:44:41.876607 6448 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/6/08d759525028501a0f41a3fb12ce61-644963.o -> module.PyQt5.QtCore-postLoad.o
+[2021-02-26T17:44:41.887595 6448 ] Succeeded getting cached result
+[2021-02-26T17:44:41.887595 6448 ] Result: cache hit (direct)
+[2021-02-26T17:44:41.920567 13400] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:41.920567 13400] Config: (default) base_dir = 
+[2021-02-26T17:44:41.920567 13400] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:41.920567 13400] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:41.920567 13400] Config: (default) compiler = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:41.920567 13400] Config: (default) compression = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) compression_level = 6
+[2021-02-26T17:44:41.920567 13400] Config: (default) cpp_extension = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) debug = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) depend_mode = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) direct_mode = true
+[2021-02-26T17:44:41.920567 13400] Config: (default) disable = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) hard_link = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) hash_dir = true
+[2021-02-26T17:44:41.920567 13400] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:41.920567 13400] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:41.920567 13400] Config: (default) max_files = 0
+[2021-02-26T17:44:41.920567 13400] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:41.920567 13400] Config: (default) path = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) prefix_command = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) read_only = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) read_only_direct = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) recache = false
+[2021-02-26T17:44:41.920567 13400] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:41.920567 13400] Config: (default) sloppiness = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) stats = true
+[2021-02-26T17:44:41.920567 13400] Config: (default) temporary_dir = 
+[2021-02-26T17:44:41.920567 13400] Config: (default) umask = 
+[2021-02-26T17:44:41.921566 13400] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.__main__.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.__main__.c
+[2021-02-26T17:44:41.922565 13400] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:41.922565 13400] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:41.922565 13400] Source file: module.__main__.c
+[2021-02-26T17:44:41.923564 13400] Object file: module.__main__.o
+[2021-02-26T17:44:41.923564 13400] Trying direct lookup
+[2021-02-26T17:44:41.982517 6448 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2021-02-26T17:44:42.001497 13400] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/2/49b7e89bdb5a7a51ad3c86be6d22e9-2205331.manifest
+[2021-02-26T17:44:42.002497 13400] No such manifest file
+[2021-02-26T17:44:42.002497 13400] Did not find object file hash in manifest
+[2021-02-26T17:44:42.003490 13400] Running preprocessor
+[2021-02-26T17:44:42.074424 6448 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2021-02-26T17:44:42.132369 14364] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:42.132369 14364] Config: (default) base_dir = 
+[2021-02-26T17:44:42.132369 14364] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:42.132369 14364] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:42.132369 14364] Config: (default) compiler = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:42.132369 14364] Config: (default) compression = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) compression_level = 6
+[2021-02-26T17:44:42.132369 14364] Config: (default) cpp_extension = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) debug = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) depend_mode = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) direct_mode = true
+[2021-02-26T17:44:42.132369 14364] Config: (default) disable = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) hard_link = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) hash_dir = true
+[2021-02-26T17:44:42.132369 14364] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:42.132369 14364] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:42.132369 14364] Config: (default) max_files = 0
+[2021-02-26T17:44:42.132369 14364] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:42.132369 14364] Config: (default) path = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) prefix_command = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) read_only = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) read_only_direct = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) recache = false
+[2021-02-26T17:44:42.132369 14364] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:42.132369 14364] Config: (default) sloppiness = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) stats = true
+[2021-02-26T17:44:42.132369 14364] Config: (default) temporary_dir = 
+[2021-02-26T17:44:42.132369 14364] Config: (default) umask = 
+[2021-02-26T17:44:42.133369 14364] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.add.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.add.c
+[2021-02-26T17:44:42.133369 14364] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:42.133369 14364] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:42.134368 14364] Source file: module.add.c
+[2021-02-26T17:44:42.134368 14364] Object file: module.add.o
+[2021-02-26T17:44:42.134368 14364] Trying direct lookup
+[2021-02-26T17:44:42.135366 14364] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/b/32f6240212687cf9c58a337496c787-100451.manifest
+[2021-02-26T17:44:42.136365 6556 ] Got object file hash from manifest
+[2021-02-26T17:44:42.167337 6556 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/f/f53dd5038839872589ee9534ab7bdf-685681.o to module.PyQt5.o (uncompressed)
+[2021-02-26T17:44:42.191316 6556 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/f/f53dd5038839872589ee9534ab7bdf-685681.o -> module.PyQt5.o
+[2021-02-26T17:44:42.191316 6556 ] Succeeded getting cached result
+[2021-02-26T17:44:42.191316 6556 ] Result: cache hit (direct)
+[2021-02-26T17:44:42.192315 6556 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock
+[2021-02-26T17:44:42.214294 6556 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock
+[2021-02-26T17:44:42.230280 1400 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) base_dir = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) compiler = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) compression = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) debug = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) disable = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) hard_link = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:42.230280 1400 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) max_files = 0
+[2021-02-26T17:44:42.230280 1400 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) path = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) read_only = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) recache = false
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) stats = true
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:42.230280 1400 ] Config: (default) umask = 
+[2021-02-26T17:44:42.231279 1400 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.design.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.design.c
+[2021-02-26T17:44:42.231279 1400 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:42.231279 1400 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:42.232280 1400 ] Source file: module.design.c
+[2021-02-26T17:44:42.232280 1400 ] Object file: module.design.o
+[2021-02-26T17:44:42.233276 1400 ] Trying direct lookup
+[2021-02-26T17:44:42.233276 1400 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/4/31a4b17a25fad70a6aabf57a963ab2-17969.manifest
+[2021-02-26T17:44:42.322194 14364] Got object file hash from manifest
+[2021-02-26T17:44:42.355164 14364] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/7/ce5d608bad2fe90f850ad0dc6f7869-713111.o to module.add.o (uncompressed)
+[2021-02-26T17:44:42.368152 14364] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/7/ce5d608bad2fe90f850ad0dc6f7869-713111.o -> module.add.o
+[2021-02-26T17:44:42.369150 14364] Succeeded getting cached result
+[2021-02-26T17:44:42.369150 14364] Result: cache hit (direct)
+[2021-02-26T17:44:42.369150 14364] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2021-02-26T17:44:42.397125 14364] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2021-02-26T17:44:42.415108 460  ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:42.415108 460  ] Config: (default) base_dir = 
+[2021-02-26T17:44:42.415108 460  ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:42.415108 460  ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:42.415108 460  ] Config: (default) compiler = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:42.415108 460  ] Config: (default) compression = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) compression_level = 6
+[2021-02-26T17:44:42.415108 460  ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) debug = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) depend_mode = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) direct_mode = true
+[2021-02-26T17:44:42.415108 460  ] Config: (default) disable = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) hard_link = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) hash_dir = true
+[2021-02-26T17:44:42.415108 460  ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:42.415108 460  ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:42.415108 460  ] Config: (default) max_files = 0
+[2021-02-26T17:44:42.415108 460  ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:42.415108 460  ] Config: (default) path = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) prefix_command = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) read_only = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) recache = false
+[2021-02-26T17:44:42.415108 460  ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:42.415108 460  ] Config: (default) sloppiness = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) stats = true
+[2021-02-26T17:44:42.415108 460  ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:42.415108 460  ] Config: (default) umask = 
+[2021-02-26T17:44:42.416108 460  ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.design.ui_login.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.design.ui_login.c
+[2021-02-26T17:44:42.416108 460  ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:42.416108 460  ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:42.417107 460  ] Source file: module.design.ui_login.c
+[2021-02-26T17:44:42.417107 460  ] Object file: module.design.ui_login.o
+[2021-02-26T17:44:42.417107 460  ] Trying direct lookup
+[2021-02-26T17:44:42.419106 460  ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/d/f21514112614377e6d03905cd9a58b-197573.manifest
+[2021-02-26T17:44:42.419106 1400 ] Got object file hash from manifest
+[2021-02-26T17:44:42.457070 1400 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/3/d60fe17b23d2893848794091313d5a-632226.o to module.design.o (uncompressed)
+[2021-02-26T17:44:42.459067 1400 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/3/d60fe17b23d2893848794091313d5a-632226.o -> module.design.o
+[2021-02-26T17:44:42.459067 1400 ] Succeeded getting cached result
+[2021-02-26T17:44:42.459067 1400 ] Result: cache hit (direct)
+[2021-02-26T17:44:42.460065 1400 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/stats.lock
+[2021-02-26T17:44:42.488039 1400 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/stats.lock
+[2021-02-26T17:44:42.759788 460  ] Got object file hash from manifest
+[2021-02-26T17:44:42.781768 460  ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/b/16133a5391cf0e3f12d97f05f570e8-815909.o to module.design.ui_login.o (uncompressed)
+[2021-02-26T17:44:42.797755 460  ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/b/16133a5391cf0e3f12d97f05f570e8-815909.o -> module.design.ui_login.o
+[2021-02-26T17:44:42.797755 460  ] Succeeded getting cached result
+[2021-02-26T17:44:42.798752 460  ] Result: cache hit (direct)
+[2021-02-26T17:44:42.798752 460  ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2021-02-26T17:44:42.824727 460  ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2021-02-26T17:44:43.171405 5412 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) base_dir = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) compiler = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) compression = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) debug = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) disable = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) hard_link = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:43.171405 5412 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) max_files = 0
+[2021-02-26T17:44:43.171405 5412 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) path = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) read_only = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) recache = false
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) stats = true
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:43.171405 5412 ] Config: (default) umask = 
+[2021-02-26T17:44:43.172404 5412 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.design.ui_main.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.design.ui_main.c
+[2021-02-26T17:44:43.172404 5412 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:43.172404 5412 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:43.173404 5412 ] Source file: module.design.ui_main.c
+[2021-02-26T17:44:43.173404 5412 ] Object file: module.design.ui_main.o
+[2021-02-26T17:44:43.173404 5412 ] Trying direct lookup
+[2021-02-26T17:44:43.223357 5412 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/4/6270c825b6208172d24b7d18e7f461-8463167.manifest
+[2021-02-26T17:44:43.306280 13920] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:43.306280 13920] Config: (default) base_dir = 
+[2021-02-26T17:44:43.306280 13920] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:43.306280 13920] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:43.306280 13920] Config: (default) compiler = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:43.306280 13920] Config: (default) compression = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) compression_level = 6
+[2021-02-26T17:44:43.306280 13920] Config: (default) cpp_extension = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) debug = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) depend_mode = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) direct_mode = true
+[2021-02-26T17:44:43.306280 13920] Config: (default) disable = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) hard_link = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) hash_dir = true
+[2021-02-26T17:44:43.306280 13920] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:43.306280 13920] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:43.306280 13920] Config: (default) max_files = 0
+[2021-02-26T17:44:43.306280 13920] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:43.306280 13920] Config: (default) path = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) prefix_command = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) read_only = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) read_only_direct = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) recache = false
+[2021-02-26T17:44:43.306280 13920] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:43.306280 13920] Config: (default) sloppiness = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) stats = true
+[2021-02-26T17:44:43.306280 13920] Config: (default) temporary_dir = 
+[2021-02-26T17:44:43.306280 13920] Config: (default) umask = 
+[2021-02-26T17:44:43.307280 13920] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.functions.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.functions.c
+[2021-02-26T17:44:43.307280 13920] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:43.308278 13920] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:43.308278 13920] Source file: module.functions.c
+[2021-02-26T17:44:43.308278 13920] Object file: module.functions.o
+[2021-02-26T17:44:43.308278 13920] Trying direct lookup
+[2021-02-26T17:44:43.312275 13920] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/e/fb01a74297280a453761ae10c94c9e-558527.manifest
+[2021-02-26T17:44:43.341247 6248 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) base_dir = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) compiler = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) compression = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) debug = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) disable = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) hard_link = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:43.341247 6248 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) max_files = 0
+[2021-02-26T17:44:43.341247 6248 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) path = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) read_only = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) recache = false
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) stats = true
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:43.341247 6248 ] Config: (default) umask = 
+[2021-02-26T17:44:43.346244 6248 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.insert.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.insert.c
+[2021-02-26T17:44:43.346244 6248 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:43.346244 6248 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:43.347243 6248 ] Source file: module.insert.c
+[2021-02-26T17:44:43.347243 6248 ] Object file: module.insert.o
+[2021-02-26T17:44:43.347243 6248 ] Trying direct lookup
+[2021-02-26T17:44:43.348242 6248 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/6/d71d76cbb38f555b307d33e45ffa9a-159234.manifest
+[2021-02-26T17:44:43.392200 5412 ] Got object file hash from manifest
+[2021-02-26T17:44:43.409186 5412 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/0/1c7a01a744191e6433dd03eadce913-9534555.o to module.design.ui_main.o (uncompressed)
+[2021-02-26T17:44:43.428167 5412 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/0/1c7a01a744191e6433dd03eadce913-9534555.o -> module.design.ui_main.o
+[2021-02-26T17:44:43.428167 5412 ] Succeeded getting cached result
+[2021-02-26T17:44:43.428167 5412 ] Result: cache hit (direct)
+[2021-02-26T17:44:43.429166 5412 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2021-02-26T17:44:43.444153 5412 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2021-02-26T17:44:43.472127 13920] Got object file hash from manifest
+[2021-02-26T17:44:43.516085 13920] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/c/1fb1ed41de2dfc177f37cdb3f1c869-1175117.o to module.functions.o (uncompressed)
+[2021-02-26T17:44:43.529074 6248 ] Got object file hash from manifest
+[2021-02-26T17:44:43.532072 13920] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/c/1fb1ed41de2dfc177f37cdb3f1c869-1175117.o -> module.functions.o
+[2021-02-26T17:44:43.533070 13920] Succeeded getting cached result
+[2021-02-26T17:44:43.533070 13920] Result: cache hit (direct)
+[2021-02-26T17:44:43.533070 13920] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2021-02-26T17:44:43.546058 6248 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/8/4ad463ae7dcc2f7d2c1313b4401ad2-772498.o to module.insert.o (uncompressed)
+[2021-02-26T17:44:43.560046 6248 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/8/4ad463ae7dcc2f7d2c1313b4401ad2-772498.o -> module.insert.o
+[2021-02-26T17:44:43.560046 6248 ] Succeeded getting cached result
+[2021-02-26T17:44:43.560046 6248 ] Result: cache hit (direct)
+[2021-02-26T17:44:43.561045 6248 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-02-26T17:44:43.593016 13920] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2021-02-26T17:44:43.596012 6248 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-02-26T17:44:43.714902 4640 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) base_dir = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) compiler = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) compression = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) debug = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) disable = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) hard_link = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:43.714902 4640 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) max_files = 0
+[2021-02-26T17:44:43.714902 4640 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) path = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) read_only = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) recache = false
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) stats = true
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:43.714902 4640 ] Config: (default) umask = 
+[2021-02-26T17:44:43.716900 4640 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.login.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.login.c
+[2021-02-26T17:44:43.716900 4640 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:43.716900 4640 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:43.717899 4640 ] Source file: module.login.c
+[2021-02-26T17:44:43.717899 4640 ] Object file: module.login.o
+[2021-02-26T17:44:43.717899 4640 ] Trying direct lookup
+[2021-02-26T17:44:43.719897 4640 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/6/1b80897bcddaf5ef58731ad15aa372-267164.manifest
+[2021-02-26T17:44:43.812811 5880 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) base_dir = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) compiler = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) compression = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) debug = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) disable = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) hard_link = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:43.812811 5880 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) max_files = 0
+[2021-02-26T17:44:43.812811 5880 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) path = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) read_only = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) recache = false
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) stats = true
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:43.812811 5880 ] Config: (default) umask = 
+[2021-02-26T17:44:43.813810 5880 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.main.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.main.c
+[2021-02-26T17:44:43.813810 5880 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:43.813810 5880 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:43.814810 5880 ] Source file: module.main.c
+[2021-02-26T17:44:43.814810 5880 ] Object file: module.main.o
+[2021-02-26T17:44:43.814810 5880 ] Trying direct lookup
+[2021-02-26T17:44:43.825800 5880 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/0/2835ee80568a636bd3df7d63933cc4-2187915.manifest
+[2021-02-26T17:44:43.827796 5880 ] No such manifest file
+[2021-02-26T17:44:43.827796 5880 ] Did not find object file hash in manifest
+[2021-02-26T17:44:43.828797 5880 ] Running preprocessor
+[2021-02-26T17:44:43.855770 7360 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) base_dir = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) compiler = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) compression = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) debug = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) disable = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) hard_link = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:43.855770 7360 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) max_files = 0
+[2021-02-26T17:44:43.855770 7360 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) path = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) read_only = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) recache = false
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) stats = true
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:43.855770 7360 ] Config: (default) umask = 
+[2021-02-26T17:44:43.856769 7360 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.resourse.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src module.resourse.c
+[2021-02-26T17:44:43.856769 7360 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:43.856769 7360 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:43.857768 7360 ] Source file: module.resourse.c
+[2021-02-26T17:44:43.857768 7360 ] Object file: module.resourse.o
+[2021-02-26T17:44:43.857768 7360 ] Trying direct lookup
+[2021-02-26T17:44:43.858767 7360 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/7/bb667c68f5edcb6acd681e9a409417-57625.manifest
+[2021-02-26T17:44:43.860765 4640 ] Got object file hash from manifest
+[2021-02-26T17:44:43.879749 4640 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/5/fb0a084b98fc41070e113d2228756f-884906.o to module.login.o (uncompressed)
+[2021-02-26T17:44:43.893735 4640 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/5/fb0a084b98fc41070e113d2228756f-884906.o -> module.login.o
+[2021-02-26T17:44:43.893735 4640 ] Succeeded getting cached result
+[2021-02-26T17:44:43.893735 4640 ] Result: cache hit (direct)
+[2021-02-26T17:44:43.894734 4640 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock
+[2021-02-26T17:44:43.908721 4640 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/stats.lock
+[2021-02-26T17:44:43.984652 13400] Got object file hash from preprocessor
+[2021-02-26T17:44:43.984652 13400] Object file C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/c/ea98a58779e1ef9affb317c381ad6e-2888319.o not in cache
+[2021-02-26T17:44:43.984652 13400] Running real compiler
+[2021-02-26T17:44:44.027612 7360 ] Got object file hash from manifest
+[2021-02-26T17:44:44.048592 7360 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/8/ade2400d13e1e350343c1044bc187d-668365.o to module.resourse.o (uncompressed)
+[2021-02-26T17:44:44.083559 3832 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) base_dir = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) compiler = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) compression = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) debug = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) disable = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) hard_link = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:44.083559 3832 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) max_files = 0
+[2021-02-26T17:44:44.083559 3832 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) path = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) read_only = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) recache = false
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) stats = true
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:44.083559 3832 ] Config: (default) umask = 
+[2021-02-26T17:44:44.085558 3832 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\MainProgram.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src static_src\MainProgram.c
+[2021-02-26T17:44:44.085558 3832 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:44.085558 3832 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:44.086558 3832 ] Source file: static_src\MainProgram.c
+[2021-02-26T17:44:44.086558 3832 ] Object file: static_src\MainProgram.o
+[2021-02-26T17:44:44.086558 3832 ] Trying direct lookup
+[2021-02-26T17:44:44.087557 3832 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/1/8c3f8fbdca2df7f8d19f88ef1157dc-23556.manifest
+[2021-02-26T17:44:44.087557 7360 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/8/ade2400d13e1e350343c1044bc187d-668365.o -> module.resourse.o
+[2021-02-26T17:44:44.112532 7360 ] Succeeded getting cached result
+[2021-02-26T17:44:44.112532 7360 ] Result: cache hit (direct)
+[2021-02-26T17:44:44.125520 7360 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2021-02-26T17:44:44.151496 7360 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2021-02-26T17:44:44.326334 2112 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) base_dir = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) compiler = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) compression = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) debug = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) disable = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) hard_link = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:44.326334 2112 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) max_files = 0
+[2021-02-26T17:44:44.326334 2112 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) path = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) read_only = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) recache = false
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) stats = true
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:44.326334 2112 ] Config: (default) umask = 
+[2021-02-26T17:44:44.328332 2112 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\CompiledCellType.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledCellType.c
+[2021-02-26T17:44:44.328332 2112 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:44.328332 2112 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:44.328332 2112 ] Source file: static_src\CompiledCellType.c
+[2021-02-26T17:44:44.328332 2112 ] Object file: static_src\CompiledCellType.o
+[2021-02-26T17:44:44.329331 2112 ] Trying direct lookup
+[2021-02-26T17:44:44.329331 2112 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/5/7e479e93685446fa8fa3ed9b5a6543-8116.manifest
+[2021-02-26T17:44:44.587092 2112 ] Got object file hash from manifest
+[2021-02-26T17:44:44.603078 2112 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/4/c4c775cd177b0d160693768906123d-630866.o to static_src\CompiledCellType.o (uncompressed)
+[2021-02-26T17:44:44.615066 2112 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/4/c4c775cd177b0d160693768906123d-630866.o -> static_src\CompiledCellType.o
+[2021-02-26T17:44:44.616065 2112 ] Succeeded getting cached result
+[2021-02-26T17:44:44.616065 2112 ] Result: cache hit (direct)
+[2021-02-26T17:44:44.616065 2112 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2021-02-26T17:44:44.644041 2112 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2021-02-26T17:44:45.004706 7740 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) base_dir = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) compiler = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) compression = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) debug = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) disable = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) hard_link = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:45.004706 7740 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) max_files = 0
+[2021-02-26T17:44:45.004706 7740 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) path = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) read_only = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) recache = false
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) stats = true
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:45.004706 7740 ] Config: (default) umask = 
+[2021-02-26T17:44:45.006702 7740 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\CompiledFunctionType.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledFunctionType.c
+[2021-02-26T17:44:45.006702 7740 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:45.006702 7740 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:45.007702 7740 ] Source file: static_src\CompiledFunctionType.c
+[2021-02-26T17:44:45.007702 7740 ] Object file: static_src\CompiledFunctionType.o
+[2021-02-26T17:44:45.007702 7740 ] Trying direct lookup
+[2021-02-26T17:44:45.008701 7740 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/d/f8e3c27b59497f6d7857b45246162c-79097.manifest
+[2021-02-26T17:44:45.170550 5880 ] Got object file hash from preprocessor
+[2021-02-26T17:44:45.170550 5880 ] Object file C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/2/cb76f8edd61179af0b98352c754a07-2871514.o not in cache
+[2021-02-26T17:44:45.170550 5880 ] Running real compiler
+[2021-02-26T17:44:45.187536 7740 ] Got object file hash from manifest
+[2021-02-26T17:44:45.206518 7740 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/8/2bc59df24674919f135ffe9a9a8e5c-711321.o to static_src\CompiledFunctionType.o (uncompressed)
+[2021-02-26T17:44:45.219505 7740 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/8/2bc59df24674919f135ffe9a9a8e5c-711321.o -> static_src\CompiledFunctionType.o
+[2021-02-26T17:44:45.220505 7740 ] Succeeded getting cached result
+[2021-02-26T17:44:45.220505 7740 ] Result: cache hit (direct)
+[2021-02-26T17:44:45.221503 7740 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/stats.lock
+[2021-02-26T17:44:45.268471 7740 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/stats.lock
+[2021-02-26T17:44:45.856913 8968 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) base_dir = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) compiler = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) compression = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) debug = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) disable = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) hard_link = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:45.856913 8968 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) max_files = 0
+[2021-02-26T17:44:45.856913 8968 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) path = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) read_only = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) recache = false
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) stats = true
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:45.856913 8968 ] Config: (default) umask = 
+[2021-02-26T17:44:45.858911 8968 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\CompiledGeneratorType.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledGeneratorType.c
+[2021-02-26T17:44:45.858911 8968 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:45.858911 8968 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:45.859911 8968 ] Source file: static_src\CompiledGeneratorType.c
+[2021-02-26T17:44:45.859911 8968 ] Object file: static_src\CompiledGeneratorType.o
+[2021-02-26T17:44:45.859911 8968 ] Trying direct lookup
+[2021-02-26T17:44:45.860913 8968 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/a/2e1f7de6fcc7cf39f1a6472553b718-57546.manifest
+[2021-02-26T17:44:46.035748 8968 ] Got object file hash from manifest
+[2021-02-26T17:44:46.071715 8968 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/7/a600061c6ad81581f650c7ecf680c1-806041.o to static_src\CompiledGeneratorType.o (uncompressed)
+[2021-02-26T17:44:46.086702 8968 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/7/a600061c6ad81581f650c7ecf680c1-806041.o -> static_src\CompiledGeneratorType.o
+[2021-02-26T17:44:46.087701 8968 ] Succeeded getting cached result
+[2021-02-26T17:44:46.087701 8968 ] Result: cache hit (direct)
+[2021-02-26T17:44:46.087701 8968 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2021-02-26T17:44:46.114675 8968 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2021-02-26T17:44:48.061868 3832 ] Got object file hash from manifest
+[2021-02-26T17:44:48.078853 3832 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/0/109bd2c38d87cec45d8553e6c1ec7e-4117462.o to static_src\MainProgram.o (uncompressed)
+[2021-02-26T17:44:48.081851 3832 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/0/109bd2c38d87cec45d8553e6c1ec7e-4117462.o -> static_src\MainProgram.o
+[2021-02-26T17:44:48.082850 3832 ] Succeeded getting cached result
+[2021-02-26T17:44:48.082850 3832 ] Result: cache hit (direct)
+[2021-02-26T17:44:48.083847 3832 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2021-02-26T17:44:48.096836 3832 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2021-02-26T17:44:48.197741 5288 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) base_dir = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) compiler = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) compression = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) debug = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) disable = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) hard_link = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:48.197741 5288 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) max_files = 0
+[2021-02-26T17:44:48.197741 5288 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) path = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) read_only = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) recache = false
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) stats = true
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:48.197741 5288 ] Config: (default) umask = 
+[2021-02-26T17:44:48.198740 5288 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\InspectPatcher.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src static_src\InspectPatcher.c
+[2021-02-26T17:44:48.199739 5288 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:48.199739 5288 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:48.199739 5288 ] Source file: static_src\InspectPatcher.c
+[2021-02-26T17:44:48.199739 5288 ] Object file: static_src\InspectPatcher.o
+[2021-02-26T17:44:48.199739 5288 ] Trying direct lookup
+[2021-02-26T17:44:48.200738 5288 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/2/0062a1616cdbed991d26718b6fe72f-13780.manifest
+[2021-02-26T17:44:48.233708 11400] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:48.233708 11400] Config: (default) base_dir = 
+[2021-02-26T17:44:48.233708 11400] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:48.233708 11400] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:48.233708 11400] Config: (default) compiler = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:48.233708 11400] Config: (default) compression = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) compression_level = 6
+[2021-02-26T17:44:48.233708 11400] Config: (default) cpp_extension = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) debug = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) depend_mode = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) direct_mode = true
+[2021-02-26T17:44:48.233708 11400] Config: (default) disable = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) hard_link = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) hash_dir = true
+[2021-02-26T17:44:48.233708 11400] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:48.233708 11400] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:48.233708 11400] Config: (default) max_files = 0
+[2021-02-26T17:44:48.233708 11400] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:48.233708 11400] Config: (default) path = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) prefix_command = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) read_only = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) read_only_direct = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) recache = false
+[2021-02-26T17:44:48.233708 11400] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:48.233708 11400] Config: (default) sloppiness = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) stats = true
+[2021-02-26T17:44:48.233708 11400] Config: (default) temporary_dir = 
+[2021-02-26T17:44:48.233708 11400] Config: (default) umask = 
+[2021-02-26T17:44:48.234708 11400] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\CompiledCodeHelpers.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledCodeHelpers.c
+[2021-02-26T17:44:48.235707 11400] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:48.235707 11400] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:48.235707 11400] Source file: static_src\CompiledCodeHelpers.c
+[2021-02-26T17:44:48.235707 11400] Object file: static_src\CompiledCodeHelpers.o
+[2021-02-26T17:44:48.236706 11400] Trying direct lookup
+[2021-02-26T17:44:48.236706 11400] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/b/137c167e0e2c0faf4982e4e71aba16-57257.manifest
+[2021-02-26T17:44:48.368583 5288 ] Got object file hash from manifest
+[2021-02-26T17:44:48.385568 5288 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/8/1c25ae71f3def2534a742dd4ab524b-636551.o to static_src\InspectPatcher.o (uncompressed)
+[2021-02-26T17:44:48.399554 5288 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/8/1c25ae71f3def2534a742dd4ab524b-636551.o -> static_src\InspectPatcher.o
+[2021-02-26T17:44:48.400554 5288 ] Succeeded getting cached result
+[2021-02-26T17:44:48.400554 5288 ] Result: cache hit (direct)
+[2021-02-26T17:44:48.400554 5288 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2021-02-26T17:44:48.437520 5288 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2021-02-26T17:44:48.683291 11400] Got object file hash from manifest
+[2021-02-26T17:44:48.709283 11400] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/3/4f630b0a2f8ba3b63998a5f8d453fb-5314435.o to static_src\CompiledCodeHelpers.o (uncompressed)
+[2021-02-26T17:44:48.725254 11400] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/3/4f630b0a2f8ba3b63998a5f8d453fb-5314435.o -> static_src\CompiledCodeHelpers.o
+[2021-02-26T17:44:48.726252 11400] Succeeded getting cached result
+[2021-02-26T17:44:48.726252 11400] Result: cache hit (direct)
+[2021-02-26T17:44:48.727253 11400] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/stats.lock
+[2021-02-26T17:44:48.755226 11400] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/stats.lock
+[2021-02-26T17:44:48.785199 2236 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) base_dir = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (environment) cache_dir = C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) cache_dir_levels = 2
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) compiler = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) compiler_check = mtime
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) compression = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) compression_level = 6
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) cpp_extension = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) debug = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) depend_mode = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) direct_mode = true
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) disable = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) extra_files_to_hash = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) hard_link = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) hash_dir = true
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) ignore_headers_in_manifest = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) keep_comments_cpp = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) limit_multiple = 0.8
+[2021-02-26T17:44:48.785199 2236 ] Config: (environment) log_file = D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) max_files = 0
+[2021-02-26T17:44:48.785199 2236 ] Config: (C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) path = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) pch_external_checksum = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) prefix_command = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) prefix_command_cpp = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) read_only = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) read_only_direct = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) recache = false
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) run_second_cpp = true
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) sloppiness = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) stats = true
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) temporary_dir = 
+[2021-02-26T17:44:48.785199 2236 ] Config: (default) umask = 
+[2021-02-26T17:44:48.787195 2236 ] Command line: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\MetaPathBasedLoader.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D_NUITKA_STANDALONE -D_NUITKA_WINMAIN_ENTRY_POINT -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=166 -D_NUITKA_EXE -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\include -I. -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\include -IC:\Users\Lenovo\AppData\Local\Programs\Python\Python39\lib\SITE-P~1\nuitka\build\static_src static_src\MetaPathBasedLoader.c
+[2021-02-26T17:44:48.787195 2236 ] Hostname: DESKTOP-7SK0EFD
+[2021-02-26T17:44:48.787195 2236 ] Working directory: D:\MyProjects\PyProjects\BeneFit\main.build
+[2021-02-26T17:44:48.788194 2236 ] Source file: static_src\MetaPathBasedLoader.c
+[2021-02-26T17:44:48.788194 2236 ] Object file: static_src\MetaPathBasedLoader.o
+[2021-02-26T17:44:48.789195 2236 ] Trying direct lookup
+[2021-02-26T17:44:48.789195 2236 ] Looking for object file hash in C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/7/26c0dc46ccaa46ac63e8f51ee3617a-52159.manifest
+[2021-02-26T17:44:49.056947 2236 ] Got object file hash from manifest
+[2021-02-26T17:44:49.077925 2236 ] Copying C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/a/559b297818a232c1633fb4b58a0348-2981853.o to static_src\MetaPathBasedLoader.o (uncompressed)
+[2021-02-26T17:44:49.094910 2236 ] Created from cache: C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/a/559b297818a232c1633fb4b58a0348-2981853.o -> static_src\MetaPathBasedLoader.o
+[2021-02-26T17:44:49.095910 2236 ] Succeeded getting cached result
+[2021-02-26T17:44:49.095910 2236 ] Result: cache hit (direct)
+[2021-02-26T17:44:49.096910 2236 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2021-02-26T17:44:49.130875 2236 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2021-02-26T17:45:49.053273 13400] Unlink C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/c/ea98a58779e1ef9affb317c381ad6e-2888319.o.tmp.stdout.DESKTOP-7SK0EFD.13400.FzP5tM
+[2021-02-26T17:45:49.053273 13400] Unlink C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/c/ea98a58779e1ef9affb317c381ad6e-2888319.o.tmp.stderr.DESKTOP-7SK0EFD.13400.1QBI6D
+[2021-02-26T17:45:49.054271 13400] Copying module.__main__.o to C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/c/ea98a58779e1ef9affb317c381ad6e-2888319.o via C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/c/ea98a58779e1ef9affb317c381ad6e-2888319.o.DESKTOP-7SK0EFD.13400.SS92c3 (uncompressed)
+[2021-02-26T17:45:49.076253 13400] Stored in cache: module.__main__.o -> C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/c/ea98a58779e1ef9affb317c381ad6e-2888319.o (copied)
+[2021-02-26T17:45:49.098238 13400] Added object file hash to C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/2/49b7e89bdb5a7a51ad3c86be6d22e9-2205331.manifest
+[2021-02-26T17:45:49.099231 13400] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-02-26T17:45:49.114216 13400] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-02-26T17:45:49.116215 13400] Result: cache miss
+[2021-02-26T17:45:49.117213 13400] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-02-26T17:45:49.132200 13400] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-02-26T17:45:49.691678 5880 ] Unlink C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/2/cb76f8edd61179af0b98352c754a07-2871514.o.tmp.stdout.DESKTOP-7SK0EFD.5880.1QBI6D
+[2021-02-26T17:45:49.692678 5880 ] Unlink C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/2/cb76f8edd61179af0b98352c754a07-2871514.o.tmp.stderr.DESKTOP-7SK0EFD.5880.SS92c3
+[2021-02-26T17:45:49.693678 5880 ] Copying module.main.o to C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/2/cb76f8edd61179af0b98352c754a07-2871514.o via C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/2/cb76f8edd61179af0b98352c754a07-2871514.o.DESKTOP-7SK0EFD.5880.1Apgjk (uncompressed)
+[2021-02-26T17:45:49.713666 5880 ] Stored in cache: module.main.o -> C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/2/cb76f8edd61179af0b98352c754a07-2871514.o (copied)
+[2021-02-26T17:45:49.731643 5880 ] Added object file hash to C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/0/2835ee80568a636bd3df7d63933cc4-2187915.manifest
+[2021-02-26T17:45:49.732642 5880 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/stats.lock
+[2021-02-26T17:45:49.747628 5880 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/stats.lock
+[2021-02-26T17:45:49.749628 5880 ] Result: cache miss
+[2021-02-26T17:45:49.750625 5880 ] Acquired lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2021-02-26T17:45:49.764612 5880 ] Releasing lock C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock

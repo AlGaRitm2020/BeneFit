@@ -1,7 +1,7 @@
 AS=as
 CC=C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe "C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe"
 CCACHE_DIR=C:\Users\Lenovo\AppData\Local\Nuitka\Nuitka\Cache\ccache
-CCACHE_LOGFILE=C:\Users\Lenovo\MyProjects\PyProjects\BeneFit - Copy - Copy (2)\main.build\ccache-6228.txt
+CCACHE_LOGFILE=D:\MyProjects\PyProjects\BeneFit\main.build\ccache-1608.txt
 CCCOM=$CC -o $TARGET -c $CFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
 CFILESUFFIX=.c
 CPPDEFINES=['_WIN32_WINNT=0x0501', '_NUITKA_STANDALONE', '_NUITKA_WINMAIN_ENTRY_POINT', '__NUITKA_NO_ASSERT__', 'MS_WIN64', '_NUITKA_CONSTANTS_FROM_RESOURCE', '_NUITKA_FROZEN=166', '_NUITKA_EXE']

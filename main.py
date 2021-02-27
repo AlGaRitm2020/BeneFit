@@ -674,12 +674,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             with sqlite3.connect('db/dataBase2.db') as db:
                 # создание курсора
                 cursor = db.cursor()
-                print(float(self.lineEdit_percent.text()))
-                cursor.execute(
-                    f"""  UPDATE info SET (height, weight, age, gender, activity,
-                     wrist, fat_check, waist, neck, hip, IMT, type) = {(height, weight, age,
-                                                                        self.male, activity, wrist, self.check, waist, neck, hip, imt, self.body_type)} WHERE ID = {ID}""")
-
+                try:
+                    cursor.execute(
+                        f"""  UPDATE info SET (height, weight, age, gender, activity,
+                         wrist, fat_check, waist, neck, hip, IMT, type) = {(height, weight, age,
+                                                                            self.male, activity, wrist, self.check, waist, neck, hip, imt, self.body_type)} WHERE ID = {ID}""")
+                except Exception:
+                    pass
     # показать поле для расчета процента жира
     def show_extra(self):
         # нажатие на неактивный чекбокс
